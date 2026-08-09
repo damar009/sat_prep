@@ -1,0 +1,123 @@
+{
+  "settings": {
+    "showSolutionToggle": true,
+    "sections": {
+      "material": true,
+      "practice": true,
+      "additionalPractice": true
+    }
+  },
+  "meta": {
+    "section": "math",
+    "pageId": "page_mat_3",
+    "number": "03"
+  },
+  "eyebrow": "SAT Math / 03",
+  "title": "Linear functions and graphs",
+  "subtitle": "Read slope, intercepts, tables, and graphs to build linear models.",
+  "materi": [
+    {
+      "judul": "Slope and initial value",
+      "icon": "fa-chart-line",
+      "tipe": "basic",
+      "isi": [
+        "The form \\(y = mx + b\\) contains two important pieces of information: \\(m\\) is the slope, and \\(b\\) is the value of \\(y\\) when \\(x = 0\\).",
+        {
+          "type": "formula",
+          "content": "\\[m = \\frac{y_2 - y_1}{x_2 - x_1}\\]"
+        }
+      ]
+    },
+    {
+      "judul": "How to read a graph",
+      "icon": "fa-magnifying-glass-chart",
+      "tipe": "basic",
+      "isi": [
+        "Choose two points that are easy to read. Calculate the change in \\(y\\) divided by the change in \\(x\\) to find the slope, then use one point to find the intercept.",
+        {
+          "type": "note",
+          "content": "A positive slope means the output increases as the input increases. A negative slope means the output decreases as the input increases."
+        }
+      ]
+    },
+    {
+      "judul": "Representations of a line",
+      "icon": "fa-table",
+      "tipe": "table",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Representation",
+              "What to inspect"
+            ],
+            "leftAlign": [
+              0,
+              1
+            ],
+            "rows": [
+              [
+                "Equation",
+                "Slope and intercept"
+              ],
+              [
+                "Table",
+                "Constant change in output for equal input changes"
+              ],
+              [
+                "Graph",
+                "Rise, run, and axis intercepts"
+              ],
+              [
+                "Context",
+                "Units and meaning of the rate"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A line passes through \\((2, 5)\\) and \\((6, 13)\\). What is its slope?",
+      "answer": "\\(2\\)",
+      "discussion": [
+        "The change in \\(y\\) is \\(13 - 5 = 8\\).",
+        "The change in \\(x\\) is \\(6 - 2 = 4\\).",
+        "Therefore, \\(m = \\frac{8}{4} = 2\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "What is the \\(y\\)-intercept of \\(y = -6x - 32\\)?",
+      "options": [
+        "\\((-6, 0)\\)",
+        "\\((0, -32)\\)",
+        "\\((0, 32)\\)",
+        "\\((-32, 0)\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The \\(y\\)-intercept occurs when \\(x = 0\\).",
+        "Substituting \\(x = 0\\) gives \\(y = -32\\), so the point is \\((0, -32)\\)."
+      ]
+    }
+  ],
+  "additionalPractice": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Before solving a new SAT Math question, what should you identify first?",
+      "answer": "Identify what the question is asking and the information that matters.",
+      "discussion": [
+        "Read the question carefully and name the quantity, claim, or skill being tested.",
+        "Then choose a representation or strategy that matches the information given."
+      ]
+    }
+  ]
+}

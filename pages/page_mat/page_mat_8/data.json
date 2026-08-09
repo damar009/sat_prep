@@ -1,0 +1,64 @@
+{
+  "settings": {
+    "showSolutionToggle": true,
+    "sections": {
+      "material": true,
+      "practice": true,
+      "additionalPractice": true
+    }
+  },
+  "meta": {
+    "section": "math",
+    "pageId": "page_mat_8",
+    "number": "08"
+  },
+  "eyebrow": "SAT Math / 08",
+  "title": "Quadratic equations",
+  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "materi": [
+    {
+      "judul": "Page structure ready",
+      "icon": "fa-hourglass-half",
+      "tipe": "basic",
+      "isi": [
+        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        {
+          "type": "note",
+          "content": "This lesson can be published when its content has been reviewed."
+        }
+      ]
+    },
+    {
+      "judul": "Planned focus",
+      "icon": "fa-square-root-variable",
+      "tipe": "basic",
+      "isi": [
+        "SAT Math unit 08 is reserved for: Quadratic equations."
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "What is the first useful step when beginning the SAT Math unit \"Quadratic equations\"?",
+      "answer": "Identify what the question is asking and the information that matters.",
+      "discussion": [
+        "Read the question carefully and name the quantity, claim, or skill being tested.",
+        "Then choose a representation or strategy that matches the information given."
+      ]
+    }
+  ],
+  "additionalPractice": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Before solving a new SAT Math question, what should you identify first?",
+      "answer": "Identify what the question is asking and the information that matters.",
+      "discussion": [
+        "Read the question carefully and name the quantity, claim, or skill being tested.",
+        "Then choose a representation or strategy that matches the information given."
+      ]
+    }
+  ]
+}

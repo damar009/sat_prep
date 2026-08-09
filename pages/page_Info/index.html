@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light only">
+  <title>SAT Information | SAT Pradita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../../shared/page-nav.css">
+  <link rel="stylesheet" href="../../shared/hub-page.css">
+</head>
+
+<body data-section-id="info">
+  <div data-page-nav></div>
+  <header class="hub-hero">
+    <div class="hub-hero__inner">
+      <p class="hub-hero__eyebrow">Study path / orientation</p>
+      <h1 id="hub-title">SAT Information</h1>
+      <p id="hub-description" class="hub-hero__description">Loading study path...</p>
+      <div class="hub-hero__stats">
+        <span><strong id="active-count">–</strong> active pages</span>
+        <span><strong id="total-count">–</strong> pages in path</span>
+        <span><strong>01</strong> orientation layer</span>
+      </div>
+    </div>
+  </header>
+  <main class="hub-main">
+    <section class="hub-section-head">
+      <div>
+        <p class="hub-section__eyebrow">Page catalogue</p>
+        <h2>Start with the context</h2>
+        <p>Read these pages before deep practice so the test format and your study rhythm feel familiar.</p>
+      </div>
+      <div class="hub-filter" role="group" aria-label="Filter page status">
+        <button class="is-active" type="button" data-hub-filter="all">All</button>
+        <button type="button" data-hub-filter="active">Active</button>
+        <button type="button" data-hub-filter="upcoming">Non-active</button>
+      </div>
+    </section>
+    <div id="hub-list" class="hub-list" aria-live="polite">
+      <p class="hub-empty">Loading pages...</p>
+    </div>
+    <section class="hub-note">
+      <div>
+        <p class="hub-section__eyebrow">Tutor control</p>
+        <h2>Open only what the class needs.</h2>
+      </div>
+      <p>Page activation is managed centrally in <code>data/pages.json</code>. The catalogue stays visible even when a page is not ready, so the learning map remains clear.</p>
+    </section>
+  </main>
+  <script src="../../shared/page-nav.js" type="module"></script>
+  <script src="../../shared/hub-page.js" type="module"></script>
+</body>
+
+</html>

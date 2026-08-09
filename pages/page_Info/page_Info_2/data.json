@@ -1,0 +1,112 @@
+{
+  "settings": {
+    "showSolutionToggle": true,
+    "sections": {
+      "material": true,
+      "practice": true,
+      "additionalPractice": true
+    }
+  },
+  "meta": {
+    "section": "info",
+    "pageId": "page_Info_2",
+    "number": "02"
+  },
+  "eyebrow": "SAT Information / 02",
+  "title": "Study strategy and pacing",
+  "subtitle": "Turn a large target into small, repeatable study actions.",
+  "materi": [
+    {
+      "judul": "Plan from evidence",
+      "icon": "fa-chart-line",
+      "tipe": "basic",
+      "isi": [
+        "A useful plan is built from evidence: the kinds of questions you miss, the time you need, and the concepts that still feel unstable.",
+        {
+          "type": "formula",
+          "content": "\\[\\text{Weekly focus} = \\text{priority skill} + \\text{targeted practice} + \\text{error review}\\]"
+        }
+      ]
+    },
+    {
+      "judul": "A compact practice rhythm",
+      "icon": "fa-clock",
+      "tipe": "table",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Session",
+              "Purpose",
+              "Suggested output"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "Preview",
+                "Recall the concept and inspect examples.",
+                "Three key ideas"
+              ],
+              [
+                "Drill",
+                "Solve a small set with one focus.",
+                "Marked attempts"
+              ],
+              [
+                "Review",
+                "Classify the reason for each miss.",
+                "Error log"
+              ],
+              [
+                "Transfer",
+                "Solve a new context without prompts.",
+                "One clean solution"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "judul": "Pacing without panic",
+      "icon": "fa-gauge-high",
+      "tipe": "basic",
+      "isi": [
+        "Pacing is not simply working faster. It is deciding which questions deserve immediate attention, which need a marked return, and which can be simplified with a model or estimation.",
+        {
+          "type": "note",
+          "content": "When time feels tight, protect accuracy on questions whose structure you understand. Use the review step to study the questions that exposed a real gap."
+        }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A learner completes 18 focused practice questions in 3 sessions. What is the average number of questions per session?",
+      "answer": "\\(6\\)",
+      "discussion": [
+        "Divide the total number of questions by the number of sessions.",
+        "\\(18 \\div 3 = 6\\), so the average is \\(6\\) questions per session."
+      ]
+    }
+  ],
+  "additionalPractice": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Before solving a new SAT Information question, what should you identify first?",
+      "answer": "Identify what the question is asking and the information that matters.",
+      "discussion": [
+        "Read the question carefully and name the quantity, claim, or skill being tested.",
+        "Then choose a representation or strategy that matches the information given."
+      ]
+    }
+  ]
+}

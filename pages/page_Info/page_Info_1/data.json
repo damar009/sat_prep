@@ -1,0 +1,114 @@
+{
+  "settings": {
+    "showSolutionToggle": true,
+    "sections": {
+      "material": true,
+      "practice": true,
+      "additionalPractice": true
+    }
+  },
+  "meta": {
+    "section": "info",
+    "pageId": "page_Info_1",
+    "number": "01"
+  },
+  "eyebrow": "SAT Information / 01",
+  "title": "SAT overview and structure",
+  "subtitle": "Build a mental map of the test before building a study plan.",
+  "materi": [
+    {
+      "judul": "What this page is for",
+      "icon": "fa-compass",
+      "tipe": "basic",
+      "isi": [
+        "Start here when the SAT still feels like a collection of unfamiliar terms. The goal is to understand the shape of the test, the role of each section, and the difference between learning a concept and practicing a question type.",
+        {
+          "type": "note",
+          "content": "Use this page as an orientation checklist. Exact test policies and dates should always be checked against the official College Board source before test day."
+        }
+      ]
+    },
+    {
+      "judul": "A simple study map",
+      "icon": "fa-map",
+      "tipe": "table",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Layer",
+              "Question to ask",
+              "Output"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "Understand",
+                "What skill is being tested?",
+                "A short concept note"
+              ],
+              [
+                "Model",
+                "What relationship connects the information?",
+                "An equation or diagram"
+              ],
+              [
+                "Practice",
+                "Can I solve a similar question?",
+                "A timed attempt"
+              ],
+              [
+                "Review",
+                "Why did my first approach fail?",
+                "An error log entry"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "judul": "The two study modes",
+      "icon": "fa-people-arrows",
+      "tipe": "basic",
+      "isi": [
+        "For independent learning, read the concept note, attempt the examples without opening the solution, and record the exact step where you became uncertain.",
+        "For tutor-led learning, use the same page as a shared agenda. The tutor can open the discussion after the learner has committed to a first approach."
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "Which sequence best describes a productive learning loop?",
+      "options": [
+        "Guess, skip, repeat",
+        "Understand, model, practice, review",
+        "Memorize, rush, compare",
+        "Read, copy, finish"
+      ],
+      "answer": "B",
+      "discussion": [
+        "A productive loop moves from understanding the idea to building a model, practicing it, and reviewing the result."
+      ]
+    }
+  ],
+  "additionalPractice": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Before solving a new SAT Information question, what should you identify first?",
+      "answer": "Identify what the question is asking and the information that matters.",
+      "discussion": [
+        "Read the question carefully and name the quantity, claim, or skill being tested.",
+        "Then choose a representation or strategy that matches the information given."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "settings": {
+    "showSolutionToggle": true,
+    "sections": {
+      "material": true,
+      "practice": true,
+      "additionalPractice": true
+    }
+  },
+  "meta": {
+    "section": "math",
+    "pageId": "page_mat_4",
+    "number": "04"
+  },
+  "eyebrow": "SAT Math / 04",
+  "title": "Systems of linear equations",
+  "subtitle": "Use substitution, elimination, and intersections to solve systems.",
+  "materi": [
+    {
+      "judul": "What a system represents",
+      "icon": "fa-code-compare",
+      "tipe": "basic",
+      "isi": [
+        "A system asks for values that satisfy two or more equations at the same time. On a graph, the solution is the point where the relationships intersect.",
+        {
+          "type": "formula",
+          "content": "\\[\\begin{aligned}x + y &= 10\\\\x - y &= 2\\end{aligned}\\]"
+        }
+      ]
+    },
+    {
+      "judul": "Two common methods",
+      "icon": "fa-shuffle",
+      "tipe": "table",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Method",
+              "Best first move"
+            ],
+            "leftAlign": [
+              0,
+              1
+            ],
+            "rows": [
+              [
+                "Substitution",
+                "Solve one equation for one variable."
+              ],
+              [
+                "Elimination",
+                "Add or subtract equations to cancel a variable."
+              ],
+              [
+                "Graphing",
+                "Find the intersection of the two lines."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "judul": "Check the pair",
+      "icon": "fa-check-double",
+      "tipe": "basic",
+      "isi": [
+        "A pair is a solution only if it works in every equation in the system. Substitution is the quickest final check."
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Solve the system \\(x + y = 10\\) and \\(x - y = 2\\).",
+      "answer": "\\((6, 4)\\)",
+      "discussion": [
+        "Add the equations to eliminate \\(y\\): \\(2x = 12\\).",
+        "So \\(x = 6\\). Substitute into \\(x + y = 10\\): \\(6 + y = 10\\), so \\(y = 4\\)."
+      ]
+    }
+  ],
+  "additionalPractice": [
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Before solving a new SAT Math question, what should you identify first?",
+      "answer": "Identify what the question is asking and the information that matters.",
+      "discussion": [
+        "Read the question carefully and name the quantity, claim, or skill being tested.",
+        "Then choose a representation or strategy that matches the information given."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "site": {
+    "title": "SAT Preparation",
+    "subtitle": "Study materials for independent learning and tutoring",
+    "showComingSoon": false
+  },
+  "sections": [
+    {
+      "id": "info",
+      "key": "page_Info",
+      "title": "SAT Information",
+      "shortTitle": "Information",
+      "description": "Format, strategy, planning, and resources for a clearer SAT journey.",
+      "icon": "fa-compass",
+      "active": false,
+      "hubUrl": "pages/page_Info/index.html",
+      "pages": [
+        {
+          "id": "page_Info_1",
+          "number": "01",
+          "title": "SAT overview and structure",
+          "summary": "Understand the Digital SAT sections, timing, and adaptive flow.",
+          "active": false,
+          "url": "pages/page_Info/page_Info_1/index.html"
+        },
+        {
+          "id": "page_Info_2",
+          "number": "02",
+          "title": "Study strategy and pacing",
+          "summary": "Build a realistic plan and make every practice session count.",
+          "active": false,
+          "url": "pages/page_Info/page_Info_2/index.html"
+        },
+        {
+          "id": "page_Info_3",
+          "number": "03",
+          "title": "Tools and resources",
+          "summary": "Collect calculators, references, and useful study workflows.",
+          "active": false,
+          "url": "pages/page_Info/page_Info_3/index.html"
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "key": "page_mat",
+      "title": "SAT Math",
+      "shortTitle": "Math",
+      "description": "Twenty meeting-ready units for concepts, practice, and review.",
+      "icon": "fa-square-root-variable",
+      "active": true,
+      "hubUrl": "pages/page_mat/index.html",
+      "pages": [
+        {
+          "id": "page_mat_1",
+          "number": "01",
+          "title": "Chapter 1.1. Introduction to SAT Math",
+          "summary": "SAT Math structure, question types, tools, and mathematical modeling.",
+          "active": true,
+          "url": "pages/page_mat/page_mat_1/index.html"
+        },
+        {
+          "id": "page_mat_2",
+          "number": "02",
+          "title": "Chapter 1.2. Fundamentals of Math",
+          "summary": "Use practical strategies, the SAT reference sheet, and Desmos efficiently.",
+          "active": true,
+          "url": "pages/page_mat/page_mat_2/index.html"
+        },
+        {
+          "id": "page_mat_3",
+          "number": "03",
+          "title": "Chapter 2.1. Numbers and Operations",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_3/index.html"
+        },
+        {
+          "id": "page_mat_4",
+          "number": "04",
+          "title": "Chapter 2.2. Quantitative Relationship",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_4/index.html"
+        },
+        {
+          "id": "page_mat_5",
+          "number": "05",
+          "title": "Chapter 3.1. Linear Equations in One Variable",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_5/index.html"
+        },
+        {
+          "id": "page_mat_6",
+          "number": "06",
+          "title": "Chapter 3.2. Linear Equations in More Than One Variable",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_6/index.html"
+        },
+        {
+          "id": "page_mat_7",
+          "number": "07",
+          "title": "Chapter 3.3. Inequalities",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_7/index.html"
+        },
+        {
+          "id": "page_mat_8",
+          "number": "08",
+          "title": "Chapter 3.4. Quadratic Equations and Roots",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_8/index.html"
+        },
+        {
+          "id": "page_mat_9",
+          "number": "09",
+          "title": "Chapter 3.5. Polynomials",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_9/index.html"
+        },
+        {
+          "id": "page_mat_10",
+          "number": "10",
+          "title": "Chapter 3.6. Other Equations",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_10/index.html"
+        },
+        {
+          "id": "page_mat_11",
+          "number": "11",
+          "title": "Chapter 4.1. Angles",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_11/index.html"
+        },
+        {
+          "id": "page_mat_12",
+          "number": "12",
+          "title": "Chapter 4.2. Trigonometry",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_12/index.html"
+        },
+        {
+          "id": "page_mat_13",
+          "number": "13",
+          "title": "Chapter 4.3. Plane Figures",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_13/index.html"
+        },
+        {
+          "id": "page_mat_14",
+          "number": "14",
+          "title": "Chapter 4.4. Solid Figures",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_14/index.html"
+        },
+        {
+          "id": "page_mat_15",
+          "number": "15",
+          "title": "Chapter 4.5. Coordinate Geometry",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_15/index.html"
+        },
+        {
+          "id": "page_mat_16",
+          "number": "16",
+          "title": "Chapter 5.1. Statistical Analysis",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_16/index.html"
+        },
+        {
+          "id": "page_mat_17",
+          "number": "17",
+          "title": "Chapter 5.2. Measures of Central Tendency",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_17/index.html"
+        },
+        {
+          "id": "page_mat_18",
+          "number": "18",
+          "title": "Chapter 5.3. Probability",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_18/index.html"
+        },
+        {
+          "id": "page_mat_19",
+          "number": "19",
+          "title": "Chapter 6.1. Arithmetics + Chapter 6.2. Algebra",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_19/index.html"
+        },
+        {
+          "id": "page_mat_20",
+          "number": "20",
+          "title": "Chapter 6.3. Geometry + Chapter 6.4. Statistics",
+          "summary": "?",
+          "active": false,
+          "url": "pages/page_mat/page_mat_20/index.html"
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "key": "page_eng",
+      "title": "SAT English / Verbal",
+      "shortTitle": "English",
+      "description": "A future twenty-unit path for Reading and Writing preparation.",
+      "icon": "fa-language",
+      "active": false,
+      "hubUrl": "pages/page_eng/index.html",
+      "pages": [
+        {
+          "id": "page_eng_1",
+          "number": "01",
+          "title": "Reading and Writing foundations",
+          "summary": "A first look at the verbal section and its question families.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_1/index.html"
+        },
+        {
+          "id": "page_eng_2",
+          "number": "02",
+          "title": "Central ideas and details",
+          "summary": "Locate what a passage says and what it implies.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_2/index.html"
+        },
+        {
+          "id": "page_eng_3",
+          "number": "03",
+          "title": "Inferences",
+          "summary": "Support an inference with precise textual evidence.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_3/index.html"
+        },
+        {
+          "id": "page_eng_4",
+          "number": "04",
+          "title": "Command of evidence",
+          "summary": "Choose the evidence that best supports a claim.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_4/index.html"
+        },
+        {
+          "id": "page_eng_5",
+          "number": "05",
+          "title": "Words in context",
+          "summary": "Use context to determine meaning and function.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_5/index.html"
+        },
+        {
+          "id": "page_eng_6",
+          "number": "06",
+          "title": "Text structure and purpose",
+          "summary": "Analyze how a text is organized and why.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_6/index.html"
+        },
+        {
+          "id": "page_eng_7",
+          "number": "07",
+          "title": "Cross-text connections",
+          "summary": "Compare ideas across paired passages.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_7/index.html"
+        },
+        {
+          "id": "page_eng_8",
+          "number": "08",
+          "title": "Rhetorical synthesis",
+          "summary": "Use notes to answer a focused writing task.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_8/index.html"
+        },
+        {
+          "id": "page_eng_9",
+          "number": "09",
+          "title": "Transitions",
+          "summary": "Choose transitions that fit the logic of a passage.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_9/index.html"
+        },
+        {
+          "id": "page_eng_10",
+          "number": "10",
+          "title": "Boundaries",
+          "summary": "Use punctuation to mark complete thoughts.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_10/index.html"
+        },
+        {
+          "id": "page_eng_11",
+          "number": "11",
+          "title": "Form, structure, and sense",
+          "summary": "Build sentences that are complete and logical.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_11/index.html"
+        },
+        {
+          "id": "page_eng_12",
+          "number": "12",
+          "title": "Subject-verb agreement",
+          "summary": "Match subjects and verbs across complex sentences.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_12/index.html"
+        },
+        {
+          "id": "page_eng_13",
+          "number": "13",
+          "title": "Pronouns and modifiers",
+          "summary": "Keep references clear and modifiers placed correctly.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_13/index.html"
+        },
+        {
+          "id": "page_eng_14",
+          "number": "14",
+          "title": "Verb forms and tense",
+          "summary": "Choose forms that match time and meaning.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_14/index.html"
+        },
+        {
+          "id": "page_eng_15",
+          "number": "15",
+          "title": "Parallelism",
+          "summary": "Make items in a series match in form.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_15/index.html"
+        },
+        {
+          "id": "page_eng_16",
+          "number": "16",
+          "title": "Precision and concision",
+          "summary": "Prefer clear, direct, and exact wording.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_16/index.html"
+        },
+        {
+          "id": "page_eng_17",
+          "number": "17",
+          "title": "Rhetorical placement",
+          "summary": "Place sentences where they best support a passage.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_17/index.html"
+        },
+        {
+          "id": "page_eng_18",
+          "number": "18",
+          "title": "Data and paired information",
+          "summary": "Connect claims with tables and figures.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_18/index.html"
+        },
+        {
+          "id": "page_eng_19",
+          "number": "19",
+          "title": "Mixed Reading and Writing practice",
+          "summary": "Practice the verbal section in mixed sets.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_19/index.html"
+        },
+        {
+          "id": "page_eng_20",
+          "number": "20",
+          "title": "Full English / Verbal review",
+          "summary": "Review, timing, and final verbal preparation.",
+          "active": false,
+          "url": "pages/page_eng/page_eng_20/index.html"
+        }
+      ]
+    }
+  ]
+}
