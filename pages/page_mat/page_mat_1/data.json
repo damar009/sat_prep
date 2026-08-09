@@ -78,7 +78,7 @@
         },
         {
           "type": "note",
-          "content": "For a student-produced response, enter a number, decimal point, fraction slash, or negative sign as appropriate. A mixed number such as \\(4\\frac{1}{2}\\) may be entered as \\(\\frac{9}{2}\\) or \\(4.5\\)."
+          "content": "For a student-produced response, enter a number, decimal point, fraction slash, or negative sign as appropriate. A mixed number such as \\(4\\dfrac{1}{2}\\) may be entered as \\(\\dfrac{9}{2}\\) or \\(4.5\\)."
         }
       ]
     },
@@ -160,7 +160,7 @@
               ],
               [
                 "half of \\(x\\)",
-                "\\(\\frac{x}{2}\\)",
+                "\\(\\dfrac{x}{2}\\)",
                 "Divide the quantity by 2."
               ],
               [
@@ -320,17 +320,6 @@
   "latihan": [
     {
       "showSolutionButton": true,
-      "sourcePage": 18,
-      "type": "open",
-      "question": "Why should I learn Math Modelling?",
-      "answer": "Because many SAT questions involve translating words into mathematical equations and translating equations back into words, especially in word problems.",
-      "discussion": [
-        "Mathematical modeling connects a real-world situation to a mathematical representation.",
-        "This skill helps identify variables, relationships, units, and the equation that represents the situation."
-      ]
-    },
-    {
-      "showSolutionButton": true,
       "sourcePage": 19,
       "type": "open",
       "question": "Andy's height is \\(x\\), and Bryan is 3 cm taller than Andy. What is Bryan's height?",
@@ -389,10 +378,10 @@
       "sourcePage": 20,
       "type": "open",
       "question": "A teacher brings \\(b\\) books to the class to be divided equally among \\(s\\) students. How many books does every student get?",
-      "answer": "\\(\\frac{b}{s}\\)",
+      "answer": "\\(\\dfrac{b}{s}\\)",
       "discussion": [
         "Dividing \\(b\\) books equally among \\(s\\) students means divide \\(b\\) by \\(s\\).",
-        "Every student gets \\(\\frac{b}{s}\\) books."
+        "Every student gets \\(\\dfrac{b}{s}\\) books."
       ]
     },
     {
@@ -442,8 +431,8 @@
       "options": [
         "\\(2c\\)",
         "\\(2+c\\)",
-        "\\(\\frac{2}{c}\\)",
-        "\\(\\frac{c}{2}\\)"
+        "\\(\\dfrac{2}{c}\\)",
+        "\\(\\dfrac{c}{2}\\)"
       ],
       "answer": "A",
       "discussion": [
@@ -496,8 +485,8 @@
       "options": [
         "\\(c=0.20(60h)\\)",
         "\\(c=0.20h+60\\)",
-        "\\(c=\\frac{60h}{0.20}\\)",
-        "\\(c=\\frac{0.20h}{60}\\)"
+        "\\(c=\\dfrac{60h}{0.20}\\)",
+        "\\(c=\\dfrac{0.20h}{60}\\)"
       ],
       "answer": "A",
       "discussion": [
@@ -587,7 +576,7 @@
       "options": [
         "\\(n+4\\)",
         "\\(4n\\)",
-        "\\(\\frac{n}{4}\\)",
+        "\\(\\dfrac{n}{4}\\)",
         "\\(4-n\\)"
       ],
       "answer": "B",
@@ -605,7 +594,7 @@
         "\\(a-5\\)",
         "\\(5a\\)",
         "\\(a+5\\)",
-        "\\(\\frac{a}{5}\\)"
+        "\\(\\dfrac{a}{5}\\)"
       ],
       "answer": "C",
       "discussion": [
@@ -622,7 +611,7 @@
         "\\(b-g\\)",
         "\\(bg\\)",
         "\\(b+g\\)",
-        "\\(\\frac{b}{g}\\)"
+        "\\(\\dfrac{b}{g}\\)"
       ],
       "answer": "C",
       "discussion": [
@@ -742,10 +731,10 @@
       "type": "multiple-choice",
       "question": "A school accepts at least 300 applicants but no more than 500 applicants. If \\(x\\) is the number accepted, which system represents the situation?",
       "options": [
-        "\\(x<300\\) and \\(x>500\\)",
+        "\\(x < 300\\) and \\(x>500\\)",
         "\\(x\\le300\\) and \\(x\\ge500\\)",
         "\\(300\\le x\\le500\\)",
-        "\\(300<x<500\\)"
+        "\\(300 < x < 500\\)"
       ],
       "answer": "C",
       "discussion": [
@@ -884,10 +873,10 @@
       "type": "multiple-choice",
       "question": "The number of students in a club is represented by \\(n\\). The statement “the number of students is at least 12 but less than 30” is written as:",
       "options": [
-        "\\(12<n<30\\)",
-        "\\(12\\le n<30\\)",
-        "\\(12<n\\le30\\)",
-        "\\(n\\le12\\) or \\(n\\ge30\\)"
+        "\\(12 < n < 30\\)",
+        "\\(12 \\le n < 30\\)",
+        "\\(12 < n \\le 30\\)",
+        "\\(n \\le 12 \\) or \\( n \\ge 30 \\)"
       ],
       "answer": "B",
       "discussion": [
@@ -905,7 +894,7 @@
         "\\(P=6x-4\\)",
         "\\(P=6x+4\\)",
         "\\(P=4x+6\\)",
-        "\\(P=\\frac{x}{6}+4\\)"
+        "\\(P=\\dfrac{x}{6}+4\\)"
       ],
       "answer": "B",
       "discussion": [
