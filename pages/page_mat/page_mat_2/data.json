@@ -3,8 +3,8 @@
     "showSolutionToggle": false,
     "sections": {
       "material": true,
-      "practice": true,
-      "additionalPractice": false
+      "practice": false,
+      "additionalPractice": true
     }
   },
   "meta": {

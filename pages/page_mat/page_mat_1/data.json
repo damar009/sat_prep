@@ -1,6 +1,6 @@
 {
   "settings": {
-    "showSolutionToggle": false,
+    "showSolutionToggle": true,
     "sections": {
       "material": true,
       "practice": true,
