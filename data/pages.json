@@ -78,17 +78,17 @@
         {
           "id": "page_mat_4",
           "number": "04",
-          "title": "Chapter 2.2. Quantitative Relationship",
-          "summary": "?",
-          "active": false,
+          "title": "Chapter 2.2. Fractions, Percentages, Ratios, and Proportions",
+          "summary": "Convert between fractions, decimals, percentages, ratios, rates, and proportions.",
+          "active": true,
           "url": "pages/page_mat/page_mat_4/index.html"
         },
         {
           "id": "page_mat_5",
           "number": "05",
-          "title": "Chapter 3.1. Linear Equations in One Variable",
-          "summary": "?",
-          "active": false,
+          "title": "Chapter 3.1. Linear Equations and Linear Functions",
+          "summary": "Solve linear equations and interpret slope, intercepts, rates, and linear models.",
+          "active": true,
           "url": "pages/page_mat/page_mat_5/index.html"
         },
         {

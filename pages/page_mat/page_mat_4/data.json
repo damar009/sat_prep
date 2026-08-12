@@ -3,7 +3,7 @@
     "showSolutionToggle": true,
     "sections": {
       "material": true,
-      "practice": true,
+      "practice": false,
       "additionalPractice": true
     }
   },
@@ -13,49 +13,64 @@
     "number": "04"
   },
   "eyebrow": "SAT Math / 04",
-  "title": "Systems of linear equations",
-  "subtitle": "Use substitution, elimination, and intersections to solve systems.",
+  "title": "Fractions, percentages, ratios, and proportions",
+  "subtitle": "Translate between representations and model quantitative relationships with confidence.",
   "materi": [
     {
-      "judul": "What a system represents",
-      "icon": "fa-code-compare",
+      "judul": "Fractions: simplify first",
+      "icon": "fa-divide",
       "tipe": "basic",
       "isi": [
-        "A system asks for values that satisfy two or more equations at the same time. On a graph, the solution is the point where the relationships intersect.",
+        "Fractions, decimals, and percentages describe the same part-to-whole relationship in different forms. Before performing a calculation, simplify and keep the numerator and denominator connected to their meaning.",
         {
           "type": "formula",
-          "content": "\\[\\begin{aligned}x + y &= 10\\\\x - y &= 2\\end{aligned}\\]"
+          "content": "\\[\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+bc}{bd},\\qquad \\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd},\\qquad \\frac{a}{b}\\div\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Worked example",
+          "content": "To simplify \\(\\frac{11}{5}\\div\\frac{2}{5}\\), multiply by the reciprocal: \\(\\frac{11}{5}\\cdot\\frac{5}{2}=\\frac{11}{2}\\)."
         }
       ]
     },
     {
-      "judul": "Two common methods",
-      "icon": "fa-shuffle",
+      "judul": "Convert between forms",
+      "icon": "fa-arrows-rotate",
       "tipe": "table",
       "isi": [
+        "Choose the form that makes the question easiest to read. A decimal becomes a percent by multiplying by 100, while a percent becomes a decimal by dividing by 100.",
+        {
+          "type": "formula",
+          "content": "\\[0.75=\\frac{3}{4}=75\\%\\]"
+        },
         {
           "type": "table",
           "table": {
             "headers": [
-              "Method",
-              "Best first move"
+              "Representation",
+              "How to convert",
+              "Example"
             ],
             "leftAlign": [
               0,
-              1
+              1,
+              2
             ],
             "rows": [
               [
-                "Substitution",
-                "Solve one equation for one variable."
+                "Decimal to percent",
+                "Multiply by 100",
+                "\\(0.36=36\\%\\)"
               ],
               [
-                "Elimination",
-                "Add or subtract equations to cancel a variable."
+                "Percent to decimal",
+                "Divide by 100",
+                "\\(18\\%=0.18\\)"
               ],
               [
-                "Graphing",
-                "Find the intersection of the two lines."
+                "Fraction to percent",
+                "Divide, then multiply by 100",
+                "\\(\\frac{3}{4}=75\\%\\)"
               ]
             ]
           }
@@ -63,11 +78,145 @@
       ]
     },
     {
-      "judul": "Check the pair",
-      "icon": "fa-check-double",
+      "judul": "Percent of a number",
+      "icon": "fa-percent",
       "tipe": "basic",
       "isi": [
-        "A pair is a solution only if it works in every equation in the system. Substitution is the quickest final check."
+        "Identify the whole before calculating. The basic model is part = percent × whole, where the percentage is written as a decimal.",
+        {
+          "type": "formula",
+          "content": "\\[\\text{part}=\\frac{p}{100}\\cdot\\text{whole}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Worked example",
+          "content": "If \\(18\\) is what percent of \\(90\\), write \\(18=\\frac{p}{100}(90)\\). Dividing by \\(90\\) gives \\(p=20\\), so the answer is \\(20\\%\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Percent increase and decrease",
+      "icon": "fa-arrow-trend-up",
+      "tipe": "basic",
+      "isi": [
+        "Percent change compares the change with the original amount. The original value is the denominator, even when the new value is larger or smaller.",
+        {
+          "type": "formula",
+          "content": "\\[\\text{percent change}=\\frac{\\text{new}-\\text{original}}{\\text{original}}\\cdot100\\%\\]"
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Discount",
+              "content": "Multiply by \\(1-r\\). A 20% discount uses factor \\(0.80\\)."
+            },
+            {
+              "title": "Tax or growth",
+              "content": "Multiply by \\(1+r\\). A 7% tax uses factor \\(1.07\\)."
+            },
+            {
+              "title": "Sequential changes",
+              "content": "Multiply factors. Do not simply add or subtract the percentages."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Discount followed by tax",
+          "content": "A USD 100 sweater discounted by 20% and taxed at 7% costs \\(100(0.80)(1.07)=\\text{USD }85.60\\)."
+        },
+        {
+          "type": "note",
+          "content": "A 10% increase followed by a 10% decrease does not return to the original value: \\(1.10\\cdot0.90=0.99\\), so the final amount is 1% lower."
+        }
+      ]
+    },
+    {
+      "judul": "Ratios and proportions",
+      "icon": "fa-scale-balanced",
+      "tipe": "basic",
+      "isi": [
+        "A ratio \\(a:b\\) describes two quantities in a fixed order. Represent the quantities as \\(ak\\) and \\(bk\\), where \\(k\\) is the common scale factor.",
+        {
+          "type": "formula",
+          "content": "\\[a:b\\Rightarrow ak:bk,\\qquad \\frac{a}{b}=\\frac{c}{d}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Ratio model",
+          "content": "If girls to boys is \\(2:5\\), then \\(G=2k\\) and \\(B=5k\\). If there are 28 girls, \\(2k=28\\), so \\(k=14\\) and \\(B=70\\)."
+        },
+        {
+          "type": "note",
+          "content": "The total number of parts is \\(2+5=7\\). If the total is known, divide the total by 7 before finding each group."
+        }
+      ]
+    },
+    {
+      "judul": "Rates, direct variation, and inverse variation",
+      "icon": "fa-gauge-high",
+      "tipe": "table",
+      "isi": [
+        "Rates compare quantities with different units. Convert units first, then use the rate. For variation questions, decide whether the product or the quotient stays constant.",
+        {
+          "type": "formula",
+          "content": "\\[\\text{rate}=\\frac{\\text{quantity}}{\\text{time}},\\qquad y=kx,\\qquad y=\\frac{k}{x}\\;\\text{or}\\;xy=k\\]"
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Relationship",
+              "Model",
+              "What stays constant"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "Direct variation",
+                "\\(y=kx\\)",
+                "\\(\\frac{y}{x}=k\\)"
+              ],
+              [
+                "Inverse variation",
+                "\\(y=\\frac{k}{x}\\)",
+                "\\(xy=k\\)"
+              ],
+              [
+                "Unit rate",
+                "\\(r=\\frac{q}{t}\\)",
+                "The rate for one unit of time"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Worked example",
+          "content": "A student writes 5 pages in 20 minutes. In 5 hours, there are 300 minutes. The rate is \\(\\frac{5}{20}=\\frac14\\) page per minute, so the student writes \\(300\\cdot\\frac14=75\\) pages."
+        }
+      ]
+    },
+    {
+      "judul": "SAT translation checklist",
+      "icon": "fa-list-check",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "list",
+          "items": [
+            "Name the whole, part, original value, and new value.",
+            "Preserve the order of a ratio exactly as stated.",
+            "Use compatible units before applying a rate.",
+            "Use a factor below 1 for a discount or decrease and above 1 for tax, growth, or increase.",
+            "Estimate before calculating so an unreasonable result is easy to catch."
+          ]
+        }
       ]
     }
   ],
@@ -75,11 +224,480 @@
     {
       "showSolutionButton": true,
       "type": "open",
-      "question": "Solve the system \\(x + y = 10\\) and \\(x - y = 2\\).",
-      "answer": "\\((6, 4)\\)",
+      "question": "Simplify \\(\\frac{3}{4}+\\frac{1}{8}\\).",
+      "answer": "\\(\\frac{7}{8}\\)",
       "discussion": [
-        "Add the equations to eliminate \\(y\\): \\(2x = 12\\).",
-        "So \\(x = 6\\). Substitute into \\(x + y = 10\\): \\(6 + y = 10\\), so \\(y = 4\\)."
+        "Use a common denominator of 8: \\(\\frac{3}{4}=\\frac{6}{8}\\).",
+        "Then \\(\\frac{6}{8}+\\frac{1}{8}=\\frac{7}{8}\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Convert \\(0.36\\) to a fraction and a percent.",
+      "answer": "\\(\\frac{9}{25}\\) and \\(36\\%\\)",
+      "discussion": [
+        "Write \\(0.36=\\frac{36}{100}\\) and simplify by dividing by 4.",
+        "Multiply \\(0.36\\) by 100 to obtain \\(36\\%\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A jacket priced at USD 80 is discounted by 15%. What is the sale price?",
+      "options": [
+        "USD 12",
+        "USD 65",
+        "USD 68",
+        "USD 92"
+      ],
+      "answer": "C",
+      "discussion": [
+        "A 15% discount leaves 85% of the original price.",
+        "Calculate \\(80(0.85)=68\\), so the sale price is USD 68."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of red to blue marbles is \\(3:4\\). If there are 12 red marbles, how many blue marbles are there?",
+      "answer": "\\(16\\)",
+      "discussion": [
+        "The scale factor is \\(12\\div3=4\\).",
+        "Multiply the blue part by the same factor: \\(4\\cdot4=16\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A population increases from 2,500 to 2,875. What is the percent increase?",
+      "answer": "\\(15\\%\\)",
+      "discussion": [
+        "The increase is \\(2{,}875-2{,}500=375\\).",
+        "Compare with the original: \\(\\frac{375}{2{,}500}\\cdot100\\%=15\\%\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Twelve workers complete a task in 15 days. Assuming inverse variation, how many days would 20 workers need?",
+      "answer": "\\(9\\) days",
+      "discussion": [
+        "For inverse variation, workers × days stays constant.",
+        "Set \\(12\\cdot15=20d\\). Then \\(d=180\\div20=9\\) days."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Fractions Quiz: Simplify \\(\\frac{2}{5}+\\frac{4}{15}\\).",
+      "answer": "\\(\\frac{2}{3}\\)",
+      "discussion": [
+        "Use a common denominator of 15: \\(\\frac{2}{5}=\\frac{6}{15}\\).",
+        "Then \\(\\frac{6}{15}+\\frac{4}{15}=\\frac{10}{15}=\\frac{2}{3}\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Fractions Quiz: Simplify \\(\\frac{3}{7}-\\frac{1}{0.5}\\).",
+      "answer": "\\(-\\frac{11}{7}\\)",
+      "discussion": [
+        "Since \\(0.5=\\frac{1}{2}\\), \\(\\frac{1}{0.5}=2\\).",
+        "Therefore \\(\\frac{3}{7}-2=\\frac{3}{7}-\\frac{14}{7}=-\\frac{11}{7}\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Fractions Quiz: Simplify \\(\\frac{2}{7}\\times\\frac{14}{3}\\).",
+      "answer": "\\(\\frac{4}{3}\\)",
+      "discussion": [
+        "Cancel 14 with 7: \\(\\frac{2}{7}\\times\\frac{14}{3}=\\frac{2\\times2}{3}=\\frac{4}{3}\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Fractions Quiz: Simplify \\(\\frac{11}{5}\\div\\frac{2}{5}\\).",
+      "answer": "\\(\\frac{11}{2}\\)",
+      "discussion": [
+        "Multiply by the reciprocal: \\(\\frac{11}{5}\\times\\frac{5}{2}=\\frac{11}{2}\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Complete the percentage conversion table: \\(0.75\\), \\(12\\%\\), and \\(\\frac{3}{5}\\). Give each as a decimal, fraction, and percent.",
+      "answer": "\\(0.75=\\frac{3}{4}=75\\%\\); \\(12\\%=0.12=\\frac{3}{25}\\); \\(\\frac{3}{5}=0.6=60\\%\\).",
+      "discussion": [
+        "Convert decimals to percentages by multiplying by 100 and percentages to decimals by dividing by 100.",
+        "Simplify \\(\\frac{75}{100}\\) to \\(\\frac{3}{4}\\), and \\(\\frac{12}{100}\\) to \\(\\frac{3}{25}\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "\\(25\\) is what percent of \\(40\\)?",
+      "answer": "\\(62.5\\%\\)",
+      "discussion": [
+        "Divide the part by the whole: \\(25\\div40=0.625\\).",
+        "Multiply by 100 to obtain \\(62.5\\%\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "What is \\(15\\%\\) of \\(60\\)?",
+      "answer": "\\(9\\)",
+      "discussion": [
+        "Write 15% as \\(0.15\\).",
+        "Then \\(0.15\\times60=9\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "\\(18\\) is what percent of \\(90\\)?",
+      "answer": "\\(20\\%\\)",
+      "discussion": [
+        "Set \\(18=\\frac{p}{100}(90)\\).",
+        "Solving gives \\(p=20\\), so the answer is \\(20\\%\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "\\(10\\) is \\(50\\%\\) of what number?",
+      "answer": "\\(20\\)",
+      "discussion": [
+        "Let the number be \\(n\\): \\(10=0.5n\\).",
+        "Divide by 0.5 to get \\(n=20\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A book was on sale for 40% off its original price. If the sale price was USD 18.00, what was the original price?",
+      "options": [
+        "USD 7.20",
+        "USD 10.80",
+        "USD 30.00",
+        "USD 45.00"
+      ],
+      "answer": "C",
+      "discussion": [
+        "A 40% discount leaves 60% of the original price.",
+        "Set \\(0.60P=18\\), so \\(P=18\\div0.60=30\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "During a sale, a sweater listed at USD 100 is discounted by 20% and then taxed at 7%. How much did Arianna pay?",
+      "options": [
+        "USD 73.00",
+        "USD 80.00",
+        "USD 85.60",
+        "USD 87.00",
+        "USD 88.30"
+      ],
+      "answer": "C",
+      "discussion": [
+        "After the discount: \\(100(0.80)=80\\).",
+        "After tax: \\(80(1.07)=85.60\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "The sum of three numbers is \\(855\\). One number, \\(x\\), is 50% more than the sum of the other two numbers. What is \\(x\\)?",
+      "options": [
+        "\\(570\\)",
+        "\\(513\\)",
+        "\\(214\\)",
+        "\\(155\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Let the sum of the other two numbers be \\(s\\). Then \\(x=1.5s\\).",
+        "Since \\(x+s=855\\), \\(2.5s=855\\), so \\(s=342\\) and \\(x=513\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "Becca deposits USD 100 in an account earning 4% annual compound interest. How many years will it take to increase the account value by at least 60%?",
+      "options": [
+        "\\(12\\)",
+        "\\(15\\)",
+        "\\(25\\)",
+        "\\(30\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The target value is USD 160, so solve \\(100(1.04)^t\\ge160\\).",
+        "Testing the choices, \\(1.04^{12}\\approx1.601\\), so 12 years is the first choice to reach at least 60% growth."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "An account earns 2% interest compounded annually. The value after \\(t\\) years is modeled by \\(100(x)^t\\). What is \\(x\\)?",
+      "answer": "\\(1.02\\)",
+      "discussion": [
+        "A 2% annual increase uses the growth factor \\(1+0.02\\).",
+        "Therefore \\(x=1.02\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If there are 12 girls, how many boys are there?",
+      "answer": "\\(30\\)",
+      "discussion": [
+        "The scale factor is \\(12\\div2=6\\).",
+        "The number of boys is \\(5\\times6=30\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If there are 50 boys, how many girls are there?",
+      "answer": "\\(20\\)",
+      "discussion": [
+        "The scale factor is \\(50\\div5=10\\).",
+        "The number of girls is \\(2\\times10=20\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If there are 35 students in the class, how many boys are there?",
+      "answer": "\\(25\\)",
+      "discussion": [
+        "There are 7 total ratio parts, so each part is \\(35\\div7=5\\).",
+        "Boys represent 5 parts: \\(5\\times5=25\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If there are 4 girls, how many students are there?",
+      "answer": "\\(14\\)",
+      "discussion": [
+        "The scale factor is \\(4\\div2=2\\).",
+        "The total is \\((2+5)\\times2=14\\) students."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If there are 28 girls, what is the difference between the number of girls and boys?",
+      "answer": "\\(42\\)",
+      "discussion": [
+        "The scale factor is \\(28\\div2=14\\), so there are \\(5\\times14=70\\) boys.",
+        "The difference is \\(70-28=42\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If there are 21 more boys than girls, how many boys are there?",
+      "answer": "\\(35\\)",
+      "discussion": [
+        "The difference is \\(5k-2k=3k=21\\), so \\(k=7\\).",
+        "There are \\(5k=35\\) boys."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If the difference between the number of girls and boys is 15, what is the total number of students?",
+      "answer": "\\(35\\)",
+      "discussion": [
+        "The difference is \\(3k=15\\), so \\(k=5\\).",
+        "The total is \\(7k=35\\) students."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "The ratio of girls to boys is \\(2:5\\). If there are 21 students in total, what is the difference between the number of girls and boys?",
+      "answer": "\\(9\\)",
+      "discussion": [
+        "There are 7 total parts, so \\(k=21\\div7=3\\).",
+        "The difference is \\((5-2)k=3\\times3=9\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "If a student writes 2 pages per 3 minutes, how many minutes does it take to write 180 pages?",
+      "answer": "\\(270\\) minutes",
+      "discussion": [
+        "The time per page is \\(3\\div2=1.5\\) minutes.",
+        "For 180 pages: \\(180\\times1.5=270\\) minutes."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "If a student writes 5 pages per 20 minutes, how many pages can the student write in 5 hours?",
+      "answer": "\\(75\\) pages",
+      "discussion": [
+        "Convert 5 hours to 300 minutes.",
+        "The rate is \\(5\\div20=\\frac14\\) page per minute, so \\(300\\times\\frac14=75\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "If a student writes 80 pages in 20 minutes, what is the writing rate?",
+      "answer": "\\(4\\) pages per minute",
+      "discussion": [
+        "Rate is quantity divided by time: \\(80\\div20=4\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "An acidic solution has a nitric acid-to-water mass ratio of \\(2:7\\). If the total mass is 270 grams, how many more grams of water are there than nitric acid?",
+      "options": [
+        "\\(60\\)",
+        "\\(110\\)",
+        "\\(150\\)",
+        "\\(210\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "There are 9 parts, so each part is \\(270\\div9=30\\) grams.",
+        "Water is 210 grams and acid is 60 grams, giving a difference of \\(210-60=150\\) grams."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "Nate walks 25 meters in 13.7 seconds. At the same rate, which distance is closest to what he walks in 4 minutes?",
+      "options": [
+        "150 meters",
+        "450 meters",
+        "700 meters",
+        "1,400 meters"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Convert 4 minutes to 240 seconds.",
+        "Calculate \\(25\\div13.7\\times240\\approx438\\) meters, which is closest to 450 meters."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A rectangular reproduction has dimensions one-third the original. If the original height is 29 inches, what is the reproduction's height?",
+      "answer": "\\(\\frac{29}{3}\\) inches",
+      "discussion": [
+        "Multiply the original height by the scale factor: \\(29\\times\\frac13=\\frac{29}{3}\\) inches."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A baker needs 2.5 ounces of chocolate per muffin. How many pounds are needed for 48 muffins? Use 1 pound = 16 ounces.",
+      "options": [
+        "\\(7.5\\)",
+        "\\(10\\)",
+        "\\(50.5\\)",
+        "\\(120\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The total is \\(2.5\\times48=120\\) ounces.",
+        "Convert to pounds: \\(120\\div16=7.5\\) pounds."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "The time to consume a buffalo carcass is inversely proportional to the number of vultures. If 12 vultures take 3 days, how many fewer hours will it take with 16 vultures?",
+      "options": [
+        "\\(\\frac14\\)",
+        "\\(\\frac34\\)",
+        "\\(18\\)",
+        "\\(54\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The constant is \\(12\\times3=36\\) vulture-days.",
+        "With 16 vultures, the time is \\(36\\div16=2.25\\) days, or 18 hours less than 3 days."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "The ratio of boys to girls is \\(x:y\\). If the total number of children is five times the number of boys, which could be the sum of \\(x+y\\)?",
+      "options": [
+        "\\(9\\)",
+        "\\(10\\)",
+        "\\(11\\)",
+        "\\(12\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The condition gives \\(x+y=5x\\), so \\(y=4x\\).",
+        "The simplest integer ratio is \\(x:y=1:4\\), whose sum is 5. Any equivalent ratio has sum a multiple of 5, so 10 could be the sum."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A miniature's scale is 0.4 inches to 1 foot of actual height. If Gary is 5 feet 9 inches tall, what is the miniature's height?",
+      "options": [
+        "2.0 inches",
+        "2.3 inches",
+        "2.6 inches",
+        "2.9 inches"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Gary is \\(5+\\frac{9}{12}=5.75\\) feet tall.",
+        "The miniature is \\(0.4\\times5.75=2.3\\) inches."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "Wyatt can husk between 12 and 18 dozen ears of corn per hour. What is a possible amount of time, in hours, to husk 72 dozen ears?",
+      "answer": "Any time from 4 to 6 hours; for example, 5 hours.",
+      "discussion": [
+        "At 18 dozen per hour, the time is \\(72\\div18=4\\) hours.",
+        "At 12 dozen per hour, the time is \\(72\\div12=6\\) hours, so any time in the interval \\([4,6]\\) is possible."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A television station sells time slots in 30-minute intervals and operates 24 hours per day. How many slots can it sell for Tuesday and Wednesday?",
+      "answer": "\\(96\\) slots",
+      "discussion": [
+        "Two days contain 48 hours, and each hour contains two 30-minute intervals.",
+        "Therefore \\(48\\times2=96\\) slots."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "One ounce of graphene can cover 7 football fields, and each field is approximately \\(1\\frac13\\) acres. About how many acres can 48 ounces cover?",
+      "options": [
+        "\\(250\\)",
+        "\\(350\\)",
+        "\\(450\\)",
+        "\\(1{,}350\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The coverage is \\(48\\times7\\times\\frac43=448\\) acres.",
+        "The closest choice is 450 acres."
       ]
     }
   ],
@@ -87,11 +705,374 @@
     {
       "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT Math question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Find 25% of 72.",
+      "answer": "\\(18\\)",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
+        "Convert 25% to \\(0.25\\) and calculate \\(0.25\\cdot72=18\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A car travels 180 miles in 3 hours. At the same rate, how far will it travel in 4.5 hours?",
+      "answer": "\\(270\\) miles",
+      "discussion": [
+        "The rate is \\(180\\div3=60\\) miles per hour.",
+        "Then \\(60\\cdot4.5=270\\) miles."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A mixture has acid to water ratio \\(2:7\\) and total mass 270 grams. How many grams of water are present?",
+      "answer": "\\(210\\) grams",
+      "discussion": [
+        "There are \\(2+7=9\\) total parts, so each part is \\(270\\div9=30\\) grams.",
+        "Water is 7 parts: \\(7\\cdot30=210\\) grams."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A price is increased by 10% and then decreased by 10%. Is the final price equal to the original price?",
+      "answer": "No; the final price is 1% less than the original.",
+      "discussion": [
+        "Use multiplicative factors: \\(1.10\\cdot0.90=0.99\\).",
+        "The final price is \\(99\\%\\) of the original, so it is 1% lower."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "A recipe uses 2 cups of flour for 4 cookies. How many cups are needed for 30 cookies?",
+      "answer": "\\(15\\) cups",
+      "discussion": [
+        "The recipe uses \\(2\\div4=\\frac12\\) cup per cookie.",
+        "For 30 cookies, \\(30\\cdot\\frac12=15\\) cups."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "open",
+      "question": "One quantity is 40% less than \\(x\\), while another is 50% greater than \\(x\\). What is the ratio of the first quantity to the second?",
+      "answer": "\\(2:5\\)",
+      "discussion": [
+        "The first quantity is \\(0.60x\\), and the second is \\(1.50x\\).",
+        "The ratio is \\(0.60x:1.50x=0.60:1.50=2:5\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "Simplify \\(\\frac{3}{8}+\\frac{1}{8}\\).",
+      "options": [
+        "\\(\\frac14\\)",
+        "\\(\\frac12\\)",
+        "\\(\\frac58\\)",
+        "\\(\\frac34\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The denominators match, so add the numerators: \\(\\frac{3}{8}+\\frac{1}{8}=\\frac{4}{8}=\\frac12\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "What is \\(30\\%\\) of \\(90\\)?",
+      "options": [
+        "\\(18\\)",
+        "\\(27\\)",
+        "\\(30\\)",
+        "\\(60\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Calculate \\(0.30\\times90=27\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "Convert \\(0.45\\) to a percent.",
+      "options": [
+        "\\(0.45\\%\\)",
+        "\\(4.5\\%\\)",
+        "\\(45\\%\\)",
+        "\\(450\\%\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Multiply by 100: \\(0.45\\times100=45\\%\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "The ratio of cats to dogs is \\(2:3\\). If there are 8 cats, how many dogs are there?",
+      "options": [
+        "\\(6\\)",
+        "\\(10\\)",
+        "\\(12\\)",
+        "\\(16\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The scale factor is \\(8\\div2=4\\).",
+        "Dogs: \\(3\\times4=12\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A car travels 180 miles in 3 hours. What is its average rate?",
+      "options": [
+        "30 miles per hour",
+        "45 miles per hour",
+        "60 miles per hour",
+        "90 miles per hour"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Average rate is distance divided by time: \\(180\\div3=60\\) miles per hour."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A jacket priced at USD 120 is discounted by 25%. What is the sale price?",
+      "options": [
+        "USD 30",
+        "USD 90",
+        "USD 95",
+        "USD 150"
+      ],
+      "answer": "B",
+      "discussion": [
+        "A 25% discount leaves 75% of the price.",
+        "Calculate \\(120(0.75)=90\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "The ratio of boys to girls is \\(3:4\\). If there are 35 students, how many are girls?",
+      "options": [
+        "\\(15\\)",
+        "\\(18\\)",
+        "\\(20\\)",
+        "\\(24\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "There are 7 parts, so each part is \\(35\\div7=5\\).",
+        "Girls represent 4 parts: \\(4\\times5=20\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A recipe uses 3 cups of flour for 8 servings. How many cups are needed for 20 servings?",
+      "options": [
+        "6",
+        "7.5",
+        "8",
+        "9"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The rate is \\(3\\div8\\) cups per serving.",
+        "For 20 servings: \\(20\\times\\frac38=7.5\\) cups."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A quantity increases from 80 to 104. What is the percent increase?",
+      "options": [
+        "20%",
+        "24%",
+        "30%",
+        "32%"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The increase is 24. Relative to the original: \\(24\\div80=0.30=30\\%\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "Twelve workers finish a job in 10 days. Assuming inverse variation, how many days would 15 workers need?",
+      "options": [
+        "6",
+        "8",
+        "12",
+        "15"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Workers times days is constant: \\(12\\times10=15d\\).",
+        "Thus \\(d=120\\div15=8\\) days."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A price is increased by 20% and then decreased by 20%. What is the final price of an item that originally cost USD 250?",
+      "options": [
+        "USD 200",
+        "USD 240",
+        "USD 250",
+        "USD 260"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Use factors: \\(250(1.20)(0.80)=240\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "The ratio of red paint to blue paint is \\(5:2\\). If 21 liters of mixture are used, how many liters are red paint?",
+      "options": [
+        "6",
+        "12",
+        "15",
+        "18"
+      ],
+      "answer": "C",
+      "discussion": [
+        "There are 7 parts, so each part is \\(21\\div7=3\\) liters.",
+        "Red paint is 5 parts: \\(5\\times3=15\\) liters."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A machine produces 240 parts in 8 hours. Its production rate increases by 25%. How many parts will it produce in 10 hours at the new rate?",
+      "options": [
+        "300",
+        "360",
+        "375",
+        "400"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The original rate is \\(240\\div8=30\\) parts per hour.",
+        "The new rate is \\(30(1.25)=37.5\\), so 10 hours produces \\(375\\) parts."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A solution contains acid and water in the ratio \\(3:7\\). How many grams of water must be added to 200 grams of solution to make the ratio \\(1:3\\)?",
+      "options": [
+        "40",
+        "60",
+        "80",
+        "100"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The initial acid is \\(\\frac{3}{10}(200)=60\\) grams and water is 140 grams.",
+        "For a 1:3 ratio, 60 grams of acid requires 180 grams of water, so add \\(180-140=40\\) grams."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A car travels the first half of a trip at 40 miles per hour and the second half at 60 miles per hour. What is the average speed for the entire trip?",
+      "options": [
+        "48",
+        "50",
+        "52",
+        "54"
+      ],
+      "answer": "A",
+      "discussion": [
+        "For equal distances, use total distance divided by total time, not the arithmetic mean.",
+        "The harmonic mean is \\(\\frac{2(40)(60)}{40+60}=48\\) miles per hour."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A student answers 80% of the first 25 questions correctly. How many of the next 15 must be correct to have at least 70% accuracy after 40 questions?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The student has \\(0.80\\times25=20\\) correct answers.",
+        "At least 70% of 40 is 28, so at least \\(28-20=8\\) of the next 15 must be correct."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A quantity \\(x\\) varies directly with \\(y\\). When \\(y=6\\), \\(x=15\\). What is \\(x\\) when \\(y=14\\)?",
+      "options": [
+        "28",
+        "30",
+        "35",
+        "42"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Direct variation gives \\(x=ky\\), with \\(k=15\\div6=2.5\\).",
+        "When \\(y=14\\), \\(x=2.5\\times14=35\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A quantity \\(x\\) varies inversely with \\(y\\). When \\(y=8\\), \\(x=15\\). What is \\(x\\) when \\(y=12\\)?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "18"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Inverse variation gives \\(xy=k\\), so \\(8\\times15=120\\).",
+        "When \\(y=12\\), \\(x=120\\div12=10\\)."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A store marks up an item by 40% and then gives a 15% discount. Compared with the original price, the final price is:",
+      "options": [
+        "6% greater",
+        "15% greater",
+        "19% greater",
+        "25% greater"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The combined factor is \\(1.40\\times0.85=1.19\\).",
+        "The final price is 19% greater than the original."
+      ]
+    },
+    {
+      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "A tank contains 140 liters after 4 minutes and 260 liters after 10 minutes. If it is filled at a constant rate, what was the initial amount of water?",
+      "options": [
+        "40 liters",
+        "60 liters",
+        "80 liters",
+        "100 liters"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The rate is \\((260-140)\\div(10-4)=20\\) liters per minute.",
+        "Four minutes added 80 liters, so the initial amount was \\(140-80=60\\) liters."
       ]
     }
   ]

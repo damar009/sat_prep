@@ -1,10 +1,10 @@
 {
   "settings": {
-    "showSolutionToggle": false,
+    "showSolutionToggle": true,
     "sections": {
       "material": true,
       "practice": true,
-      "additionalPractice": false
+      "additionalPractice": true
     }
   },
   "meta": {

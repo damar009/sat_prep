@@ -968,57 +968,273 @@ const mathContent = {
   },
   page_mat_4: {
     eyebrow: "SAT Math / 04",
-    title: "Systems of linear equations",
-    subtitle: "Use substitution, elimination, and intersections to solve systems.",
+    title: "Fractions, percentages, ratios, and proportions",
+    subtitle: "Translate between representations and model quantitative relationships with confidence.",
     materi: [
       {
-        judul: "What a system represents",
-        icon: "fa-code-compare",
+        judul: "Fractions: simplify first",
+        icon: "fa-divide",
         tipe: "basic",
         isi: [
-          "A system asks for values that satisfy two or more equations at the same time. On a graph, the solution is the point where the relationships intersect.",
+          "Fractions, decimals, and percentages describe the same part-to-whole relationship in different forms. Before performing a calculation, simplify and keep the numerator and denominator connected to their meaning.",
           {
             type: "formula",
-            content: "\\[\\begin{aligned}x + y &= 10\\\\x - y &= 2\\end{aligned}\\]",
+            content: "\\[\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+bc}{bd},\\qquad \\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd},\\qquad \\frac{a}{b}\\div\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}\\]",
+          },
+          {
+            type: "example",
+            title: "Worked example",
+            content: "To simplify \\(\\frac{11}{5}\\div\\frac{2}{5}\\), multiply by the reciprocal: \\(\\frac{11}{5}\\cdot\\frac{5}{2}=\\frac{11}{2}\\).",
           },
         ],
       },
       {
-        judul: "Two common methods",
-        icon: "fa-shuffle",
+        judul: "Convert between forms",
+        icon: "fa-arrows-rotate",
         tipe: "table",
         isi: [
+          "Choose the form that makes the question easiest to read. A decimal becomes a percent by multiplying by 100, while a percent becomes a decimal by dividing by 100.",
+          {
+            type: "formula",
+            content: "\\[0.75=\\frac{3}{4}=75\\%\\]",
+          },
           {
             type: "table",
             table: {
-              headers: ["Method", "Best first move"],
-              leftAlign: [0, 1],
+              headers: ["Representation", "How to convert", "Example"],
+              leftAlign: [0, 1, 2],
               rows: [
-                ["Substitution", "Solve one equation for one variable."],
-                ["Elimination", "Add or subtract equations to cancel a variable."],
-                ["Graphing", "Find the intersection of the two lines."],
+                ["Decimal to percent", "Multiply by 100", "\\(0.36=36\\%\\)"],
+                ["Percent to decimal", "Divide by 100", "\\(18\\%=0.18\\)"],
+                ["Fraction to percent", "Divide, then multiply by 100", "\\(\\frac{3}{4}=75\\%\\)"],
               ],
             },
           },
         ],
       },
       {
-        judul: "Check the pair",
-        icon: "fa-check-double",
+        judul: "Percent of a number",
+        icon: "fa-percent",
         tipe: "basic",
         isi: [
-          "A pair is a solution only if it works in every equation in the system. Substitution is the quickest final check.",
+          "Identify the whole before calculating. The basic model is part = percent × whole, where the percentage is written as a decimal.",
+          {
+            type: "formula",
+            content: "\\[\\text{part}=\\frac{p}{100}\\cdot\\text{whole}\\]",
+          },
+          {
+            type: "example",
+            title: "Worked example",
+            content: "If \\(18\\) is what percent of \\(90\\), write \\(18=\\frac{p}{100}(90)\\). Dividing by \\(90\\) gives \\(p=20\\), so the answer is \\(20\\%\\).",
+          },
+        ],
+      },
+      {
+        judul: "Percent increase and decrease",
+        icon: "fa-arrow-trend-up",
+        tipe: "basic",
+        isi: [
+          "Percent change compares the change with the original amount. The original value is the denominator, even when the new value is larger or smaller.",
+          {
+            type: "formula",
+            content: "\\[\\text{percent change}=\\frac{\\text{new}-\\text{original}}{\\text{original}}\\cdot100\\%\\]",
+          },
+          {
+            type: "grid",
+            items: [
+              { title: "Discount", content: "Multiply by \\(1-r\\). A 20% discount uses factor \\(0.80\\)." },
+              { title: "Tax or growth", content: "Multiply by \\(1+r\\). A 7% tax uses factor \\(1.07\\)." },
+              { title: "Sequential changes", content: "Multiply factors. Do not simply add or subtract the percentages." },
+            ],
+          },
+          {
+            type: "example",
+            title: "Discount followed by tax",
+            content: "A USD 100 sweater discounted by 20% and taxed at 7% costs \\(100(0.80)(1.07)=\\text{USD }85.60\\).",
+          },
+          {
+            type: "note",
+            content: "A 10% increase followed by a 10% decrease does not return to the original value: \\(1.10\\cdot0.90=0.99\\), so the final amount is 1% lower.",
+          },
+        ],
+      },
+      {
+        judul: "Ratios and proportions",
+        icon: "fa-scale-balanced",
+        tipe: "basic",
+        isi: [
+          "A ratio \\(a:b\\) describes two quantities in a fixed order. Represent the quantities as \\(ak\\) and \\(bk\\), where \\(k\\) is the common scale factor.",
+          {
+            type: "formula",
+            content: "\\[a:b\\Rightarrow ak:bk,\\qquad \\frac{a}{b}=\\frac{c}{d}\\]",
+          },
+          {
+            type: "example",
+            title: "Ratio model",
+            content: "If girls to boys is \\(2:5\\), then \\(G=2k\\) and \\(B=5k\\). If there are 28 girls, \\(2k=28\\), so \\(k=14\\) and \\(B=70\\).",
+          },
+          {
+            type: "note",
+            content: "The total number of parts is \\(2+5=7\\). If the total is known, divide the total by 7 before finding each group.",
+          },
+        ],
+      },
+      {
+        judul: "Rates, direct variation, and inverse variation",
+        icon: "fa-gauge-high",
+        tipe: "table",
+        isi: [
+          "Rates compare quantities with different units. Convert units first, then use the rate. For variation questions, decide whether the product or the quotient stays constant.",
+          {
+            type: "formula",
+            content: "\\[\\text{rate}=\\frac{\\text{quantity}}{\\text{time}},\\qquad y=kx,\\qquad y=\\frac{k}{x}\\;\\text{or}\\;xy=k\\]",
+          },
+          {
+            type: "table",
+            table: {
+              headers: ["Relationship", "Model", "What stays constant"],
+              leftAlign: [0, 1, 2],
+              rows: [
+                ["Direct variation", "\\(y=kx\\)", "\\(\\frac{y}{x}=k\\)"],
+                ["Inverse variation", "\\(y=\\frac{k}{x}\\)", "\\(xy=k\\)"],
+                ["Unit rate", "\\(r=\\frac{q}{t}\\)", "The rate for one unit of time"],
+              ],
+            },
+          },
+          {
+            type: "example",
+            title: "Worked example",
+            content: "A student writes 5 pages in 20 minutes. In 5 hours, there are 300 minutes. The rate is \\(\\frac{5}{20}=\\frac14\\) page per minute, so the student writes \\(300\\cdot\\frac14=75\\) pages.",
+          },
+        ],
+      },
+      {
+        judul: "SAT translation checklist",
+        icon: "fa-list-check",
+        tipe: "basic",
+        isi: [
+          {
+            type: "list",
+            items: [
+              "Name the whole, part, original value, and new value.",
+              "Preserve the order of a ratio exactly as stated.",
+              "Use compatible units before applying a rate.",
+              "Use a factor below 1 for a discount or decrease and above 1 for tax, growth, or increase.",
+              "Estimate before calculating so an unreasonable result is easy to catch.",
+            ],
+          },
         ],
       },
     ],
     latihan: [
       {
         type: "open",
-        question: "Solve the system \\(x + y = 10\\) and \\(x - y = 2\\).",
-        answer: "\\((6, 4)\\)",
+        question: "Simplify \\(\\frac{3}{4}+\\frac{1}{8}\\).",
+        answer: "\\(\\frac{7}{8}\\)",
         discussion: [
-          "Add the equations to eliminate \\(y\\): \\(2x = 12\\).",
-          "So \\(x = 6\\). Substitute into \\(x + y = 10\\): \\(6 + y = 10\\), so \\(y = 4\\).",
+          "Use a common denominator of 8: \\(\\frac{3}{4}=\\frac{6}{8}\\).",
+          "Then \\(\\frac{6}{8}+\\frac{1}{8}=\\frac{7}{8}\\).",
+        ],
+      },
+      {
+        type: "open",
+        question: "Convert \\(0.36\\) to a fraction and a percent.",
+        answer: "\\(\\frac{9}{25}\\) and \\(36\\%\\)",
+        discussion: [
+          "Write \\(0.36=\\frac{36}{100}\\) and simplify by dividing by 4.",
+          "Multiply \\(0.36\\) by 100 to obtain \\(36\\%\\).",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "A jacket priced at USD 80 is discounted by 15%. What is the sale price?",
+        options: ["USD 12", "USD 65", "USD 68", "USD 92"],
+        answer: "C",
+        discussion: [
+          "A 15% discount leaves 85% of the original price.",
+          "Calculate \\(80(0.85)=68\\), so the sale price is USD 68.",
+        ],
+      },
+      {
+        type: "open",
+        question: "The ratio of red to blue marbles is \\(3:4\\). If there are 12 red marbles, how many blue marbles are there?",
+        answer: "\\(16\\)",
+        discussion: [
+          "The scale factor is \\(12\\div3=4\\).",
+          "Multiply the blue part by the same factor: \\(4\\cdot4=16\\).",
+        ],
+      },
+      {
+        type: "open",
+        question: "A population increases from 2,500 to 2,875. What is the percent increase?",
+        answer: "\\(15\\%\\)",
+        discussion: [
+          "The increase is \\(2{,}875-2{,}500=375\\).",
+          "Compare with the original: \\(\\frac{375}{2{,}500}\\cdot100\\%=15\\%\\).",
+        ],
+      },
+      {
+        type: "open",
+        question: "Twelve workers complete a task in 15 days. Assuming inverse variation, how many days would 20 workers need?",
+        answer: "\\(9\\) days",
+        discussion: [
+          "For inverse variation, workers × days stays constant.",
+          "Set \\(12\\cdot15=20d\\). Then \\(d=180\\div20=9\\) days.",
+        ],
+      },
+    ],
+    additionalPractice: [
+      {
+        type: "open",
+        question: "Find 25% of 72.",
+        answer: "\\(18\\)",
+        discussion: [
+          "Convert 25% to \\(0.25\\) and calculate \\(0.25\\cdot72=18\\).",
+        ],
+      },
+      {
+        type: "open",
+        question: "A car travels 180 miles in 3 hours. At the same rate, how far will it travel in 4.5 hours?",
+        answer: "\\(270\\) miles",
+        discussion: [
+          "The rate is \\(180\\div3=60\\) miles per hour.",
+          "Then \\(60\\cdot4.5=270\\) miles.",
+        ],
+      },
+      {
+        type: "open",
+        question: "A mixture has acid to water ratio \\(2:7\\) and total mass 270 grams. How many grams of water are present?",
+        answer: "\\(210\\) grams",
+        discussion: [
+          "There are \\(2+7=9\\) total parts, so each part is \\(270\\div9=30\\) grams.",
+          "Water is 7 parts: \\(7\\cdot30=210\\) grams.",
+        ],
+      },
+      {
+        type: "open",
+        question: "A price is increased by 10% and then decreased by 10%. Is the final price equal to the original price?",
+        answer: "No; the final price is 1% less than the original.",
+        discussion: [
+          "Use multiplicative factors: \\(1.10\\cdot0.90=0.99\\).",
+          "The final price is \\(99\\%\\) of the original, so it is 1% lower.",
+        ],
+      },
+      {
+        type: "open",
+        question: "A recipe uses 2 cups of flour for 4 cookies. How many cups are needed for 30 cookies?",
+        answer: "\\(15\\) cups",
+        discussion: [
+          "The recipe uses \\(2\\div4=\\frac12\\) cup per cookie.",
+          "For 30 cookies, \\(30\\cdot\\frac12=15\\) cups.",
+        ],
+      },
+      {
+        type: "open",
+        question: "One quantity is 40% less than \\(x\\), while another is 50% greater than \\(x\\). What is the ratio of the first quantity to the second?",
+        answer: "\\(2:5\\)",
+        discussion: [
+          "The first quantity is \\(0.60x\\), and the second is \\(1.50x\\).",
+          "The ratio is \\(0.60x:1.50x=0.60:1.50=2:5\\).",
         ],
       },
     ],
@@ -1078,7 +1294,10 @@ function dummyQuestion(sectionKey, page, kind) {
 }
 
 function pageData(sectionKey, page) {
-  const content = sectionKey === "info"
+  const localPageDataPath = path.join(pagesDir, "page_mat", page.id, "data.json");
+  const content = ["page_mat_4", "page_mat_5"].includes(page.id) && fs.existsSync(localPageDataPath)
+    ? JSON.parse(fs.readFileSync(localPageDataPath, "utf8"))
+    : sectionKey === "info"
     ? infoContent[page.id]
     : sectionKey === "math"
       ? mathContent[page.id]

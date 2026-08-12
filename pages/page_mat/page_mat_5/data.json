@@ -3,7 +3,7 @@
     "showSolutionToggle": true,
     "sections": {
       "material": true,
-      "practice": true,
+      "practice": false,
       "additionalPractice": true
     }
   },
@@ -13,52 +13,522 @@
     "number": "05"
   },
   "eyebrow": "SAT Math / 05",
-  "title": "Linear inequalities",
-  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "title": "Linear equations and linear functions",
+  "subtitle": "Solve equations, interpret slope and intercepts, and model constant rates in context.",
   "materi": [
     {
-      "judul": "Page structure ready",
-      "icon": "fa-hourglass-half",
+      "judul": "Solve a linear equation",
+      "icon": "fa-equals",
       "tipe": "basic",
       "isi": [
-        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        "The goal is to isolate the variable while preserving equality. Whatever operation is performed on one side must also be performed on the other side.",
         {
-          "type": "note",
-          "content": "This lesson can be published when its content has been reviewed."
+          "type": "list",
+          "items": [
+            "Distribute multiplication when necessary.",
+            "Combine like terms.",
+            "Move variable terms to one side and constants to the other.",
+            "Divide by the coefficient of the variable.",
+            "Substitute the result back to check it."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Worked example",
+          "content": "Solve \\(3x-4=2-5x+10\\). Combine the right side to get \\(3x-4=12-5x\\). Add \\(5x+4\\) to both sides: \\(8x=16\\), so \\(x=2\\)."
         }
       ]
     },
     {
-      "judul": "Planned focus",
-      "icon": "fa-square-root-variable",
+      "judul": "Equation forms and restrictions",
+      "icon": "fa-filter-circle-dollar",
+      "tipe": "table",
+      "isi": [
+        "Some equations require an extra check. A denominator cannot be zero, a square root must have a nonnegative radicand in real-number problems, and squaring both sides can create an extraneous solution.",
+        {
+          "type": "table",
+          "table": {
+            "headers": ["Form", "Useful first move", "Restriction or check"],
+            "leftAlign": [0, 1, 2],
+            "rows": [
+              ["\\(ax+b=c\\)", "Undo addition, then multiplication", "Substitute the result"],
+              ["\\(\\frac{a}{x}=b\\)", "Multiply by \\(x\\)", "\\(x\\ne0\\)"],
+              ["\\(\\sqrt{x}=a\\)", "Square both sides", "\\(x\\ge0\\) and verify"],
+              ["\\(x^2=a\\)", "Take both square roots", "Include positive and negative roots when allowed"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "judul": "Slope-intercept form",
+      "icon": "fa-chart-line",
       "tipe": "basic",
       "isi": [
-        "SAT Math unit 05 is reserved for: Linear inequalities."
+        "A linear function is often written as \\(y=mx+b\\). The slope \\(m\\) is the constant rate of change, and the y-intercept \\(b\\) is the output when \\(x=0\\).",
+        {
+          "type": "formula",
+          "content": "\\[y=mx+b,\\qquad m=\\frac{y_2-y_1}{x_2-x_1}\\]"
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Positive slope",
+              "content": "The output increases as the input increases."
+            },
+            {
+              "title": "Negative slope",
+              "content": "The output decreases as the input increases."
+            },
+            {
+              "title": "Zero slope",
+              "content": "The output stays constant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Initial value and rate",
+      "icon": "fa-money-bill-trend-up",
+      "tipe": "basic",
+      "isi": [
+        "In a context, the intercept is usually a fixed starting amount and the slope is usually a per-unit rate. Keep the units attached to both quantities.",
+        {
+          "type": "example",
+          "title": "Car rental model",
+          "content": "A car rental charges USD 50 plus USD 0.25 per mile. The model is \\(C(m)=50+0.25m\\). Here, 50 dollars is the fixed fee and 0.25 dollar per mile is the rate."
+        },
+        {
+          "type": "note",
+          "content": "A negative slope describes a decrease. For example, \\(V(t)=25{,}000-2{,}000t\\) means a car starts at USD 25,000 and loses USD 2,000 of value per year."
+        }
+      ]
+    },
+    {
+      "judul": "Tables, graphs, and equations",
+      "icon": "fa-table",
+      "tipe": "table",
+      "isi": [
+        "The same linear relationship can be shown with a table, graph, or equation. Equal changes in the input should produce equal changes in the output.",
+        {
+          "type": "table",
+          "table": {
+            "headers": ["Representation", "What to inspect"],
+            "leftAlign": [0, 1],
+            "rows": [
+              ["Equation", "Slope and y-intercept"],
+              ["Table", "Constant first differences"],
+              ["Graph", "Rise, run, and axis intercepts"],
+              ["Context", "Meaning and units of the rate"]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "From a table to a function",
+          "content": "If the outputs for inputs \\(0,1,2,3\\) are \\(5,8,11,14\\), the output increases by 3 each time. The y-intercept is 5, so the model is \\(C=3h+5\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Compare linear models",
+      "icon": "fa-code-compare",
+      "tipe": "basic",
+      "isi": [
+        "To find when two plans or models have the same value, set their expressions equal. The solution is the break-even input.",
+        {
+          "type": "formula",
+          "content": "\\[A(x)=B(x)\\]"
+        },
+        {
+          "type": "example",
+          "title": "Break-even point",
+          "content": "For \\(A(x)=20+4x\\) and \\(B(x)=8+6x\\), set \\(20+4x=8+6x\\). Then \\(12=2x\\), so \\(x=6\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Domain, zero, and reasonableness",
+      "icon": "fa-ruler-combined",
+      "tipe": "basic",
+      "isi": [
+        "A model may be algebraically defined for many values, but the context can restrict the domain. Time, distance, and number of items are usually nonnegative; some quantities must also be whole numbers.",
+        {
+          "type": "formula",
+          "content": "\\[\\text{zero of }f:\\quad f(x)=0\\]"
+        },
+        {
+          "type": "example",
+          "title": "When a tank is empty",
+          "content": "For \\(L(t)=500-2t\\), set \\(L(t)=0\\): \\(0=500-2t\\), so \\(t=250\\) hours. The zero represents the time when the tank becomes empty."
+        },
+        {
+          "type": "note",
+          "content": "Always check whether the answer fits the situation. A negative number of miles or a time before the process begins is not meaningful unless the problem explicitly allows it."
+        }
+      ]
+    },
+    {
+      "judul": "SAT translation checklist",
+      "icon": "fa-list-check",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "list",
+          "items": [
+            "Name the input and output variables.",
+            "Identify the initial value and constant rate.",
+            "Preserve units when interpreting slope.",
+            "Use two points to calculate slope when an equation is not given.",
+            "Set two functions equal for a break-even question.",
+            "Check domain restrictions and whether the answer is reasonable."
+          ]
+        }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "What is the first useful step when beginning the SAT Math unit \"Linear inequalities\"?",
-      "answer": "Identify what the question is asking and the information that matters.",
-      "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+      "question": "Solve \\(5+x=-3\\).",
+      "answer": "\\(-8\\)",
+      "discussion": ["Subtract 5 from both sides: \\(x=-3-5=-8\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(x-1.5=6\\).",
+      "answer": "\\(7.5\\)",
+      "discussion": ["Add 1.5 to both sides: \\(x=6+1.5=7.5\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(4x=8\\).",
+      "answer": "\\(2\\)",
+      "discussion": ["Divide both sides by 4: \\(x=8\\div4=2\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(\\frac{x}{3}=5\\).",
+      "answer": "\\(15\\)",
+      "discussion": ["Multiply both sides by 3: \\(x=15\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(\\frac{6}{x}=4\\).",
+      "answer": "\\(\\frac{3}{2}\\)",
+      "discussion": ["Multiply by \\(x\\): \\(6=4x\\). Divide by 4 to get \\(x=\\frac{3}{2}\\), which is nonzero as required."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(x^2=9\\).",
+      "answer": "\\(x=3\\) or \\(x=-3\\)",
+      "discussion": ["Take both square roots: \\(x=\\pm\\sqrt9=\\pm3\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(\\sqrt{x}=7\\).",
+      "answer": "\\(49\\)",
+      "discussion": ["Square both sides: \\(x=7^2=49\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(3x-2=5-0.5x\\).",
+      "answer": "\\(\\frac{14}{7}=2\\)",
+      "discussion": ["Add \\(0.5x\\) and 2: \\(3.5x=7\\). Divide by 3.5 to get \\(x=2\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(\\frac{x-3}{2}=-3\\).",
+      "answer": "\\(-3\\)",
+      "discussion": ["Multiply by 2: \\(x-3=-6\\). Add 3 to obtain \\(x=-3\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(\\frac{2}{x}=\\frac{8}{x+3}\\).",
+      "answer": "\\(x=1\\)",
+      "discussion": ["Cross-multiply: \\(2(x+3)=8x\\). Thus \\(6=6x\\), so \\(x=1\\), which does not make a denominator zero."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(\\sqrt{4x}=12\\).",
+      "answer": "\\(36\\)",
+      "discussion": ["Square both sides: \\(4x=144\\). Divide by 4 to get \\(x=36\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(3x-4=2-5x+10\\).",
+      "answer": "\\(2\\)",
+      "discussion": ["Combine the right side: \\(3x-4=12-5x\\). Add \\(5x+4\\): \\(8x=16\\), so \\(x=2\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(\\frac{x-1}{3}=k\\) and \\(k=3\\), what is the value of \\(x\\)?",
+      "options": ["\\(2\\)", "\\(4\\)", "\\(9\\)", "\\(10\\)"],
+      "answer": "D",
+      "discussion": ["Substitute \\(k=3\\): \\(\\frac{x-1}{3}=3\\). Multiply by 3 to get \\(x-1=9\\), so \\(x=10\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(\\frac{a}{b}=2\\), what is the value of \\(\\frac{4b}{a}\\)?",
+      "options": ["\\(0\\)", "\\(1\\)", "\\(2\\)", "\\(4\\)"],
+      "answer": "C",
+      "discussion": ["Since \\(a/b=2\\), its reciprocal is \\(b/a=1/2\\). Thus \\(4b/a=4(1/2)=2\\). The correct option is C."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(16+4x\\) is 10 more than 14, what is the value of \\(8x\\)?",
+      "options": ["\\(2\\)", "\\(6\\)", "\\(16\\)", "\\(80\\)"],
+      "answer": "C",
+      "discussion": ["Ten more than 14 is 24, so \\(16+4x=24\\). Then \\(4x=8\\), \\(x=2\\), and \\(8x=16\\). The correct option is C."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(3r=18\\), what is the value of \\(6r+3\\)?",
+      "options": ["\\(6\\)", "\\(27\\)", "\\(36\\)", "\\(39\\)"],
+      "answer": "D",
+      "discussion": ["Divide by 3 to get \\(r=6\\). Then \\(6r+3=36+3=39\\). The correct option is D."]
+    },
+    {
+      "type": "open",
+      "question": "If \\(\\frac{7}{9}x-\\frac{4}{9}x=\\frac14+\\frac5{12}\\), what is the value of \\(x\\)?",
+      "answer": "\\(2\\)",
+      "discussion": ["The left side is \\(\\frac{3}{9}x=\\frac{x}{3}\\). The right side is \\(\\frac{3}{12}+\\frac{5}{12}=\\frac{2}{3}\\). Thus \\(x/3=2/3\\), so \\(x=2\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(\\frac35w=\\frac43\\), what is the value of \\(w\\)?",
+      "options": ["\\(\\frac9{20}\\)", "\\(\\frac45\\)", "\\(\\frac54\\)", "\\(\\frac{20}{9}\\)"],
+      "answer": "D",
+      "discussion": ["Multiply both sides by \\(\\frac53\\): \\(w=\\frac43\\cdot\\frac53=\\frac{20}{9}\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Julia earns a base pay of USD 2 per hour and a commission of USD 3 for each item sold. Let \\(x\\) be the number of items and \\(y\\) the total revenue. What equation models the relationship?",
+      "answer": "\\(y=2+3x\\)",
+      "discussion": ["The fixed base pay is 2, and each item adds 3. Therefore \\(y=2+3x\\)."]
+    },
+    {
+      "type": "open",
+      "question": "A car rental company charges a flat fee of USD 50 plus USD 0.25 per mile. Write a function for cost \\(C\\) for \\(m\\) miles.",
+      "answer": "\\(C(m)=50+0.25m\\)",
+      "discussion": ["The flat fee is the intercept and the per-mile charge is the slope: \\(C(m)=50+0.25m\\)."]
+    },
+    {
+      "type": "open",
+      "question": "Maria has USD 100 and saves USD 20 each week. Write a function for savings \\(S\\) after \\(w\\) weeks.",
+      "answer": "\\(S(w)=100+20w\\)",
+      "discussion": ["The initial amount is 100 and the weekly increase is 20, so \\(S(w)=100+20w\\)."]
+    },
+    {
+      "type": "open",
+      "question": "A car originally purchased for USD 25,000 decreases in value by USD 2,000 each year. Write \\(V(t)\\).",
+      "answer": "\\(V(t)=25{,}000-2{,}000t\\)",
+      "discussion": ["The initial value is 25,000 and the rate is a decrease of 2,000 per year."]
+    },
+    {
+      "type": "open",
+      "question": "For \\(C(x)=15+0.10x\\), what do 15 and 0.10 represent, and what is the cost for 200 extra minutes?",
+      "answer": "15 is the fixed monthly cost, 0.10 is the cost per extra minute, and \\(C(200)=35\\) dollars.",
+      "discussion": ["The intercept 15 is the starting cost. The slope 0.10 is dollars per extra minute. Calculate \\(15+0.10(200)=35\\)."]
+    },
+    {
+      "type": "open",
+      "question": "For \\(L(t)=500-2t\\), what do 500 and \\(-2\\) represent, how much remains after 8 hours, and when is the tank empty?",
+      "answer": "500 is the initial water level, -2 is the rate of loss in gallons per hour, \\(L(8)=484\\) gallons, and the tank is empty after 250 hours.",
+      "discussion": ["The intercept is 500 gallons and the slope is -2 gallons per hour. \\(L(8)=500-16=484\\). Set \\(0=500-2t\\) to get \\(t=250\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The equation \\(T=15n+12\\) gives the total cost for \\(n\\) tickets. What does 12 represent?",
+      "options": ["Price of one ticket", "Service fee", "Total amount paid for one ticket", "Total amount paid for any number of tickets"],
+      "answer": "B",
+      "discussion": ["The constant term is paid even when \\(n=0\\), so it represents the service fee."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The number of phones left to repair is modeled by \\(P=108-23d\\). What does 108 represent?",
+      "options": ["Repairs completed within 108 days", "Phones Kathy starts with", "Repairs per hour", "Repairs per day"],
+      "answer": "B",
+      "discussion": ["When \\(d=0\\), \\(P=108\\). Therefore 108 is the starting number of phones."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A pediatrician uses \\(h=3a+28.6\\) to estimate a boy's height. What is the estimated yearly increase?",
+      "options": ["3", "5.7", "9.5", "14.3"],
+      "answer": "A",
+      "discussion": ["The coefficient of age \\(a\\) is the slope, so the estimated increase is 3 units per year."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(t=n+2\\), how many additional tea bags are needed for each additional cup?",
+      "options": ["None", "One", "Two", "Three"],
+      "answer": "B",
+      "discussion": ["The coefficient of \\(n\\) is 1, so one additional tea bag is needed per additional cup."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A boat-rental graph has points \\((0,5),(1,8),(2,11),(3,14),(4,17),(5,20)\\). What does the y-intercept represent?",
+      "options": ["Initial rental cost", "Total number of boats", "Total hours rented", "Cost increase per hour"],
+      "answer": "A",
+      "discussion": ["At \\(h=0\\), the cost is 5, so the y-intercept is the initial rental cost."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "For the same boat-rental graph, which equation represents the relationship?",
+      "options": ["\\(C=5h\\)", "\\(C=\\frac34h+5\\)", "\\(C=3h+5\\)", "\\(h=3C\\)"],
+      "answer": "C",
+      "discussion": ["The cost increases by 3 for each additional hour and starts at 5, so \\(C=3h+5\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The average number of students per classroom is modeled by \\(y=0.56x+27.2\\). What does 0.56 represent?",
+      "options": ["Total students in 2000", "Average in 2000", "Estimated yearly increase", "Difference between 2010 and 2000"],
+      "answer": "C",
+      "discussion": ["The coefficient of time is the slope, so it represents the estimated yearly increase."]
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Before solving a new SAT Math question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
-      "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+      "type": "multiple-choice",
+      "question": "Solve \\(x+7=19\\).",
+      "options": ["\\(10\\)", "\\(12\\)", "\\(14\\)", "\\(26\\)"],
+      "answer": "B",
+      "discussion": ["Subtract 7: \\(x=12\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Solve \\(5x=45\\).",
+      "options": ["\\(5\\)", "\\(8\\)", "\\(9\\)", "\\(10\\)"],
+      "answer": "C",
+      "discussion": ["Divide by 5: \\(x=9\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the slope of \\(y=4x-7\\)?",
+      "options": ["\\(-7\\)", "\\(-4\\)", "\\(4\\)", "\\(7\\)"],
+      "answer": "C",
+      "discussion": ["In \\(y=mx+b\\), the coefficient of \\(x\\) is the slope, so \\(m=4\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the y-intercept of \\(y=-3x+11\\)?",
+      "options": ["\\(-3\\)", "\\(3\\)", "\\(11\\)", "\\(-11\\)"],
+      "answer": "C",
+      "discussion": ["The constant term is the y-intercept: \\((0,11)\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A taxi charges USD 5 plus USD 2 per mile. What is the cost of a 6-mile trip?",
+      "options": ["USD 12", "USD 15", "USD 17", "USD 22"],
+      "answer": "C",
+      "discussion": ["Use \\(C=5+2m\\): \\(C(6)=5+12=17\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Solve \\(4x-9=2x+7\\).",
+      "options": ["\\(-8\\)", "\\(-1\\)", "\\(8\\)", "\\(16\\)"],
+      "answer": "C",
+      "discussion": ["Subtract \\(2x\\) and add 9: \\(2x=16\\), so \\(x=8\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A line passes through \\((2,5)\\) and \\((6,17)\\). What is its slope?",
+      "options": ["\\(2\\)", "\\(3\\)", "\\(4\\)", "\\(6\\)"],
+      "answer": "B",
+      "discussion": ["\\(m=(17-5)/(6-2)=12/4=3\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A savings account starts with USD 250 and increases by USD 35 each month. Which function represents the balance after \\(m\\) months?",
+      "options": ["\\(B(m)=35m\\)", "\\(B(m)=250m+35\\)", "\\(B(m)=250+35m\\)", "\\(B(m)=285m\\)"],
+      "answer": "C",
+      "discussion": ["The initial value is 250 and the monthly rate is 35, so \\(B(m)=250+35m\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "For \\(C(x)=18+0.12x\\), what does 0.12 represent?",
+      "options": ["Initial monthly cost", "Monthly cost per additional unit", "Number of included units", "Total cost after 12 units"],
+      "answer": "B",
+      "discussion": ["The coefficient of \\(x\\) is the rate: 0.12 dollars per additional unit."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Two plans cost \\(A(x)=25+3x\\) and \\(B(x)=10+5x\\). For what value of \\(x\\) are the costs equal?",
+      "options": ["\\(5\\)", "\\(7.5\\)", "\\(10\\)", "\\(15\\)"],
+      "answer": "B",
+      "discussion": ["Set equal: \\(25+3x=10+5x\\). Then \\(15=2x\\), so \\(x=7.5\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A water tank contains 720 gallons and drains at 18 gallons per hour. After how many hours will it contain 270 gallons?",
+      "options": ["\\(15\\)", "\\(20\\)", "\\(25\\)", "\\(30\\)"],
+      "answer": "C",
+      "discussion": ["The tank loses \\(720-270=450\\) gallons. At 18 gallons per hour, the time is \\(450/18=25\\) hours. The correct option is C."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A linear function satisfies \\(f(3)=14\\) and \\(f(8)=34\\). What is \\(f(13)\\)?",
+      "options": ["\\(44\\)", "\\(50\\)", "\\(54\\)", "\\(60\\)"],
+      "answer": "C",
+      "discussion": ["The slope is \\((34-14)/(8-3)=4\\). Five more input units add 20, so \\(f(13)=34+20=54\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The line \\(y=mx+b\\) passes through \\((4,13)\\) and has x-intercept \\(-2\\). What is \\(m\\)?",
+      "options": ["\\(\\frac{13}{2}\\)", "\\(\\frac{13}{6}\\)", "\\(\\frac{6}{13}\\)", "\\(2\\)"],
+      "answer": "B",
+      "discussion": ["The line passes through \\((-2,0)\\) and \\((4,13)\\). Thus \\(m=(13-0)/(4-(-2))=13/6\\). The correct option is B."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A company produces 1,200 units with 8 machines and 2,100 units with 14 machines. Assuming a linear relationship, how many units are produced with 20 machines?",
+      "options": ["2,700", "3,000", "3,300", "3,600"],
+      "answer": "B",
+      "discussion": ["The rate is \\((2100-1200)/(14-8)=150\\) units per machine. Six more machines add 900 units, giving \\(2100+900=3000\\). The correct option is B."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A phone plan costs USD 30 for the first 5 gigabytes and USD 6 for each additional gigabyte. Which equation gives the cost for \\(x>5\\)?",
+      "options": ["\\(C=30+6x\\)", "\\(C=30+6(x-5)\\)", "\\(C=6x-5\\)", "\\(C=36x\\)"],
+      "answer": "B",
+      "discussion": ["Only the gigabytes beyond the first 5 incur the extra charge, so the model is \\(C=30+6(x-5)\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A car's value is modeled by \\(V(t)=28{,}000-2{,}400t\\). After how many years will its value be USD 13,600?",
+      "options": ["\\(4\\)", "\\(5\\)", "\\(6\\)", "\\(7\\)"],
+      "answer": "C",
+      "discussion": ["Set \\(13{,}600=28{,}000-2{,}400t\\). Then \\(2{,}400t=14{,}400\\), so \\(t=6\\). The correct option is C."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The average number of students per class is modeled by \\(y=0.56x+27.2\\), where \\(x\\) is years since 2000. What is the predicted average in 2015?",
+      "options": ["\\(30.0\\)", "\\(34.2\\)", "\\(35.6\\)", "\\(42.4\\)"],
+      "answer": "C",
+      "discussion": ["For 2015, \\(x=15\\). Then \\(y=0.56(15)+27.2=35.6\\). The correct option is C."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A line has y-intercept 8 and is perpendicular to \\(y=\\frac12x-3\\). Which equation represents the line?",
+      "options": ["\\(y=2x+8\\)", "\\(y=-2x+8\\)", "\\(y=-\\frac12x+8\\)", "\\(y=\\frac12x+8\\)"],
+      "answer": "B",
+      "discussion": ["A perpendicular slope to \\(1/2\\) is \\(-2\\). With y-intercept 8, the equation is \\(y=-2x+8\\)."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Revenue is modeled by \\(R(x)=120x-0.5x^2\\). For which value of \\(x\\) does revenue first reach USD 7,200?",
+      "options": ["\\(60\\)", "\\(80\\)", "\\(120\\)", "\\(180\\)"],
+      "answer": "C",
+      "discussion": ["Set \\(120x-0.5x^2=7200\\). Rearranging gives \\(x^2-240x+14400=0=(x-120)^2\\), so \\(x=120\\). The correct option is C."]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A line passes through \\((a,12)\\) and \\((8,30)\\) and has slope 3. What is \\(a\\)?",
+      "options": ["\\(-2\\)", "\\(1\\)", "\\(2\\)", "\\(4\\)"],
+      "answer": "C",
+      "discussion": ["Use \\(3=(30-12)/(8-a)=18/(8-a)\\). Then \\(8-a=6\\), so \\(a=2\\)."]
     }
   ]
 }
