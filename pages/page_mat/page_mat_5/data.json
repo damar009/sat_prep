@@ -3,7 +3,7 @@
     "showSolutionToggle": true,
     "sections": {
       "material": true,
-      "practice": false,
+      "practice": true,
       "additionalPractice": true
     }
   },
