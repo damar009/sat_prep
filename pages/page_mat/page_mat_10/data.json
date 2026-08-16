@@ -13,52 +13,662 @@
     "number": "10"
   },
   "eyebrow": "SAT Math / 10",
-  "title": "Polynomial expressions",
-  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "title": "Statistics and Statistical Analysis",
+  "subtitle": "Read graphs and scatterplots, interpret regression models, compare trends, and make careful predictions.",
   "materi": [
     {
-      "judul": "Page structure ready",
-      "icon": "fa-hourglass-half",
+      "judul": "Read the graph before the trend",
+      "icon": "fa-chart-column",
       "tipe": "basic",
       "isi": [
-        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        {
+          "type": "paragraph",
+          "content": "A graph is a mathematical representation, not just a picture. Before interpreting a trend, identify the variables, units, axis labels, scale, and interval size."
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Graph type",
+              "Best for",
+              "What to inspect"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "Line graph",
+                "Change across an ordered variable, often time",
+                "Direction, peaks, valleys, and intervals"
+              ],
+              [
+                "Bar graph",
+                "Comparing categories",
+                "Category labels and bar heights"
+              ],
+              [
+                "Histogram",
+                "Grouped numerical data",
+                "Intervals, frequency, and distribution shape"
+              ],
+              [
+                "Two-way table",
+                "Counts for two categorical variables",
+                "Rows, columns, totals, and conditional counts"
+              ],
+              [
+                "Scatterplot",
+                "Paired numerical variables",
+                "Association, outliers, and line of best fit"
+              ]
+            ]
+          }
+        },
         {
           "type": "note",
-          "content": "This lesson can be published when its content has been reviewed."
+          "content": "Never compare graph values before checking whether the axes use the same units and scale."
         }
       ]
     },
     {
-      "judul": "Planned focus",
-      "icon": "fa-square-root-variable",
+      "judul": "Scatterplots and association",
+      "icon": "fa-braille",
       "tipe": "basic",
       "isi": [
-        "SAT Math unit 10 is reserved for: Polynomial expressions."
+        {
+          "type": "paragraph",
+          "content": "A scatterplot displays paired numerical data as points. The overall pattern may show a positive association, negative association, or little to no association."
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Positive association",
+              "content": "As \\(x\\) increases, \\(y\\) tends to increase."
+            },
+            {
+              "title": "Negative association",
+              "content": "As \\(x\\) increases, \\(y\\) tends to decrease."
+            },
+            {
+              "title": "No clear association",
+              "content": "The points do not follow a consistent upward or downward pattern."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Association does not prove causation. A third variable or the study design may explain why two variables move together."
+        }
+      ]
+    },
+    {
+      "judul": "Linear models and line of best fit",
+      "icon": "fa-chart-line",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[\\hat{y}=mx+b\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "A line of best fit summarizes the general pattern in a scatterplot. The symbol \\(\\hat{y}\\) represents a predicted value rather than necessarily an observed data point."
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Slope \\(m\\)",
+              "content": "The predicted change in \\(y\\) for each one-unit increase in \\(x\\)."
+            },
+            {
+              "title": "Y-intercept \\(b\\)",
+              "content": "The predicted value of \\(y\\) when \\(x=0\\), if that input is meaningful."
+            },
+            {
+              "title": "Residual",
+              "content": "Observed value minus predicted value: \\(y-\\hat{y}\\)."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: interpret a model",
+          "content": "For \\(\\hat{y}=4x+12\\), the slope 4 means each one-unit increase in \\(x\\) predicts a 4-unit increase in \\(y\\). At \\(x=7\\), the predicted value is \\(4(7)+12=40\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Slope and average rate of change",
+      "icon": "fa-arrow-trend-up",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[m=\\frac{y_2-y_1}{x_2-x_1}\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "The average rate of change is the change in the dependent variable divided by the change in the independent variable. Include units in the final interpretation."
+        },
+        {
+          "type": "example",
+          "title": "Example: estimate a negative slope",
+          "content": "A line runs approximately from \\((0,14)\\) to \\((13,0)\\). Its slope is \\(\\dfrac{0-14}{13-0}=-\\dfrac{14}{13}\\approx-1.1\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: average rate",
+          "content": "If a bird spends 6 hours in flight on January 13 and 15 hours on January 15, the average rate is \\(\\dfrac{15-6}{2}=4.5\\) hours per day."
+        },
+        {
+          "type": "note",
+          "content": "A negative slope describes a decreasing prediction, not a negative amount of the measured quantity."
+        }
+      ]
+    },
+    {
+      "judul": "Transforming a regression model",
+      "icon": "fa-up-down-left-right",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "If every observed y-coordinate is multiplied by a constant \\(k\\), the slope and y-intercept of the corresponding linear model are also multiplied by \\(k\\)."
+        },
+        {
+          "type": "formula",
+          "content": "\\[y=mx+b\\quad\\Longrightarrow\\quad ky=kmx+kb\\]"
+        },
+        {
+          "type": "example",
+          "title": "Example: scale every y-value",
+          "content": "If data set E has model \\(y=12+1.5x\\) and every y-coordinate is multiplied by 3.9, then the new model is \\(y=3.9(12+1.5x)=46.8+5.85x\\), approximately \\(y=46.8+5.9x\\)."
+        },
+        {
+          "type": "note",
+          "content": "Scaling only the y-values changes both the slope and intercept. Scaling only x-values would require a different analysis."
+        }
+      ]
+    },
+    {
+      "judul": "Linear versus exponential models",
+      "icon": "fa-code-compare",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Pattern",
+              "Model",
+              "Clue"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "Constant additive change",
+                "\\(y=mx+b\\)",
+                "Adds approximately the same amount each interval."
+              ],
+              [
+                "Constant multiplicative change",
+                "\\(y=ab^x\\)",
+                "Changes by approximately the same percentage or factor."
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Example: identify the model type",
+          "content": "If an investment increases by 0.49% of its previous value each year, the change depends on the current amount. The appropriate model is increasing exponential."
+        },
+        {
+          "type": "note",
+          "content": "A percentage change describes multiplication by a factor. A fixed numerical change describes addition and is typically linear."
+        }
+      ]
+    },
+    {
+      "judul": "Interpolation, extrapolation, and prediction limits",
+      "icon": "fa-arrows-left-right",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Interpolation",
+              "content": "Predicting within the observed range of x-values. This is usually more reliable."
+            },
+            {
+              "title": "Extrapolation",
+              "content": "Predicting outside the observed range. The relationship may change beyond the data."
+            },
+            {
+              "title": "Outlier",
+              "content": "A point that is unusually far from the general pattern."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: an unreliable prediction",
+          "content": "If a line model is built from advertising amounts between USD 2,000 and USD 8,000, predicting the outcome at USD 25,000 is extrapolation and may be unreliable."
+        },
+        {
+          "type": "note",
+          "content": "A model can make a numerical prediction outside the data range, but the prediction should be treated cautiously."
+        }
+      ]
+    },
+    {
+      "judul": "Reading inconsistent or image-based data",
+      "icon": "fa-triangle-exclamation",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "Some questions depend on a graph or table. If a visual and a written statement conflict, identify the conflict instead of inventing precision that the information does not support."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use only values that are clearly labeled or supported by the scale.",
+            "Distinguish a flat segment from a slowly changing segment.",
+            "Check whether the time interval in the text matches the interval shown.",
+            "For a line of best fit, do not assume every observed point lies exactly on the line."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "When a graph is low-resolution or incomplete, state what can be concluded confidently and avoid unsupported exact values."
+        }
+      ]
+    },
+    {
+      "judul": "A reliable statistical-analysis workflow",
+      "icon": "fa-check-double",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Identify the graph type, variables, units, and scale.",
+            "Describe the association before calculating.",
+            "Use two clear points to estimate slope or average rate of change.",
+            "Interpret the intercept only when \\(x=0\\) has meaning.",
+            "Distinguish observed values, predicted values, and residuals.",
+            "Prefer interpolation to extrapolation.",
+            "Do not infer causation from association alone."
+          ]
+        }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "What is the first useful step when beginning the SAT Math unit \"Polynomial expressions\"?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "type": "multiple-choice",
+      "question": "A scatterplot shows a strong negative linear pattern, approximately from \\((0,9.6)\\) to \\((5,0.7)\\). Which equation is the most appropriate linear model?",
+      "options": [
+        "\\(y=-1.9x-10.1\\)",
+        "\\(y=-1.9x+10.1\\)",
+        "\\(y=1.9x-10.1\\)",
+        "\\(y=1.9x+10.1\\)"
+      ],
+      "answer": "B",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "The slope is negative because the pattern decreases.",
+        "Using the approximate point at \\(x=0\\), the y-intercept is about 9.6, so the intercept should be positive and close to 10.1.",
+        "Choice B has a negative slope and positive intercept, so it is the appropriate model."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The number of solar-panel installations in five cities is shown in a graph. If the total number of installations is 27,500, what is an appropriate label for the vertical axis?",
+      "options": [
+        "Number of installations in tens",
+        "Number of installations in hundreds",
+        "Number of installations in thousands",
+        "Number of installations in tens of thousands"
+      ],
+      "answer": "C",
+      "discussion": [
+        "A total of 27,500 installations is naturally represented using values in the thousands.",
+        "A vertical-axis label such as “number of installations in thousands” allows the total to be represented as 27.5.",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A graph shows Marilyn's distance from her campsite during a three-hour hike. She stopped for 90 minutes to eat lunch. Based on the graph description, which time is most consistent with the end of lunch and the continuation of the hike?",
+      "options": [
+        "12:40 P.M.",
+        "1:10 P.M.",
+        "1:40 P.M.",
+        "2:00 P.M."
+      ],
+      "answer": "C",
+      "discussion": [
+        "A stop is represented by a flat segment because the distance from the campsite does not change.",
+        "The source graph indicates that the flat segment ends at approximately 1:40 P.M.",
+        "Therefore, choice C is the intended answer."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A graph shows total music-album sales, in millions, each year from 1997 through 2009. Which best describes the general trend?",
+      "options": [
+        "Sales generally increased each year since 1997.",
+        "Sales generally decreased each year since 1997.",
+        "Sales increased until 2000 and then generally decreased.",
+        "Sales generally remained steady from 1997 through 2009."
+      ],
+      "answer": "C",
+      "discussion": [
+        "The described graph rises during the early years and then trends downward after approximately 2000.",
+        "This is a general trend, not a claim that every individual year changes in exactly the same direction.",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A graph shows the temperature of a heated cup of coffee immediately after removal from a heat source and at 10-minute intervals. Which could be the initial temperature?",
+      "options": [
+        "\\(75^\\circ\\text{F}\\)",
+        "\\(100^\\circ\\text{F}\\)",
+        "\\(155^\\circ\\text{F}\\)",
+        "\\(195^\\circ\\text{F}\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "The initial temperature is the y-value at time 0.",
+        "The source graph begins near 195 degrees Fahrenheit.",
+        "Therefore, choice D is the closest possible initial temperature."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A line of best fit runs approximately from \\((0,14)\\) to \\((13,0)\\). Which is closest to its slope?",
+      "options": [
+        "\\(-3.3\\)",
+        "\\(-1.1\\)",
+        "\\(1.1\\)",
+        "\\(3.3\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Use the slope formula: \\(m=\\dfrac{0-14}{13-0}=-\\dfrac{14}{13}\\).",
+        "The decimal approximation is about \\(-1.1\\).",
+        "The correct answer is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Three insect colonies are treated with different pesticides over eight weeks. Which colonies decreased in size every two weeks after the initial treatment?",
+      "options": [
+        "I only",
+        "III only",
+        "I and II only",
+        "I, II, and III"
+      ],
+      "answer": "D",
+      "discussion": [
+        "For each colony, compare the plotted size at each successive two-week interval.",
+        "The source graph shows a decrease at every interval for colonies I, II, and III.",
+        "Therefore, choice D is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A line of best fit decreases approximately from \\((0,8)\\) to \\((10,1)\\). Which is closest to the slope?",
+      "options": [
+        "\\(7\\)",
+        "\\(0.7\\)",
+        "\\(-0.7\\)",
+        "\\(-7\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Calculate \\(m=\\dfrac{1-8}{10-0}=\\dfrac{-7}{10}=-0.7\\).",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Michael swam 2,000 yards on each of 18 days. A scatterplot shows swim time and heart rate with a line of best fit. For a swim taking 34 minutes, the actual heart rate was about how many beats per minute less than the predicted rate?",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(3\\)",
+        "\\(4\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "At 34 minutes, compare the observed point with the line of best fit.",
+        "The source graph shows the actual heart rate approximately 3 beats per minute below the predicted value.",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A tree's age is estimated by multiplying its diameter by a species growth factor. Which listed species has a growth factor closest to the value estimated from the source scatterplot?",
+      "options": [
+        "Red maple",
+        "Cottonwood",
+        "White birch",
+        "Shagbark hickory"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The source scatterplot's estimated growth factor is closest to 4.5.",
+        "Among the choices, red maple has a growth factor of 4.5.",
+        "Therefore, choice A is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A scatterplot shows chamber temperature \\(y\\) in degrees Celsius against time \\(x\\) in minutes. The points at \\(x=5\\) and \\(x=7\\) are approximately \\((5,14)\\) and \\((7,24)\\). What is the average rate of change?",
+      "answer": "\\(5\\) degrees Celsius per minute",
+      "discussion": [
+        "Use the average-rate formula: \\(\\dfrac{24-14}{7-5}=\\dfrac{10}{2}=5\\).",
+        "The average rate of change is 5 degrees Celsius per minute."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Data set E has a line of best fit \\(y=12+1.5x\\). Data set F is created by multiplying every y-coordinate by 3.9. Which could be a line of best fit for F?",
+      "options": [
+        "\\(y=46.8+5.9x\\)",
+        "\\(y=46.8+1.5x\\)",
+        "\\(y=12+5.9x\\)",
+        "\\(y=12+1.5x\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Multiply both the intercept and slope by 3.9.",
+        "The new model is \\(y=3.9(12)+3.9(1.5)x=46.8+5.85x\\).",
+        "Rounding the slope gives \\(y=46.8+5.9x\\), choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A bird spends approximately 6 hours in flight on January 13 and 15 hours on January 15. What is the average rate of change from January 13 to January 15?",
+      "answer": "\\(4.5\\) hours per day",
+      "discussion": [
+        "The change in flight time is \\(15-6=9\\) hours.",
+        "The time interval is 2 days.",
+        "The average rate is \\(9\\div2=4.5\\) hours per day."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Each year, an investment increases by 0.49% of its previous value. Which model best describes the change?",
+      "options": [
+        "Decreasing exponential",
+        "Decreasing linear",
+        "Increasing exponential",
+        "Increasing linear"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The change is a percentage of the previous value, so it is multiplicative.",
+        "Because the percentage is positive, the quantity increases.",
+        "The appropriate model is increasing exponential, choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A scatterplot shows a negative association, with approximate y-intercept 9.4 and slope \\(-0.9\\). Which equation is most appropriate?",
+      "options": [
+        "\\(y=0.9+9.4x\\)",
+        "\\(y=0.9-9.4x\\)",
+        "\\(y=9.4+0.9x\\)",
+        "\\(y=9.4-0.9x\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "Use \\(y=mx+b\\), where \\(m=-0.9\\) and \\(b=9.4\\).",
+        "Thus, \\(y=9.4-0.9x\\), choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "For \\(x>0\\), \\(f(x)\\) equals 201% of \\(x\\). Which could describe this function?",
+      "options": [
+        "Decreasing exponential",
+        "Decreasing linear",
+        "Increasing exponential",
+        "Increasing linear"
+      ],
+      "answer": "D",
+      "discussion": [
+        "The statement means \\(f(x)=2.01x\\), which is a linear function.",
+        "Because the coefficient is positive, it is increasing.",
+        "The correct answer is choice D."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT Math question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Which graph is most appropriate for monthly temperature over one year?",
+      "answer": "A line graph",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "Monthly temperature is measured across an ordered time variable.",
+        "A line graph is appropriate for showing change across time."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A bar graph shows 18 red items and 27 blue items. How many items are shown?",
+      "answer": "\\(45\\)",
+      "discussion": [
+        "Add the two category counts: \\(18+27=45\\).",
+        "Therefore, the graph represents 45 items."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What type of graph displays paired numerical variables as points?",
+      "options": [
+        "Bar graph",
+        "Histogram",
+        "Scatterplot",
+        "Line graph"
+      ],
+      "answer": "C",
+      "discussion": [
+        "A scatterplot represents paired numerical observations as individual points.",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A model is \\(\\hat{y}=4x+12\\). Find the predicted value when \\(x=7\\).",
+      "answer": "\\(40\\)",
+      "discussion": [
+        "Substitute \\(x=7\\): \\(\\hat{y}=4(7)+12=28+12=40\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A line runs from \\((2,5)\\) to \\((8,17)\\). Find its slope.",
+      "answer": "\\(2\\)",
+      "discussion": [
+        "Use \\(m=\\dfrac{17-5}{8-2}=\\dfrac{12}{6}=2\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A poll reports 52% support with a margin of error of 3%. State the plausible interval.",
+      "answer": "From \\(49\\%\\) to \\(55\\%\\)",
+      "discussion": [
+        "Subtract and add the margin of error: \\(52\\%-3\\%=49\\%\\) and \\(52\\%+3\\%=55\\%\\).",
+        "The plausible interval is 49% to 55%."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A line model is reliable for advertising between USD \\(2{,}000\\) and USD \\(8{,}000\\). Why is predicting at USD \\(25{,}000\\) risky?",
+      "answer": "It is extrapolation outside the observed range.",
+      "discussion": [
+        "The prediction at USD 25,000 is outside the interval used to build the model.",
+        "This is extrapolation, so the original relationship may not continue at that level."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A data set E has model \\(y=10+2x\\). Every y-coordinate is multiplied by 4. Write a model for data set F.",
+      "answer": "\\(y=40+8x\\)",
+      "discussion": [
+        "Multiply the entire model by 4: \\(4(10+2x)=40+8x\\).",
+        "Thus, a model for data set F is \\(y=40+8x\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A scatterplot shows a strong negative association. Explain why this does not prove causation.",
+      "answer": "A third variable or the study design may explain the association.",
+      "discussion": [
+        "A negative association means the variables tend to move in opposite directions.",
+        "It does not show that changing one variable causes the other to change.",
+        "A third variable, coincidence, or the study design may account for the pattern."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

@@ -13,1196 +13,728 @@
     "number": "03"
   },
   "eyebrow": "SAT Math / 03",
-  "title": "Exponents, radicals, and complex numbers",
-  "subtitle": "Simplify powers and roots, model exponential change, solve radical equations, and work confidently with i.",
+  "title": "Algebra and Linear Equations",
+  "subtitle": "Solve equations carefully, respect restrictions, and interpret linear functions as rates and initial values.",
   "materi": [
     {
-      "judul": "Exponent rules",
-      "icon": "fa-superscript",
-      "tipe": "table",
-      "isi": [
-        "An exponent tells how many times a base is used as a factor. Before combining exponents, make sure the bases are the same.",
-        {
-          "type": "table",
-          "table": {
-            "headers": [
-              "Rule",
-              "Equivalent form",
-              "Example"
-            ],
-            "leftAlign": [
-              0,
-              1,
-              2
-            ],
-            "rows": [
-              [
-                "Product of powers",
-                "\\(a^m\\cdot a^n=a^{m+n}\\)",
-                "\\(x^3x^8=x^{11}\\)"
-              ],
-              [
-                "Quotient of powers",
-                "\\(\\dfrac{a^m}{a^n}=a^{m-n}\\)",
-                "\\(\\dfrac{x^4}{x^9}=x^{-5}=\\dfrac1{x^5}\\)"
-              ],
-              [
-                "Power of a power",
-                "\\((a^m)^n=a^{mn}\\)",
-                "\\((x^4)^3=x^{12}\\)"
-              ],
-              [
-                "Zero exponent",
-                "\\(a^0=1\\), for \\(a\\ne0\\)",
-                "\\(17^0=1\\)"
-              ],
-              [
-                "Negative exponent",
-                "\\(a^{-n}=\\dfrac1{a^n}\\)",
-                "\\(x^{-2}=\\dfrac1{x^2}\\)"
-              ]
-            ]
-          }
-        },
-        {
-          "type": "note",
-          "content": "Do not add exponents across addition: \\(x^2+x^3\\) is not \\(x^5\\). Exponent rules apply to multiplication, division, and powers."
-        }
-      ]
-    },
-    {
-      "judul": "Rational exponents and radicals",
-      "icon": "fa-root",
+      "judul": "The balance principle",
+      "icon": "fa-scale-balanced",
       "tipe": "basic",
       "isi": [
-        "A fractional exponent is another notation for a root. The denominator identifies the root; the numerator identifies the power.",
         {
-          "type": "formula",
-          "content": "\\[a^{1/n}=\\sqrt[n]{a},\\qquad a^{m/n}=\\sqrt[n]{a^m}=\\left(\\sqrt[n]{a}\\right)^m\\]"
-        },
-        {
-          "type": "grid",
-          "items": [
-            {
-              "title": "\\(x^{1/2}\\)",
-              "content": "Square root: \\(\\sqrt{x}\\)"
-            },
-            {
-              "title": "\\(x^{1/3}\\)",
-              "content": "Cube root: \\(\\sqrt[3]{x}\\)"
-            },
-            {
-              "title": "\\(x^{2/3}\\)",
-              "content": "Cube root, then square: \\(\\sqrt[3]{x^2}\\)"
-            }
-          ]
-        },
-        {
-          "type": "example",
-          "title": "Example: rewrite before simplifying",
-          "content": "\\(\\sqrt[3]{x^{5/6}}=(x^{5/6})^{1/3}=x^{5/18}\\). Multiplying the exponents is usually the fastest route."
-        },
-        {
-          "type": "note",
-          "content": "For even roots in the real numbers, the radicand must be nonnegative. Odd roots can accept negative radicands."
-        }
-      ]
-    },
-    {
-      "judul": "Simplifying radicals and absolute value",
-      "icon": "fa-square-root-variable",
-      "tipe": "basic",
-      "isi": [
-        "To simplify a square root, factor out the largest perfect square. Only factors that occur in pairs can leave the radical.",
-        {
-          "type": "example",
-          "title": "Example: extract a perfect square",
-          "content": "\\(\\sqrt{72}=\\sqrt{36\\cdot2}=6\\sqrt2\\). Likewise, \\(\\sqrt{108}=\\sqrt{36\\cdot3}=6\\sqrt3\\)."
-        },
-        {
-          "type": "formula",
-          "content": "\\[\\sqrt{x^2}=|x|\\qquad\\text{and, if }x>0,\\qquad\\sqrt{9x^2}=3x\\]"
-        },
-        {
-          "type": "note",
-          "content": "The principal square root is never negative. Therefore \\(\\sqrt{(-4)^2}=4\\), not \\(-4\\). Use \\(|x|\\) unless the problem gives a condition such as \\(x>0\\)."
-        }
-      ]
-    },
-    {
-      "judul": "Exponential models",
-      "icon": "fa-chart-line",
-      "tipe": "table",
-      "isi": [
-        "Exponential models describe repeated multiplication. The general form is \\(A(t)=A_0b^t\\), where \\(A_0\\) is the initial amount and \\(b\\) is the multiplier for one time unit.",
-        {
-          "type": "table",
-          "table": {
-            "headers": [
-              "Situation",
-              "Model",
-              "Multiplier"
-            ],
-            "leftAlign": [
-              0,
-              1,
-              2
-            ],
-            "rows": [
-              [
-                "Doubles every \\(k\\) time units",
-                "\\(A(t)=A_0\\cdot2^{t/k}\\)",
-                "\\(2\\)"
-              ],
-              [
-                "Grows by \\(r\\)% each period",
-                "\\(A(t)=A_0\\left(1+\\dfrac r{100}\\right)^t\\)",
-                "\\(1+\\dfrac r{100}\\)"
-              ],
-              [
-                "Decreases by \\(r\\)% each period",
-                "\\(A(t)=A_0\\left(1-\\dfrac r{100}\\right)^t\\)",
-                "\\(1-\\dfrac r{100}\\)"
-              ]
-            ]
-          }
-        },
-        {
-          "type": "example",
-          "title": "Example: doubling",
-          "content": "A town has population \\(8{,}000\\) and doubles every 5 years. After 15 years, there are \\(15\\div5=3\\) doubling periods, so the model is \\(8000\\cdot2^3\\)."
-        },
-        {
-          "type": "note",
-          "content": "Count periods, not just the number of years. A 3% annual increase uses multiplier \\(1.03\\), not \\(0.03\\)."
-        }
-      ]
-    },
-    {
-      "judul": "Solving radical equations",
-      "icon": "fa-equals",
-      "tipe": "basic",
-      "isi": [
-        "Isolate the radical first. Then raise both sides to the appropriate power and check every candidate in the original equation.",
-        {
-          "type": "example",
-          "title": "Example: a linear radical equation",
-          "content": "Solve \\(7\\sqrt{x}-24=11\\). Add 24: \\(7\\sqrt{x}=35\\). Divide by 7: \\(\\sqrt{x}=5\\). Square both sides: \\(x=25\\)."
-        },
-        {
-          "type": "example",
-          "title": "Example: check for an extraneous solution",
-          "content": "Solve \\(\\sqrt{2x+3}=x-1\\). Since the left side is nonnegative, require \\(x\\ge1\\). Squaring gives \\(2x+3=(x-1)^2\\), or \\(x^2-4x-2=0\\). The candidates are \\(2\\pm\\sqrt6\\); only \\(2+\\sqrt6\\) satisfies \\(x\\ge1\\) and the original equation."
+          "type": "paragraph",
+          "content": "An equation is a statement that two expressions have the same value. It stays true when the same operation is performed on both sides. The goal is to isolate the variable without changing the solution set."
         },
         {
           "type": "ordered-list",
           "items": [
-            "State any domain restriction, especially when an even root is involved.",
-            "Isolate the radical.",
-            "Raise both sides to a power.",
-            "Substitute each candidate into the original equation."
+            "Simplify each side of the equation.",
+            "Collect variable terms on one side.",
+            "Collect constant terms on the other side.",
+            "Divide or multiply to isolate the variable.",
+            "Check the solution in the original equation."
           ]
-        }
-      ]
-    },
-    {
-      "judul": "Complex numbers and powers of i",
-      "icon": "fa-i-cursor",
-      "tipe": "table",
-      "isi": [
-        "The imaginary unit is defined by \\(i=\\sqrt{-1}\\), so \\(i^2=-1\\). A complex number is written as \\(a+bi\\), with real part \\(a\\) and imaginary coefficient \\(b\\).",
-        {
-          "type": "table",
-          "table": {
-            "headers": [
-              "Power",
-              "Value",
-              "Cycle position"
-            ],
-            "leftAlign": [
-              0,
-              1,
-              2
-            ],
-            "rows": [
-              [
-                "\\(i^1\\)",
-                "\\(i\\)",
-                "remainder 1"
-              ],
-              [
-                "\\(i^2\\)",
-                "\\(-1\\)",
-                "remainder 2"
-              ],
-              [
-                "\\(i^3\\)",
-                "\\(-i\\)",
-                "remainder 3"
-              ],
-              [
-                "\\(i^4\\)",
-                "\\(1\\)",
-                "remainder 0"
-              ]
-            ]
-          }
-        },
-        {
-          "type": "example",
-          "title": "Example: simplify a product",
-          "content": "\\((3+i)(2-i)=6-3i+2i-i^2=6-i+1=7-i\\). Expand first, then replace \\(i^2\\) with \\(-1\\)."
-        },
-        {
-          "type": "example",
-          "title": "Example: reduce a large power",
-          "content": "Because powers of \\(i\\) repeat every 4, \\(i^{23}=i^{4\\cdot5+3}=i^3=-i\\)."
         },
         {
           "type": "note",
-          "content": "Add and subtract complex numbers by combining real parts with real parts and imaginary terms with imaginary terms."
+          "content": "Write one algebraic step per line. This makes sign errors easier to find and keeps both sides balanced."
         }
       ]
     },
     {
-      "judul": "SAT checklist for this topic",
-      "icon": "fa-list-check",
+      "judul": "One-step and multi-step equations",
+      "icon": "fa-arrow-right-long",
       "tipe": "basic",
       "isi": [
-        "Use the form that makes the structure easiest to see: exponential, radical, factored, or complex-number form.",
+        {
+          "type": "paragraph",
+          "content": "Undo operations in reverse order. Addition is undone by subtraction, multiplication is undone by division, and so on."
+        },
+        {
+          "type": "example",
+          "title": "Example: one-step equation",
+          "content": "To solve \\(x-1.5=6\\), add 1.5 to both sides: \\(x=7.5\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: multi-step equation",
+          "content": "For \\(3x-2=5-0.5x\\), add \\(0.5x\\) to both sides to get \\(3.5x-2=5\\). Add 2, then divide by 3.5: \\(3.5x=7\\), so \\(x=2\\)."
+        },
+        {
+          "type": "note",
+          "content": "If an equation has the same variable expression on both sides, move one copy of that expression first. Keep the sign attached to the term when it crosses the equals sign."
+        }
+      ]
+    },
+    {
+      "judul": "Distributive property and like terms",
+      "icon": "fa-code",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[a(b+c)=ab+ac\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "Use the distributive property before combining like terms. Like terms have the same variable part and exponent."
+        },
         {
           "type": "grid",
           "items": [
             {
-              "title": "Same base?",
-              "content": "Only combine exponents when multiplication or division involves the same base."
+              "title": "Can combine",
+              "content": "\\(3x+5x=8x\\) because both terms contain \\(x\\)."
             },
             {
-              "title": "Domain?",
-              "content": "Check nonnegative radicands, nonzero denominators, and conditions such as \\(x>0\\)."
+              "title": "Cannot combine",
+              "content": "\\(3x+5\\) cannot become \\(8x\\) because one term has a variable and the other is a constant."
             },
             {
-              "title": "Extraneous?",
-              "content": "After squaring a radical equation, verify in the original equation."
-            },
-            {
-              "title": "Complex form?",
-              "content": "Replace \\(i^2\\) with \\(-1\\) and reduce powers of \\(i\\) modulo 4."
+              "title": "Distribute",
+              "content": "\\(2(x+5)=2x+10\\). Multiply 2 by every term inside the parentheses."
             }
           ]
+        }
+      ]
+    },
+    {
+      "judul": "Equations with fractions and decimals",
+      "icon": "fa-divide",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "For an equation with several fractions, multiply every term by the least common denominator. This removes the fractions while preserving equality."
+        },
+        {
+          "type": "example",
+          "title": "Example: clear fractions",
+          "content": "To solve \\(\\dfrac{2}{3}x-\\dfrac{1}{6}=\\dfrac{5}{2}\\), multiply every term by 6: \\(4x-1=15\\). Then \\(4x=16\\), so \\(x=4\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: a fractional expression",
+          "content": "For \\(\\dfrac{x-3}{2}=-3\\), multiply both sides by 2: \\(x-3=-6\\). Therefore, \\(x=-3\\)."
+        },
+        {
+          "type": "note",
+          "content": "When decimals are terminating, multiplying by 10, 100, or 1,000 can make the equation easier to read."
+        }
+      ]
+    },
+    {
+      "judul": "Reciprocal equations and restrictions",
+      "icon": "fa-ban",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "A denominator can never equal zero. Write these restrictions before multiplying or cross-multiplying."
+        },
+        {
+          "type": "example",
+          "title": "Example: one denominator",
+          "content": "For \\(\\dfrac{6}{x}=4\\), the restriction is \\(x\\ne0\\). Multiplying by \\(x\\) gives \\(6=4x\\), so \\(x=\\dfrac32\\), which satisfies the restriction."
+        },
+        {
+          "type": "example",
+          "title": "Example: cross-multiplication",
+          "content": "For \\(\\dfrac{2}{x}=\\dfrac{8}{x+3}\\), the restrictions are \\(x\\ne0\\) and \\(x\\ne-3\\). Cross-multiply: \\(2(x+3)=8x\\), so \\(x=1\\)."
+        },
+        {
+          "type": "note",
+          "content": "Cross-multiplication is valid only when the original denominators are nonzero. Always test the final value in the original equation."
+        }
+      ]
+    },
+    {
+      "judul": "Radical and squared equations",
+      "icon": "fa-square-root-variable",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "To solve a radical equation, isolate the radical before squaring. Squaring can create an extraneous solution, so check every candidate in the original equation."
+        },
+        {
+          "type": "example",
+          "title": "Example: radical equation",
+          "content": "For \\(\\sqrt{4x}=12\\), square both sides: \\(4x=144\\), so \\(x=36\\). Checking gives \\(\\sqrt{4(36)}=12\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: domain check",
+          "content": "For \\(\\sqrt{2x+6}+4=x+3\\), isolate the radical to get \\(\\sqrt{2x+6}=x-1\\). Since a square root is nonnegative, \\(x\\ge1\\) is required before squaring."
+        },
+        {
+          "type": "paragraph",
+          "content": "When \\(x^2=9\\), the solutions are \\(x=3\\) and \\(x=-3\\). A squared equation usually has two solutions unless a restriction removes one."
+        }
+      ]
+    },
+    {
+      "judul": "Linear functions",
+      "icon": "fa-chart-line",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[y=mx+b\\]"
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Slope \\(m\\)",
+              "content": "The rate of change: how much \\(y\\) changes for each 1-unit increase in \\(x\\)."
+            },
+            {
+              "title": "Intercept \\(b\\)",
+              "content": "The initial value, or the value of \\(y\\) when \\(x=0\\)."
+            },
+            {
+              "title": "Function value",
+              "content": "The output found by substituting an input into the model."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: commission model",
+          "content": "Julia earns a base pay of USD \\(2\\) per hour and USD \\(3\\) for each item sold. If \\(x\\) is the number of items and \\(y\\) is the total revenue, then \\(y=2+3x\\). The intercept is 2 and the rate is 3."
+        },
+        {
+          "type": "note",
+          "content": "The units of the slope matter. In a cost model, slope may be dollars per mile; in a water-level model, it may be gallons per hour."
+        }
+      ]
+    },
+    {
+      "judul": "Build and interpret linear models",
+      "icon": "fa-diagram-project",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "A linear model can describe a fixed starting amount plus a constant rate of change. A negative slope describes a quantity that decreases over time."
+        },
+        {
+          "type": "example",
+          "title": "Example: fixed fee and rate",
+          "content": "A car rental company charges USD \\(50\\) plus USD \\(0.25\\) per mile. For \\(m\\) miles, \\(C(m)=50+0.25m\\). At 80 miles, the cost is \\(50+0.25(80)=70\\) dollars."
+        },
+        {
+          "type": "example",
+          "title": "Example: decreasing value",
+          "content": "A car worth USD \\(25{,}000\\) loses USD \\(2{,}000\\) each year. Its value after \\(t\\) years is \\(V(t)=25{,}000-2{,}000t\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: water level",
+          "content": "For \\(L(t)=500-2t\\), the tank starts with 500 gallons and loses 2 gallons per hour. It is empty when \\(0=500-2t\\), so \\(t=250\\) hours."
+        }
+      ]
+    },
+    {
+      "judul": "Solving from tables, graphs, and two points",
+      "icon": "fa-table",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "A constant first difference in a table indicates a linear relationship. The slope between two points is"
+        },
+        {
+          "type": "formula",
+          "content": "\\[m=\\frac{y_2-y_1}{x_2-x_1}\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "After finding the slope, substitute a known point into \\(y=mx+b\\) to find the intercept."
+        },
+        {
+          "type": "example",
+          "title": "Example: two points",
+          "content": "A line passes through \\((2,11)\\) and \\((8,35)\\). Its slope is \\(\\dfrac{35-11}{8-2}=4\\). Using \\((2,11)\\), \\(11=4(2)+b\\), so \\(b=3\\). The equation is \\(y=4x+3\\)."
+        },
+        {
+          "type": "note",
+          "content": "Check whether the slope has a meaningful unit and whether the intercept makes sense in the situation. Some models are only valid for a restricted domain, such as nonnegative time."
         }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Simplify \\(2^3\\).",
-      "answer": "\\(8\\)",
+      "question": "Find the value of \\(x\\): \\(5+x=-3\\).",
+      "answer": "\\(-8\\)",
       "discussion": [
-        "\\(2^3=2\\cdot2\\cdot2=8\\)."
-      ]
+        "Subtract 5 from both sides: \\(x=-3-5\\).",
+        "Therefore, \\(x=-8\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Simplify \\(\\sqrt{16}\\).",
-      "answer": "\\(4\\)",
+      "question": "Find the value of \\(x\\): \\(x-1.5=6\\).",
+      "answer": "\\(7.5\\)",
       "discussion": [
-        "The principal square root is nonnegative, so \\(\\sqrt{16}=4\\)."
-      ]
+        "Add 1.5 to both sides: \\(x=6+1.5\\).",
+        "Therefore, \\(x=7.5\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
+      "type": "open",
+      "question": "Find the value of \\(x\\): \\(4x=8\\).",
+      "answer": "\\(2\\)",
+      "discussion": [
+        "Divide both sides by 4: \\(x=8\\div4\\).",
+        "Therefore, \\(x=2\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Find the value of \\(x\\): \\(\\dfrac{x}{3}=5\\).",
+      "answer": "\\(15\\)",
+      "discussion": [
+        "Multiply both sides by 3: \\(x=5(3)\\).",
+        "Therefore, \\(x=15\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Find the value of \\(x\\): \\(\\dfrac{6}{x}=4\\).",
+      "answer": "\\(\\dfrac32\\)",
+      "discussion": [
+        "The restriction is \\(x\\ne0\\).",
+        "Multiply both sides by \\(x\\): \\(6=4x\\).",
+        "Divide by 4: \\(x=\\dfrac64=\\dfrac32\\), which satisfies the restriction."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Find all real values of \\(x\\): \\(x^2=9\\).",
+      "answer": "\\(x=\\pm3\\)",
+      "discussion": [
+        "Taking the square root of both sides gives two possibilities: \\(x=3\\) or \\(x=-3\\).",
+        "Both values satisfy \\(x^2=9\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Find the value of \\(x\\): \\(\\sqrt{x}=7\\).",
+      "answer": "\\(49\\)",
+      "discussion": [
+        "Square both sides: \\(x=7^2\\).",
+        "Therefore, \\(x=49\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Solve: \\(3x-2=5-0.5x\\).",
+      "answer": "\\(2\\)",
+      "discussion": [
+        "Add \\(0.5x\\) to both sides: \\(3.5x-2=5\\).",
+        "Add 2: \\(3.5x=7\\).",
+        "Divide by 3.5: \\(x=2\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Solve: \\(\\dfrac{x-3}{2}=-3\\).",
+      "answer": "\\(-3\\)",
+      "discussion": [
+        "Multiply both sides by 2: \\(x-3=-6\\).",
+        "Add 3 to both sides: \\(x=-3\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Solve: \\(\\dfrac{2}{x}=\\dfrac{8}{x+3}\\).",
+      "answer": "\\(1\\)",
+      "discussion": [
+        "The restrictions are \\(x\\ne0\\) and \\(x\\ne-3\\).",
+        "Cross-multiply: \\(2(x+3)=8x\\).",
+        "Then \\(2x+6=8x\\), so \\(6=6x\\), giving \\(x=1\\).",
+        "The solution does not violate either restriction."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Solve: \\(\\sqrt{4x}=12\\).",
+      "answer": "\\(36\\)",
+      "discussion": [
+        "Square both sides: \\(4x=144\\).",
+        "Divide by 4: \\(x=36\\).",
+        "Check: \\(\\sqrt{4(36)}=\\sqrt{144}=12\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
       "type": "multiple-choice",
-      "question": "The function \\(h\\) is defined by \\(h(x)=2^x\\). What is \\(h(5)-h(3)\\)?",
+      "question": "If \\(\\dfrac{x-1}{3}=k\\) and \\(k=3\\), what is the value of \\(x\\)?",
       "options": [
         "\\(2\\)",
         "\\(4\\)",
-        "\\(24\\)",
-        "\\(28\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "\\(h(5)=2^5=32\\) and \\(h(3)=2^3=8\\).",
-        "Therefore, \\(h(5)-h(3)=32-8=24\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "If \\(a=5\\sqrt2\\) and \\(2a=\\sqrt{2x}\\), what is the value of \\(x\\)?",
-      "answer": "\\(100\\)",
-      "discussion": [
-        "Substitute \\(a=5\\sqrt2\\): \\(2a=10\\sqrt2\\).",
-        "Square both sides: \\(2x=(10\\sqrt2)^2=200\\), so \\(x=100\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(\\sqrt{x}+\\sqrt9=\\sqrt{64}\\), what is the value of \\(x\\)?",
-      "options": [
-        "\\(\\sqrt5\\)",
-        "\\(5\\)",
-        "\\(25\\)",
-        "\\(55\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "\\(\\sqrt9=3\\) and \\(\\sqrt{64}=8\\), so \\(\\sqrt{x}+3=8\\).",
-        "Thus \\(\\sqrt{x}=5\\), and squaring gives \\(x=25\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\(x^0\\).",
-      "answer": "\\(1\\)",
-      "discussion": [
-        "For \\(x\\ne0\\), the zero-exponent rule gives \\(x^0=1\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\(x^3x^8\\).",
-      "answer": "\\(x^{11}\\)",
-      "discussion": [
-        "The bases match, so add the exponents: \\(x^3x^8=x^{3+8}=x^{11}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\(\\dfrac{x^4}{x^9}\\).",
-      "answer": "\\(\\dfrac1{x^5}\\)",
-      "discussion": [
-        "Subtract exponents: \\(\\dfrac{x^4}{x^9}=x^{4-9}=x^{-5}=\\dfrac1{x^5}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\((x^4)^3\\).",
-      "answer": "\\(x^{12}\\)",
-      "discussion": [
-        "Multiply the exponents: \\((x^4)^3=x^{4\\cdot3}=x^{12}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\(\\sqrt[3]{x^{5/6}}\\).",
-      "answer": "\\(x^{5/18}\\)",
-      "discussion": [
-        "Rewrite the cube root as exponent \\(1/3\\): \\(\\sqrt[3]{x^{5/6}}=(x^{5/6})^{1/3}=x^{5/18}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(7\\sqrt{x}-24=11\\), what is the value of \\(x\\)?",
-      "options": [
-        "\\(\\sqrt5\\)",
-        "\\(\\sqrt7\\)",
-        "\\(5\\)",
-        "\\(25\\)"
+        "\\(9\\)",
+        "\\(10\\)"
       ],
       "answer": "D",
       "discussion": [
-        "Add 24 and divide by 7: \\(\\sqrt{x}=5\\).",
-        "Squaring both sides gives \\(x=25\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Which of the following is equal to \\(a^{2/3}\\), for all values of \\(a\\)?",
-      "options": [
-        "\\(\\sqrt{a^{1/3}}\\)",
-        "\\(\\sqrt{a^3}\\)",
-        "\\(\\sqrt[3]{a^{1/2}}\\)",
-        "\\(\\sqrt[3]{a^2}\\)"
+        "Substitute \\(k=3\\): \\(\\dfrac{x-1}{3}=3\\).",
+        "Multiply by 3: \\(x-1=9\\).",
+        "Add 1: \\(x=10\\), choice D."
       ],
-      "answer": "D",
-      "discussion": [
-        "The denominator 3 indicates a cube root and the numerator 2 indicates a square: \\(a^{2/3}=\\sqrt[3]{a^2}\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "If \\(x>0\\), which of the following is equivalent to \\(\\sqrt{x^3}\\)?<br>I. \\(x\\cdot x^{1/2}\\)<br>II. \\((x^{1/2})^3\\)<br>III. \\((x^2)(x^{-1/2})\\)",
+      "question": "If \\(\\dfrac{a}{b}=2\\), what is the value of \\(\\dfrac{4b}{a}\\)?",
       "options": [
-        "None",
-        "I and II only",
-        "II and III only",
-        "I, II, and III"
-      ],
-      "answer": "D",
-      "discussion": [
-        "\\(\\sqrt{x^3}=x^{3/2}\\) because \\(x>0\\).",
-        "Each statement equals \\(x^{3/2}\\): \\(x\\cdot x^{1/2}=x^{3/2}\\), \\((x^{1/2})^3=x^{3/2}\\), and \\(x^2x^{-1/2}=x^{3/2}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(a^{-1/2}=x\\), where \\(a>0\\), what is \\(a\\) in terms of \\(x\\)?",
-      "options": [
-        "\\(\\sqrt{x}\\)",
-        "\\(-\\sqrt{x}\\)",
-        "\\(\\dfrac1{x^2}\\)",
-        "\\(-\\dfrac1{x^2}\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "\\(a^{-1/2}=\\dfrac1{\\sqrt a}=x\\), so \\(\\sqrt a=\\dfrac1x\\).",
-        "Squaring gives \\(a=\\dfrac1{x^2}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Given \\(\\sqrt{x^2}=x\\), which value of \\(x\\) is NOT a solution?",
-      "options": [
-        "\\(-4\\)",
         "\\(0\\)",
         "\\(1\\)",
-        "\\(3\\)"
+        "\\(2\\)",
+        "\\(4\\)"
       ],
-      "answer": "A",
+      "answer": "C",
       "discussion": [
-        "Since \\(\\sqrt{x^2}=|x|\\), the equation becomes \\(|x|=x\\), which holds only when \\(x\\ge0\\).",
-        "Therefore, \\(-4\\) is not a solution."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "If \\(a^{b/4}=16\\) for positive integers \\(a\\) and \\(b\\), what is one possible value of \\(b\\)?",
-      "answer": "One possible value is \\(b=4\\).",
-      "discussion": [
-        "Choose \\(a=16\\) and \\(b=4\\). Then \\(a^{b/4}=16^{4/4}=16\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(x>0\\), which of the following is equivalent to \\(\\sqrt{9x^2}\\)?",
-      "options": [
-        "\\(3x\\)",
-        "\\(3x^2\\)",
-        "\\(18x\\)",
-        "\\(18x^4\\)"
+        "From \\(\\dfrac{a}{b}=2\\), we have \\(a=2b\\).",
+        "Therefore, \\(\\dfrac{4b}{a}=\\dfrac{4b}{2b}=2\\).",
+        "The correct answer is C."
       ],
-      "answer": "A",
-      "discussion": [
-        "\\(\\sqrt{9x^2}=3|x|\\). Since \\(x>0\\), \\(|x|=x\\), so the expression is \\(3x\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "If \\(3x-y=12\\), what is the value of \\(\\dfrac{8^x}{2^y}\\)?",
+      "question": "If \\(16+4x\\) is 10 more than 14, what is the value of \\(8x\\)?",
       "options": [
-        "\\(2^{12}\\)",
-        "\\(4^4\\)",
-        "\\(8^2\\)",
-        "The value cannot be determined from the information given."
+        "\\(2\\)",
+        "\\(6\\)",
+        "\\(16\\)",
+        "\\(80\\)"
       ],
-      "answer": "A",
+      "answer": "C",
       "discussion": [
-        "Rewrite \\(8^x=(2^3)^x=2^{3x}\\).",
-        "Therefore \\(\\dfrac{8^x}{2^y}=2^{3x-y}=2^{12}\\)."
-      ]
+        "Ten more than 14 is 24, so \\(16+4x=24\\).",
+        "Subtract 16: \\(4x=8\\), so \\(x=2\\).",
+        "Therefore, \\(8x=16\\), choice C."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "The expression \\(\\dfrac{x^{-2}y^{1/2}}{x^{1/3}y^{-1}}\\), where \\(x>1\\) and \\(y>1\\), is equivalent to which of the following?",
+      "question": "If \\(3r=18\\), what is the value of \\(6r+3\\)?",
       "options": [
-        "\\(\\dfrac{\\sqrt y}{\\sqrt[3]{x^2}}\\)",
-        "\\(\\dfrac{y\\sqrt y}{\\sqrt[3]{x^2}}\\)",
-        "\\(\\dfrac{y\\sqrt y}{x\\sqrt x}\\)",
-        "\\(\\dfrac{y\\sqrt y}{x^2\\sqrt[3]{x}}\\)"
+        "\\(6\\)",
+        "\\(27\\)",
+        "\\(36\\)",
+        "\\(39\\)"
       ],
       "answer": "D",
       "discussion": [
-        "Subtract exponents: \\(x^{-2-1/3}y^{1/2-(-1)}=x^{-7/3}y^{3/2}\\).",
-        "Rewrite with positive exponents: \\(x^{-7/3}=\\dfrac1{x^2\\sqrt[3]{x}}\\) and \\(y^{3/2}=y\\sqrt y\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "The population of a town doubles every 5 years. If the current population is 8,000, which expression represents the population after 15 years?",
-      "options": [
-        "\\(8000\\cdot2^3\\)",
-        "\\(8000\\cdot3^5\\)",
-        "\\(8000\\cdot2^{15}\\)",
-        "\\(8000\\cdot5^3\\)"
+        "Divide \\(3r=18\\) by 3 to get \\(r=6\\).",
+        "Then \\(6r+3=6(6)+3=39\\).",
+        "The correct answer is D."
       ],
-      "answer": "A",
-      "discussion": [
-        "There are \\(15\\div5=3\\) doubling periods.",
-        "The population is therefore \\(8000\\cdot2^3\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "An investment grows by 3% per year. If the initial investment is USD 1,000, which expression represents its value after 10 years?",
-      "options": [
-        "\\(1000\\cdot1.03^{10}\\)",
-        "\\(1000\\cdot10^{1.03}\\)",
-        "\\(1000\\cdot1.03^5\\)",
-        "\\(1000\\cdot1.03\\cdot10\\)"
+      "type": "open",
+      "question": "If \\(\\dfrac{7}{9}x-\\dfrac{4}{9}x=\\dfrac14+\\dfrac5{12}\\), what is the value of \\(x\\)?",
+      "answer": "\\(2\\)",
+      "discussion": [
+        "Combine the left side: \\(\\dfrac{3}{9}x=\\dfrac{x}{3}\\).",
+        "Combine the right side using denominator 12: \\(\\dfrac14+\\dfrac5{12}=\\dfrac3{12}+\\dfrac5{12}=\\dfrac23\\).",
+        "Thus, \\(\\dfrac{x}{3}=\\dfrac23\\), so \\(x=2\\)."
       ],
-      "answer": "A",
-      "discussion": [
-        "A 3% annual increase multiplies the value by \\(1.03\\) each year.",
-        "After 10 years, the model is \\(1000\\cdot1.03^{10}\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "A certain strain of bacteria doubles in population every hour. If the population starts at 500 bacteria, which expression represents the population after 6 hours?",
+      "question": "If \\(\\dfrac35w=\\dfrac43\\), what is the value of \\(w\\)?",
       "options": [
-        "\\(500\\cdot6^2\\)",
-        "\\(500\\cdot2^6\\)",
-        "\\(500\\cdot12\\)",
-        "\\(500\\cdot6\\cdot2\\)"
+        "\\(\\dfrac9{20}\\)",
+        "\\(\\dfrac45\\)",
+        "\\(\\dfrac54\\)",
+        "\\(\\dfrac{20}{9}\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "Multiply both sides by \\(\\dfrac53\\), the reciprocal of \\(\\dfrac35\\).",
+        "Then \\(w=\\dfrac43\\cdot\\dfrac53=\\dfrac{20}{9}\\).",
+        "The correct answer is D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A car rental company charges a flat fee of USD \\(50\\) plus USD \\(0.25\\) per mile driven. Which function gives the cost \\(C\\) for \\(m\\) miles?",
+      "options": [
+        "\\(C(m)=50m+0.25\\)",
+        "\\(C(m)=0.25m+50\\)",
+        "\\(C(m)=50.25m\\)",
+        "\\(C(m)=50-0.25m\\)"
       ],
       "answer": "B",
       "discussion": [
-        "There are 6 doubling periods, so multiply the initial population by \\(2^6\\).",
-        "The expression is \\(500\\cdot2^6\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "What are \\(\\sqrt1\\), \\(\\sqrt4\\), and \\(\\sqrt9\\)? What about \\(\\sqrt{-1}\\)?",
-      "answer": "\\(1,\\ 2,\\ 3,\\) and \\(i\\)",
-      "discussion": [
-        "\\(\\sqrt1=1\\), \\(\\sqrt4=2\\), and \\(\\sqrt9=3\\).",
-        "The imaginary unit is defined by \\(i=\\sqrt{-1}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Let \\(i\\) be the imaginary unit. Simplify \\(i^2\\).",
-      "answer": "\\(-1\\)",
-      "discussion": [
-        "By definition, \\(i^2=-1\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Let \\(i\\) be the imaginary unit. Simplify \\((2+3i)-(5+2i)\\).",
-      "answer": "\\(-3+i\\)",
-      "discussion": [
-        "Combine like terms: \\((2-5)+(3i-2i)=-3+i\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Let \\(i\\) be the imaginary unit. Simplify \\((3+i)(2-i)\\).",
-      "answer": "\\(7-i\\)",
-      "discussion": [
-        "Expand: \\(6-3i+2i-i^2\\).",
-        "Since \\(i^2=-1\\), the result is \\(6-i+1=7-i\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "For \\(i=\\sqrt{-1}\\), what is the sum \\((7+3i)+(-8+9i)\\)?",
-      "options": [
-        "\\(-1+12i\\)",
-        "\\(-1-6i\\)",
-        "\\(15+12i\\)",
-        "\\(15-6i\\)"
+        "The flat fee is the constant 50.",
+        "The per-mile rate contributes \\(0.25m\\).",
+        "Therefore, \\(C(m)=0.25m+50\\), choice B."
       ],
-      "answer": "A",
-      "discussion": [
-        "Combine real parts: \\(7-8=-1\\).",
-        "Combine imaginary terms: \\(3i+9i=12i\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
+      "type": "open",
+      "question": "Maria currently has USD \\(100\\) and saves USD \\(20\\) every week. Write a linear function for her total savings \\(S\\) after \\(w\\) weeks.",
+      "answer": "\\(S(w)=100+20w\\)",
+      "discussion": [
+        "The initial savings are 100, so the intercept is 100.",
+        "The savings increase by 20 dollars per week, so the slope is 20.",
+        "The model is \\(S(w)=100+20w\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
       "type": "multiple-choice",
-      "question": "What is the sum of the complex numbers \\(2+3i\\) and \\(4+8i\\)?",
+      "question": "The function \\(C(x)=15+0.10x\\) gives the monthly cost of a phone plan, where \\(x\\) is the number of extra minutes. What is the total cost for 200 extra minutes?",
       "options": [
-        "\\(17\\)",
-        "\\(17i\\)",
-        "\\(6+11i\\)",
-        "\\(8+24i\\)"
+        "\\(\\$15.10\\)",
+        "\\(\\$20\\)",
+        "\\(\\$35\\)",
+        "\\(\\$215\\)"
       ],
       "answer": "C",
       "discussion": [
-        "Combine real parts and imaginary terms: \\((2+4)+(3i+8i)=6+11i\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Which complex number is equal to \\((5+12i)-(9i^2-6i)\\)?",
-      "options": [
-        "\\(-14-18i\\)",
-        "\\(-4-6i\\)",
-        "\\(4+6i\\)",
-        "\\(14+18i\\)"
+        "Substitute \\(x=200\\): \\(C(200)=15+0.10(200)\\).",
+        "The extra-minute charge is 20 dollars.",
+        "Therefore, the total cost is USD 35, choice C."
       ],
-      "answer": "D",
-      "discussion": [
-        "Since \\(i^2=-1\\), \\(9i^2-6i=-9-6i\\).",
-        "Subtracting gives \\(5+12i-(-9-6i)=14+18i\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "Given \\(h(x)=2^x\\), what is \\(h(5)-h(3)\\)?",
+      "question": "The water level in a tank is modeled by \\(L(t)=500-2t\\), where \\(t\\) is hours. After how many hours will the tank be empty?",
       "options": [
         "\\(2\\)",
-        "\\(4\\)",
-        "\\(24\\)",
-        "\\(28\\)"
+        "\\(25\\)",
+        "\\(250\\)",
+        "\\(500\\)"
       ],
       "answer": "C",
       "discussion": [
-        "\\(h(5)=2^5=32\\) and \\(h(3)=2^3=8\\).",
-        "Therefore, \\(h(5)-h(3)=32-8=24\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Which expression is equal to \\(a^{2/3}\\) for real \\(a\\ge0\\)?",
-      "options": [
-        "\\(\\sqrt{a^{1/3}}\\)",
-        "\\(\\sqrt{a^3}\\)",
-        "\\(\\sqrt[3]{a^{1/2}}\\)",
-        "\\(\\sqrt[3]{a^2}\\)"
+        "The tank is empty when \\(L(t)=0\\).",
+        "Solve \\(0=500-2t\\): \\(2t=500\\), so \\(t=250\\).",
+        "The correct answer is C."
       ],
-      "answer": "D",
-      "discussion": [
-        "The denominator 3 indicates a cube root and the numerator 2 indicates a square: \\(a^{2/3}=\\sqrt[3]{a^2}\\).",
-        "The other choices represent different exponents."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\(\\dfrac{x^{-2}y^{1/2}}{x^{1/3}y^{-1}}\\) for \\(x>1\\) and \\(y>1\\).",
-      "answer": "\\(\\dfrac{y\\sqrt y}{x^2\\sqrt[3]{x}}\\)",
-      "discussion": [
-        "Subtract exponents for each base: \\(x^{-2-1/3}y^{1/2-(-1)}=x^{-7/3}y^{3/2}\\).",
-        "Rewrite positive powers: \\(y^{3/2}=y\\sqrt y\\) and \\(x^{-7/3}=\\dfrac1{x^2\\sqrt[3]{x}}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(x>0\\), which is equivalent to \\(\\sqrt{9x^2}\\)?",
-      "options": [
-        "\\(3x\\)",
-        "\\(3x^2\\)",
-        "\\(18x\\)",
-        "\\(18x^4\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "\\(\\sqrt{9x^2}=\\sqrt9\\sqrt{x^2}=3|x|\\).",
-        "Because \\(x>0\\), \\(|x|=x\\), so the expression is \\(3x\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A population doubles every 5 years. If the current population is 8,000, which expression represents the population after 15 years?",
-      "options": [
-        "\\(8000\\cdot2^3\\)",
-        "\\(8000\\cdot3^5\\)",
-        "\\(8000\\cdot2^{15}\\)",
-        "\\(8000\\cdot5^3\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "There are \\(15\\div5=3\\) doubling periods.",
-        "The population is therefore \\(8000\\cdot2^3\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "An investment grows by 3% per year. Which expression represents USD 1,000 after 10 years?",
-      "options": [
-        "\\(1000(1.03)^{10}\\)",
-        "\\(1000(10)^{1.03}\\)",
-        "\\(1000(1.03)^5\\)",
-        "\\(1000(1.03)(10)\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "A 3% increase multiplies the amount by \\(1+0.03=1.03\\) each year.",
-        "Ten years gives \\(1000(1.03)^{10}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Solve \\(7\\sqrt{x}-24=11\\).",
-      "answer": "\\(x=25\\)",
-      "discussion": [
-        "Add 24 and divide by 7: \\(\\sqrt{x}=5\\).",
-        "Square both sides: \\(x=25\\).",
-        "The check \\(7\\sqrt{25}-24=35-24=11\\) confirms the solution."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Given \\(\\sqrt{x^2}=x\\), which value is not a solution?",
-      "options": [
-        "\\(-4\\)",
-        "\\(0\\)",
-        "\\(1\\)",
-        "\\(3\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "Since \\(\\sqrt{x^2}=|x|\\), the equation becomes \\(|x|=x\\).",
-        "This is true for \\(x\\ge0\\), but false for \\(x=-4\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(3x-y=12\\), what is \\(\\dfrac{8^x}{2^y}\\)?",
-      "options": [
-        "\\(2^{12}\\)",
-        "\\(4^4\\)",
-        "\\(8^2\\)",
-        "The value cannot be determined."
-      ],
-      "answer": "A",
-      "discussion": [
-        "Rewrite \\(8^x\\) as \\((2^3)^x=2^{3x}\\).",
-        "Then \\(\\dfrac{8^x}{2^y}=2^{3x-y}=2^{12}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "What is \\((7+3i)+(-8+9i)\\)?",
-      "options": [
-        "\\(-1+12i\\)",
-        "\\(-1-6i\\)",
-        "\\(15+12i\\)",
-        "\\(15-6i\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "Combine real parts: \\(7+(-8)=-1\\).",
-        "Combine imaginary terms: \\(3i+9i=12i\\).",
-        "The result is \\(-1+12i\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\((3+i)(2-i)\\).",
-      "answer": "\\(7-i\\)",
-      "discussion": [
-        "Expand: \\(6-3i+2i-i^2\\).",
-        "Use \\(i^2=-1\\): \\(6-i+1=7-i\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Which complex number equals \\((5+12i)-(9i^2-6i)\\)?",
-      "options": [
-        "\\(-14-18i\\)",
-        "\\(-4-6i\\)",
-        "\\(4+6i\\)",
-        "\\(14+18i\\)"
-      ],
-      "answer": "D",
-      "discussion": [
-        "Because \\(i^2=-1\\), \\(9i^2-6i=-9-6i\\).",
-        "Subtracting gives \\(5+12i-(-9-6i)=14+18i\\)."
-      ]
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Simplify \\(\\sqrt{72}+\\sqrt{18}\\).",
-      "answer": "\\(9\\sqrt2\\)",
+      "question": "Solve \\(x+7=19\\).",
+      "answer": "\\(12\\)",
       "discussion": [
-        "\\(\\sqrt{72}=6\\sqrt2\\) and \\(\\sqrt{18}=3\\sqrt2\\).",
-        "Combine like radicals: \\(6\\sqrt2+3\\sqrt2=9\\sqrt2\\)."
-      ]
+        "Subtract 7 from both sides: \\(x=19-7=12\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "If \\(a^{-1/2}=x\\) and \\(a>0\\), express \\(a\\) in terms of \\(x\\).",
-      "answer": "\\(a=\\dfrac1{x^2}\\)",
+      "question": "Solve \\(5x=45\\).",
+      "answer": "\\(9\\)",
       "discussion": [
-        "Rewrite \\(a^{-1/2}=\\dfrac1{\\sqrt a}=x\\).",
-        "Invert and square: \\(\\sqrt a=\\dfrac1x\\), so \\(a=\\dfrac1{x^2}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "What is \\(i^{37}\\)?",
-      "options": [
-        "\\(1\\)",
-        "\\(-1\\)",
-        "\\(i\\)",
-        "\\(-i\\)"
+        "Divide both sides by 5: \\(x=45\\div5=9\\)."
       ],
-      "answer": "C",
-      "discussion": [
-        "Divide 37 by 4: the remainder is 1.",
-        "Therefore, \\(i^{37}=i^1=i\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Solve \\(\\sqrt{2x+3}=x-1\\) and check for extraneous solutions.",
-      "answer": "\\(x=2+\\sqrt6\\)",
-      "discussion": [
-        "The right side must be nonnegative, so \\(x\\ge1\\).",
-        "Squaring gives \\(2x+3=(x-1)^2\\), hence \\(x^2-4x-2=0\\).",
-        "The candidates are \\(2\\pm\\sqrt6\\). Only \\(2+\\sqrt6\\) is at least 1 and satisfies the original equation."
-      ]
-    },
-    {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "Simplify \\(3^2\\cdot3^4\\).",
+      "question": "What is the slope of \\(y=4x-7\\)?",
       "options": [
-        "\\(3^6\\)",
-        "\\(3^8\\)",
-        "\\(9^6\\)",
-        "\\(6^3\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "The bases are the same, so add the exponents: \\(3^2\\cdot3^4=3^{2+4}=3^6\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Simplify \\(\\dfrac{x^7}{x^3}\\).",
-      "options": [
-        "\\(x^2\\)",
-        "\\(x^3\\)",
-        "\\(x^4\\)",
-        "\\(x^{10}\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "Subtract the exponents: \\(\\dfrac{x^7}{x^3}=x^{7-3}=x^4\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Simplify \\(\\sqrt{81}\\).",
-      "options": [
-        "\\(8\\)",
-        "\\(9\\)",
-        "\\(18\\)",
-        "\\(81\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Since \\(9^2=81\\), the principal square root is \\(\\sqrt{81}=9\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(i=\\sqrt{-1}\\), what is \\(i^2\\)?",
-      "options": [
-        "\\(-1\\)",
-        "\\(0\\)",
-        "\\(1\\)",
-        "\\(i\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "By definition, \\(i^2=-1\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Simplify \\((4+3i)+(2-5i)\\).",
-      "options": [
-        "\\(6-2i\\)",
-        "\\(6+8i\\)",
-        "\\(2-2i\\)",
-        "\\(8-15i\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "Combine real parts and imaginary terms: \\((4+2)+(3i-5i)=6-2i\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Simplify \\((x^3)^4\\).",
-      "options": [
-        "\\(x^7\\)",
-        "\\(x^{12}\\)",
-        "\\(4x^3\\)",
-        "\\(x^{81}\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Multiply the exponents: \\((x^3)^4=x^{3\\cdot4}=x^{12}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Simplify \\(\\sqrt{48}\\).",
-      "options": [
-        "\\(4\\sqrt3\\)",
-        "\\(6\\sqrt2\\)",
-        "\\(8\\sqrt3\\)",
-        "\\(12\\sqrt2\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "\\(\\sqrt{48}=\\sqrt{16\\cdot3}=4\\sqrt3\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Solve \\(5\\sqrt{x}=20\\).",
-      "options": [
+        "\\(-7\\)",
+        "\\(-4\\)",
         "\\(4\\)",
-        "\\(8\\)",
-        "\\(16\\)",
-        "\\(25\\)"
+        "\\(7\\)"
       ],
       "answer": "C",
       "discussion": [
-        "Divide by 5: \\(\\sqrt{x}=4\\).",
-        "Square both sides: \\(x=16\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Which expression is equivalent to \\(a^{3/4}\\)?",
-      "options": [
-        "\\(\\sqrt[3]{a^4}\\)",
-        "\\(\\sqrt{a^3}\\)",
-        "\\(\\sqrt[4]{a^3}\\)",
-        "\\(\\dfrac34a\\)"
+        "Compare the equation with \\(y=mx+b\\).",
+        "The coefficient of \\(x\\) is 4, so the slope is 4, choice C."
       ],
-      "answer": "C",
-      "discussion": [
-        "The denominator 4 indicates a fourth root and the numerator 3 indicates a third power: \\(a^{3/4}=\\sqrt[4]{a^3}\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
+      "type": "open",
+      "question": "Solve \\(5x-7=2x+11\\).",
+      "answer": "\\(6\\)",
+      "discussion": [
+        "Subtract \\(2x\\): \\(3x-7=11\\).",
+        "Add 7: \\(3x=18\\).",
+        "Divide by 3: \\(x=6\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A taxi charges USD \\(3\\) plus USD \\(2.50\\) per mile. What is the cost of an 8-mile ride?",
+      "answer": "USD \\(23\\)",
+      "discussion": [
+        "The cost model is \\(C=3+2.50m\\).",
+        "For 8 miles, \\(C=3+2.50(8)=3+20=23\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A line has slope \\(-4\\) and y-intercept 9. Write its equation.",
+      "answer": "\\(y=-4x+9\\)",
+      "discussion": [
+        "Use slope-intercept form \\(y=mx+b\\).",
+        "Substitute \\(m=-4\\) and \\(b=9\\): \\(y=-4x+9\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Two plans have costs \\(A(x)=35+2x\\) and \\(B(x)=11+5x\\). For what value of \\(x\\) are the costs equal?",
+      "answer": "\\(x=8\\)",
+      "discussion": [
+        "Set the costs equal: \\(35+2x=11+5x\\).",
+        "Subtract 11 and 2x: \\(24=3x\\).",
+        "Therefore, \\(x=8\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A quantity decreases linearly from 840 to 660 over 12 hours. Write a model \\(Q(t)\\) for the quantity after \\(t\\) hours.",
+      "answer": "\\(Q(t)=840-15t\\)",
+      "discussion": [
+        "The change is \\(660-840=-180\\) over 12 hours.",
+        "The rate is \\(-180\\div12=-15\\) units per hour.",
+        "Starting at 840 gives \\(Q(t)=840-15t\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A line passes through \\((2,11)\\) and \\((8,35)\\). Find its equation.",
+      "answer": "\\(y=4x+3\\)",
+      "discussion": [
+        "Find the slope: \\(m=\\dfrac{35-11}{8-2}=\\dfrac{24}{6}=4\\).",
+        "Use \\((2,11)\\) in \\(y=mx+b\\): \\(11=4(2)+b\\), so \\(b=3\\).",
+        "The equation is \\(y=4x+3\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
       "type": "multiple-choice",
-      "question": "Simplify \\((2-i)(3+4i)\\).",
+      "question": "Salim buys tennis-match tickets. The equation \\(T=15n+12\\) gives the total cost for \\(n\\) tickets. What does 12 represent?",
       "options": [
-        "\\(2+5i\\)",
-        "\\(10+5i\\)",
-        "\\(10+11i\\)",
-        "\\(6+8i\\)"
+        "The price of one ticket",
+        "The service fee",
+        "The total amount paid for one ticket",
+        "The total amount paid for any number of tickets"
       ],
       "answer": "B",
       "discussion": [
-        "Expand: \\(6+8i-3i-4i^2\\).",
-        "Since \\(i^2=-1\\), the result is \\(6+5i+4=10+5i\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(x>0\\) and \\(x^{1/2}=3\\), what is \\(x^{3/2}\\)?",
-      "options": [
-        "\\(9\\)",
-        "\\(18\\)",
-        "\\(27\\)",
-        "\\(81\\)"
+        "In \\(T=15n+12\\), the coefficient 15 is the per-ticket cost.",
+        "The constant 12 is paid even when \\(n=0\\), so it represents the fixed service fee, choice B."
       ],
-      "answer": "C",
-      "discussion": [
-        "Use \\(x^{3/2}=(x^{1/2})^3\\).",
-        "Therefore, \\(x^{3/2}=3^3=27\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "If \\(2^{x+1}=32\\), what is the value of \\(x^2\\)?",
+      "question": "Kathy repairs phones. The number left at the end of each day is modeled by \\(P=108-23d\\). What does 108 represent?",
       "options": [
-        "\\(9\\)",
-        "\\(16\\)",
-        "\\(25\\)",
-        "\\(36\\)"
+        "Kathy completes repairs within 108 days",
+        "Kathy starts with 108 phones to fix",
+        "Kathy repairs 108 phones per hour",
+        "Kathy repairs 108 phones per day"
       ],
       "answer": "B",
       "discussion": [
-        "Since \\(32=2^5\\), \\(x+1=5\\), so \\(x=4\\).",
-        "Thus, \\(x^2=16\\)."
-      ]
+        "At \\(d=0\\), the model gives \\(P=108\\).",
+        "Therefore, 108 is the initial number of phones to fix. In the stated context, that is the starting amount represented by choice B."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "If \\(3x-y=7\\), which expression is equivalent to \\(\\dfrac{27^x}{3^y}\\)?",
+      "question": "A pediatrician uses \\(h=3a+28.6\\) to estimate a boy's height. What is the estimated yearly increase?",
       "options": [
-        "\\(3^7\\)",
-        "\\(3^{10}\\)",
-        "\\(9^7\\)",
-        "\\(27^7\\)"
+        "\\(3\\)",
+        "\\(5.7\\)",
+        "\\(9.5\\)",
+        "\\(14.3\\)"
       ],
       "answer": "A",
       "discussion": [
-        "Rewrite \\(27^x=(3^3)^x=3^{3x}\\).",
-        "Therefore, \\(\\dfrac{27^x}{3^y}=3^{3x-y}=3^7\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(\\sqrt{x+4}=x-2\\), what is the solution?",
-      "options": [
-        "\\(0\\)",
-        "\\(2\\)",
-        "\\(5\\)",
-        "\\(8\\)"
+        "The coefficient of age \\(a\\) is 3.",
+        "Therefore, the model predicts an increase of 3 height units per year, choice A."
       ],
-      "answer": "C",
-      "discussion": [
-        "The right side must be nonnegative, so \\(x\\ge2\\).",
-        "Squaring gives \\(x+4=(x-2)^2\\), so \\(x^2-5x=0\\).",
-        "The candidates are 0 and 5; only \\(x=5\\) satisfies the original equation."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "For positive \\(x\\) and \\(y\\), simplify \\(\\dfrac{x^{5/2}y^{-1}}{x^{1/2}y^{-3}}\\).",
+      "question": "At a restaurant, \\(n\\) cups of tea are made using \\(t\\) tea bags. If \\(t=n+2\\), how many additional tea bags are needed for each additional cup?",
       "options": [
-        "\\(x^2y^2\\)",
-        "\\(x^3y^2\\)",
-        "\\(x^3y^{-2}\\)",
-        "\\(x^2y^{-4}\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "Subtract exponents for each base: \\(x^{5/2-1/2}y^{-1-(-3)}=x^2y^2\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(a=2\\sqrt3\\) and \\(a=\\sqrt{x+1}\\), what is \\(x\\)?",
-      "options": [
-        "\\(5\\)",
-        "\\(11\\)",
-        "\\(12\\)",
-        "\\(13\\)"
+        "None",
+        "One",
+        "Two",
+        "Three"
       ],
       "answer": "B",
       "discussion": [
-        "Square both sides: \\(x+1=(2\\sqrt3)^2=12\\).",
-        "Therefore, \\(x=11\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(z=3+4i\\), what is \\(|z|^2\\)?",
-      "options": [
-        "\\(5\\)",
-        "\\(7\\)",
-        "\\(12\\)",
-        "\\(25\\)"
+        "The coefficient of \\(n\\) is 1.",
+        "This means the number of tea bags increases by 1 for every additional cup, choice B."
       ],
-      "answer": "D",
-      "discussion": [
-        "For \\(z=a+bi\\), \\(|z|^2=a^2+b^2\\).",
-        "Thus, \\(|z|^2=3^2+4^2=25\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "Simplify \\(\\dfrac{1}{2+i}\\).",
+      "question": "A graph of total boat-rental cost includes the points \\((0,5),(1,8),(2,11),(3,14),(4,17),(5,20)\\). Which equation represents the relationship?",
       "options": [
-        "\\(\\dfrac{2+i}{5}\\)",
-        "\\(\\dfrac{2-i}{5}\\)",
-        "\\(\\dfrac{1+i}{3}\\)",
-        "\\(2-i\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Multiply by the conjugate: \\(\\dfrac1{2+i}\\cdot\\dfrac{2-i}{2-i}=\\dfrac{2-i}{4-i^2}=\\dfrac{2-i}{5}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(i^n=i\\), where \\(n\\) is a positive integer less than 20, which could be the value of \\(n\\)?",
-      "options": [
-        "\\(4\\)",
-        "\\(8\\)",
-        "\\(13\\)",
-        "\\(16\\)"
+        "\\(C=5h\\)",
+        "\\(C=\\dfrac34h+5\\)",
+        "\\(C=3h+5\\)",
+        "\\(h=3C\\)"
       ],
       "answer": "C",
       "discussion": [
-        "Powers of \\(i\\) repeat every 4. An exponent congruent to 1 modulo 4 gives \\(i\\).",
-        "Since \\(13\\equiv1\\pmod4\\), \\(i^{13}=i\\)."
-      ]
+        "The cost increases by 3 when the number of hours increases by 1, so the slope is 3.",
+        "The point \\((0,5)\\) gives the y-intercept 5.",
+        "Therefore, \\(C=3h+5\\), choice C."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "A population is modeled by \\(P(t)=P_0(1.08)^t\\). If \\(P(3)=125{,}971.2\\), what is \\(P_0\\)?",
+      "question": "The average number of students per classroom is modeled by \\(y=0.56x+27.2\\). What does 0.56 represent?",
       "options": [
-        "\\(100{,}000\\)",
-        "\\(108{,}000\\)",
-        "\\(116{,}640\\)",
-        "\\(125{,}971.2\\)"
+        "The total number of students in 2000",
+        "The average students per classroom in 2000",
+        "The estimated yearly increase in average students per classroom",
+        "The difference between the 2010 and 2000 averages"
       ],
-      "answer": "A",
+      "answer": "C",
       "discussion": [
-        "Substitute \\(t=3\\): \\(125{,}971.2=P_0(1.08)^3\\).",
-        "Since \\((1.08)^3=1.259712\\), divide to get \\(P_0=100{,}000\\)."
-      ]
+        "The coefficient of \\(x\\) is the slope, or rate of change.",
+        "Thus, 0.56 represents the estimated yearly increase in the average number of students per classroom, choice C."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

@@ -14,51 +14,43 @@
   },
   "eyebrow": "SAT English / Verbal / 08",
   "title": "Rhetorical synthesis",
-  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "subtitle": "Temporary placeholder content. This page will be rewritten using the new lesson list.",
   "materi": [
     {
-      "judul": "Page structure ready",
-      "icon": "fa-hourglass-half",
+      "judul": "Dummy material",
+      "icon": "fa-file-lines",
       "tipe": "basic",
       "isi": [
-        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        "This is temporary material for SAT English / Verbal unit 08: Rhetorical synthesis.",
         {
           "type": "note",
-          "content": "This lesson can be published when its content has been reviewed."
+          "content": "Replace this placeholder with the new material list."
         }
-      ]
-    },
-    {
-      "judul": "Planned focus",
-      "icon": "fa-language",
-      "tipe": "basic",
-      "isi": [
-        "SAT English / Verbal unit 08 is reserved for: Rhetorical synthesis."
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "What is the first useful step when beginning the SAT English / Verbal unit \"Rhetorical synthesis\"?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Dummy practice question for SAT English / Verbal unit 08.",
+      "answer": "Dummy answer. Replace this question and solution later.",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "This is temporary placeholder content.",
+        "Replace the question, answer, and discussion with the new lesson list."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT English / Verbal question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Dummy additional practice question for SAT English / Verbal unit 08.",
+      "answer": "Dummy answer. Replace this question and solution later.",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "This is temporary placeholder content.",
+        "Replace the question, answer, and discussion with the new lesson list."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

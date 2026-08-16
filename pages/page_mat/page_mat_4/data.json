@@ -13,43 +13,50 @@
     "number": "04"
   },
   "eyebrow": "SAT Math / 04",
-  "title": "Fractions, percentages, ratios, and proportions",
-  "subtitle": "Translate between representations and model quantitative relationships with confidence.",
+  "title": "Linear Equations in Two Variables and Systems",
+  "subtitle": "Connect equations and graphs, compare slopes, solve systems, and model real-world situations.",
   "materi": [
     {
-      "judul": "Fractions: simplify first",
-      "icon": "fa-divide",
+      "judul": "What a system represents",
+      "icon": "fa-diagram-project",
       "tipe": "basic",
       "isi": [
-        "Fractions, decimals, and percentages describe the same part-to-whole relationship in different forms. Before performing a calculation, simplify and keep the numerator and denominator connected to their meaning.",
         {
-          "type": "formula",
-          "content": "\\[\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+bc}{bd},\\qquad \\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd},\\qquad \\frac{a}{b}\\div\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}\\]"
+          "type": "paragraph",
+          "content": "A system of equations combines two or more conditions that must be true at the same time. A solution is an ordered pair that satisfies every equation in the system."
         },
         {
           "type": "example",
-          "title": "Worked example",
-          "content": "To simplify \\(\\frac{11}{5}\\div\\frac{2}{5}\\), multiply by the reciprocal: \\(\\frac{11}{5}\\cdot\\frac{5}{2}=\\frac{11}{2}\\)."
+          "title": "Example: tickets and revenue",
+          "content": "If \\(B\\) represents bench tickets and \\(L\\) represents lawn tickets, then \\(B+L=350\\) counts tickets, while \\(75B+40L=19{,}250\\) models the ticket revenue. The two equations describe different facts about the same situation."
+        },
+        {
+          "type": "ordered-list",
+          "items": [
+            "Define each variable and include its unit or meaning.",
+            "Translate each condition into its own equation or inequality.",
+            "Choose substitution, elimination, graphing, or a calculator-assisted method.",
+            "Check the solution in every original equation and in the context."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Keep equations separate when modeling. A count equation and a money equation should not be mixed into one relationship."
         }
       ]
     },
     {
-      "judul": "Convert between forms",
-      "icon": "fa-arrows-rotate",
-      "tipe": "table",
+      "judul": "Forms of a linear equation",
+      "icon": "fa-lines-leaning",
+      "tipe": "basic",
       "isi": [
-        "Choose the form that makes the question easiest to read. A decimal becomes a percent by multiplying by 100, while a percent becomes a decimal by dividing by 100.",
-        {
-          "type": "formula",
-          "content": "\\[0.75=\\frac{3}{4}=75\\%\\]"
-        },
         {
           "type": "table",
           "table": {
             "headers": [
-              "Representation",
-              "How to convert",
-              "Example"
+              "Form",
+              "Equation",
+              "Best use"
             ],
             "leftAlign": [
               0,
@@ -58,118 +65,161 @@
             ],
             "rows": [
               [
-                "Decimal to percent",
-                "Multiply by 100",
-                "\\(0.36=36\\%\\)"
+                "Slope-intercept",
+                "\\(y=mx+b\\)",
+                "Read the slope and y-intercept directly."
               ],
               [
-                "Percent to decimal",
-                "Divide by 100",
-                "\\(18\\%=0.18\\)"
+                "Standard",
+                "\\(Ax+By=C\\)",
+                "Model totals and eliminate a variable."
               ],
               [
-                "Fraction to percent",
-                "Divide, then multiply by 100",
-                "\\(\\frac{3}{4}=75\\%\\)"
+                "Point-slope",
+                "\\(y-y_1=m(x-x_1)\\)",
+                "Write a line from a slope and one point."
               ]
             ]
           }
+        },
+        {
+          "type": "formula",
+          "content": "\\[m=\\frac{y_2-y_1}{x_2-x_1}\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "The slope measures the change in \\(y\\) for each 1-unit change in \\(x\\). Always attach units when the variables describe a real situation."
         }
       ]
     },
     {
-      "judul": "Percent of a number",
-      "icon": "fa-percent",
+      "judul": "Slope, parallel lines, and perpendicular lines",
+      "icon": "fa-arrows-left-right-to-line",
       "tipe": "basic",
       "isi": [
-        "Identify the whole before calculating. The basic model is part = percent × whole, where the percentage is written as a decimal.",
-        {
-          "type": "formula",
-          "content": "\\[\\text{part}=\\frac{p}{100}\\cdot\\text{whole}\\]"
-        },
-        {
-          "type": "example",
-          "title": "Worked example",
-          "content": "If \\(18\\) is what percent of \\(90\\), write \\(18=\\frac{p}{100}(90)\\). Dividing by \\(90\\) gives \\(p=20\\), so the answer is \\(20\\%\\)."
-        }
-      ]
-    },
-    {
-      "judul": "Percent increase and decrease",
-      "icon": "fa-arrow-trend-up",
-      "tipe": "basic",
-      "isi": [
-        "Percent change compares the change with the original amount. The original value is the denominator, even when the new value is larger or smaller.",
-        {
-          "type": "formula",
-          "content": "\\[\\text{percent change}=\\frac{\\text{new}-\\text{original}}{\\text{original}}\\cdot100\\%\\]"
-        },
         {
           "type": "grid",
           "items": [
             {
-              "title": "Discount",
-              "content": "Multiply by \\(1-r\\). A 20% discount uses factor \\(0.80\\)."
+              "title": "Parallel",
+              "content": "Distinct parallel lines have equal slopes: \\(m_1=m_2\\)."
             },
             {
-              "title": "Tax or growth",
-              "content": "Multiply by \\(1+r\\). A 7% tax uses factor \\(1.07\\)."
+              "title": "Perpendicular",
+              "content": "Nonvertical perpendicular lines have slopes whose product is \\(-1\\): \\(m_1m_2=-1\\)."
             },
             {
-              "title": "Sequential changes",
-              "content": "Multiply factors. Do not simply add or subtract the percentages."
+              "title": "Horizontal and vertical",
+              "content": "A horizontal line has slope 0. A vertical line has undefined slope."
             }
           ]
         },
         {
           "type": "example",
-          "title": "Discount followed by tax",
-          "content": "A USD 100 sweater discounted by 20% and taxed at 7% costs \\(100(0.80)(1.07)=\\text{USD }85.60\\)."
+          "title": "Example: perpendicular slope",
+          "content": "A line with slope 4 has a perpendicular slope of \\(-\\dfrac14\\), the negative reciprocal of 4."
         },
         {
           "type": "note",
-          "content": "A 10% increase followed by a 10% decrease does not return to the original value: \\(1.10\\cdot0.90=0.99\\), so the final amount is 1% lower."
+          "content": "Do not use only the reciprocal for perpendicular lines. The sign must change as well."
         }
       ]
     },
     {
-      "judul": "Ratios and proportions",
-      "icon": "fa-scale-balanced",
+      "judul": "Intercepts and point-slope form",
+      "icon": "fa-location-crosshairs",
       "tipe": "basic",
       "isi": [
-        "A ratio \\(a:b\\) describes two quantities in a fixed order. Represent the quantities as \\(ak\\) and \\(bk\\), where \\(k\\) is the common scale factor.",
+        {
+          "type": "paragraph",
+          "content": "The y-intercept occurs when \\(x=0\\). The x-intercept occurs when \\(y=0\\). To write a line from a point and a slope, use point-slope form."
+        },
         {
           "type": "formula",
-          "content": "\\[a:b\\Rightarrow ak:bk,\\qquad \\frac{a}{b}=\\frac{c}{d}\\]"
+          "content": "\\[y-y_1=m(x-x_1)\\]"
         },
         {
           "type": "example",
-          "title": "Ratio model",
-          "content": "If girls to boys is \\(2:5\\), then \\(G=2k\\) and \\(B=5k\\). If there are 28 girls, \\(2k=28\\), so \\(k=14\\) and \\(B=70\\)."
+          "title": "Example: find a y-intercept",
+          "content": "A line has slope \\(-\\dfrac54\\) and x-intercept \\((8,0)\\). Its equation is \\(y=-\\dfrac54(x-8)\\). Setting \\(x=0\\) gives \\(y=10\\), so the y-intercept is \\((0,10)\\)."
         },
         {
-          "type": "note",
-          "content": "The total number of parts is \\(2+5=7\\). If the total is known, divide the total by 7 before finding each group."
+          "type": "list",
+          "items": [
+            "To find an x-intercept, set \\(y=0\\).",
+            "To find a y-intercept, set \\(x=0\\).",
+            "A line with a positive slope rises from left to right.",
+            "A line with a negative slope falls from left to right."
+          ]
         }
       ]
     },
     {
-      "judul": "Rates, direct variation, and inverse variation",
-      "icon": "fa-gauge-high",
-      "tipe": "table",
+      "judul": "Solving systems by substitution",
+      "icon": "fa-arrow-turn-down",
+      "tipe": "basic",
       "isi": [
-        "Rates compare quantities with different units. Convert units first, then use the rate. For variation questions, decide whether the product or the quotient stays constant.",
         {
-          "type": "formula",
-          "content": "\\[\\text{rate}=\\frac{\\text{quantity}}{\\text{time}},\\qquad y=kx,\\qquad y=\\frac{k}{x}\\;\\text{or}\\;xy=k\\]"
+          "type": "paragraph",
+          "content": "Substitution is efficient when one equation already gives a variable in terms of the other variable."
         },
+        {
+          "type": "example",
+          "title": "Example: substitution",
+          "content": "For \\(\\begin{cases}y=2x+1\\\\x+y=10\\end{cases}\\), substitute \\(2x+1\\) for \\(y\\): \\(x+(2x+1)=10\\). Thus \\(3x=9\\), so \\(x=3\\), and \\(y=7\\). The solution is \\((3,7)\\)."
+        },
+        {
+          "type": "ordered-list",
+          "items": [
+            "Solve one equation for one variable if needed.",
+            "Substitute that expression into the other equation.",
+            "Solve the resulting one-variable equation.",
+            "Substitute back to find the second variable."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Always check the ordered pair in both original equations, not only in the equation used during substitution."
+        }
+      ]
+    },
+    {
+      "judul": "Solving systems by elimination",
+      "icon": "fa-minus",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "Elimination adds or subtracts equations so that one variable disappears. You may multiply one or both equations first to align coefficients."
+        },
+        {
+          "type": "example",
+          "title": "Example: eliminate a variable",
+          "content": "For \\(\\begin{cases}3x+2y=12\\\\3x-y=6\\end{cases}\\), subtract the second equation from the first: \\(3y=6\\), so \\(y=2\\). Then \\(3x-2=6\\), giving \\(x=\\dfrac83\\)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Choose the variable whose coefficients are easiest to cancel.",
+            "Keep the equation signs aligned when adding or subtracting.",
+            "Substitute the value back into either original equation.",
+            "Use exact fractions when appropriate; round only when the question asks."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Classifying the number of solutions",
+      "icon": "fa-code-compare",
+      "tipe": "basic",
+      "isi": [
         {
           "type": "table",
           "table": {
             "headers": [
-              "Relationship",
-              "Model",
-              "What stays constant"
+              "Graph",
+              "Algebraic result",
+              "Number of solutions"
             ],
             "leftAlign": [
               0,
@@ -178,902 +228,419 @@
             ],
             "rows": [
               [
-                "Direct variation",
-                "\\(y=kx\\)",
-                "\\(\\frac{y}{x}=k\\)"
+                "Lines intersect once",
+                "A single ordered pair",
+                "One solution"
               ],
               [
-                "Inverse variation",
-                "\\(y=\\frac{k}{x}\\)",
-                "\\(xy=k\\)"
+                "Parallel distinct lines",
+                "A contradiction such as \\(0=5\\)",
+                "No solution"
               ],
               [
-                "Unit rate",
-                "\\(r=\\frac{q}{t}\\)",
-                "The rate for one unit of time"
+                "Same line",
+                "An identity such as \\(0=0\\)",
+                "Infinitely many solutions"
               ]
             ]
           }
         },
         {
           "type": "example",
-          "title": "Worked example",
-          "content": "A student writes 5 pages in 20 minutes. In 5 hours, there are 300 minutes. The rate is \\(\\frac{5}{20}=\\frac14\\) page per minute, so the student writes \\(300\\cdot\\frac14=75\\) pages."
+          "title": "Example: no solution",
+          "content": "The lines \\(y=3x+2\\) and \\(y=3x-5\\) have equal slopes but different y-intercepts. They are parallel and distinct, so the system has no solution."
+        },
+        {
+          "type": "note",
+          "content": "If one equation is a nonzero multiple of the other, the system describes the same line and has infinitely many solutions."
         }
       ]
     },
     {
-      "judul": "SAT translation checklist",
-      "icon": "fa-list-check",
+      "judul": "Systems in real-world contexts",
+      "icon": "fa-receipt",
       "tipe": "basic",
       "isi": [
         {
+          "type": "paragraph",
+          "content": "Translate each category separately. Counts, prices, weights, and totals usually produce different equations."
+        },
+        {
+          "type": "example",
+          "title": "Example: food-truck sales",
+          "content": "A food truck sells salads for USD \\(6.50\\) and drinks for USD \\(2\\). It sells 209 items for USD \\(836.50\\). If \\(s\\) is salads and \\(d\\) is drinks, then \\(\\begin{cases}s+d=209\\\\6.5s+2d=836.5\\end{cases}\\). Solving gives \\(s=93\\) and \\(d=116\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: inequality system",
+          "content": "If a restaurant sells at least 50 items and earns at least USD \\(390\\) from USD \\(9\\) sandwiches and USD \\(6\\) salads, then \\(s+a\\ge50\\) and \\(9s+6a\\ge390\\)."
+        },
+        {
           "type": "list",
           "items": [
-            "Name the whole, part, original value, and new value.",
-            "Preserve the order of a ratio exactly as stated.",
-            "Use compatible units before applying a rate.",
-            "Use a factor below 1 for a discount or decrease and above 1 for tax, growth, or increase.",
-            "Estimate before calculating so an unreasonable result is easy to catch."
+            "Define variables before writing equations.",
+            "Use the correct price or rate with the correct variable.",
+            "Reject negative or non-integer counts when the context requires whole objects.",
+            "Check the result using both the total-count and total-value conditions."
           ]
+        }
+      ]
+    },
+    {
+      "judul": "Graphing and Desmos checks",
+      "icon": "fa-chart-line",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "Graphing both equations shows the solution as their intersection. Desmos can also help classify a system, check an ordered pair, and inspect a table or intercept."
+        },
+        {
+          "type": "ordered-list",
+          "items": [
+            "Enter each equation on a separate line.",
+            "Click the intersection point to read the ordered pair.",
+            "Check the viewing window so the relevant features are visible.",
+            "Substitute the point into both original equations.",
+            "For a real-world model, check units and whether the point is in the allowed domain."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "A graph is a verification tool. Read the equations and labels carefully before trusting a visual result."
         }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Simplify \\(\\frac{3}{4}+\\frac{1}{8}\\).",
-      "answer": "\\(\\frac{7}{8}\\)",
-      "discussion": [
-        "Use a common denominator of 8: \\(\\frac{3}{4}=\\frac{6}{8}\\).",
-        "Then \\(\\frac{6}{8}+\\frac{1}{8}=\\frac{7}{8}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Convert \\(0.36\\) to a fraction and a percent.",
-      "answer": "\\(\\frac{9}{25}\\) and \\(36\\%\\)",
-      "discussion": [
-        "Write \\(0.36=\\frac{36}{100}\\) and simplify by dividing by 4.",
-        "Multiply \\(0.36\\) by 100 to obtain \\(36\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "A jacket priced at USD 80 is discounted by 15%. What is the sale price?",
+      "question": "Line \\(k\\) is \\(y=4x+15\\). Line \\(j\\) is perpendicular to line \\(k\\). What is the slope of line \\(j\\)?",
       "options": [
-        "USD 12",
-        "USD 65",
-        "USD 68",
-        "USD 92"
-      ],
-      "answer": "C",
-      "discussion": [
-        "A 15% discount leaves 85% of the original price.",
-        "Calculate \\(80(0.85)=68\\), so the sale price is USD 68."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of red to blue marbles is \\(3:4\\). If there are 12 red marbles, how many blue marbles are there?",
-      "answer": "\\(16\\)",
-      "discussion": [
-        "The scale factor is \\(12\\div3=4\\).",
-        "Multiply the blue part by the same factor: \\(4\\cdot4=16\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "A population increases from 2,500 to 2,875. What is the percent increase?",
-      "answer": "\\(15\\%\\)",
-      "discussion": [
-        "The increase is \\(2{,}875-2{,}500=375\\).",
-        "Compare with the original: \\(\\frac{375}{2{,}500}\\cdot100\\%=15\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Twelve workers complete a task in 15 days. Assuming inverse variation, how many days would 20 workers need?",
-      "answer": "\\(9\\) days",
-      "discussion": [
-        "For inverse variation, workers × days stays constant.",
-        "Set \\(12\\cdot15=20d\\). Then \\(d=180\\div20=9\\) days."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Fractions Quiz: Simplify \\(\\frac{2}{5}+\\frac{4}{15}\\).",
-      "answer": "\\(\\frac{2}{3}\\)",
-      "discussion": [
-        "Use a common denominator of 15: \\(\\frac{2}{5}=\\frac{6}{15}\\).",
-        "Then \\(\\frac{6}{15}+\\frac{4}{15}=\\frac{10}{15}=\\frac{2}{3}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Fractions Quiz: Simplify \\(\\frac{3}{7}-\\frac{1}{0.5}\\).",
-      "answer": "\\(-\\frac{11}{7}\\)",
-      "discussion": [
-        "Since \\(0.5=\\frac{1}{2}\\), \\(\\frac{1}{0.5}=2\\).",
-        "Therefore \\(\\frac{3}{7}-2=\\frac{3}{7}-\\frac{14}{7}=-\\frac{11}{7}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Fractions Quiz: Simplify \\(\\frac{2}{7}\\times\\frac{14}{3}\\).",
-      "answer": "\\(\\frac{4}{3}\\)",
-      "discussion": [
-        "Cancel 14 with 7: \\(\\frac{2}{7}\\times\\frac{14}{3}=\\frac{2\\times2}{3}=\\frac{4}{3}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Fractions Quiz: Simplify \\(\\frac{11}{5}\\div\\frac{2}{5}\\).",
-      "answer": "\\(\\frac{11}{2}\\)",
-      "discussion": [
-        "Multiply by the reciprocal: \\(\\frac{11}{5}\\times\\frac{5}{2}=\\frac{11}{2}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Complete the percentage conversion table: \\(0.75\\), \\(12\\%\\), and \\(\\frac{3}{5}\\). Give each as a decimal, fraction, and percent.",
-      "answer": "\\(0.75=\\frac{3}{4}=75\\%\\); \\(12\\%=0.12=\\frac{3}{25}\\); \\(\\frac{3}{5}=0.6=60\\%\\).",
-      "discussion": [
-        "Convert decimals to percentages by multiplying by 100 and percentages to decimals by dividing by 100.",
-        "Simplify \\(\\frac{75}{100}\\) to \\(\\frac{3}{4}\\), and \\(\\frac{12}{100}\\) to \\(\\frac{3}{25}\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "\\(25\\) is what percent of \\(40\\)?",
-      "answer": "\\(62.5\\%\\)",
-      "discussion": [
-        "Divide the part by the whole: \\(25\\div40=0.625\\).",
-        "Multiply by 100 to obtain \\(62.5\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "What is \\(15\\%\\) of \\(60\\)?",
-      "answer": "\\(9\\)",
-      "discussion": [
-        "Write 15% as \\(0.15\\).",
-        "Then \\(0.15\\times60=9\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "\\(18\\) is what percent of \\(90\\)?",
-      "answer": "\\(20\\%\\)",
-      "discussion": [
-        "Set \\(18=\\frac{p}{100}(90)\\).",
-        "Solving gives \\(p=20\\), so the answer is \\(20\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "\\(10\\) is \\(50\\%\\) of what number?",
-      "answer": "\\(20\\)",
-      "discussion": [
-        "Let the number be \\(n\\): \\(10=0.5n\\).",
-        "Divide by 0.5 to get \\(n=20\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A book was on sale for 40% off its original price. If the sale price was USD 18.00, what was the original price?",
-      "options": [
-        "USD 7.20",
-        "USD 10.80",
-        "USD 30.00",
-        "USD 45.00"
-      ],
-      "answer": "C",
-      "discussion": [
-        "A 40% discount leaves 60% of the original price.",
-        "Set \\(0.60P=18\\), so \\(P=18\\div0.60=30\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "During a sale, a sweater listed at USD 100 is discounted by 20% and then taxed at 7%. How much did Arianna pay?",
-      "options": [
-        "USD 73.00",
-        "USD 80.00",
-        "USD 85.60",
-        "USD 87.00",
-        "USD 88.30"
-      ],
-      "answer": "C",
-      "discussion": [
-        "After the discount: \\(100(0.80)=80\\).",
-        "After tax: \\(80(1.07)=85.60\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "The sum of three numbers is \\(855\\). One number, \\(x\\), is 50% more than the sum of the other two numbers. What is \\(x\\)?",
-      "options": [
-        "\\(570\\)",
-        "\\(513\\)",
-        "\\(214\\)",
-        "\\(155\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Let the sum of the other two numbers be \\(s\\). Then \\(x=1.5s\\).",
-        "Since \\(x+s=855\\), \\(2.5s=855\\), so \\(s=342\\) and \\(x=513\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Becca deposits USD 100 in an account earning 4% annual compound interest. How many years will it take to increase the account value by at least 60%?",
-      "options": [
-        "\\(12\\)",
-        "\\(15\\)",
-        "\\(25\\)",
-        "\\(30\\)"
+        "\\(-\\dfrac14\\)",
+        "\\(-\\dfrac1{16}\\)",
+        "\\(-\\dfrac1{24}\\)",
+        "\\(-\\dfrac1{60}\\)"
       ],
       "answer": "A",
       "discussion": [
-        "The target value is USD 160, so solve \\(100(1.04)^t\\ge160\\).",
-        "Testing the choices, \\(1.04^{12}\\approx1.601\\), so 12 years is the first choice to reach at least 60% growth."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "An account earns 2% interest compounded annually. The value after \\(t\\) years is modeled by \\(100(x)^t\\). What is \\(x\\)?",
-      "answer": "\\(1.02\\)",
-      "discussion": [
-        "A 2% annual increase uses the growth factor \\(1+0.02\\).",
-        "Therefore \\(x=1.02\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If there are 12 girls, how many boys are there?",
-      "answer": "\\(30\\)",
-      "discussion": [
-        "The scale factor is \\(12\\div2=6\\).",
-        "The number of boys is \\(5\\times6=30\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If there are 50 boys, how many girls are there?",
-      "answer": "\\(20\\)",
-      "discussion": [
-        "The scale factor is \\(50\\div5=10\\).",
-        "The number of girls is \\(2\\times10=20\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If there are 35 students in the class, how many boys are there?",
-      "answer": "\\(25\\)",
-      "discussion": [
-        "There are 7 total ratio parts, so each part is \\(35\\div7=5\\).",
-        "Boys represent 5 parts: \\(5\\times5=25\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If there are 4 girls, how many students are there?",
-      "answer": "\\(14\\)",
-      "discussion": [
-        "The scale factor is \\(4\\div2=2\\).",
-        "The total is \\((2+5)\\times2=14\\) students."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If there are 28 girls, what is the difference between the number of girls and boys?",
-      "answer": "\\(42\\)",
-      "discussion": [
-        "The scale factor is \\(28\\div2=14\\), so there are \\(5\\times14=70\\) boys.",
-        "The difference is \\(70-28=42\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If there are 21 more boys than girls, how many boys are there?",
-      "answer": "\\(35\\)",
-      "discussion": [
-        "The difference is \\(5k-2k=3k=21\\), so \\(k=7\\).",
-        "There are \\(5k=35\\) boys."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If the difference between the number of girls and boys is 15, what is the total number of students?",
-      "answer": "\\(35\\)",
-      "discussion": [
-        "The difference is \\(3k=15\\), so \\(k=5\\).",
-        "The total is \\(7k=35\\) students."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "The ratio of girls to boys is \\(2:5\\). If there are 21 students in total, what is the difference between the number of girls and boys?",
-      "answer": "\\(9\\)",
-      "discussion": [
-        "There are 7 total parts, so \\(k=21\\div7=3\\).",
-        "The difference is \\((5-2)k=3\\times3=9\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "If a student writes 2 pages per 3 minutes, how many minutes does it take to write 180 pages?",
-      "answer": "\\(270\\) minutes",
-      "discussion": [
-        "The time per page is \\(3\\div2=1.5\\) minutes.",
-        "For 180 pages: \\(180\\times1.5=270\\) minutes."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "If a student writes 5 pages per 20 minutes, how many pages can the student write in 5 hours?",
-      "answer": "\\(75\\) pages",
-      "discussion": [
-        "Convert 5 hours to 300 minutes.",
-        "The rate is \\(5\\div20=\\frac14\\) page per minute, so \\(300\\times\\frac14=75\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "If a student writes 80 pages in 20 minutes, what is the writing rate?",
-      "answer": "\\(4\\) pages per minute",
-      "discussion": [
-        "Rate is quantity divided by time: \\(80\\div20=4\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "An acidic solution has a nitric acid-to-water mass ratio of \\(2:7\\). If the total mass is 270 grams, how many more grams of water are there than nitric acid?",
-      "options": [
-        "\\(60\\)",
-        "\\(110\\)",
-        "\\(150\\)",
-        "\\(210\\)"
+        "The slope of line \\(k\\) is 4.",
+        "A perpendicular line has the negative reciprocal slope, so \\(m=-\\dfrac14\\).",
+        "The correct answer is A."
       ],
-      "answer": "C",
-      "discussion": [
-        "There are 9 parts, so each part is \\(270\\div9=30\\) grams.",
-        "Water is 210 grams and acid is 60 grams, giving a difference of \\(210-60=150\\) grams."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Nate walks 25 meters in 13.7 seconds. At the same rate, which distance is closest to what he walks in 4 minutes?",
-      "options": [
-        "150 meters",
-        "450 meters",
-        "700 meters",
-        "1,400 meters"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Convert 4 minutes to 240 seconds.",
-        "Calculate \\(25\\div13.7\\times240\\approx438\\) meters, which is closest to 450 meters."
-      ]
-    },
-    {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "A rectangular reproduction has dimensions one-third the original. If the original height is 29 inches, what is the reproduction's height?",
-      "answer": "\\(\\frac{29}{3}\\) inches",
+      "question": "The equation \\(58=3x+13\\) gives the perimeter of a rectangular rug. If the width is 10 feet, find the length \\(x\\) represented by the equation.",
+      "answer": "\\(15\\) feet",
       "discussion": [
-        "Multiply the original height by the scale factor: \\(29\\times\\frac13=\\frac{29}{3}\\) inches."
-      ]
+        "Subtract 13 from both sides: \\(3x=45\\).",
+        "Divide by 3: \\(x=15\\).",
+        "Therefore, the length represented by the equation is 15 feet."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "A baker needs 2.5 ounces of chocolate per muffin. How many pounds are needed for 48 muffins? Use 1 pound = 16 ounces.",
+      "question": "Regular polygons A and B have a combined perimeter of 63 inches. The equation is \\(3x+6y=63\\), where \\(x\\) and \\(y\\) are their numbers of sides. What does the number 6 represent?",
       "options": [
-        "\\(7.5\\)",
-        "\\(10\\)",
-        "\\(50.5\\)",
-        "\\(120\\)"
+        "Each side of polygon B is 6 inches.",
+        "Polygon B has 6 sides.",
+        "Each side of polygon A is 6 inches.",
+        "Polygon A has 6 sides."
       ],
       "answer": "A",
       "discussion": [
-        "The total is \\(2.5\\times48=120\\) ounces.",
-        "Convert to pounds: \\(120\\div16=7.5\\) pounds."
-      ]
+        "The variable \\(y\\) represents the number of sides of polygon B.",
+        "Because the equation represents combined perimeter, the coefficient 6 is the length of each side of polygon B.",
+        "Therefore, choice A is correct."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
+      "type": "open",
+      "question": "Find the slope of \\(y=\\dfrac15(28x+14)+9x\\).",
+      "answer": "\\(\\dfrac{73}{5}\\)",
+      "discussion": [
+        "Distribute \\(\\dfrac15\\): \\(y=\\dfrac{28}{5}x+\\dfrac{14}{5}+9x\\).",
+        "Rewrite \\(9x\\) as \\(\\dfrac{45}{5}x\\).",
+        "The coefficient of \\(x\\) is \\(\\dfrac{28}{5}+\\dfrac{45}{5}=\\dfrac{73}{5}\\), so that is the slope."
+      ],
+      "showSolutionButton": true
+    },
+    {
       "type": "multiple-choice",
-      "question": "The time to consume a buffalo carcass is inversely proportional to the number of vultures. If 12 vultures take 3 days, how many fewer hours will it take with 16 vultures?",
+      "question": "Keenan fills \\(x\\) small jars and \\(y\\) large jars. The equation is \\(3x+7y=63\\). What does \\(7y\\) represent?",
       "options": [
-        "\\(\\frac14\\)",
-        "\\(\\frac34\\)",
-        "\\(18\\)",
-        "\\(54\\)"
+        "The number of large jars",
+        "The number of small jars",
+        "The total cups of broth in large jars",
+        "The total cups of broth in small jars"
       ],
       "answer": "C",
       "discussion": [
-        "The constant is \\(12\\times3=36\\) vulture-days.",
-        "With 16 vultures, the time is \\(36\\div16=2.25\\) days, or 18 hours less than 3 days."
-      ]
+        "The term \\(7y\\) means 7 units for each of \\(y\\) large jars.",
+        "Therefore, it represents the total cups of broth in the large jars, choice C."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
+      "type": "open",
+      "question": "A line has slope \\(-\\dfrac54\\) and x-intercept \\((8,0)\\). Find the y-coordinate of its y-intercept.",
+      "answer": "\\(10\\)",
+      "discussion": [
+        "Use point-slope form with slope \\(-\\dfrac54\\) and point \\((8,0)\\): \\(y=-\\dfrac54(x-8)\\).",
+        "At the y-intercept, \\(x=0\\). Thus, \\(y=-\\dfrac54(0-8)=10\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
       "type": "multiple-choice",
-      "question": "The ratio of boys to girls is \\(x:y\\). If the total number of children is five times the number of boys, which could be the sum of \\(x+y\\)?",
+      "question": "Solve \\(\\begin{cases}3x+4y=-23\\\\2y-x=-19\\end{cases}\\).",
       "options": [
-        "\\(9\\)",
-        "\\(10\\)",
-        "\\(11\\)",
-        "\\(12\\)"
+        "\\((-5,-2)\\)",
+        "\\((3,-8)\\)",
+        "\\((4,-6)\\)",
+        "\\((9,-6)\\)"
       ],
       "answer": "B",
       "discussion": [
-        "The condition gives \\(x+y=5x\\), so \\(y=4x\\).",
-        "The simplest integer ratio is \\(x:y=1:4\\), whose sum is 5. Any equivalent ratio has sum a multiple of 5, so 10 could be the sum."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A miniature's scale is 0.4 inches to 1 foot of actual height. If Gary is 5 feet 9 inches tall, what is the miniature's height?",
-      "options": [
-        "2.0 inches",
-        "2.3 inches",
-        "2.6 inches",
-        "2.9 inches"
+        "Rewrite the second equation as \\(x-2y=19\\), so \\(x=2y+19\\).",
+        "Substitute into the first equation: \\(3(2y+19)+4y=-23\\).",
+        "This gives \\(10y=-80\\), so \\(y=-8\\), and then \\(x=3\\).",
+        "The solution is \\((3,-8)\\), choice B."
       ],
-      "answer": "B",
-      "discussion": [
-        "Gary is \\(5+\\frac{9}{12}=5.75\\) feet tall.",
-        "The miniature is \\(0.4\\times5.75=2.3\\) inches."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Wyatt can husk between 12 and 18 dozen ears of corn per hour. What is a possible amount of time, in hours, to husk 72 dozen ears?",
-      "answer": "Any time from 4 to 6 hours; for example, 5 hours.",
+      "question": "Solve \\(\\begin{cases}x+y=-9\\\\x+2y=-25\\end{cases}\\). Find \\(x\\).",
+      "answer": "\\(7\\)",
       "discussion": [
-        "At 18 dozen per hour, the time is \\(72\\div18=4\\) hours.",
-        "At 12 dozen per hour, the time is \\(72\\div12=6\\) hours, so any time in the interval \\([4,6]\\) is possible."
-      ]
+        "Subtract the first equation from the second: \\(y=-16\\).",
+        "Substitute into \\(x+y=-9\\): \\(x-16=-9\\).",
+        "Therefore, \\(x=7\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "A television station sells time slots in 30-minute intervals and operates 24 hours per day. How many slots can it sell for Tuesday and Wednesday?",
-      "answer": "\\(96\\) slots",
-      "discussion": [
-        "Two days contain 48 hours, and each hour contains two 30-minute intervals.",
-        "Therefore \\(48\\times2=96\\) slots."
-      ]
-    },
-    {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "One ounce of graphene can cover 7 football fields, and each field is approximately \\(1\\frac13\\) acres. About how many acres can 48 ounces cover?",
+      "question": "Two lines are given by \\(y=x+1\\) and \\(y=-x+9\\). What is their point of intersection?",
       "options": [
-        "\\(250\\)",
-        "\\(350\\)",
-        "\\(450\\)",
-        "\\(1{,}350\\)"
+        "\\((2,3)\\)",
+        "\\((3,4)\\)",
+        "\\((4,5)\\)",
+        "\\((5,6)\\)"
       ],
       "answer": "C",
       "discussion": [
-        "The coverage is \\(48\\times7\\times\\frac43=448\\) acres.",
-        "The closest choice is 450 acres."
-      ]
+        "Set the two expressions for \\(y\\) equal: \\(x+1=-x+9\\).",
+        "Then \\(2x=8\\), so \\(x=4\\).",
+        "Substitute into \\(y=x+1\\): \\(y=5\\).",
+        "The intersection is \\((4,5)\\), choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A food truck sells salads for USD \\(6.50\\) and drinks for USD \\(2.00\\). It sells 209 items for USD \\(836.50\\). How many salads does it sell?",
+      "options": [
+        "\\(77\\)",
+        "\\(93\\)",
+        "\\(99\\)",
+        "\\(105\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Let \\(s\\) be salads and \\(d\\) be drinks. Then \\(s+d=209\\) and \\(6.5s+2d=836.5\\).",
+        "Use \\(d=209-s\\): \\(6.5s+2(209-s)=836.5\\).",
+        "This gives \\(4.5s=418.5\\), so \\(s=93\\).",
+        "The correct answer is B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A hamburger has 50 more calories than fries. Two hamburgers and three fries total 1,700 calories. How many calories are in one hamburger?",
+      "answer": "\\(370\\) calories",
+      "discussion": [
+        "Let \\(h\\) be hamburger calories and \\(f\\) be fries calories. Then \\(h=f+50\\) and \\(2h+3f=1700\\).",
+        "Substitute: \\(2(f+50)+3f=1700\\).",
+        "Thus, \\(5f+100=1700\\), so \\(f=320\\).",
+        "Therefore, \\(h=320+50=370\\) calories."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A mirror and a vase have a combined original price of USD \\(79\\). The mirror is discounted by 25%, the vase by 35%, and the combined sale price is USD \\(43\\). Which system represents the original prices \\(m\\) and \\(v\\)?",
+      "options": [
+        "\\(m+v=79\\); \\(0.65m+0.75v=43\\)",
+        "\\(m+v=79\\); \\(0.35m+0.25v=43\\)",
+        "\\(m+v=79\\); \\(0.75m+0.65v=43\\)",
+        "\\(m+v=79\\); \\(0.25m+0.45v=43\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The original-price equation is \\(m+v=79\\).",
+        "A 25% discount means the mirror sells for 75% of its original price: \\(0.75m\\).",
+        "A 35% discount means the vase sells for 65% of its original price: \\(0.65v\\).",
+        "Therefore, choice C represents the system."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(\\begin{cases}7y=10x+11\\\\-7y=5x-21\\end{cases}\\). Find \\(30x\\).",
+      "answer": "\\(20\\)",
+      "discussion": [
+        "Add the two equations to eliminate \\(y\\): \\(0=15x-10\\).",
+        "Thus, \\(15x=10\\), so \\(x=\\dfrac23\\).",
+        "Therefore, \\(30x=30\\left(\\dfrac23\\right)=20\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(3x=36y-45\\), the system has no solution. Which could be the second equation?",
+      "options": [
+        "\\(x=4y\\)",
+        "\\(\\dfrac13x=4y\\)",
+        "\\(x=12y-15\\)",
+        "\\(\\dfrac13x=12y-15\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Rewrite the first equation as \\(x=12y-15\\).",
+        "A no-solution system needs a parallel but distinct second line.",
+        "Choice B becomes \\(x=12y\\), which has the same slope but a different intercept.",
+        "Therefore, the two lines are parallel and distinct, so choice B is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(\\begin{cases}8x+7y=9\\\\24x+21y=27\\end{cases}\\), which point lies on both equations for every real value of \\(p\\)?",
+      "options": [
+        "\\(\\left(p,-\\dfrac{8p}{7}+\\dfrac97\\right)\\)",
+        "\\(\\left(-\\dfrac{8p}{7}+\\dfrac97,p\\right)\\)",
+        "\\(\\left(-\\dfrac{8p}{7}+9,\\dfrac{8p}{7}+27\\right)\\)",
+        "\\(\\left(\\dfrac p3+9,-\\dfrac p3+27\\right)\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The second equation is 3 times the first, so both equations describe the same line.",
+        "Let \\(x=p\\). Solving the first equation for \\(y\\) gives \\(y=-\\dfrac{8p}{7}+\\dfrac97\\).",
+        "Thus, choice A gives a point on the line for every real \\(p\\)."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Find 25% of 72.",
-      "answer": "\\(18\\)",
+      "question": "Find the slope of \\(y=3x-8\\).",
+      "answer": "\\(3\\)",
       "discussion": [
-        "Convert 25% to \\(0.25\\) and calculate \\(0.25\\cdot72=18\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "A car travels 180 miles in 3 hours. At the same rate, how far will it travel in 4.5 hours?",
-      "answer": "\\(270\\) miles",
-      "discussion": [
-        "The rate is \\(180\\div3=60\\) miles per hour.",
-        "Then \\(60\\cdot4.5=270\\) miles."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "A mixture has acid to water ratio \\(2:7\\) and total mass 270 grams. How many grams of water are present?",
-      "answer": "\\(210\\) grams",
-      "discussion": [
-        "There are \\(2+7=9\\) total parts, so each part is \\(270\\div9=30\\) grams.",
-        "Water is 7 parts: \\(7\\cdot30=210\\) grams."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "A price is increased by 10% and then decreased by 10%. Is the final price equal to the original price?",
-      "answer": "No; the final price is 1% less than the original.",
-      "discussion": [
-        "Use multiplicative factors: \\(1.10\\cdot0.90=0.99\\).",
-        "The final price is \\(99\\%\\) of the original, so it is 1% lower."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "A recipe uses 2 cups of flour for 4 cookies. How many cups are needed for 30 cookies?",
-      "answer": "\\(15\\) cups",
-      "discussion": [
-        "The recipe uses \\(2\\div4=\\frac12\\) cup per cookie.",
-        "For 30 cookies, \\(30\\cdot\\frac12=15\\) cups."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "One quantity is 40% less than \\(x\\), while another is 50% greater than \\(x\\). What is the ratio of the first quantity to the second?",
-      "answer": "\\(2:5\\)",
-      "discussion": [
-        "The first quantity is \\(0.60x\\), and the second is \\(1.50x\\).",
-        "The ratio is \\(0.60x:1.50x=0.60:1.50=2:5\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Simplify \\(\\frac{3}{8}+\\frac{1}{8}\\).",
-      "options": [
-        "\\(\\frac14\\)",
-        "\\(\\frac12\\)",
-        "\\(\\frac58\\)",
-        "\\(\\frac34\\)"
+        "Compare the equation with \\(y=mx+b\\).",
+        "The coefficient of \\(x\\) is the slope, so \\(m=3\\)."
       ],
-      "answer": "B",
-      "discussion": [
-        "The denominators match, so add the numerators: \\(\\frac{3}{8}+\\frac{1}{8}=\\frac{4}{8}=\\frac12\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "What is \\(30\\%\\) of \\(90\\)?",
+      "question": "Are the lines \\(y=2x+1\\) and \\(y=2x-5\\) parallel, perpendicular, or neither?",
       "options": [
-        "\\(18\\)",
-        "\\(27\\)",
-        "\\(30\\)",
-        "\\(60\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Calculate \\(0.30\\times90=27\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Convert \\(0.45\\) to a percent.",
-      "options": [
-        "\\(0.45\\%\\)",
-        "\\(4.5\\%\\)",
-        "\\(45\\%\\)",
-        "\\(450\\%\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "Multiply by 100: \\(0.45\\times100=45\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "The ratio of cats to dogs is \\(2:3\\). If there are 8 cats, how many dogs are there?",
-      "options": [
-        "\\(6\\)",
-        "\\(10\\)",
-        "\\(12\\)",
-        "\\(16\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "The scale factor is \\(8\\div2=4\\).",
-        "Dogs: \\(3\\times4=12\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A car travels 180 miles in 3 hours. What is its average rate?",
-      "options": [
-        "30 miles per hour",
-        "45 miles per hour",
-        "60 miles per hour",
-        "90 miles per hour"
-      ],
-      "answer": "C",
-      "discussion": [
-        "Average rate is distance divided by time: \\(180\\div3=60\\) miles per hour."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A jacket priced at USD 120 is discounted by 25%. What is the sale price?",
-      "options": [
-        "USD 30",
-        "USD 90",
-        "USD 95",
-        "USD 150"
-      ],
-      "answer": "B",
-      "discussion": [
-        "A 25% discount leaves 75% of the price.",
-        "Calculate \\(120(0.75)=90\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "The ratio of boys to girls is \\(3:4\\). If there are 35 students, how many are girls?",
-      "options": [
-        "\\(15\\)",
-        "\\(18\\)",
-        "\\(20\\)",
-        "\\(24\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "There are 7 parts, so each part is \\(35\\div7=5\\).",
-        "Girls represent 4 parts: \\(4\\times5=20\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A recipe uses 3 cups of flour for 8 servings. How many cups are needed for 20 servings?",
-      "options": [
-        "6",
-        "7.5",
-        "8",
-        "9"
-      ],
-      "answer": "B",
-      "discussion": [
-        "The rate is \\(3\\div8\\) cups per serving.",
-        "For 20 servings: \\(20\\times\\frac38=7.5\\) cups."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A quantity increases from 80 to 104. What is the percent increase?",
-      "options": [
-        "20%",
-        "24%",
-        "30%",
-        "32%"
-      ],
-      "answer": "C",
-      "discussion": [
-        "The increase is 24. Relative to the original: \\(24\\div80=0.30=30\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Twelve workers finish a job in 10 days. Assuming inverse variation, how many days would 15 workers need?",
-      "options": [
-        "6",
-        "8",
-        "12",
-        "15"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Workers times days is constant: \\(12\\times10=15d\\).",
-        "Thus \\(d=120\\div15=8\\) days."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A price is increased by 20% and then decreased by 20%. What is the final price of an item that originally cost USD 250?",
-      "options": [
-        "USD 200",
-        "USD 240",
-        "USD 250",
-        "USD 260"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Use factors: \\(250(1.20)(0.80)=240\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "The ratio of red paint to blue paint is \\(5:2\\). If 21 liters of mixture are used, how many liters are red paint?",
-      "options": [
-        "6",
-        "12",
-        "15",
-        "18"
-      ],
-      "answer": "C",
-      "discussion": [
-        "There are 7 parts, so each part is \\(21\\div7=3\\) liters.",
-        "Red paint is 5 parts: \\(5\\times3=15\\) liters."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A machine produces 240 parts in 8 hours. Its production rate increases by 25%. How many parts will it produce in 10 hours at the new rate?",
-      "options": [
-        "300",
-        "360",
-        "375",
-        "400"
-      ],
-      "answer": "C",
-      "discussion": [
-        "The original rate is \\(240\\div8=30\\) parts per hour.",
-        "The new rate is \\(30(1.25)=37.5\\), so 10 hours produces \\(375\\) parts."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A solution contains acid and water in the ratio \\(3:7\\). How many grams of water must be added to 200 grams of solution to make the ratio \\(1:3\\)?",
-      "options": [
-        "40",
-        "60",
-        "80",
-        "100"
+        "Parallel",
+        "Perpendicular",
+        "Neither",
+        "The same line"
       ],
       "answer": "A",
       "discussion": [
-        "The initial acid is \\(\\frac{3}{10}(200)=60\\) grams and water is 140 grams.",
-        "For a 1:3 ratio, 60 grams of acid requires 180 grams of water, so add \\(180-140=40\\) grams."
-      ]
+        "Both lines have slope 2.",
+        "Their y-intercepts differ, so they are distinct parallel lines.",
+        "The correct answer is A."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A car travels the first half of a trip at 40 miles per hour and the second half at 60 miles per hour. What is the average speed for the entire trip?",
-      "options": [
-        "48",
-        "50",
-        "52",
-        "54"
-      ],
-      "answer": "A",
+      "type": "open",
+      "question": "Solve \\(\\begin{cases}x+y=10\\\\x-y=4\\end{cases}\\).",
+      "answer": "\\((7,3)\\)",
       "discussion": [
-        "For equal distances, use total distance divided by total time, not the arithmetic mean.",
-        "The harmonic mean is \\(\\frac{2(40)(60)}{40+60}=48\\) miles per hour."
-      ]
+        "Add the equations: \\(2x=14\\), so \\(x=7\\).",
+        "Substitute into \\(x+y=10\\): \\(7+y=10\\), so \\(y=3\\).",
+        "The solution is \\((7,3)\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A student answers 80% of the first 25 questions correctly. How many of the next 15 must be correct to have at least 70% accuracy after 40 questions?",
-      "options": [
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "answer": "C",
+      "type": "open",
+      "question": "Solve \\(\\begin{cases}2x+3y=13\\\\x-y=1\\end{cases}\\).",
+      "answer": "\\(\\left(\\dfrac{16}{5},\\dfrac{11}{5}\\right)\\)",
       "discussion": [
-        "The student has \\(0.80\\times25=20\\) correct answers.",
-        "At least 70% of 40 is 28, so at least \\(28-20=8\\) of the next 15 must be correct."
-      ]
+        "From \\(x-y=1\\), write \\(x=y+1\\).",
+        "Substitute: \\(2(y+1)+3y=13\\), so \\(5y=11\\) and \\(y=\\dfrac{11}{5}\\).",
+        "Then \\(x=y+1=\\dfrac{16}{5}\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A quantity \\(x\\) varies directly with \\(y\\). When \\(y=6\\), \\(x=15\\). What is \\(x\\) when \\(y=14\\)?",
-      "options": [
-        "28",
-        "30",
-        "35",
-        "42"
-      ],
-      "answer": "C",
+      "type": "open",
+      "question": "A school sells adult tickets for USD \\(8\\) and student tickets for USD \\(5\\). It sells 120 tickets for USD \\(780\\). How many adult tickets are sold?",
+      "answer": "\\(60\\) adult tickets",
       "discussion": [
-        "Direct variation gives \\(x=ky\\), with \\(k=15\\div6=2.5\\).",
-        "When \\(y=14\\), \\(x=2.5\\times14=35\\)."
-      ]
+        "Let \\(a\\) be adult tickets and \\(s\\) be student tickets. Then \\(a+s=120\\) and \\(8a+5s=780\\).",
+        "Use \\(s=120-a\\): \\(8a+5(120-a)=780\\).",
+        "Thus, \\(3a=180\\), so \\(a=60\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A quantity \\(x\\) varies inversely with \\(y\\). When \\(y=8\\), \\(x=15\\). What is \\(x\\) when \\(y=12\\)?",
-      "options": [
-        "8",
-        "10",
-        "12",
-        "18"
-      ],
-      "answer": "B",
+      "type": "open",
+      "question": "Find the equation of the line through \\((2,5)\\) with slope \\(-3\\).",
+      "answer": "\\(y=-3x+11\\)",
       "discussion": [
-        "Inverse variation gives \\(xy=k\\), so \\(8\\times15=120\\).",
-        "When \\(y=12\\), \\(x=120\\div12=10\\)."
-      ]
+        "Use point-slope form: \\(y-5=-3(x-2)\\).",
+        "Expand: \\(y-5=-3x+6\\).",
+        "Add 5: \\(y=-3x+11\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A store marks up an item by 40% and then gives a 15% discount. Compared with the original price, the final price is:",
-      "options": [
-        "6% greater",
-        "15% greater",
-        "19% greater",
-        "25% greater"
-      ],
-      "answer": "C",
+      "type": "open",
+      "question": "A system has infinitely many solutions. If one equation is \\(4x-6y=12\\), give a different equation describing the same line.",
+      "answer": "For example, \\(8x-12y=24\\)",
       "discussion": [
-        "The combined factor is \\(1.40\\times0.85=1.19\\).",
-        "The final price is 19% greater than the original."
-      ]
+        "Multiplying every term of an equation by the same nonzero number preserves its solution set.",
+        "Multiplying \\(4x-6y=12\\) by 2 gives \\(8x-12y=24\\).",
+        "This is a different-looking equation for the same line, so the system has infinitely many solutions."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A tank contains 140 liters after 4 minutes and 260 liters after 10 minutes. If it is filled at a constant rate, what was the initial amount of water?",
-      "options": [
-        "40 liters",
-        "60 liters",
-        "80 liters",
-        "100 liters"
-      ],
-      "answer": "B",
+      "type": "open",
+      "question": "Two numbers have a sum of 48 and a difference of 14. Find the two numbers.",
+      "answer": "\\(31\\) and \\(17\\)",
       "discussion": [
-        "The rate is \\((260-140)\\div(10-4)=20\\) liters per minute.",
-        "Four minutes added 80 liters, so the initial amount was \\(140-80=60\\) liters."
-      ]
+        "Let the numbers be \\(x\\) and \\(y\\): \\(x+y=48\\) and \\(x-y=14\\).",
+        "Add the equations: \\(2x=62\\), so \\(x=31\\).",
+        "Then \\(y=48-31=17\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A restaurant sells sandwiches for USD \\(9\\) and salads for USD \\(6\\). It sells at least 50 items and earns at least USD \\(390\\). Write a system of inequalities for \\(s\\) sandwiches and \\(a\\) salads.",
+      "answer": "\\(\\begin{cases}s+a\\ge50\\\\9s+6a\\ge390\\end{cases}\\)",
+      "discussion": [
+        "The item-count requirement is \\(s+a\\ge50\\).",
+        "The revenue requirement is \\(9s+6a\\ge390\\).",
+        "Together, these form the required system."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

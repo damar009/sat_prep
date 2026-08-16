@@ -1,9 +1,9 @@
 {
   "settings": {
-    "showSolutionToggle": false,
+    "showSolutionToggle": true,
     "sections": {
       "material": true,
-      "practice": false,
+      "practice": true,
       "additionalPractice": true
     }
   },
@@ -13,55 +13,61 @@
     "number": "02"
   },
   "eyebrow": "SAT Math / 02",
-  "title": "Strategies, reference sheet, and Desmos",
-  "subtitle": "Make accurate decisions under time pressure: identify the goal, choose an efficient representation, and verify the result.",
+  "title": "SAT Math Strategies, Reference Sheet, and Desmos",
+  "subtitle": "Choose efficient representations, use the reference sheet strategically, and make Desmos work for you.",
   "materi": [
     {
       "judul": "The SAT Math decision loop",
       "icon": "fa-compass",
       "tipe": "basic",
       "isi": [
-        "Strong SAT Math performance is not only about knowing formulas. It is also about deciding what the question is asking, what information matters, and which method reaches the target with the least unnecessary work.",
+        {
+          "type": "paragraph",
+          "content": "Strong SAT Math performance is not only about knowing formulas. It also depends on deciding what the question asks, selecting a useful representation, estimating before calculating, and checking whether the result makes sense."
+        },
         {
           "type": "ordered-list",
           "items": [
-            "Focus on the goal: name the exact quantity or claim the question asks for.",
-            "Choose a representation: equation, sketch, table, graph, easy numbers, or calculator.",
-            "Estimate or eliminate: predict the sign and rough size before calculating exactly.",
-            "Calculate and verify: check the answer against the original conditions, units, and domain."
+            "Focus on the goal: identify the exact quantity, expression, or statement requested.",
+            "Choose a representation: use an equation, sketch, table, graph, easy numbers, formula, or calculator.",
+            "Estimate or eliminate: predict the sign, size, units, and possible domain before doing all the work.",
+            "Calculate and verify: check the result against the original conditions."
           ]
         },
         {
           "type": "note",
-          "content": "These strategies support mathematical understanding. They do not replace reading the question carefully or checking whether a result makes sense."
+          "content": "A strategy should make correct mathematics faster and clearer. It should never replace careful reading of the question."
         }
       ]
     },
     {
-      "judul": "Focus on the goal and important details",
+      "judul": "Focus on the goal",
       "icon": "fa-crosshairs",
       "tipe": "basic",
       "isi": [
-        "Many SAT questions give more information than you need. Read the final question first, identify the target, and keep only the details that affect it.",
+        {
+          "type": "paragraph",
+          "content": "Read the final sentence carefully. Many SAT questions provide more information than you need. If the question asks for an expression, you may not need to find every variable separately."
+        },
         {
           "type": "example",
-          "title": "Example: solve only the requested expression",
-          "content": "If \\(16x-2=30\\), then \\(16x=32\\), so \\(x=2\\). The question does not ask for \\(x\\) alone; it asks for \\(8x-1\\). Therefore, \\(8(2)-1=15\\)."
+          "title": "Example: calculate only the requested expression",
+          "content": "If \\(4x+2=12\\), then \\(4x=10\\). Therefore, \\(16x+8=4(4x)+8=4(10)+8=48\\). The requested expression can be found without first solving for \\(x\\)."
         },
         {
           "type": "grid",
           "items": [
             {
               "title": "Target",
-              "content": "What quantity, expression, or statement must be reported?"
+              "content": "What number, expression, graph feature, or statement must be reported?"
             },
             {
-              "title": "Details",
-              "content": "Which numbers, labels, units, or conditions actually influence the target?"
+              "title": "Relevant details",
+              "content": "Which values and conditions actually affect that target?"
             },
             {
-              "title": "Check",
-              "content": "Does the result have the correct sign, size, unit, and domain?"
+              "title": "Verification",
+              "content": "Does the result have the correct sign, size, units, and domain?"
             }
           ]
         }
@@ -72,114 +78,174 @@
       "icon": "fa-pen-ruler",
       "tipe": "basic",
       "isi": [
-        "A quick sketch can turn a long description into visible relationships. Draw only what helps: label known lengths, mark the relevant angle or diagonal, and keep the diagram proportional enough to reveal the structure.",
+        {
+          "type": "paragraph",
+          "content": "A quick sketch can organize lengths, angles, areas, and relationships. The drawing does not need to be perfectly scaled; it only needs to label the important quantities."
+        },
         {
           "type": "example",
           "title": "Example: rectangle and diagonal",
-          "content": "A rectangle has area \\(540\\) square feet and length \\(36\\) feet. Its width is \\(540\\div36=15\\). A diagonal forms a right triangle, so \\(d=\\sqrt{36^2+15^2}=\\sqrt{1521}=39\\) feet."
+          "content": "A rectangle has area 540 square feet and length 36 feet. Its width is \\(w=540\\div36=15\\) feet. If the diagonal is needed, use the Pythagorean theorem: \\(d=\\sqrt{36^2+15^2}=\\sqrt{1521}=39\\) feet."
         },
         {
-          "type": "note",
-          "content": "A sketch is a model, not proof that the picture is drawn to scale. Trust the labels and relationships given in the question."
+          "type": "list",
+          "items": [
+            "Label known lengths and unknown lengths.",
+            "Mark a right angle when the Pythagorean theorem or right-triangle trigonometry may apply.",
+            "Separate area, perimeter, surface area, and volume.",
+            "Write units beside measurements so the requested unit stays visible."
+          ]
         }
       ]
     },
     {
-      "judul": "Eliminate impossible options",
-      "icon": "fa-filter-circle-xmark",
-      "tipe": "table",
+      "judul": "Focus on important details",
+      "icon": "fa-filter",
+      "tipe": "basic",
       "isi": [
-        "Before doing exact algebra, use the context to reject choices that cannot work. This is especially useful for multiple-choice questions.",
         {
-          "type": "table",
-          "table": {
-            "headers": [
-              "Check",
-              "Question to ask",
-              "Typical consequence"
-            ],
-            "leftAlign": [
-              0,
-              1,
-              2
-            ],
-            "rows": [
-              [
-                "Sign",
-                "Can the quantity be negative?",
-                "A length, area, or count is usually nonnegative."
-              ],
-              [
-                "Size",
-                "Is the answer near the expected magnitude?",
-                "An estimate can remove choices that are far too large or small."
-              ],
-              [
-                "Units",
-                "Does the choice measure the requested quantity?",
-                "A perimeter cannot be reported in square units."
-              ],
-              [
-                "Domain",
-                "Does the value satisfy the original condition?",
-                "A denominator cannot be zero, and a square-root input must be nonnegative."
-              ]
-            ]
-          }
+          "type": "paragraph",
+          "content": "Before calculating, identify details that control the answer: signs, units, restrictions, definitions, and boundary words. Ignore decorative information that does not affect the target."
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Sign",
+              "content": "An absolute value cannot be negative, and a length or probability cannot be negative."
+            },
+            {
+              "title": "Size",
+              "content": "A percentage between 0% and 100% cannot be represented by a value such as 250% unless the context allows it."
+            },
+            {
+              "title": "Units",
+              "content": "Area uses square units, volume uses cubic units, and rates must be multiplied by compatible units."
+            },
+            {
+              "title": "Domain",
+              "content": "Check restrictions such as a positive denominator, a nonnegative radicand, or a whole-number count."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: eliminate by sign",
+          "content": "Because \\(\\left|f(x)\\right|\\ge0\\), any negative answer for the value of \\(\\left|f(x)\\right|\\) choice can be eliminated before substituting values."
         }
       ]
     },
     {
       "judul": "Pick easy numbers",
-      "icon": "fa-dice-five",
+      "icon": "fa-dice-one",
       "tipe": "basic",
       "isi": [
-        "When a problem describes a relationship involving an unspecified total or a variable with a simple restriction, choose a convenient value that preserves the relationship. This can make the structure visible.",
+        {
+          "type": "paragraph",
+          "content": "When a problem describes a percentage or ratio but does not give a total, choose a convenient total. The number 100 is especially useful because percentages become whole numbers."
+        },
         {
           "type": "example",
-          "title": "Example: nested percentages",
-          "content": "Suppose \\(40\\%\\) of students have blue eyes and \\(20\\%\\) of those students also have brown hair. Imagine \\(100\\) students: \\(40\\) have blue eyes, and \\(20\\%\\) of \\(40\\) is \\(8\\). Therefore, \\(8\\%\\) of the original group has both characteristics."
+          "title": "Example: two consecutive percentages",
+          "content": "If 40% of students have blue eyes and 20% of those students have brown hair, what percent of the original group has both characteristics?<br><br>Imagine 100 students. If 40% have blue eyes, 40 students have blue eyes. If 20% of those students have brown hair, then \\(0.20(40)=8\\) students have both characteristics. Thus, 8% of the original group has both."
         },
         {
           "type": "note",
-          "content": "Choose easy numbers only when the problem gives a proportional relationship. Do not replace a fixed value or a condition that determines a unique total."
+          "content": "You may choose any convenient total that preserves the relationships. The answer should not depend on the particular total you choose."
         }
       ]
     },
     {
-      "judul": "Use 10 or 100 for percentage problems",
+      "judul": "Percent change and multipliers",
       "icon": "fa-percent",
       "tipe": "basic",
       "isi": [
-        "For a percentage question, make the base explicit. Using \\(100\\) is often fastest when the problem asks for a percentage of an original group; using \\(10\\) can make decimal percentages easy to visualize.",
         {
           "type": "formula",
-          "content": "\\[\\text{new amount}=\\left(1\\pm\\frac{p}{100}\\right)(\\text{original amount})\\]"
+          "content": "\\[\\text{percent change}=\\frac{\\text{new}-\\text{original}}{\\text{original}}\\times100\\%\\]"
         },
         {
-          "type": "example",
-          "title": "Example: percent of a percent",
-          "content": "If a triangle's base is \\(40\\%\\) less than a rectangle's length and its height is \\(50\\%\\) greater than the rectangle's width, let the rectangle dimensions be \\(L\\) and \\(W\\). Then \\(b=0.6L\\), \\(h=1.5W\\), and \\(A_T=\\frac12(0.6L)(1.5W)=0.45LW\\). The triangle's area is \\(45\\%\\) of the rectangle's area."
+          "type": "paragraph",
+          "content": "The original amount is the reference for a percent change. A percent increase or decrease can also be modeled with a multiplier."
         },
-        {
-          "type": "note",
-          "content": "“20% of the blue-eyed students” is different from “20% of all students.” Always name the base before multiplying."
-        }
-      ]
-    },
-    {
-      "judul": "Know the SAT reference sheet",
-      "icon": "fa-book-open",
-      "tipe": "table",
-      "isi": [
-        "The reference sheet is a tool for recall, but it is only useful when you recognize the variables and the situation that matches a formula.",
         {
           "type": "table",
           "table": {
             "headers": [
-              "Shape or relationship",
+              "Change",
+              "Multiplier",
+              "Model"
+            ],
+            "leftAlign": [
+              0,
+              2
+            ],
+            "rows": [
+              [
+                "Increase by 15%",
+                "1.15",
+                "\\(\\text{new}=1.15(\\text{original})\\)"
+              ],
+              [
+                "Decrease by 25%",
+                "0.75",
+                "\\(\\text{new}=0.75(\\text{original})\\)"
+              ],
+              [
+                "Increase by 40%",
+                "1.40",
+                "\\(\\text{new}=1.40(\\text{original})\\)"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Example: sequential changes",
+          "content": "A 15% increase followed by another 15% increase gives \\(\\text{final}=\\text{original}(1.15)(1.15)=1.3225(\\text{original})\\). The total increase is 32.25%, not 30%, because the second increase is based on the new amount."
+        }
+      ]
+    },
+    {
+      "judul": "Mean and data transformations",
+      "icon": "fa-chart-column",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[\\text{mean}=\\frac{\\text{sum of the values}}{\\text{number of values}}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Example: calculate a mean",
+          "content": "For \\(25,28,23,36,29\\), the mean is \\(\\dfrac{25+28+23+36+29}{5}=\\dfrac{141}{5}=28.2\\)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Adding the same number to every data value adds that number to the mean and leaves the standard deviation unchanged.",
+            "Multiplying every data value by a positive number \\(k\\) multiplies both the mean and the standard deviation by \\(k\\).",
+            "When finding a missing data value, first calculate the required total from the mean."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Use the reference sheet strategically",
+      "icon": "fa-file-lines",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "The SAT reference sheet can save time, but only when you recognize the shape or relationship in the problem. Identify what each variable represents before substituting."
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Quantity",
               "Formula",
-              "Variables"
+              "Units"
             ],
             "leftAlign": [
               0,
@@ -189,111 +255,87 @@
             "rows": [
               [
                 "Triangle area",
-                "\\(A=\\frac12bh\\)",
-                "\\(b\\) is base; \\(h\\) is perpendicular height"
+                "\\(A=\\dfrac12bh\\)",
+                "square units"
               ],
               [
                 "Circle area",
                 "\\(A=\\pi r^2\\)",
-                "\\(r\\) is radius"
+                "square units"
               ],
               [
                 "Circle circumference",
                 "\\(C=2\\pi r\\)",
-                "\\(r\\) is radius"
+                "units"
               ],
               [
                 "Cylinder volume",
                 "\\(V=\\pi r^2h\\)",
-                "\\(r\\) is radius; \\(h\\) is height"
-              ],
-              [
-                "Pythagorean theorem",
-                "\\(a^2+b^2=c^2\\)",
-                "\\(c\\) is the hypotenuse"
+                "cubic units"
               ]
             ]
           }
         },
         {
           "type": "example",
-          "title": "Example: estimate a cylinder volume",
-          "content": "For radius \\(2\\) inches and height between \\(7.75\\) and \\(8\\) inches, \\(V=\\pi(2)^2h=4\\pi h\\). Choosing \\(h=8\\) gives about \\(32\\pi\\approx101\\) cubic inches, so a possible volume rounded to the nearest cubic inch is \\(101\\)."
+          "title": "Example: cylinder volume",
+          "content": "A cylinder has radius 2 inches and height 8 inches. Using \\(V=\\pi r^2h\\), the volume is \\(\\pi(2)^2(8)=32\\pi\\) cubic inches."
         },
         {
           "type": "note",
-          "content": "Before substituting, check whether the problem gives a radius or diameter and whether the requested unit is linear, square, or cubic."
+          "content": "For an equilateral triangle with side length \\(s\\), the height is \\(\\dfrac{\\sqrt3}{2}s\\). This relationship can be derived by splitting the triangle into two 30-60-90 triangles."
         }
       ]
     },
     {
-      "judul": "Get comfortable with Desmos",
+      "judul": "Use Desmos deliberately",
       "icon": "fa-chart-line",
       "tipe": "basic",
       "isi": [
-        "Desmos is most helpful when the question is naturally numerical or graphical. Enter the mathematical relationship first, then use the tool to calculate, graph, compare, or confirm.",
         {
-          "type": "table",
-          "table": {
-            "headers": [
-              "Task",
-              "Desmos move",
-              "What to inspect"
-            ],
-            "leftAlign": [
-              0,
-              1,
-              2
-            ],
-            "rows": [
-              [
-                "Evaluate",
-                "Type an expression such as \\(23+40\\) or \\(\\sqrt{36}\\).",
-                "The numerical result and its units."
-              ],
-              [
-                "Intersection",
-                "Graph both equations.",
-                "The shared point, especially its \\(x\\)-coordinate."
-              ],
-              [
-                "Intercept",
-                "Graph the function and select the intercept.",
-                "Where the graph crosses an axis."
-              ],
-              [
-                "Table",
-                "Enter a function and open its table.",
-                "Output values for selected inputs."
-              ],
-              [
-                "Check a point",
-                "Graph the equation and inspect whether the point lies on it.",
-                "Whether the coordinates satisfy the relationship."
-              ]
-            ]
-          }
+          "type": "paragraph",
+          "content": "Desmos is useful for graphing equations and inequalities, finding intersections, checking zeros and intercepts, building tables, and evaluating expressions involving exponents or radicals."
+        },
+        {
+          "type": "ordered-list",
+          "items": [
+            "Enter each equation on its own line.",
+            "Use parentheses carefully, especially around negative numbers and exponents.",
+            "Click an intersection point to read its coordinates.",
+            "Use a table when a question asks for repeated values or a pattern.",
+            "Use the graph to identify a zero, intercept, maximum, minimum, or solution region.",
+            "Check that the displayed value matches the requested units and rounding."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: find an intersection",
+          "content": "For \\(y=3x-5\\) and \\(y=-x+11\\), set the expressions equal: \\(3x-5=-x+11\\), so \\(x=4\\), and then \\(y=7\\). Desmos can display the intersection \\((4,7)\\), while substitution verifies it."
+        },
+        {
+          "type": "example",
+          "title": "Example: identify when an exponential doubles",
+          "content": "For \\(f(t)=40{,}000(2)^{t/790}\\), doubling occurs when the exponent is 1. Thus, \\(t/790=1\\), so \\(t=790\\) minutes."
         },
         {
           "type": "note",
-          "content": "Estimate before pressing Enter. A calculator can evaluate the expression you typed, but it cannot repair a misread question or an incorrect model."
+          "content": "Use mental math for a simple one-step calculation. Use Desmos when graphing, repeated evaluation, nonlinear behavior, or verification makes the tool genuinely useful."
         }
       ]
     },
     {
-      "judul": "A practical SAT Math checklist",
-      "icon": "fa-clipboard-check",
+      "judul": "Time management and verification",
+      "icon": "fa-stopwatch",
       "tipe": "basic",
       "isi": [
         {
           "type": "list",
           "items": [
-            "Read the final question and underline the target mentally.",
-            "Translate the important information into an equation, sketch, table, or graph.",
-            "Estimate the answer's sign and size.",
-            "Use answer choices, easy numbers, the reference sheet, or Desmos when they reduce work.",
-            "Re-read the question and report the requested quantity with the correct unit.",
-            "Record recurring mistakes as sign, unit, interpretation, or calculator-entry errors."
+            "Estimate before calculating so an implausible answer is easier to notice.",
+            "Use answer choices as information; substitution can be faster than solving symbolically.",
+            "Keep units visible in intermediate work.",
+            "If a question is taking too long, mark it, move on, and return after securing easier points.",
+            "Before moving on, ask whether the answer matches the question's requested form: integer, fraction, percentage, coordinate, or unit."
           ]
         }
       ]
@@ -301,290 +343,280 @@
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "If \\(16x-2=30\\), what is the value of \\(8x-1\\)?",
+      "question": "If \\(4x+2=12\\), what is the value of \\(16x+8\\)?",
       "options": [
-        "12",
-        "15",
-        "16",
-        "28"
+        "\\(40\\)",
+        "\\(48\\)",
+        "\\(56\\)",
+        "\\(60\\)"
       ],
       "answer": "B",
       "discussion": [
-        "Add 2 to both sides: \\(16x=32\\), so \\(x=2\\).",
-        "The question asks for \\(8x-1\\), not just \\(x\\). Substitute: \\(8(2)-1=15\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A rectangle has area \\(540\\) square feet and length \\(36\\) feet. A fence is built along its diagonal. How many feet of fence are needed?",
-      "options": [
-        "39",
-        "51",
-        "60",
-        "81"
+        "From \\(4x+2=12\\), subtract 2 to get \\(4x=10\\).",
+        "Rewrite the target as \\(16x+8=4(4x)+8\\).",
+        "Therefore, \\(16x+8=4(10)+8=48\\). The correct answer is B."
       ],
-      "answer": "A",
-      "discussion": [
-        "The width is \\(540\\div36=15\\) feet.",
-        "The diagonal is the hypotenuse of a right triangle: \\(d=\\sqrt{36^2+15^2}=\\sqrt{1521}=39\\) feet."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "Forty percent of a class has blue eyes. Twenty percent of that group has brown hair. What percentage of the entire class has both characteristics?",
+      "question": "Given \\(x+1=\\dfrac{2}{x+1}\\), which is a possible value of \\(x+1\\)?",
       "options": [
-        "4%",
-        "8%",
-        "16%",
-        "20%"
+        "\\(1-\\sqrt2\\)",
+        "\\(\\sqrt2\\)",
+        "\\(2\\)",
+        "\\(4\\)"
       ],
       "answer": "B",
       "discussion": [
-        "Imagine 100 students. Then 40 students have blue eyes.",
-        "Twenty percent of 40 is \\(0.20(40)=8\\), so 8 students out of 100 have both characteristics: \\(8\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Given \\(E=\\frac{O+4M+P}{6}\\), which expression gives \\(P\\) in terms of \\(E\\), \\(O\\), and \\(M\\)?",
-      "options": [
-        "\\(P=6E-O-4M\\)",
-        "\\(P=-6E+O+4M\\)",
-        "\\(P=\\frac{O+4M+E}{6}\\)",
-        "\\(P=\\frac{O+4M-E}{6}\\)"
+        "Let \\(u=x+1\\). Then \\(u=\\dfrac{2}{u}\\), so \\(u^2=2\\).",
+        "Thus, \\(u=\\sqrt2\\) or \\(u=-\\sqrt2\\).",
+        "Among the choices, \\(\\sqrt2\\) is possible, so the correct answer is B."
       ],
-      "answer": "A",
-      "discussion": [
-        "Multiply both sides by 6: \\(6E=O+4M+P\\).",
-        "Subtract \\(O+4M\\) from both sides to obtain \\(P=6E-O-4M\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
+      "type": "multiple-choice",
+      "question": "Which expression is equivalent to \\(\\dfrac{8x(x-7)-3(x-7)}{2x-14}\\), where \\(x>7\\)?",
+      "options": [
+        "\\(\\dfrac{x-7}{5}\\)",
+        "\\(\\dfrac{8x-3}{2}\\)",
+        "\\(\\dfrac{8x^2-3x-14}{2x-14}\\)",
+        "\\(\\dfrac{8x^2-3x-77}{2x-14}\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Factor the numerator: \\(8x(x-7)-3(x-7)=(x-7)(8x-3)\\).",
+        "Factor the denominator: \\(2x-14=2(x-7)\\).",
+        "Since \\(x>7\\), \\(x-7\\ne0\\), so the expression simplifies to \\(\\dfrac{8x-3}{2}\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
       "type": "open",
-      "question": "What is the mean of the data set \\(25,28,23,36,29\\)?",
-      "answer": "\\(28.2\\)",
+      "question": "An event planner pays a one-time venue fee of USD \\(35\\) and USD \\(10.25\\) per attendee. With a USD \\(300\\) budget, what is the greatest possible whole-number of attendees?",
+      "answer": "\\(25\\) attendees",
       "discussion": [
-        "Add the values: \\(25+28+23+36+29=141\\).",
-        "Divide by the five data values: \\(141\\div5=28.2\\).",
-        "In Desmos, you can enter the list and calculate its mean to confirm the result."
-      ]
+        "Let \\(n\\) be the number of attendees. The cost model is \\(35+10.25n\\le300\\).",
+        "Subtract 35: \\(10.25n\\le265\\).",
+        "Divide by 10.25: \\(n\\le25.8536\\ldots\\).",
+        "Because attendees are counted in whole numbers, the greatest possible value is \\(25\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
+      "type": "open",
+      "question": "An equilateral triangle has perimeter 624 centimeters. Its height is \\(k\\sqrt3\\) centimeters. Find \\(k\\).",
+      "answer": "\\(104\\)",
+      "discussion": [
+        "Each side has length \\(624\\div3=208\\) centimeters.",
+        "The height of an equilateral triangle is \\(\\dfrac{\\sqrt3}{2}s\\).",
+        "Therefore, the height is \\(\\dfrac{\\sqrt3}{2}(208)=104\\sqrt3\\), so \\(k=104\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
       "type": "multiple-choice",
-      "question": "If 40% of the students in a class have blue eyes, and 20% of those students with blue eyes have brown hair, then what percent of the original total number of students have brown hair and blue eyes?",
+      "question": "A machine produces beads, and 29 out of every 100 beads are defective. What is the probability of selecting a defective bead?",
       "options": [
-        "4%",
-        "8%",
-        "16%",
-        "20%",
-        "32%"
+        "\\(\\dfrac{1}{2900}\\)",
+        "\\(\\dfrac{1}{29}\\)",
+        "\\(\\dfrac{29}{100}\\)",
+        "\\(\\dfrac{29}{10}\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The phrase “29 out of every 100” directly represents the ratio \\(\\dfrac{29}{100}\\).",
+        "This ratio is already a valid probability between 0 and 1.",
+        "The correct answer is C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(\\dfrac{x^2}{\\sqrt{x^2-c^2}}=\\dfrac{c^2}{\\sqrt{x^2-c^2}}+39\\), where \\(c\\) is positive, which is one solution?",
+      "options": [
+        "\\(-c\\)",
+        "\\(-c^2-39^2\\)",
+        "\\(-\\sqrt{39^2-c^2}\\)",
+        "\\(-\\sqrt{c^2+39^2}\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "Subtract the two fractions and multiply by the positive denominator: \\(x^2-c^2=39\\sqrt{x^2-c^2}\\).",
+        "Let \\(u=\\sqrt{x^2-c^2}\\). Then \\(u^2=39u\\), and because the denominator is defined, \\(u>0\\), so \\(u=39\\).",
+        "Thus, \\(x^2-c^2=39^2\\), giving \\(x^2=c^2+39^2\\).",
+        "The negative solution is \\(x=-\\sqrt{c^2+39^2}\\), choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(b=3\\) and \\(d=1\\), which is equivalent to \\(\\left|\\dfrac{2b-3}{-4d+1}\\right|\\)?",
+      "options": [
+        "\\(-2\\)",
+        "\\(-1\\)",
+        "\\(0\\)",
+        "\\(1\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "Substitute \\(b=3\\) and \\(d=1\\): \\(\\left|\\dfrac{2(3)-3}{-4(1)+1}\\right|=\\left|\\dfrac{3}{-3}\\right|\\).",
+        "The absolute value of \\(-1\\) is 1.",
+        "The correct answer is D. The sign check also eliminates negative choices."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(f(x)=(x+6)(x+5)(x-4)\\), which table represents \\(y=f(x)-3\\)?",
+      "options": [
+        "\\((-6,-9),(-5,-8),(4,1)\\)",
+        "\\((-6,-3),(-5,-3),(4,-3)\\)",
+        "\\((-6,-3),(-5,-2),(4,7)\\)",
+        "\\((-6,3),(-5,3),(4,3)\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "At \\(x=-6,-5,4\\), one factor of \\(f(x)\\) is zero, so \\(f(x)=0\\).",
+        "Therefore, \\(y=f(x)-3=-3\\) at all three inputs.",
+        "The correct table is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(x\\) represents an even integer, which expression represents an odd integer?",
+      "options": [
+        "\\(3x\\)",
+        "\\(2x+1\\)",
+        "\\(3x+2\\)",
+        "\\(4x-2\\)",
+        "\\(5x-4\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Any multiple of an even integer is even.",
+        "The expression \\(2x\\) is even, and adding 1 makes it odd.",
+        "Thus, \\(2x+1\\) is always odd, choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Solve \\(\\sqrt{2x+6}+4=x+3\\).",
+      "options": [
+        "\\(\\{-1\\}\\)",
+        "\\(\\{5\\}\\)",
+        "\\(\\{-1,5\\}\\)",
+        "\\(\\{0,-1,5\\}\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Isolate the radical: \\(\\sqrt{2x+6}=x-1\\), so the right side requires \\(x\\ge1\\).",
+        "Square both sides: \\(2x+6=(x-1)^2=x^2-2x+1\\).",
+        "This gives \\(x^2-4x-5=0\\), so \\(x=5\\) or \\(x=-1\\).",
+        "The domain excludes \\(-1\\), and checking \\(x=5\\) works. The answer is B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The base of triangle \\(T\\) is 40% less than the length of rectangle \\(R\\). The height of triangle \\(T\\) is 50% greater than the width of rectangle \\(R\\). The area of \\(T\\) is what percent of the area of \\(R\\)?",
+      "options": [
+        "\\(10\\)",
+        "\\(45\\)",
+        "\\(90\\)",
+        "\\(110\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Let the rectangle's length and width be \\(L\\) and \\(W\\).",
+        "The triangle's base is \\(0.60L\\), and its height is \\(1.50W\\).",
+        "Thus, \\(A_T=\\frac12(0.60L)(1.50W)=0.45LW\\).",
+        "Since \\(A_R=LW\\), the triangle's area is 45% of the rectangle's area."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If 40% of students have blue eyes and 20% of those students have brown hair, what percent of the original group has both characteristics?",
+      "options": [
+        "\\(4\\%\\)",
+        "\\(8\\%\\)",
+        "\\(16\\%\\)",
+        "\\(20\\%\\)",
+        "\\(32\\%\\)"
       ],
       "answer": "B",
       "discussion": [
         "Imagine 100 students. Then 40 students have blue eyes.",
         "Twenty percent of those 40 students is \\(0.20(40)=8\\).",
-        "Therefore, 8 students out of the original 100 have both characteristics, or \\(8\\%\\)."
-      ]
+        "Therefore, 8 out of 100 students, or 8%, have both characteristics."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "What is the mean of the following data? \\(25,\\ 28,\\ 23,\\ 36,\\ 29\\)",
+      "question": "A graduated cylinder has radius 2 inches and height 7.75 inches. What is its volume, rounded to the nearest cubic inch?",
+      "answer": "Approximately \\(97\\) cubic inches",
+      "discussion": [
+        "Use the cylinder formula \\(V=\\pi r^2h\\).",
+        "Substitute \\(r=2\\) and \\(h=7.75\\): \\(V=\\pi(2)^2(7.75)=31\\pi\\).",
+        "Since \\(31\\pi\\approx97.39\\), the volume rounds to 97 cubic inches."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(y=-(x-3)^2+a\\), which statement is true?",
+      "options": [
+        "Its minimum occurs at \\((-3,a)\\).",
+        "Its minimum occurs at \\((3,a)\\).",
+        "Its maximum occurs at \\((-3,a)\\).",
+        "Its maximum occurs at \\((3,a)\\)."
+      ],
+      "answer": "D",
+      "discussion": [
+        "The vertex form is \\(y=A(x-h)^2+k\\), with vertex \\((h,k)\\).",
+        "Here, the vertex is \\((3,a)\\).",
+        "Because the coefficient of the squared term is negative, the parabola opens downward and the vertex is a maximum. Choice D is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The function \\(f(t)=40{,}000(2)^{t/790}\\) gives the number of bacteria \\(t\\) minutes after observation. How many minutes does it take to double?",
+      "options": [
+        "\\(2\\)",
+        "\\(790\\)",
+        "\\(1{,}580\\)",
+        "\\(40{,}000\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The initial population is 40,000. To double it, the exponential factor must be 2.",
+        "Set \\(2^{t/790}=2^1\\), so \\(t/790=1\\).",
+        "Therefore, \\(t=790\\) minutes, choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "What is the mean of \\(25,28,23,36,29\\)?",
       "answer": "\\(28.2\\)",
       "discussion": [
-        "Add the five values: \\(25+28+23+36+29=141\\).",
-        "Divide by the number of values: \\(141\\div5=28.2\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(23+40\\).",
-      "answer": "\\(63\\)",
-      "discussion": [
-        "Enter \\(23+40\\) in the expression list.",
-        "Desmos gives \\(63\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(9.8-2.1\\).",
-      "answer": "\\(7.7\\)",
-      "discussion": [
-        "Enter \\(9.8-2.1\\) in the expression list.",
-        "Desmos gives \\(7.7\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(23\\times12\\).",
-      "answer": "\\(276\\)",
-      "discussion": [
-        "Enter \\(23\\times12\\) in the expression list.",
-        "Desmos gives \\(276\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(\\frac{12}{60}\\).",
-      "answer": "\\(0.2\\)",
-      "discussion": [
-        "Enter \\(12/60\\) in the expression list.",
-        "Desmos gives \\(0.2\\), which is also equal to \\(\\frac15\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(4^5\\).",
-      "answer": "\\(1024\\)",
-      "discussion": [
-        "Enter \\(4^5\\) in the expression list.",
-        "Desmos gives \\(1024\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(\\sqrt{36}\\).",
-      "answer": "\\(6\\)",
-      "discussion": [
-        "Enter \\(\\sqrt{36}\\) in the expression list.",
-        "Desmos gives \\(6\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(\\sqrt[10]{1024}\\). You may enter it as \\(1024^{1/10}\\).",
-      "answer": "\\(2\\)",
-      "discussion": [
-        "Enter \\(1024^{1/10}\\) in the expression list.",
-        "Because \\(2^{10}=1024\\), Desmos gives \\(2\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(\\frac{2\\times15}{6}\\).",
-      "answer": "\\(5\\)",
-      "discussion": [
-        "Enter \\((2\\times15)/6\\) in the expression list.",
-        "Desmos gives \\(5\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\((4^6+3)-12\\).",
-      "answer": "\\(3987\\)",
-      "discussion": [
-        "Evaluate the exponent first: \\(4^6=4096\\).",
-        "Then \\((4096+3)-12=3987\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Using Desmos, calculate \\(5\\pi+4\\).",
-      "answer": "\\(19.708\\) approximately",
-      "discussion": [
-        "Enter \\(5\\pi+4\\) in the expression list.",
-        "Desmos gives approximately \\(19.708\\)."
-      ]
+        "Add the values: \\(25+28+23+36+29=141\\).",
+        "There are 5 values, so the mean is \\(141\\div5=28.2\\)."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "If \\(x\\) represents an even integer, which expression must represent an odd integer?",
-      "options": [
-        "\\(3x\\)",
-        "\\(2x+1\\)",
-        "\\(3x+2\\)",
-        "\\(4x-2\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "An even integer can be written as \\(x=2k\\).",
-        "Then \\(2x+1=2(2k)+1=4k+1\\), which is odd."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A graduated cylinder has radius \\(2\\) inches and height between \\(7.75\\) and \\(8\\) inches. Which is one possible volume, rounded to the nearest cubic inch?",
-      "options": [
-        "25 cubic inches",
-        "50 cubic inches",
-        "101 cubic inches",
-        "201 cubic inches"
-      ],
-      "answer": "C",
-      "discussion": [
-        "Use the cylinder formula \\(V=\\pi r^2h\\).",
-        "With \\(r=2\\) and \\(h=8\\), \\(V=4\\pi(8)=32\\pi\\approx100.5\\), which rounds to \\(101\\) cubic inches.",
-        "Because the height can be any value between \\(7.75\\) and \\(8\\), a value near 101 cubic inches is possible."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Which Desmos action is most direct for finding where \\(y=2x+3\\) and \\(y=11\\) have the same value?",
-      "options": [
-        "Graph both equations and select their intersection",
-        "Open a blank table without entering an equation",
-        "Calculate only the \\(y\\)-intercept of \\(y=2x+3\\)",
-        "Enter \\(2+3+11\\) as a single expression"
-      ],
-      "answer": "A",
-      "discussion": [
-        "The two quantities have the same value at the point where their graphs intersect.",
-        "Graph \\(y=2x+3\\) and \\(y=11\\), then select the intersection to read the solution."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "The base of a triangle is \\(40\\%\\) less than the length of a rectangle, and the triangle's height is \\(50\\%\\) greater than the rectangle's width. What percent of the rectangle's area is the triangle's area?",
-      "options": [
-        "10%",
-        "45%",
-        "90%",
-        "110%"
-      ],
-      "answer": "B",
-      "discussion": [
-        "Let the rectangle have length \\(L\\) and width \\(W\\). Then the triangle has base \\(0.6L\\) and height \\(1.5W\\).",
-        "Its area is \\(\\frac12(0.6L)(1.5W)=0.45LW\\).",
-        "Since the rectangle's area is \\(LW\\), the triangle's area is \\(45\\%\\) of it."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "Write one mistake category you should record after missing an SAT Math question, and explain what it helps you notice.",
-      "answer": "Answers may vary. Useful categories include sign, unit, interpretation, and calculator-entry errors.",
-      "discussion": [
-        "A useful error log names the cause, not only the correct answer.",
-        "For example, a unit error reminds you to distinguish length, area, and volume before selecting a choice."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(7x=42\\), what is the value of \\(x\\)?",
+      "question": "If \\(7x=42\\), what is \\(x\\)?",
       "options": [
         "\\(5\\)",
         "\\(6\\)",
@@ -593,13 +625,14 @@
       ],
       "answer": "B",
       "discussion": [
-        "Divide both sides by 7: \\(x=42\\div7=6\\)."
-      ]
+        "Divide both sides by 7: \\(x=42\\div7=6\\).",
+        "The correct answer is B."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "What is the mean of \\(8\\), \\(10\\), \\(12\\), and \\(14\\)?",
+      "question": "What is the mean of \\(8,10,12,14\\)?",
       "options": [
         "\\(10\\)",
         "\\(11\\)",
@@ -608,14 +641,14 @@
       ],
       "answer": "B",
       "discussion": [
-        "Add the values: \\(8+10+12+14=44\\).",
-        "Divide by 4: \\(44\\div4=11\\)."
-      ]
+        "The sum is \\(8+10+12+14=44\\).",
+        "There are 4 values, so the mean is \\(44\\div4=11\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "What is \\(25\\%\\) of \\(80\\)?",
+      "question": "What is 25% of 80?",
       "options": [
         "\\(15\\)",
         "\\(20\\)",
@@ -624,45 +657,14 @@
       ],
       "answer": "B",
       "discussion": [
-        "Convert \\(25\\%\\) to \\(0.25\\) and multiply: \\(0.25(80)=20\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "Which formula should be used to find the area of a circle with radius \\(r\\)?",
-      "options": [
-        "\\(A=2\\pi r\\)",
-        "\\(A=\\pi r^2\\)",
-        "\\(A=\\frac12\\pi r\\)",
-        "\\(A=4\\pi r^2\\)"
+        "Convert 25% to 0.25 and multiply: \\(0.25(80)=20\\).",
+        "The correct answer is B."
       ],
-      "answer": "B",
-      "discussion": [
-        "The area of a circle is \\(A=\\pi r^2\\).",
-        "The formula \\(2\\pi r\\) gives circumference, not area."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "Which value is closest to \\(\\sqrt{50}\\)?",
-      "options": [
-        "\\(5\\)",
-        "\\(6\\)",
-        "\\(7\\)",
-        "\\(8\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "Since \\(49<50<64\\), \\(7<\\sqrt{50}<8\\).",
-        "Also, \\(\\sqrt{50}\\approx7.07\\), so 7 is closest."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A quantity increases from \\(120\\) to \\(150\\). What is the percent increase?",
+      "question": "A quantity increases from 120 to 150. What is the percentage increase?",
       "options": [
         "\\(20\\%\\)",
         "\\(25\\%\\)",
@@ -672,13 +674,14 @@
       "answer": "B",
       "discussion": [
         "The increase is \\(150-120=30\\).",
-        "Relative to the original amount, \\(30\\div120=0.25=25\\%\\)."
-      ]
+        "Use the original amount as the denominator: \\(\\dfrac{30}{120}\\times100\\%=25\\%\\).",
+        "The correct answer is B."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "The mean of five numbers is \\(18\\). Four of the numbers are \\(12\\), \\(15\\), \\(20\\), and \\(21\\). What is the fifth number?",
+      "question": "The mean of five numbers is 18. Four numbers are 12, 15, 20, and 21. What is the fifth number?",
       "options": [
         "\\(18\\)",
         "\\(20\\)",
@@ -687,15 +690,15 @@
       ],
       "answer": "C",
       "discussion": [
-        "The total of all five numbers is \\(5(18)=90\\).",
-        "The four known numbers total \\(12+15+20+21=68\\).",
-        "The fifth number is \\(90-68=22\\)."
-      ]
+        "The total of all five values must be \\(5(18)=90\\).",
+        "The four known values sum to \\(12+15+20+21=68\\).",
+        "The missing value is \\(90-68=22\\), choice C."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "A rectangle has area \\(180\\) square units and length \\(15\\) units. What is its perimeter?",
+      "question": "A rectangle has area 180 square units and length 15 units. What is its perimeter?",
       "options": [
         "\\(36\\)",
         "\\(54\\)",
@@ -705,45 +708,14 @@
       "answer": "B",
       "discussion": [
         "The width is \\(180\\div15=12\\) units.",
-        "The perimeter is \\(2(15+12)=54\\) units."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "If \\(40\\%\\) of a number is \\(28\\), what is the number?",
-      "options": [
-        "\\(56\\)",
-        "\\(60\\)",
-        "\\(70\\)",
-        "\\(72\\)"
+        "The perimeter is \\(2(15+12)=54\\) units.",
+        "The correct answer is B."
       ],
-      "answer": "C",
-      "discussion": [
-        "Let the number be \\(n\\). Then \\(0.40n=28\\).",
-        "Divide by \\(0.40\\): \\(n=28\\div0.40=70\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "The data set is \\(4,7,7,9,13\\). Which statement is true?",
-      "options": [
-        "The mean is \\(7\\).",
-        "The median is \\(8\\).",
-        "The mode is \\(7\\).",
-        "The range is \\(7\\)."
-      ],
-      "answer": "C",
-      "discussion": [
-        "The value 7 appears more often than any other value, so the mode is 7.",
-        "The mean is 8, the median is 7, and the range is \\(13-4=9\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A rectangle has length \\(20\\%\\) greater than its width. If its area is \\(270\\) square units, what is its perimeter?",
+      "question": "A rectangle has length 20% greater than its width. Its area is 270 square units. What is its perimeter?",
       "options": [
         "\\(54\\)",
         "\\(60\\)",
@@ -752,157 +724,45 @@
       ],
       "answer": "C",
       "discussion": [
-        "Let the width be \\(w\\). The length is \\(1.2w\\).",
-        "Area: \\(1.2w^2=270\\), so \\(w^2=225\\) and \\(w=15\\).",
-        "The length is 18, so the perimeter is \\(2(15+18)=66\\)."
-      ]
+        "Let the width be \\(w\\). Then the length is \\(1.2w\\).",
+        "The area equation is \\(1.2w^2=270\\), so \\(w^2=225\\) and \\(w=15\\).",
+        "The length is \\(1.2(15)=18\\), so the perimeter is \\(2(15+18)=66\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "A data set contains \\(n\\) values with mean \\(24\\). If each value is increased by \\(5\\), what is the new mean?",
+      "question": "A data set has mean 40 and standard deviation 6. Each data value is multiplied by 3. What are the new mean and standard deviation?",
       "options": [
-        "\\(24\\)",
-        "\\(29\\)",
-        "\\(5n+24\\)",
-        "\\(120\\)"
+        "Mean 43, standard deviation 9",
+        "Mean 120, standard deviation 18",
+        "Mean 120, standard deviation 6",
+        "Mean 40, standard deviation 18"
       ],
       "answer": "B",
       "discussion": [
-        "Adding 5 to every data value adds 5 to the mean.",
-        "The new mean is \\(24+5=29\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "The mean of six test scores is \\(82\\). After one score is removed, the mean of the remaining five scores is \\(79\\). What was the removed score?",
-      "options": [
-        "\\(87\\)",
-        "\\(92\\)",
-        "\\(97\\)",
-        "\\(102\\)"
+        "Multiplying every value by 3 multiplies the mean by 3: \\(40(3)=120\\).",
+        "It also multiplies the standard deviation by 3: \\(6(3)=18\\).",
+        "The correct answer is B."
       ],
-      "answer": "C",
-      "discussion": [
-        "The original total is \\(6(82)=492\\).",
-        "The total of the remaining five scores is \\(5(79)=395\\).",
-        "The removed score is \\(492-395=97\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
       "type": "multiple-choice",
-      "question": "A cylinder has radius \\(3\\) inches and height \\(h\\) inches. Its volume is between \\(180\\pi\\) and \\(216\\pi\\) cubic inches. Which interval describes \\(h\\)?",
-      "options": [
-        "\\(20\\le h\\le24\\)",
-        "\\(10\\le h\\le12\\)",
-        "\\(6\\le h\\le8\\)",
-        "\\(3\\le h\\le6\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "Use \\(V=\\pi r^2h\\): \\(V=9\\pi h\\).",
-        "Thus \\(180\\pi\\le9\\pi h\\le216\\pi\\).",
-        "Divide by \\(9\\pi\\): \\(20\\le h\\le24\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A quantity is multiplied by \\(1.2\\) and then by \\(0.9\\). Compared with the original quantity, the final quantity is:",
-      "options": [
-        "\\(8\\%\\) greater",
-        "\\(8\\%\\) less",
-        "\\(10\\%\\) greater",
-        "unchanged"
-      ],
-      "answer": "A",
-      "discussion": [
-        "The combined multiplier is \\(1.2(0.9)=1.08\\).",
-        "A multiplier of 1.08 means the final quantity is \\(8\\%\\) greater than the original."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A survey of \\(500\\) students finds that \\(62\\%\\) prefer option A. If the survey has a margin of error of 4 percentage points, which interval is most reasonable for the population percentage?",
-      "options": [
-        "\\(54\\%\\le p\\le58\\%\\)",
-        "\\(58\\%\\le p\\le66\\%\\)",
-        "\\(62\\%\\le p\\le70\\%\\)",
-        "\\(66\\%\\le p\\le70\\%\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "A margin of error of 4 percentage points means use \\(62\\%-4\\%\\) to \\(62\\%+4\\%\\).",
-        "The interval is \\(58\\%\\le p\\le66\\%\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A graphing calculator shows that the intersection of \\(y=3x-5\\) and \\(y=-x+11\\) is \\((4,7)\\). Which expression directly verifies the y-coordinate using the first equation?",
-      "options": [
-        "\\(3(4)-5\\)",
-        "\\(3(7)-5\\)",
-        "\\(-4+11\\)",
-        "\\(4-11\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "The first equation is \\(y=3x-5\\).",
-        "Substitute \\(x=4\\): \\(y=3(4)-5=7\\), confirming the y-coordinate."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A quantity is increased by \\(15\\%\\) and then increased by another \\(15\\%\\). What is the total percent increase?",
+      "question": "A quantity is increased by 15% and then increased by another 15%. What is the total percent increase?",
       "options": [
         "\\(15\\%\\)",
         "\\(30\\%\\)",
         "\\(32.25\\%\\)",
-        "\\(35\\%\\)"
+        "\\(35.50\\%\\)"
       ],
       "answer": "C",
       "discussion": [
-        "Use the combined multiplier \\(1.15(1.15)=1.3225\\).",
-        "The final quantity is \\(32.25\\%\\) greater than the original."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A data set has mean \\(40\\) and standard deviation \\(6\\). Each data value is multiplied by \\(3\\). What are the new mean and standard deviation?",
-      "options": [
-        "Mean \\(43\\), standard deviation \\(9\\)",
-        "Mean \\(120\\), standard deviation \\(18\\)",
-        "Mean \\(120\\), standard deviation \\(6\\)",
-        "Mean \\(40\\), standard deviation \\(18\\)"
+        "Two consecutive 15% increases give the multiplier \\((1.15)(1.15)=1.3225\\).",
+        "The final value is 1.3225 times the original, which represents a 32.25% increase.",
+        "The correct answer is C."
       ],
-      "answer": "B",
-      "discussion": [
-        "Multiplying every data value by 3 multiplies both the mean and standard deviation by 3.",
-        "The new mean is \\(3(40)=120\\), and the new standard deviation is \\(3(6)=18\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "A rectangular garden has perimeter \\(80\\) meters. Its length is \\(6\\) meters greater than its width. A path of uniform width is built inside the garden, reducing the usable area to \\(364\\) square meters. If the path has width \\(w\\), which equation can be used to determine \\(w\\)?",
-      "options": [
-        "\\((23-2w)(17-2w)=364\\)",
-        "\\((23-w)(17-w)=364\\)",
-        "\\((40-w)(40+w)=364\\)",
-        "\\((23+2w)(17+2w)=364\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "From the perimeter, \\(l+w=40\\). Since the length is 6 greater than the width, the garden dimensions are 23 meters by 17 meters.",
-        "A path of width \\(w\\) on both sides reduces each dimension by \\(2w\\).",
-        "The usable-area equation is \\((23-2w)(17-2w)=364\\)."
-      ]
+      "showSolutionButton": true
     }
   ]
 }

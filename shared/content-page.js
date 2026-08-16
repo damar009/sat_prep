@@ -112,6 +112,44 @@ function renderDiscussionToggle(content, index, showSolutionToggle) {
   `;
 }
 
+function renderQuizBlock(block, index, showSolutionToggle) {
+  const question = `
+    <div class="content-block">
+      <p><strong>${escapeHtml(block.title || "Quiz")}</strong></p>
+      ${block.prompt ? `<p>${block.prompt}</p>` : ""}
+    </div>
+    ${block.statements?.length ? `
+      <div class="quiz-statements">
+        <ol type="a">
+          ${block.statements.map((statement) => `<li>${statement}</li>`).join("")}
+        </ol>
+      </div>
+    ` : ""}
+    ${block.table ? renderTable(block.table) : ""}
+    ${block.options ? renderOptions(block.options) : ""}
+  `;
+
+  if (!showSolutionToggle) return `<div class="example-box">${question}</div>`;
+
+  const solutionId = `quiz-discussion-${index}`;
+  const solution = `
+    <strong>Answer: ${escapeHtml(block.answer || "See discussion")}</strong>
+    ${(block.discussion || []).length
+      ? `<ol>${block.discussion.map((step) => `<li>${step}</li>`).join("")}</ol>`
+      : ""}
+  `;
+
+  return `
+    <div class="quiz-block">
+      ${question}
+      <button class="solution-toggle" type="button" aria-expanded="false" aria-controls="${solutionId}">
+        <span class="solution-toggle__label">Show ▼</span>
+      </button>
+      <div class="solution-box" id="${solutionId}" hidden>${solution}</div>
+    </div>
+  `;
+}
+
 function renderOptions(options = []) {
   return `
     <ol class="option-list" type="A">
@@ -138,6 +176,8 @@ function renderBlock(block, index, showSolutionToggle) {
       return `<div class="formula-box">${block.content}</div>`;
     case "note":
       return `<aside class="note-box"><strong>Note:</strong><div>${block.content}</div></aside>`;
+    case "quiz":
+      return renderQuizBlock(block, `block-${index}`, showSolutionToggle);
     case "example": {
       const content = `
         ${block.title ? `<strong>${escapeHtml(block.title)}</strong>` : ""}

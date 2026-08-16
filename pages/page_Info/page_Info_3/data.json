@@ -14,81 +14,43 @@
   },
   "eyebrow": "SAT Information / 03",
   "title": "Tools and resources",
-  "subtitle": "Keep the right tools close without letting tools replace reasoning.",
+  "subtitle": "Temporary placeholder content. This page will be rewritten using the new lesson list.",
   "materi": [
     {
-      "judul": "Tool before button",
-      "icon": "fa-toolbox",
+      "judul": "Dummy material",
+      "icon": "fa-file-lines",
       "tipe": "basic",
       "isi": [
-        "A calculator, reference sheet, or graphing tool is most useful after you identify the relationship in the problem. First decide what the question is asking; then choose the tool that reduces unnecessary work.",
+        "This is temporary material for SAT Information unit 03: Tools and resources.",
         {
-          "type": "example",
-          "title": "A good tool decision",
-          "content": "If a question asks when two quantities are equal, model the relationship first. For example, if \\(f(x) = 2x + 3\\) and \\(g(x) = 11\\), the useful question is \\(2x + 3 = 11\\), not simply which button to press."
+          "type": "note",
+          "content": "Replace this placeholder with the new material list."
         }
-      ]
-    },
-    {
-      "judul": "Build a personal reference shelf",
-      "icon": "fa-bookmark",
-      "tipe": "grid",
-      "isi": [
-        {
-          "type": "grid",
-          "items": [
-            {
-              "title": "Formula notes",
-              "content": "Keep formulas with one example and one common trap."
-            },
-            {
-              "title": "Error log",
-              "content": "Record the reason a choice failed, not only the correct answer."
-            },
-            {
-              "title": "Timed sets",
-              "content": "Use short sets to practice switching between question types."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "judul": "Source hygiene",
-      "icon": "fa-shield-halved",
-      "tipe": "basic",
-      "isi": [
-        "Separate official information from tutor notes and personal shortcuts. When a policy, schedule, or test feature matters, verify it with the current official source before relying on it."
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
-      "type": "multiple-choice",
-      "question": "What should happen before choosing a calculator strategy?",
-      "options": [
-        "Identify the mathematical relationship",
-        "Try random buttons",
-        "Skip the variables",
-        "Copy a previous answer"
-      ],
-      "answer": "A",
+      "type": "open",
+      "question": "Dummy practice question for SAT Information unit 03.",
+      "answer": "Dummy answer. Replace this question and solution later.",
       "discussion": [
-        "The relationship tells you whether a calculator, graph, estimation, or algebraic manipulation is the most efficient next step."
-      ]
+        "This is temporary placeholder content.",
+        "Replace the question, answer, and discussion with the new lesson list."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT Information question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Dummy additional practice question for SAT Information unit 03.",
+      "answer": "Dummy answer. Replace this question and solution later.",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "This is temporary placeholder content.",
+        "Replace the question, answer, and discussion with the new lesson list."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

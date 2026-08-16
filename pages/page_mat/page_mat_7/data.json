@@ -13,52 +13,633 @@
     "number": "07"
   },
   "eyebrow": "SAT Math / 07",
-  "title": "Exponents and radicals",
-  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "title": "Polynomials and Rational Functions",
+  "subtitle": "Read structure from factors, evaluate polynomial remainders, transform graphs, and manage rational-function domains.",
   "materi": [
     {
-      "judul": "Page structure ready",
-      "icon": "fa-hourglass-half",
+      "judul": "Polynomial vocabulary",
+      "icon": "fa-shapes",
       "tipe": "basic",
       "isi": [
-        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        {
+          "type": "paragraph",
+          "content": "A polynomial is an expression made from constants and variables with nonnegative integer exponents. For example, \\(3x^4-2x^2+7x-1\\) is a polynomial."
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Degree",
+              "content": "The greatest exponent with a nonzero coefficient. The degree of \\(3x^4-2x^2+7x-1\\) is 4."
+            },
+            {
+              "title": "Coefficient",
+              "content": "A number multiplying a variable, such as 3 in \\(3x^4\\)."
+            },
+            {
+              "title": "Constant term",
+              "content": "A term with no variable, such as \\(-1\\)."
+            }
+          ]
+        },
         {
           "type": "note",
-          "content": "This lesson can be published when its content has been reviewed."
+          "content": "Arrange polynomial terms in descending degree when simplifying or comparing expressions."
         }
       ]
     },
     {
-      "judul": "Planned focus",
-      "icon": "fa-square-root-variable",
+      "judul": "Polynomial operations",
+      "icon": "fa-calculator",
       "tipe": "basic",
       "isi": [
-        "SAT Math unit 07 is reserved for: Exponents and radicals."
+        {
+          "type": "paragraph",
+          "content": "Add or subtract like terms, and multiply by distributing every term. Like terms have the same variable part and exponent."
+        },
+        {
+          "type": "example",
+          "title": "Example: addition",
+          "content": "Add \\((2x^2+3x+1)+(x^2-2x+4)\\) by combining like terms: \\(3x^2+x+5\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: multiplication",
+          "content": "Distribute each term in \\((x+3)(x-2)\\): \\(x^2-2x+3x-6=x^2+x-6\\)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Keep unlike powers separate: \\(x^2\\) and \\(x\\) are not like terms.",
+            "Use the distributive property for every term in a product.",
+            "Check the degree of the product against the degrees of its factors."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Factors, zeros, and multiplicity",
+      "icon": "fa-xmark",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "If \\(x-r\\) is a factor of a polynomial, then \\(x=r\\) is a zero and the graph has an x-intercept at \\((r,0)\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: read zeros from factors",
+          "content": "For \\(f(x)=(x+3)(x+1)(x-2)\\), the zeros are \\(-3\\), \\(-1\\), and 2."
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Odd multiplicity",
+              "content": "The graph usually crosses the x-axis at the zero."
+            },
+            {
+              "title": "Even multiplicity",
+              "content": "The graph usually touches the x-axis and turns around."
+            },
+            {
+              "title": "Distinct zeros",
+              "content": "The degree can exceed the number of distinct x-intercepts when roots repeat or are nonreal."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Read the zero using the opposite sign: the factor \\(x+5\\) gives the zero \\(x=-5\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Function transformations",
+      "icon": "fa-arrows-up-down-left-right",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "New function",
+              "Transformation",
+              "Effect"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "\\(g(x)=f(x)+k\\)",
+                "Vertical shift",
+                "Up \\(k\\) units when \\(k>0\\); down when \\(k<0\\)."
+              ],
+              [
+                "\\(g(x)=f(x-h)\\)",
+                "Horizontal shift",
+                "Right \\(h\\) units."
+              ],
+              [
+                "\\(g(x)=f(x+h)\\)",
+                "Horizontal shift",
+                "Left \\(h\\) units."
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Example: vertical shift",
+          "content": "If \\(f(x)=7x^3\\) and the graph shifts down 2 units, then \\(g(x)=7x^3-2\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: horizontal shift",
+          "content": "If \\(g(x)=f(x+4)\\), the graph of \\(f\\) moves 4 units to the left. The sign inside the parentheses works opposite to the direction of the shift."
+        }
+      ]
+    },
+    {
+      "judul": "The Remainder Theorem",
+      "icon": "fa-divide",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[\\text{The remainder when }P(x)\\text{ is divided by }x-c\\text{ is }P(c).\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "This theorem often avoids polynomial long division. Substitute the value of \\(c\\) directly into the polynomial."
+        },
+        {
+          "type": "example",
+          "title": "Example: evaluate a remainder",
+          "content": "For \\(P(x)=x^3-2x+5\\), the remainder when dividing by \\(x-2\\) is \\(P(2)=2^3-2(2)+5=9\\)."
+        },
+        {
+          "type": "note",
+          "content": "If the divisor is \\(x+3\\), rewrite it as \\(x-(-3)\\). The remainder is then \\(P(-3)\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Rational functions and domain restrictions",
+      "icon": "fa-percent",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "A rational function has the form \\(f(x)=\\dfrac{p(x)}{q(x)}\\). Its domain excludes every value that makes the original denominator equal to zero."
+        },
+        {
+          "type": "example",
+          "title": "Example: canceling a common factor",
+          "content": "For \\(f(x)=\\dfrac{x^2-5x+6}{x-2}\\), factor the numerator: \\(f(x)=\\dfrac{(x-2)(x-3)}{x-2}=x-3\\), but only for \\(x\\ne2\\). The original excluded value remains excluded."
+        },
+        {
+          "type": "example",
+          "title": "Example: evaluate a rational function",
+          "content": "For \\(f(x)=\\dfrac{x^2-6x+3}{x-1}\\), \\(f(-1)=\\dfrac{1+6+3}{-2}=-5\\)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Set the original denominator equal to zero to find restrictions.",
+            "Factor before canceling.",
+            "State canceled values as excluded from the domain.",
+            "Check that an input is in the domain before evaluating."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Polynomial graphs and end behavior",
+      "icon": "fa-chart-line",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "The graph of a polynomial can reveal zeros, multiplicities, and overall behavior. The leading term controls the end behavior, while the factors identify x-intercepts."
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Degree",
+              "content": "A degree-\\(n\\) polynomial has at most \\(n\\) real zeros and exactly \\(n\\) complex zeros when multiplicity is counted."
+            },
+            {
+              "title": "Leading coefficient",
+              "content": "The sign of the leading coefficient helps determine whether the ends rise or fall."
+            },
+            {
+              "title": "x-intercepts",
+              "content": "Distinct real roots correspond to distinct points where the graph meets the x-axis."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Use a graph as a check, but read the scale and the labels carefully. A visible crossing and a tangency represent different root multiplicities."
+        }
+      ]
+    },
+    {
+      "judul": "A reliable polynomial and rational-function workflow",
+      "icon": "fa-check-double",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Inspect factors and denominators before expanding.",
+            "Use zeros to interpret factors and graph intercepts.",
+            "Use substitution for direct function values and Remainder Theorem questions.",
+            "Apply transformations with careful attention to inside-versus-outside signs.",
+            "Write domain restrictions before canceling rational factors.",
+            "Use Desmos to verify roots, shifts, holes, and graph behavior."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "When a source question has a missing graph or incomplete definition, rebuild the mathematical relationship from the stated topic before solving."
+        }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "What is the first useful step when beginning the SAT Math unit \"Exponents and radicals\"?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=(x+6)(x+5)(x-4)\\), which table represents \\(y=f(x)-3\\)?",
+      "options": [
+        "\\((-6,-9),(-5,-8),(4,1)\\)",
+        "\\((-6,-3),(-5,-3),(4,-3)\\)",
+        "\\((-6,3),(-5,-2),(4,7)\\)",
+        "\\((-6,3),(-5,3),(4,3)\\)"
+      ],
+      "answer": "B",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "At \\(x=-6,-5,4\\), one factor of \\(f(x)\\) is zero, so \\(f(x)=0\\).",
+        "Therefore, \\(y=f(x)-3=-3\\) at all three inputs.",
+        "The correct table is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=x^3+9\\), what is \\(f(2)\\)?",
+      "options": [
+        "\\(14\\)",
+        "\\(15\\)",
+        "\\(17\\)",
+        "\\(18\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Substitute \\(x=2\\): \\(f(2)=2^3+9=8+9=17\\).",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(k(x)=x^3+110\\), what is \\(k(2)\\)?",
+      "options": [
+        "\\(118\\)",
+        "\\(116\\)",
+        "\\(115\\)",
+        "\\(110\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Substitute \\(x=2\\): \\(k(2)=2^3+110=8+110=118\\).",
+        "The correct answer is choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=7x^3\\), the graph of \\(g(x)\\) is the graph of \\(f(x)\\) shifted down 2 units. Which defines \\(g\\)?",
+      "options": [
+        "\\(g(x)=7x^3-2\\)",
+        "\\(g(x)=\\dfrac{7x^3}{2}\\)",
+        "\\(g(x)=7x^3+2\\)",
+        "\\(g(x)=7x^3+4\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "A vertical shift down 2 subtracts 2 from every output.",
+        "Thus, \\(g(x)=f(x)-2=7x^3-2\\), choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A polynomial graph has exactly three distinct x-intercepts. For how many distinct values of \\(x\\) does the polynomial equal zero?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": "C",
+      "discussion": [
+        "An x-intercept occurs where the polynomial value is zero.",
+        "Three distinct x-intercepts therefore correspond to three distinct values of \\(x\\).",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(f(x)=x^5+9x+17\\), the graph passes through \\((0,b)\\). What is \\(b\\)?",
+      "answer": "\\(17\\)",
+      "discussion": [
+        "At the y-intercept, \\(x=0\\).",
+        "Thus, \\(b=f(0)=0^5+9(0)+17=17\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(g(x)=x(x-2)(x+6)^2\\), the value of \\(g(7-w)\\) is 0. What is the sum of all possible values of \\(w\\)?",
+      "answer": "\\(25\\)",
+      "discussion": [
+        "The zeros of \\(g\\) are \\(x=0\\), \\(x=2\\), and \\(x=-6\\).",
+        "Set \\(7-w\\) equal to each zero: \\(w=7\\), \\(w=5\\), or \\(w=13\\).",
+        "The sum is \\(7+5+13=25\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(y=2(x-d)(x+d)(x+g)(x-d)\\), where \\(d\\) and \\(g\\) are distinct positive constants, how many distinct x-intercepts does the graph have?",
+      "options": [
+        "\\(4\\)",
+        "\\(3\\)",
+        "\\(2\\)",
+        "\\(1\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The roots are \\(x=d\\), \\(x=-d\\), and \\(x=-g\\).",
+        "The root \\(x=d\\) is repeated, but it still represents only one distinct x-intercept.",
+        "Because \\(d\\) and \\(g\\) are distinct and positive, the three roots are distinct, so choice B is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(f(x)=(x-1)(x+3)(x-2)\\), the graph is shifted up 6 units to create \\(g\\). If \\(g(4)=b\\), what is \\(b\\)?",
+      "answer": "\\(48\\)",
+      "discussion": [
+        "A shift up 6 gives \\(g(x)=f(x)+6\\).",
+        "Compute \\(f(4)=(4-1)(4+3)(4-2)=3\\cdot7\\cdot2=42\\).",
+        "Therefore, \\(g(4)=42+6=48\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A polynomial has roots \\(-1\\), \\(-3\\), and \\(5\\). Which is a factor?",
+      "options": [
+        "\\(x-1\\)",
+        "\\(x+1\\)",
+        "\\(x-3\\)",
+        "\\(x+5\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "A root \\(r\\) corresponds to the factor \\(x-r\\).",
+        "The root \\(-1\\) corresponds to \\(x+1\\).",
+        "The correct answer is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A polynomial graph crosses the x-axis at exactly two positive points \\((a,0)\\) and \\((b,0)\\). Which could define \\(f\\)?",
+      "options": [
+        "\\(f(x)=(x-a)(x-b)\\)",
+        "\\(f(x)=(x+a)(x+b)\\)",
+        "\\(f(x)=(x-a)(x+b)\\)",
+        "\\(f(x)=x(x-a)(x-b)\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The factors \\(x-a\\) and \\(x-b\\) create the positive roots \\(a\\) and \\(b\\).",
+        "Choice A has exactly those two roots and no required additional root.",
+        "The correct answer is choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=\\dfrac{x^2-6x+3}{x-1}\\), what is \\(f(-1)\\)?",
+      "options": [
+        "\\(-5\\)",
+        "\\(-2\\)",
+        "\\(2\\)",
+        "\\(5\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Substitute \\(x=-1\\): \\(f(-1)=\\dfrac{(-1)^2-6(-1)+3}{-1-1}\\).",
+        "This equals \\(\\dfrac{1+6+3}{-2}=\\dfrac{10}{-2}=-5\\).",
+        "The correct answer is choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=\\dfrac{1}{6x}\\), what is \\(f(3)\\)?",
+      "options": [
+        "\\(\\dfrac13\\)",
+        "\\(\\dfrac16\\)",
+        "\\(\\dfrac19\\)",
+        "\\(\\dfrac1{18}\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "Substitute \\(x=3\\): \\(f(3)=\\dfrac{1}{6(3)}=\\dfrac1{18}\\).",
+        "The correct answer is choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If \\(f(x)=\\dfrac{6}{x}\\) and \\(g(x)=f(x+4)\\), which equation defines \\(g\\)?",
+      "options": [
+        "\\(g(x)=\\dfrac6x\\)",
+        "\\(g(x)=\\dfrac6{x+4}\\)",
+        "\\(g(x)=\\dfrac6{x+8}\\)",
+        "\\(g(x)=\\dfrac{6(x+4)}{x+4}\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Replace the input of \\(f\\) with \\(x+4\\): \\(g(x)=f(x+4)=\\dfrac6{x+4}\\).",
+        "This is also a shift of the graph 4 units to the left.",
+        "The correct answer is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The table gives \\(g(x)\\), where \\(g(x)=\\dfrac{f(x)}{x+3}\\) and \\(f\\) is linear. What is the y-intercept of \\(y=f(x)\\)?",
+      "table": {
+        "headers": [
+          "x",
+          "g(x)"
+        ],
+        "leftAlign": [
+          0,
+          1
+        ],
+        "rows": [
+          [
+            "-27",
+            "3"
+          ],
+          [
+            "-9",
+            "0"
+          ],
+          [
+            "21",
+            "5"
+          ]
+        ]
+      },
+      "options": [
+        "\\((0,36)\\)",
+        "\\((0,12)\\)",
+        "\\((0,4)\\)",
+        "\\((0,-9)\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Since \\(f(x)=g(x)(x+3)\\), the table gives \\(f(-27)=3(-24)=-72\\), \\(f(-9)=0\\), and \\(f(21)=5(24)=120\\).",
+        "The line through \\((-9,0)\\) and \\((21,120)\\) has slope \\(4\\).",
+        "Using \\((-9,0)\\), the equation is \\(f(x)=4x+36\\), so the y-intercept is \\((0,36)\\), choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(h(x)=\\dfrac{x^2+3x-28}{x+7}\\), if \\(h(a)=13\\) and \\(a\\) is in the domain of \\(h\\), what is \\(a\\)?",
+      "options": [
+        "\\(4\\)",
+        "\\(5\\)",
+        "\\(6\\)",
+        "\\(17\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "Factor the numerator: \\(x^2+3x-28=(x+7)(x-4)\\).",
+        "For \\(x\\ne-7\\), the function simplifies to \\(h(x)=x-4\\).",
+        "Set \\(a-4=13\\): \\(a=17\\), which is in the domain. Choice D is correct."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT Math question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "What is the degree of \\(5x^4-3x+1\\)?",
+      "answer": "\\(4\\)",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "The greatest exponent of \\(x\\) is 4.",
+        "Therefore, the degree is 4."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Add \\((x^2+3x+2)+(2x^2-x+5)\\).",
+      "answer": "\\(3x^2+2x+7\\)",
+      "discussion": [
+        "Combine the \\(x^2\\) terms: \\(x^2+2x^2=3x^2\\).",
+        "Combine the \\(x\\) terms: \\(3x-x=2x\\).",
+        "Combine constants: \\(2+5=7\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Factor \\(x^2-8x+15\\).",
+      "answer": "\\((x-3)(x-5)\\)",
+      "discussion": [
+        "The numbers \\(-3\\) and \\(-5\\) multiply to 15 and add to \\(-8\\).",
+        "Therefore, \\(x^2-8x+15=(x-3)(x-5)\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Multiply \\((x+4)(x-3)\\).",
+      "answer": "\\(x^2+x-12\\)",
+      "discussion": [
+        "Distribute: \\(x(x-3)+4(x-3)=x^2-3x+4x-12\\).",
+        "Combine like terms to get \\(x^2+x-12\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Find the remainder when \\(P(x)=x^3-2x+5\\) is divided by \\(x-2\\).",
+      "answer": "\\(9\\)",
+      "discussion": [
+        "By the Remainder Theorem, the remainder is \\(P(2)\\).",
+        "Compute \\(P(2)=2^3-2(2)+5=8-4+5=9\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Find the zeros of \\(f(x)=(x-2)(x+5)(x-7)\\).",
+      "answer": "\\(-5\\), \\(2\\), and \\(7\\)",
+      "discussion": [
+        "Set each factor equal to zero: \\(x-2=0\\), \\(x+5=0\\), and \\(x-7=0\\).",
+        "The zeros are \\(2\\), \\(-5\\), and 7."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A polynomial has roots \\(-2\\), 3, and 5. Write one possible factored form.",
+      "answer": "\\((x+2)(x-3)(x-5)\\)",
+      "discussion": [
+        "A root \\(-2\\) gives factor \\(x+2\\).",
+        "Roots 3 and 5 give factors \\(x-3\\) and \\(x-5\\).",
+        "One possible polynomial is \\((x+2)(x-3)(x-5)\\). Any nonzero constant multiple has the same roots."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "The function \\(\\dfrac{x^2-5x+6}{x-2}\\) is defined for \\(x\\ne2\\). Write an equivalent expression on its domain.",
+      "answer": "\\(x-3\\), with \\(x\\ne2\\)",
+      "discussion": [
+        "Factor the numerator: \\(x^2-5x+6=(x-2)(x-3)\\).",
+        "Cancel the common factor only on the original domain: \\(f(x)=x-3\\) for \\(x\\ne2\\).",
+        "The excluded value \\(x=2\\) must remain excluded."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A rational function has denominator \\((x-4)(x+1)\\). State its domain restrictions.",
+      "answer": "\\(x\\ne4\\) and \\(x\\ne-1\\)",
+      "discussion": [
+        "Set each denominator factor equal to zero: \\(x-4=0\\) and \\(x+1=0\\).",
+        "The denominator is zero at 4 and \\(-1\\), so both values are excluded from the domain."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

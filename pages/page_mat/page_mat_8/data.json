@@ -13,52 +13,600 @@
     "number": "08"
   },
   "eyebrow": "SAT Math / 08",
-  "title": "Quadratic equations",
-  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "title": "Exponential Equations and Functions",
+  "subtitle": "Model repeated multiplication, interpret growth and decay, convert time units, and solve exponential equations.",
   "materi": [
     {
-      "judul": "Page structure ready",
-      "icon": "fa-hourglass-half",
+      "judul": "The structure of an exponential function",
+      "icon": "fa-chart-line",
       "tipe": "basic",
       "isi": [
-        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        {
+          "type": "formula",
+          "content": "\\[f(x)=a\\cdot b^x\\]"
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Initial value \\(a\\)",
+              "content": "Because \\(b^0=1\\), \\(f(0)=a\\). The initial value is the y-intercept."
+            },
+            {
+              "title": "Growth factor \\(b\\)",
+              "content": "The output is multiplied by \\(b\\) whenever \\(x\\) increases by 1."
+            },
+            {
+              "title": "Growth",
+              "content": "If \\(b>1\\), the function represents exponential growth."
+            },
+            {
+              "title": "Decay",
+              "content": "If \\(0<b<1\\), the function represents exponential decay."
+            }
+          ]
+        },
         {
           "type": "note",
-          "content": "This lesson can be published when its content has been reviewed."
+          "content": "Exponential change uses repeated multiplication. Linear change adds the same amount over equal intervals."
         }
       ]
     },
     {
-      "judul": "Planned focus",
-      "icon": "fa-square-root-variable",
+      "judul": "Percentage changes and multipliers",
+      "icon": "fa-percent",
       "tipe": "basic",
       "isi": [
-        "SAT Math unit 08 is reserved for: Quadratic equations."
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Change",
+              "Multiplier",
+              "Example model"
+            ],
+            "leftAlign": [
+              0,
+              2
+            ],
+            "rows": [
+              [
+                "Increase by \\(r\\%\\)",
+                "\\(1+\\dfrac{r}{100}\\)",
+                "6% increase: \\(P(t)=P_0(1.06)^t\\)"
+              ],
+              [
+                "Decrease by \\(r\\%\\)",
+                "\\(1-\\dfrac{r}{100}\\)",
+                "35% decrease: \\(P(t)=P_0(0.65)^t\\)"
+              ],
+              [
+                "Increase by 190%",
+                "2.90",
+                "The new amount is 290% of the old amount."
+              ]
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "content": "A 190% increase does not use a factor of 1.90. The original 100% plus the 190% increase gives 290%, so the multiplier is 2.90."
+        },
+        {
+          "type": "example",
+          "title": "Example: repeated bounce",
+          "content": "If a ball reaches 85% of its previous maximum height after each bounce and starts at 22 feet, then \\(h(n)=22(0.85)^n\\). Since \\(0.85<1\\), the heights decay."
+        }
+      ]
+    },
+    {
+      "judul": "Interpreting the y-intercept",
+      "icon": "fa-location-crosshairs",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "For an exponential model, the y-intercept is found by evaluating the function at 0. It represents the initial amount when the input measures time or another starting variable."
+        },
+        {
+          "type": "example",
+          "title": "Example: initial coupons",
+          "content": "For \\(P(t)=8000(0.65)^t\\), \\(P(0)=8000\\). The y-intercept is \\((0,8000)\\), meaning the initial number of coupons was 8,000."
+        },
+        {
+          "type": "example",
+          "title": "Example: initial population",
+          "content": "For \\(N(t)=2000(1.05)^t\\), the population at \\(t=0\\) is 2,000. The factor 1.05 describes the yearly change, not the initial population."
+        }
+      ]
+    },
+    {
+      "judul": "Changing the time unit",
+      "icon": "fa-clock",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "If an exponential model uses years but the question asks for months, convert the input in the exponent. Do not divide the base by 12."
+        },
+        {
+          "type": "formula",
+          "content": "\\[t=\\frac{m}{12}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Example: years to months",
+          "content": "If \\(p(t)=90{,}000(1.06)^t\\), where \\(t\\) is years, then after \\(m\\) months the model is \\(p(m)=90{,}000(1.06)^{m/12}\\)."
+        },
+        {
+          "type": "note",
+          "content": "The exponent must count the number of growth periods. If growth occurs every 2 days and \\(x\\) is measured in days, the exponent is \\(x/2\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Growth and decay in context",
+      "icon": "fa-arrow-trend-up",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Population",
+              "content": "Use a factor greater than 1 for repeated percentage growth."
+            },
+            {
+              "title": "Depreciation",
+              "content": "Use a factor between 0 and 1 when a value loses a fixed percentage."
+            },
+            {
+              "title": "Bacteria",
+              "content": "Doubling every period gives a factor of 2."
+            },
+            {
+              "title": "Views or comments",
+              "content": "The exponent counts the number of equal time intervals, not necessarily the number of clock units."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: squirrel population",
+          "content": "If a population is 150% more each year, the factor is 2.5. If there are 180 squirrels at the end of the first year and \\(t=1\\) represents that time, the initial value is \\(180\\div2.5=72\\), so \\(n(t)=72(2.5)^t\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: doubling bacteria",
+          "content": "If there are 44,000 bacteria initially and the population doubles each day, then \\(y=44{,}000(2)^t\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Transformations of exponential functions",
+      "icon": "fa-arrows-up-down-left-right",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "New function",
+              "Transformation",
+              "Example"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "\\(g(x)=f(x)+k\\)",
+                "Vertical shift",
+                "Up \\(k\\) units when \\(k>0\\)."
+              ],
+              [
+                "\\(g(x)=f(x-h)\\)",
+                "Horizontal shift",
+                "Right \\(h\\) units."
+              ],
+              [
+                "\\(g(x)=f(x+h)\\)",
+                "Horizontal shift",
+                "Left \\(h\\) units."
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Example: horizontal shift",
+          "content": "If \\(f(x)=9(4)^x\\) and \\(g(x)=f(x+2)\\), then \\(g(x)=9(4)^{x+2}=9(4)^2(4)^x=144(4)^x\\)."
+        },
+        {
+          "type": "note",
+          "content": "Inside the input, the sign works opposite to the direction: \\(f(x+2)\\) shifts left 2, while \\(f(x-2)\\) shifts right 2."
+        }
+      ]
+    },
+    {
+      "judul": "Solving exponential equations",
+      "icon": "fa-equals",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "When both sides can be expressed with the same base, set the exponents equal. Otherwise, use logarithms or a graphing calculator such as Desmos."
+        },
+        {
+          "type": "example",
+          "title": "Example: matching bases",
+          "content": "Solve \\(2^{x+1}=32\\). Since \\(32=2^5\\), set exponents equal: \\(x+1=5\\), so \\(x=4\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: rewriting a rate",
+          "content": "For \\(f(x)=(1.84)^{x/4}\\), rewrite as \\(f(x)=\\left(1.84^{1/4}\\right)^x\\). Since \\(1.84^{1/4}\\approx1.16\\), the corresponding rate is approximately a 16% increase per unit of \\(x\\)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Check that both sides are positive before applying logarithms.",
+            "Use exact powers when possible.",
+            "Use Desmos to verify a numerical solution or compare exponential graphs."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "A reliable exponential-model workflow",
+      "icon": "fa-check-double",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Identify the initial value.",
+            "Convert the percentage or repeated change into a multiplier.",
+            "Determine the length of one growth period.",
+            "Write the exponent using the requested time unit.",
+            "Check whether the factor represents growth or decay.",
+            "Interpret the y-intercept and function values in context.",
+            "Use Desmos or logarithms when the bases cannot be matched."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Always ask what one unit of the exponent means. A correct factor with the wrong exponent unit produces an incorrect model."
+        }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "What is the first useful step when beginning the SAT Math unit \"Quadratic equations\"?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "type": "multiple-choice",
+      "question": "At the time an article was first featured on a news website, there were 40 comments. At the end of each hour, the number of comments increased by 190% of the previous amount. Which equation models the estimated number of comments \\(C\\), \\(t\\) hours later?",
+      "options": [
+        "\\(C=40(1.19)^t\\)",
+        "\\(C=40(1.9)^t\\)",
+        "\\(C=40(19)^t\\)",
+        "\\(C=40(2.9)^t\\)"
+      ],
+      "answer": "D",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "A 190% increase means the new amount is 100%+190%=290% of the previous amount.",
+        "The multiplier is therefore 2.90.",
+        "With initial value 40, the model is \\(C=40(2.9)^t\\), choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A ball is dropped from an initial height of 22 feet. After each bounce, its maximum height is 85% of the previous maximum height. Which equation defines \\(h(n)\\)?",
+      "options": [
+        "\\(h(n)=22(0.22)^n\\)",
+        "\\(h(n)=22(0.85)^n\\)",
+        "\\(h(n)=85(0.22)^n\\)",
+        "\\(h(n)=85(0.85)^n\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The initial height is 22, so the coefficient is 22.",
+        "Each bounce keeps 85% of the previous height, giving a factor of 0.85.",
+        "Thus, \\(h(n)=22(0.85)^n\\), choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "An exponential function satisfies \\(f(1)=128\\) and has the form \\(f(x)=a(1.6)^x\\). Which equation defines \\(f\\)?",
+      "options": [
+        "\\(f(x)=50(1.6)^x\\)",
+        "\\(f(x)=80(1.6)^x\\)",
+        "\\(f(x)=128(1.6)^x\\)",
+        "\\(f(x)=204.8(1.6)^x\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Use \\(f(1)=a(1.6)=128\\).",
+        "Divide by 1.6: \\(a=80\\).",
+        "Therefore, \\(f(x)=80(1.6)^x\\), choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The function is \\(f(x)=(-8)(2)^x\\). What is its y-intercept?",
+      "options": [
+        "\\((0,14)\\)",
+        "\\((0,2)\\)",
+        "\\((0,22)\\)",
+        "\\((0,-8)\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "The y-intercept occurs at \\(x=0\\).",
+        "Then \\(f(0)=-8(2^0)=-8\\).",
+        "The y-intercept is \\((0,-8)\\), choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A squirrel population was 150% more each year than the previous year. At the end of 2016 there were 180 squirrels. Which equation models \\(n\\), the population \\(t\\) years after the end of 2015?",
+      "options": [
+        "\\(n=72(1.5)^t\\)",
+        "\\(n=72(2.5)^t\\)",
+        "\\(n=180(1.5)^t\\)",
+        "\\(n=180(2.5)^t\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "A 150% increase gives a multiplier of \\(1+1.50=2.5\\).",
+        "At \\(t=1\\), the population is 180, so the initial value is \\(180\\div2.5=72\\).",
+        "The model is \\(n=72(2.5)^t\\), choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(p(t)=90{,}000(1.06)^t\\), where \\(t\\) is years after a census, which function models the population \\(m\\) months after the census?",
+      "options": [
+        "\\(r(m)=\\dfrac{90{,}000}{12}(1.06)^m\\)",
+        "\\(r(m)=90{,}000\\left(\\dfrac{1.06}{12}\\right)^m\\)",
+        "\\(r(m)=90{,}000\\left(\\dfrac{1.06}{12}\\right)^{m/12}\\)",
+        "\\(r(m)=90{,}000(1.06)^{m/12}\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "One year equals 12 months, so the number of years is \\(t=\\dfrac{m}{12}\\).",
+        "Substitute this into the exponent without changing the base.",
+        "The correct model is \\(r(m)=90{,}000(1.06)^{m/12}\\), choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=206(1.034)^x\\), what is the best interpretation of \\(f(5)\\approx243\\) in a model where \\(x=0\\) represents 1957?",
+      "options": [
+        "The account is approximately USD 5 greater in 1962 than in 1957.",
+        "The account is approximately USD 243 in 1962.",
+        "The account is approximately 5 times greater in 1962 than in 1957.",
+        "The account increases by an unspecified amount every year."
+      ],
+      "answer": "B",
+      "discussion": [
+        "The input \\(x=5\\) represents five years after 1957, which is 1962.",
+        "The output \\(f(5)\\approx243\\) is the modeled account value in that year.",
+        "Therefore, choice B is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "On April 1, there were 233 views of an advertisement. Every 2 days, views increased by 70%. Which equation predicts the views \\(x\\) days after April 1?",
+      "options": [
+        "\\(f(x)=233(0.70)^{x/2}\\)",
+        "\\(f(x)=233(0.70)^{2x}\\)",
+        "\\(f(x)=233(1.70)^{x/2}\\)",
+        "\\(f(x)=233(1.70)^{2x}\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "A 70% increase gives a multiplier of 1.70.",
+        "Because the increase occurs every 2 days, the number of growth periods is \\(x/2\\).",
+        "Thus, \\(f(x)=233(1.70)^{x/2}\\), choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The number of bacteria doubles every day. There are 44,000 bacteria initially. Which model represents the population after \\(t\\) days?",
+      "options": [
+        "\\(y=\\dfrac12(44{,}000)^t\\)",
+        "\\(y=2(44{,}000)^t\\)",
+        "\\(y=44{,}000\\left(\\dfrac12\\right)^t\\)",
+        "\\(y=44{,}000(2)^t\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "The initial value is 44,000.",
+        "Doubling gives a factor of 2 for each day.",
+        "Therefore, \\(y=44{,}000(2)^t\\), choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "For each increase of 1 in \\(x\\), \\(y\\) increases by a factor of 4. When \\(x=0\\), \\(y=200\\). Which equation represents the relationship?",
+      "options": [
+        "\\(y=4(x)^{200}\\)",
+        "\\(y=4(200)^x\\)",
+        "\\(y=200(x)^4\\)",
+        "\\(y=200(4)^x\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "The initial value is 200, so the coefficient is 200.",
+        "The multiplicative factor is 4, so the base is 4.",
+        "The model is \\(y=200(4)^x\\), choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(t)=8000(0.65)^t\\), what is the best interpretation of the y-intercept?",
+      "options": [
+        "The minimum number of coupons was 1,428.",
+        "The minimum number of coupons was 8,000.",
+        "The initial number of coupons was 1,428.",
+        "The initial number of coupons was 8,000."
+      ],
+      "answer": "D",
+      "discussion": [
+        "The y-intercept occurs at \\(t=0\\).",
+        "Since \\(f(0)=8000(0.65)^0=8000\\), the initial number of coupons was 8,000.",
+        "The correct answer is choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=9(4)^x\\) and \\(g(x)=f(x+2)\\), which equation defines \\(g\\)?",
+      "options": [
+        "\\(g(x)=18(4)^x\\)",
+        "\\(g(x)=144(4)^x\\)",
+        "\\(g(x)=18(8)^x\\)",
+        "\\(g(x)=81(16)^x\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Substitute \\(x+2\\) into \\(f\\): \\(g(x)=9(4)^{x+2}\\).",
+        "Rewrite: \\(9(4)^2(4)^x=144(4)^x\\).",
+        "The correct answer is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(f(x)=(1.84)^{x/4}\\), write \\(f(x)=\\left(1+\\dfrac{p}{100}\\right)^x\\). Which is closest to \\(p\\)?",
+      "options": [
+        "\\(16\\)",
+        "\\(21\\)",
+        "\\(46\\)",
+        "\\(96\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Rewrite the function as \\(f(x)=\\left(1.84^{1/4}\\right)^x\\).",
+        "The fourth root of 1.84 is approximately 1.16.",
+        "Thus, \\(1+\\dfrac{p}{100}\\approx1.16\\), so \\(p\\approx16\\), choice A."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT Math question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Identify the initial value and the growth factor in \\(f(x)=3(1.2)^x\\).",
+      "answer": "Initial value \\(3\\); growth factor \\(1.2\\)",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "The coefficient is the initial value, so \\(f(0)=3\\).",
+        "The base 1.2 is the multiplicative factor. Because it is greater than 1, the function represents growth."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Does \\(g(t)=500(0.8)^t\\) represent growth or decay?",
+      "options": [
+        "Growth",
+        "Decay",
+        "Neither",
+        "Both growth and decay"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The base is 0.8, which is between 0 and 1.",
+        "Therefore, the function represents exponential decay, choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Write an exponential model for an initial population of 2,000 that increases by 5% each year.",
+      "answer": "\\(P(t)=2000(1.05)^t\\)",
+      "discussion": [
+        "The initial value is 2,000.",
+        "A 5% increase gives the multiplier \\(1.05\\).",
+        "Thus, \\(P(t)=2000(1.05)^t\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A population starts at 8,000 and decreases by 15% annually. Write an exponential model.",
+      "answer": "\\(P(t)=8000(0.85)^t\\)",
+      "discussion": [
+        "A 15% decrease leaves 85% of the previous amount.",
+        "The decay factor is \\(1-0.15=0.85\\).",
+        "Therefore, \\(P(t)=8000(0.85)^t\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(f(x)=2(3)^x\\), find \\(f(4)\\).",
+      "answer": "\\(162\\)",
+      "discussion": [
+        "Substitute \\(x=4\\): \\(f(4)=2(3)^4\\).",
+        "Since \\(3^4=81\\), \\(f(4)=2(81)=162\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Rewrite \\(P(t)=12{,}000(1.04)^t\\) in terms of months \\(m\\), assuming \\(t\\) is measured in years.",
+      "answer": "\\(P(m)=12{,}000(1.04)^{m/12}\\)",
+      "discussion": [
+        "The number of years represented by \\(m\\) months is \\(m/12\\).",
+        "Replace \\(t\\) with \\(m/12\\) in the exponent.",
+        "The model is \\(P(m)=12{,}000(1.04)^{m/12}\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(f(x)=5(2)^x\\), define \\(g(x)=f(x+3)\\).",
+      "answer": "\\(g(x)=40(2)^x\\)",
+      "discussion": [
+        "Substitute \\(x+3\\): \\(g(x)=5(2)^{x+3}\\).",
+        "Separate the exponent: \\(5(2)^3(2)^x=40(2)^x\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A quantity grows by 12% every 4 hours. Write a model in terms of hours \\(t\\), using \\(P_0\\) for the initial value.",
+      "answer": "\\(P(t)=P_0(1.12)^{t/4}\\)",
+      "discussion": [
+        "A 12% increase gives a factor of 1.12.",
+        "There are \\(t/4\\) four-hour growth periods in \\(t\\) hours.",
+        "Therefore, \\(P(t)=P_0(1.12)^{t/4}\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(2^{x+1}=32\\).",
+      "answer": "\\(x=4\\)",
+      "discussion": [
+        "Rewrite 32 as \\(2^5\\).",
+        "Set exponents equal: \\(x+1=5\\).",
+        "Therefore, \\(x=4\\)."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

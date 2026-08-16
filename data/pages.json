@@ -62,73 +62,73 @@
         {
           "id": "page_mat_2",
           "number": "02",
-          "title": "Chapter 1.2. Fundamentals of Math",
-          "summary": "Use practical strategies, the SAT reference sheet, and Desmos efficiently.",
+          "title": "SAT Math Strategies, Reference Sheet, and Desmos",
+          "summary": "Choose efficient strategies, use the reference sheet, and work confidently with Desmos.",
           "active": true,
           "url": "pages/page_mat/page_mat_2/index.html"
         },
         {
           "id": "page_mat_3",
           "number": "03",
-          "title": "Chapter 2.1. Numbers and Operations",
-          "summary": "Exponents, radicals, exponential models, radical equations, and complex numbers.",
+          "title": "Algebra and Linear Equations",
+          "summary": "Solve equations, handle restrictions, and interpret slope, intercepts, and linear models.",
           "active": true,
           "url": "pages/page_mat/page_mat_3/index.html"
         },
         {
           "id": "page_mat_4",
           "number": "04",
-          "title": "Chapter 2.2. Fractions, Percentages, Ratios, and Proportions",
-          "summary": "Convert between fractions, decimals, percentages, ratios, rates, and proportions.",
+          "title": "Linear Equations in Two Variables and Systems",
+          "summary": "Connect graphs and equations, solve systems, and model real-world constraints.",
           "active": true,
           "url": "pages/page_mat/page_mat_4/index.html"
         },
         {
           "id": "page_mat_5",
           "number": "05",
-          "title": "Chapter 3.1. Linear Equations and Linear Functions",
-          "summary": "Solve linear equations and interpret slope, intercepts, rates, and linear models.",
+          "title": "Inequalities and Systems of Inequalities",
+          "summary": "Translate limits, solve inequalities, graph regions, and model constraints.",
           "active": true,
           "url": "pages/page_mat/page_mat_5/index.html"
         },
         {
           "id": "page_mat_6",
           "number": "06",
-          "title": "Chapter 3.2. Linear Equations in More Than One Variable",
-          "summary": "?",
-          "active": false,
+          "title": "Quadratic Equations and Functions",
+          "summary": "Factor quadratics, use the quadratic formula, and interpret roots, vertices, and models.",
+          "active": true,
           "url": "pages/page_mat/page_mat_6/index.html"
         },
         {
           "id": "page_mat_7",
           "number": "07",
-          "title": "Chapter 3.3. Inequalities",
-          "summary": "?",
-          "active": false,
+          "title": "Polynomials and Rational Functions",
+          "summary": "Use factors, transformations, remainders, and domain restrictions to analyze polynomial and rational functions.",
+          "active": true,
           "url": "pages/page_mat/page_mat_7/index.html"
         },
         {
           "id": "page_mat_8",
           "number": "08",
-          "title": "Chapter 3.4. Quadratic Equations and Roots",
-          "summary": "?",
-          "active": false,
+          "title": "Exponential Equations and Functions",
+          "summary": "Model growth and decay, convert time units, transform exponential functions, and solve exponential equations.",
+          "active": true,
           "url": "pages/page_mat/page_mat_8/index.html"
         },
         {
           "id": "page_mat_9",
           "number": "09",
-          "title": "Chapter 3.5. Polynomials",
-          "summary": "?",
-          "active": false,
+          "title": "Quantitative Relationships",
+          "summary": "Apply percentages, ratios, rates, proportions, scale, density, mixtures, and variation.",
+          "active": true,
           "url": "pages/page_mat/page_mat_9/index.html"
         },
         {
           "id": "page_mat_10",
           "number": "10",
-          "title": "Chapter 3.6. Other Equations",
-          "summary": "?",
-          "active": false,
+          "title": "Statistics and Statistical Analysis",
+          "summary": "Read graphs, interpret scatterplots, use regression models, and evaluate predictions.",
+          "active": true,
           "url": "pages/page_mat/page_mat_10/index.html"
         },
         {

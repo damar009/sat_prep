@@ -13,52 +13,729 @@
     "number": "09"
   },
   "eyebrow": "SAT Math / 09",
-  "title": "Quadratic functions",
-  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "title": "Quantitative Relationships",
+  "subtitle": "Use percentages, ratios, rates, proportions, scale factors, density, mixtures, and variation models.",
   "materi": [
     {
-      "judul": "Page structure ready",
-      "icon": "fa-hourglass-half",
+      "judul": "Percentages and part-whole relationships",
+      "icon": "fa-percent",
       "tipe": "basic",
       "isi": [
-        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        {
+          "type": "formula",
+          "content": "\\[\\text{part}=\\frac{\\text{percent}}{100}\\cdot\\text{whole}\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "A percentage compares a part with a whole. Before calculating, identify which quantity is the whole and which quantity is the part."
+        },
+        {
+          "type": "example",
+          "title": "Example: percentage of a number",
+          "content": "If a park has 250 trees and 6% are birch, the number of birch trees is \\(0.06(250)=15\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: solve for the whole",
+          "content": "If 432 is 96% of a number \\(N\\), then \\(0.96N=432\\), so \\(N=450\\)."
+        },
         {
           "type": "note",
-          "content": "This lesson can be published when its content has been reviewed."
+          "content": "Do not confuse “6% of 250” with “250 is 6% of what number?” The first multiplies by 0.06; the second divides by 0.06."
         }
       ]
     },
     {
-      "judul": "Planned focus",
-      "icon": "fa-square-root-variable",
+      "judul": "Percent increase, decrease, and repeated changes",
+      "icon": "fa-arrow-trend-up",
       "tipe": "basic",
       "isi": [
-        "SAT Math unit 09 is reserved for: Quadratic functions."
+        {
+          "type": "formula",
+          "content": "\\[\\text{percent change}=\\frac{\\text{new}-\\text{original}}{\\text{original}}\\times100\\%\\]"
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Change",
+              "Multiplier",
+              "Model"
+            ],
+            "leftAlign": [
+              0,
+              2
+            ],
+            "rows": [
+              [
+                "Increase by \\(r\\%\\)",
+                "\\(1+\\dfrac{r}{100}\\)",
+                "\\(\\text{new}=\\left(1+\\dfrac{r}{100}\\right)(\\text{original})\\)"
+              ],
+              [
+                "Decrease by \\(r\\%\\)",
+                "\\(1-\\dfrac{r}{100}\\)",
+                "\\(\\text{new}=\\left(1-\\dfrac{r}{100}\\right)(\\text{original})\\)"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Example: percentage increase",
+          "content": "If enrollment changes from 200 to 147% of its previous value, the new enrollment is \\(1.47(200)=294\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: compound interest",
+          "content": "A USD \\(100\\) account earning 4% annually is modeled by \\(A(t)=100(1.04)^t\\). The factor is applied once for each year."
+        },
+        {
+          "type": "note",
+          "content": "For consecutive percentage changes, multiply the factors. Do not simply add the percentages unless the question explicitly uses the same original amount."
+        }
+      ]
+    },
+    {
+      "judul": "Ratios and scale factors",
+      "icon": "fa-scale-balanced",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "A ratio \\(a:b\\) means the quantities can be represented as \\(ak\\) and \\(bk\\) for a common scale factor \\(k\\). Preserve the order of the ratio."
+        },
+        {
+          "type": "example",
+          "title": "Example: ratio mixture",
+          "content": "If nitric acid and water have a mass ratio of \\(2:7\\) and the total mixture is 270 grams, there are \\(2+7=9\\) parts. Each part is 30 grams, so acid is 60 grams and water is 210 grams. Water exceeds acid by 150 grams."
+        },
+        {
+          "type": "example",
+          "title": "Example: ratio of coaches to athletes",
+          "content": "If the ratio of coaches to athletes is \\(1:26\\) and there are \\(x\\) coaches, the number of athletes is \\(26x\\)."
+        },
+        {
+          "type": "note",
+          "content": "A ratio is not automatically a fraction of the total. For a ratio of 2:7, the total number of parts is 9."
+        }
+      ]
+    },
+    {
+      "judul": "Rates and unit rates",
+      "icon": "fa-gauge-high",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[\\text{rate}=\\frac{\\text{quantity}}{\\text{time}}\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "A rate compares quantities with different units. A unit rate describes how much of one quantity corresponds to one unit of another."
+        },
+        {
+          "type": "example",
+          "title": "Example: revolutions per minute",
+          "content": "A wind turbine completes 900 revolutions in 50 minutes. Its rate is \\(900\\div50=18\\) revolutions per minute."
+        },
+        {
+          "type": "example",
+          "title": "Example: cost per pound",
+          "content": "If USD \\(27\\) buys oranges at USD \\(3\\) per pound, the number of pounds is \\(27\\div3=9\\) pounds."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Write the units beside the numerator and denominator.",
+            "Divide in the order requested by the question.",
+            "Use a proportion when comparing equivalent rates."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Proportions and equivalent rates",
+      "icon": "fa-arrows-rotate",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[\\frac{a}{b}=\\frac{c}{d}\\quad\\Longleftrightarrow\\quad ad=bc\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "A proportion states that two ratios are equal. Cross-multiplication is useful after the units and order of the ratios have been matched."
+        },
+        {
+          "type": "example",
+          "title": "Example: proportional hose rate",
+          "content": "If a hose adds \\(88x\\) ounces in \\(5y\\) minutes, then in \\(9y\\) minutes it adds \\(88x\\cdot\\dfrac{9y}{5y}=\\dfrac{792x}{5}\\) ounces."
+        },
+        {
+          "type": "example",
+          "title": "Example: constant speed",
+          "content": "If an object travels 4x inches in y seconds, its speed is \\(\\dfrac{4x}{y}\\). If another object is twice as fast, its speed is \\(\\dfrac{8x}{y}\\)."
+        },
+        {
+          "type": "note",
+          "content": "Cancel common units only after writing the full rate. This helps prevent reversing the proportion."
+        }
+      ]
+    },
+    {
+      "judul": "Density and unit conversions",
+      "icon": "fa-cubes-stacked",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[\\text{density}=\\frac{\\text{mass}}{\\text{volume}}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Example: density",
+          "content": "An object with mass 168 grams and volume \\(24\\text{ cm}^3\\) has density \\(168\\div24=7\\) grams per cubic centimeter."
+        },
+        {
+          "type": "example",
+          "title": "Example: square-unit conversion",
+          "content": "A region grows at 250 square feet per hour. Using 1 meter = 3.28 feet, convert with \\(250\\cdot\\dfrac1{60}\\cdot\\left(\\dfrac1{3.28}\\right)^2\\approx0.39\\) square meters per minute."
+        },
+        {
+          "type": "note",
+          "content": "For area conversions, square the linear conversion factor. For volume conversions, cube it."
+        }
+      ]
+    },
+    {
+      "judul": "Direct and inverse variation",
+      "icon": "fa-link",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Relationship",
+              "Equation",
+              "Meaning"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "Direct variation",
+                "\\(y=kx\\)",
+                "The ratio \\(y/x\\) is constant."
+              ],
+              [
+                "Inverse variation",
+                "\\(y=\\dfrac{k}{x}\\) or \\(xy=k\\)",
+                "The product \\(xy\\) is constant."
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Example: inverse work relationship",
+          "content": "If 12 workers complete a task in 15 days, then the work product is \\(12(15)=180\\) worker-days. With 20 workers, the time is \\(180\\div20=9\\) days."
+        },
+        {
+          "type": "note",
+          "content": "More workers requiring less time is an inverse relationship only when the total amount of work stays constant."
+        }
+      ]
+    },
+    {
+      "judul": "A reliable quantitative-relationship workflow",
+      "icon": "fa-check-double",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Identify the whole, part, ratio, rate, or constant product.",
+            "Write units beside the quantities.",
+            "Convert units before applying a rate or scale.",
+            "Choose a multiplier, common scale factor, proportion, direct model, or inverse model.",
+            "Estimate the result and check whether the units and magnitude are reasonable."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "Correct setup is usually more important than difficult arithmetic. Keep the relationship visible before using a calculator."
+        }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
-      "type": "open",
-      "question": "What is the first useful step when beginning the SAT Math unit \"Quadratic functions\"?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "type": "multiple-choice",
+      "question": "There are 250 trees in a park. Of these trees, 6% are birch trees. How many birch trees are in the park?",
+      "options": [
+        "\\(6\\)",
+        "\\(15\\)",
+        "\\(75\\)",
+        "\\(244\\)"
+      ],
+      "answer": "B",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "Convert 6% to 0.06.",
+        "Calculate the part: \\(0.06(250)=15\\).",
+        "Therefore, the park has 15 birch trees, choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Amara harvests 750 cherry tomatoes and gives 10% to her neighbor. How many tomatoes does she give away?",
+      "answer": "\\(75\\)",
+      "discussion": [
+        "Ten percent of 750 is \\(0.10(750)=75\\).",
+        "Therefore, she gives away 75 tomatoes."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Last year, 200 students enrolled in an interior design program. This year, enrollment is 147% of last year's number. How many students are enrolled this year?",
+      "options": [
+        "\\(247\\)",
+        "\\(294\\)",
+        "\\(347\\)",
+        "\\(394\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Being 147% of the previous number means multiply by 1.47.",
+        "The new enrollment is \\(1.47(200)=294\\).",
+        "The correct answer is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Becca deposits USD \\(100\\) at 4% annual compound interest. How many years will it take for the account to increase by at least 60%?",
+      "options": [
+        "\\(12\\)",
+        "\\(15\\)",
+        "\\(25\\)",
+        "\\(30\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The account must reach at least \\(160\\): \\(100(1.04)^t\\ge160\\).",
+        "Testing whole years, \\(1.04^{11}\\approx1.539\\) and \\(1.04^{12}\\approx1.601\\).",
+        "The first whole year meeting the condition is 12, choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Jessica deposits USD \\(100\\) at 2% annual compound interest and uses \\(100(x)^t\\) to find the value after \\(t\\) years. What is \\(x\\)?",
+      "answer": "\\(1.02\\)",
+      "discussion": [
+        "A 2% increase corresponds to the multiplier \\(1+0.02=1.02\\).",
+        "Therefore, \\(x=1.02\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "City A's population increased by 7% from 2015 to 2016. If the 2016 population is \\(k\\) times the 2015 population, find \\(k\\).",
+      "options": [
+        "\\(0.07\\)",
+        "\\(0.7\\)",
+        "\\(1.07\\)",
+        "\\(1.7\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "A 7% increase means the new population is 107% of the original.",
+        "As a decimal multiplier, 107% is 1.07.",
+        "The correct answer is choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A box contains 450 tiles, and 6% are black. How many black tiles are there?",
+      "answer": "\\(27\\)",
+      "discussion": [
+        "Calculate 6% of 450: \\(0.06(450)=27\\).",
+        "Therefore, there are 27 black tiles."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "\\(432\\) is 96% of what number?",
+      "answer": "\\(450\\)",
+      "discussion": [
+        "Let the whole number be \\(N\\). Then \\(0.96N=432\\).",
+        "Divide by 0.96: \\(N=432\\div0.96=450\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Last year Cedric had 35 plants. This year the number is 60% greater. How many plants does he have?",
+      "answer": "\\(56\\)",
+      "discussion": [
+        "A 60% increase uses the multiplier 1.60.",
+        "The new number is \\(1.60(35)=56\\) plants."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In a group, 40% of the items are red. Of the red items, 30% have stripes. What percentage of all items is red with stripes?",
+      "options": [
+        "\\(10\\%\\)",
+        "\\(12\\%\\)",
+        "\\(70\\%\\)",
+        "\\(75\\%\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Use the original group as 100 items. Then 40 are red.",
+        "Thirty percent of the 40 red items is \\(0.30(40)=12\\).",
+        "Thus, 12% of all items are red with stripes, choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "The number of zebras in 2018 was 1.27 times the number in 2014. The 2014 number is what percent of the 2018 number, to the nearest whole percent?",
+      "answer": "\\(79\\%\\)",
+      "discussion": [
+        "If the 2014 number is \\(N\\), the 2018 number is \\(1.27N\\).",
+        "The requested percentage is \\(\\dfrac{N}{1.27N}\\times100\\%=\\dfrac1{1.27}\\times100\\%\\approx78.74\\%\\).",
+        "Rounded to the nearest whole percent, the answer is 79%."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A shirt's regular price is USD \\(11.70\\). The sale price is 80% less than the regular price and 30% greater than the store's cost. What was the store's cost?",
+      "answer": "USD \\(1.80\\)",
+      "discussion": [
+        "The sale price is 20% of the regular price: \\(0.20(11.70)=2.34\\).",
+        "The sale price is 130% of the store's cost, so \\(2.34=1.30C\\).",
+        "Divide: \\(C=2.34\\div1.30=1.80\\). Therefore, the store's cost was USD 1.80."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A gift shop buys souvenirs at a wholesale price of USD \\(7.00\\) and resells them at a retail price that is 290% of the wholesale price. Remaining souvenirs are discounted by 80% from the retail price. What is the discounted price?",
+      "answer": "USD \\(4.06\\)",
+      "discussion": [
+        "The retail price is \\(2.90(7)=20.30\\) dollars.",
+        "An 80% discount leaves 20% of the retail price.",
+        "The discounted price is \\(0.20(20.30)=4.06\\) dollars."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "The number \\(w\\) is 110% greater than \\(z\\). The number \\(z\\) is 55% less than 50. Find \\(w\\).",
+      "answer": "\\(47.25\\)",
+      "discussion": [
+        "First, \\(z=0.45(50)=22.5\\).",
+        "A 110% increase means \\(w=2.10z\\).",
+        "Thus, \\(w=2.10(22.5)=47.25\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A substance may contain a maximum of 0.001% phosphorus by mass. What is the maximum phosphorus mass in a 140-gram sample?",
+      "answer": "\\(0.0014\\) grams",
+      "discussion": [
+        "Convert 0.001% to a decimal: \\(0.001\\div100=0.00001\\).",
+        "Multiply by the sample mass: \\(0.00001(140)=0.0014\\) grams."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The mass ratio of nitric acid to water is \\(2:7\\). In 270 grams of solution, how many more grams of water than nitric acid are present?",
+      "options": [
+        "\\(60\\)",
+        "\\(110\\)",
+        "\\(150\\)",
+        "\\(210\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "There are 9 total ratio parts, so each part weighs \\(270\\div9=30\\) grams.",
+        "Water weighs \\(7(30)=210\\) grams and acid weighs \\(2(30)=60\\) grams.",
+        "The difference is \\(210-60=150\\) grams, choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A wind turbine completes 900 revolutions in 50 minutes. How many revolutions per minute does it complete?",
+      "options": [
+        "\\(18\\)",
+        "\\(850\\)",
+        "\\(950\\)",
+        "\\(1{,}400\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Divide revolutions by minutes: \\(900\\div50=18\\).",
+        "The rate is 18 revolutions per minute, choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "The Starry Night has a height of 29 inches. A reproduction has each dimension equal to \\(\\dfrac13\\) of the original. What is the reproduction's height?",
+      "answer": "\\(\\dfrac{29}{3}\\) inches, or approximately \\(9.67\\) inches",
+      "discussion": [
+        "Apply the scale factor \\(\\dfrac13\\): \\(29\\left(\\dfrac13\\right)=\\dfrac{29}{3}\\).",
+        "Thus, the reproduction is approximately 9.67 inches high."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A customer spends USD \\(27\\) on oranges at USD \\(3\\) per pound. How many pounds are purchased?",
+      "answer": "\\(9\\) pounds",
+      "discussion": [
+        "Divide total cost by cost per pound: \\(27\\div3=9\\).",
+        "The customer purchases 9 pounds."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "An object has mass 168 grams and volume \\(24\\text{ cm}^3\\). What is its density?",
+      "options": [
+        "\\(7\\)",
+        "\\(144\\)",
+        "\\(192\\)",
+        "\\(4{,}032\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Density equals mass divided by volume: \\(168\\div24=7\\).",
+        "The density is 7 grams per cubic centimeter, choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The ratio of coaches to athletes is \\(1:26\\). If there are \\(x\\) coaches, which expression represents the number of athletes?",
+      "options": [
+        "\\(\\dfrac{x}{26}\\)",
+        "\\(26x\\)",
+        "\\(x+26\\)",
+        "\\(\\dfrac{26}{x}\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "For every 1 coach, there are 26 athletes.",
+        "Therefore, \\(x\\) coaches correspond to \\(26x\\) athletes, choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A miniature scale is 0.4 inches to 1 foot. Gary is 5 feet 9 inches tall. What is the miniature's height?",
+      "options": [
+        "\\(2.0\\) inches",
+        "\\(2.3\\) inches",
+        "\\(2.6\\) inches",
+        "\\(2.9\\) inches"
+      ],
+      "answer": "B",
+      "discussion": [
+        "Convert Gary's height to feet: \\(5\\text{ feet }9\\text{ inches}=5.75\\) feet.",
+        "Apply the scale: \\(0.4(5.75)=2.3\\) inches.",
+        "The correct answer is choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Wyatt can husk at least 12 dozen and at most 18 dozen ears per hour. What is a possible time to husk 72 dozen?",
+      "answer": "For example, \\(4\\) hours",
+      "discussion": [
+        "At 12 dozen per hour, the time is \\(72\\div12=6\\) hours.",
+        "At 18 dozen per hour, the time is \\(72\\div18=4\\) hours.",
+        "Any time from 4 to 6 hours is possible; 4 hours is one valid answer."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A hose puts \\(88x\\) ounces of water in a bucket in \\(5y\\) minutes. At the same rate, how many ounces are added in \\(9y\\) minutes?",
+      "options": [
+        "\\(\\dfrac{9x}{440}\\)",
+        "\\(\\dfrac{440x}{9}\\)",
+        "\\(\\dfrac{5x}{792}\\)",
+        "\\(\\dfrac{792x}{5}\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "The amount is proportional to time, so multiply by \\(\\dfrac{9y}{5y}=\\dfrac95\\).",
+        "The new amount is \\(88x\\cdot\\dfrac95=\\dfrac{792x}{5}\\).",
+        "The correct answer is choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "One ounce of graphene covers up to 7 football fields, each approximately \\(1\\dfrac13\\) acres. About how many acres can 48 ounces cover?",
+      "options": [
+        "\\(250\\)",
+        "\\(350\\)",
+        "\\(450\\)",
+        "\\(1{,}350\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Each ounce covers approximately \\(7\\left(1\\dfrac13\\right)=7\\left(\\dfrac43\\right)=\\dfrac{28}{3}\\) acres.",
+        "For 48 ounces: \\(48\\cdot\\dfrac{28}{3}=16(28)=448\\) acres.",
+        "Approximately 450 acres, choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Object \\(R\\) travels \\(4x\\) inches in \\(y\\) seconds, and \\(R\\) is half as fast as object \\(S\\). How long does \\(S\\) take to travel \\(24x\\) inches?",
+      "options": [
+        "\\(12y\\)",
+        "\\(3y\\)",
+        "\\(16y\\)",
+        "\\(6y\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The speed of \\(R\\) is \\(\\dfrac{4x}{y}\\).",
+        "Since \\(R\\) is half as fast as \\(S\\), the speed of \\(S\\) is \\(\\dfrac{8x}{y}\\).",
+        "The time for \\(S\\) to travel \\(24x\\) is \\(\\dfrac{24x}{8x/y}=3y\\), choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A rectangular region's area increases at 250 square feet per hour. What is this rate in square meters per minute? Use 1 meter = 3.28 feet.",
+      "options": [
+        "\\(0.39\\)",
+        "\\(1.27\\)",
+        "\\(13.67\\)",
+        "\\(23.24\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Convert hours to minutes by dividing by 60.",
+        "Convert square feet to square meters by multiplying by \\(\\left(\\dfrac1{3.28}\\right)^2\\).",
+        "The rate is \\(250\\cdot\\dfrac1{60}\\cdot\\left(\\dfrac1{3.28}\\right)^2\\approx0.39\\) square meters per minute, choice A."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT Math question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Find 18% of 250.",
+      "answer": "\\(45\\)",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "Convert 18% to 0.18 and multiply: \\(0.18(250)=45\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Convert \\(0.375\\) to a fraction and a percent.",
+      "answer": "\\(\\dfrac38\\) and \\(37.5\\%\\)",
+      "discussion": [
+        "As a fraction, \\(0.375=\\dfrac{375}{1000}=\\dfrac38\\).",
+        "As a percent, multiply by 100: \\(0.375(100)=37.5\\%\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "The ratio of red to blue marbles is \\(3:5\\). If there are 18 red marbles, how many blue marbles are there?",
+      "answer": "\\(30\\)",
+      "discussion": [
+        "The scale factor is \\(18\\div3=6\\).",
+        "The number of blue marbles is \\(5(6)=30\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A population of 2,500 increases by 12%. Find the new population.",
+      "answer": "\\(2{,}800\\)",
+      "discussion": [
+        "A 12% increase uses multiplier 1.12.",
+        "The new population is \\(1.12(2500)=2800\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A car travels 210 miles in 3.5 hours. Find its average speed.",
+      "answer": "60 miles per hour",
+      "discussion": [
+        "Average speed equals distance divided by time.",
+        "Thus, \\(210\\div3.5=60\\) miles per hour."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A mixture has an acid-to-water ratio of \\(3:7\\) and a total mass of 400 grams. Find the mass of water.",
+      "answer": "280 grams",
+      "discussion": [
+        "There are 10 total parts, so each part is \\(400\\div10=40\\) grams.",
+        "Water is 7 parts: \\(7(40)=280\\) grams."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A price increases by 20% and then decreases by 15%. Write the final price in terms of the original price \\(p\\).",
+      "answer": "\\(1.02p\\)",
+      "discussion": [
+        "The 20% increase multiplies the price by 1.20.",
+        "The 15% decrease multiplies the new price by 0.85.",
+        "The final price is \\(p(1.20)(0.85)=1.02p\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Twelve workers complete a task in 15 days. Assuming inverse variation, how many days would 20 workers need?",
+      "answer": "9 days",
+      "discussion": [
+        "For inverse variation, workers times days is constant: \\(12(15)=180\\) worker-days.",
+        "With 20 workers, the time is \\(180\\div20=9\\) days."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "An area increases at 180 square feet per hour. Convert this rate to square meters per minute using 1 meter = 3.28 feet.",
+      "answer": "Approximately \\(0.28\\) square meters per minute",
+      "discussion": [
+        "Convert time: divide by 60.",
+        "Convert square feet to square meters by multiplying by \\(\\left(\\dfrac1{3.28}\\right)^2\\).",
+        "The result is \\(180\\cdot\\dfrac1{60}\\cdot\\left(\\dfrac1{3.28}\\right)^2\\approx0.28\\) square meters per minute."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

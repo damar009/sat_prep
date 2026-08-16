@@ -13,52 +13,681 @@
     "number": "06"
   },
   "eyebrow": "SAT Math / 06",
-  "title": "Ratios, rates, and percentages",
-  "subtitle": "This page is part of the learning map and will be opened when its lesson content is ready.",
+  "title": "Quadratic Equations and Functions",
+  "subtitle": "Factor quadratics, use the quadratic formula, interpret roots and vertices, and solve quadratic models.",
   "materi": [
     {
-      "judul": "Page structure ready",
-      "icon": "fa-hourglass-half",
+      "judul": "What makes an equation quadratic?",
+      "icon": "fa-chart-line",
       "tipe": "basic",
       "isi": [
-        "This page already has the same structure as every lesson page: concept notes, examples, exercises, and discussion controls.",
+        {
+          "type": "paragraph",
+          "content": "A quadratic equation contains a squared variable and can be written in standard form as \\(ax^2+bx+c=0\\), where \\(a\\ne0\\). Its graph is a parabola."
+        },
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Opens upward",
+              "content": "If \\(a>0\\), the parabola opens upward and has a minimum."
+            },
+            {
+              "title": "Opens downward",
+              "content": "If \\(a<0\\), the parabola opens downward and has a maximum."
+            },
+            {
+              "title": "Roots",
+              "content": "The real solutions of the equation are the x-intercepts of the graph."
+            }
+          ]
+        },
         {
           "type": "note",
-          "content": "This lesson can be published when its content has been reviewed."
+          "content": "Before solving, move every term to one side so the equation equals zero. Then identify \\(a\\), \\(b\\), and \\(c\\) carefully, including their signs."
         }
       ]
     },
     {
-      "judul": "Planned focus",
+      "judul": "Factoring and the zero-product property",
+      "icon": "fa-code-branch",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[AB=0\\quad\\Longrightarrow\\quad A=0\\text{ or }B=0\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "Factoring rewrites a quadratic as a product. Once the product equals zero, set each factor equal to zero."
+        },
+        {
+          "type": "example",
+          "title": "Example: monic quadratic",
+          "content": "For \\(x^2-7x+12=0\\), the numbers \\(-3\\) and \\(-4\\) multiply to 12 and add to \\(-7\\). Thus \\((x-3)(x-4)=0\\), giving \\(x=3\\) or \\(x=4\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: difference of squares",
+          "content": "Use \\(A^2-B^2=(A-B)(A+B)\\). For example, \\(4x^2-9=(2x-3)(2x+3)\\)."
+        },
+        {
+          "type": "note",
+          "content": "Factoring is often the fastest method when the coefficients are small and the factors are easy to recognize."
+        }
+      ]
+    },
+    {
+      "judul": "The quadratic formula",
       "icon": "fa-square-root-variable",
       "tipe": "basic",
       "isi": [
-        "SAT Math unit 06 is reserved for: Ratios, rates, and percentages."
+        {
+          "type": "formula",
+          "content": "\\[x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}\\]"
+        },
+        {
+          "type": "ordered-list",
+          "items": [
+            "Write the equation in the form \\(ax^2+bx+c=0\\).",
+            "Identify \\(a\\), \\(b\\), and \\(c\\), including negative signs.",
+            "Substitute into the formula using parentheses.",
+            "Simplify the radical and reduce the resulting fractions."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: use the formula",
+          "content": "For \\(3x^2+12x+6=0\\), \\(a=3\\), \\(b=12\\), and \\(c=6\\). The formula gives \\(x=\\dfrac{-12\\pm\\sqrt{72}}{6}=-2\\pm\\sqrt2\\)."
+        },
+        {
+          "type": "note",
+          "content": "Keep exact radical answers unless the question requests a decimal approximation."
+        }
+      ]
+    },
+    {
+      "judul": "The discriminant and number of solutions",
+      "icon": "fa-list-ol",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[D=b^2-4ac\\]"
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
+              "Discriminant",
+              "Real solutions",
+              "Graph"
+            ],
+            "leftAlign": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "\\(D>0\\)",
+                "Two distinct real solutions",
+                "Two x-intercepts"
+              ],
+              [
+                "\\(D=0\\)",
+                "One repeated real solution",
+                "The vertex touches the x-axis"
+              ],
+              [
+                "\\(D<0\\)",
+                "No real solutions",
+                "No x-intercepts"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "title": "Example: exactly one real solution",
+          "content": "For \\(x^2+3x+2.25=0\\), \\(D=3^2-4(1)(2.25)=0\\). Therefore, the equation has one repeated real solution, \\(x=-\\dfrac32\\)."
+        },
+        {
+          "type": "example",
+          "title": "Example: parameter with no real solutions",
+          "content": "For \\(2x^2-4x=t\\), rewrite as \\(2x^2-4x-t=0\\). Then \\(D=16+8t\\). No real solutions require \\(16+8t<0\\), so \\(t<-2\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Axis of symmetry and the vertex",
+      "icon": "fa-location-crosshairs",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "formula",
+          "content": "\\[x=-\\frac{b}{2a}\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "The axis of symmetry passes through the vertex. If the roots are \\(r_1\\) and \\(r_2\\), the axis is also the midpoint of the roots:"
+        },
+        {
+          "type": "formula",
+          "content": "\\[x=\\frac{r_1+r_2}{2}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Example: vertex from standard form",
+          "content": "For \\(P(x)=-2x^2+160x-1200\\), the vertex x-coordinate is \\(-\\dfrac{160}{2(-2)}=40\\). Substituting gives \\(P(40)=2000\\), the maximum profit."
+        },
+        {
+          "type": "example",
+          "title": "Example: vertex from factored form",
+          "content": "For \\(y=a(x-2)(x+4)\\), the roots are 2 and \\(-4\\), so the axis is \\(x=\\dfrac{2+(-4)}2=-1\\). Then the vertex y-coordinate is \\(a(-3)(3)=-9a\\)."
+        }
+      ]
+    },
+    {
+      "judul": "Quadratic functions in context",
+      "icon": "fa-rocket",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "Quadratic models can describe area, profit, projectile height, subscriber growth, and other situations with a changing rate."
+        },
+        {
+          "type": "example",
+          "title": "Example: projectile motion",
+          "content": "For \\(h(t)=-4.9t^2+25t\\), the object is on the ground when \\(h(t)=0\\). The solution \\(t=0\\) represents launch, while the positive solution represents the later landing time."
+        },
+        {
+          "type": "example",
+          "title": "Example: maximum area",
+          "content": "A garden against a fence has area \\(A(x)=x(80-2x)=-2x^2+80x\\). The vertex occurs at \\(x=20\\), giving maximum area \\(A(20)=800\\) square feet."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Reject negative time, negative length, or other impossible contextual values.",
+            "Use the vertex for a maximum or minimum when the model is quadratic.",
+            "Interpret each root in the context instead of automatically keeping every algebraic solution."
+          ]
+        }
+      ]
+    },
+    {
+      "judul": "Factored form and roots",
+      "icon": "fa-arrows-to-circle",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "If a quadratic has roots \\(r_1\\) and \\(r_2\\), it can be written as \\(f(x)=a(x-r_1)(x-r_2)\\). The value of \\(a\\) controls the vertical stretch and whether the parabola opens up or down."
+        },
+        {
+          "type": "example",
+          "title": "Example: find a from a point",
+          "content": "Suppose the roots are \\(-2\\) and 6 and the graph passes through \\((2,-16)\\). Then \\(f(x)=a(x+2)(x-6)\\). Since \\(-16=a(4)(-4)=-16a\\), we get \\(a=1\\)."
+        },
+        {
+          "type": "note",
+          "content": "The sum of the roots is \\(-\\dfrac ba\\), and the product of the roots is \\(\\dfrac ca\\). These relationships can provide a fast alternative to solving."
+        }
+      ]
+    },
+    {
+      "judul": "A reliable quadratic workflow",
+      "icon": "fa-check-double",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Move all terms to one side and set the equation equal to zero.",
+            "Try factoring, especially for small integer coefficients.",
+            "If factoring is not efficient, use the quadratic formula.",
+            "Use the discriminant when only the number of real solutions is requested.",
+            "Use the vertex or axis of symmetry for maximum and minimum questions.",
+            "Check roots in the original equation and reject values that do not fit the context.",
+            "Use Desmos to verify roots, vertices, and intersections when helpful."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "The leading coefficient determines the direction of the parabola: positive means a minimum, negative means a maximum."
+        }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "What is the first useful step when beginning the SAT Math unit \"Ratios, rates, and percentages\"?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "If \\(t>0\\) and \\(t^2-4=0\\), what is the value of \\(t\\)?",
+      "answer": "\\(2\\)",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "Solve \\(t^2=4\\), which gives \\(t=2\\) or \\(t=-2\\).",
+        "The condition \\(t>0\\) eliminates \\(-2\\).",
+        "Therefore, \\(t=2\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The profit, in dollars, from selling \\(x\\) tickets is modeled by \\(P(x)=-2x^2+160x-1200\\). What is the maximum possible profit?",
+      "options": [
+        "USD \\(1{,}800\\)",
+        "USD \\(2{,}000\\)",
+        "USD \\(2{,}400\\)",
+        "USD \\(3{,}200\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The parabola opens downward because the coefficient of \\(x^2\\) is negative.",
+        "The vertex occurs at \\(x=-\\dfrac{160}{2(-2)}=40\\).",
+        "Evaluate: \\(P(40)=-2(40)^2+160(40)-1200=2000\\).",
+        "The maximum possible profit is USD 2,000, choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What are the solutions to \\(3x^2+12x+6=0\\)?",
+      "options": [
+        "\\(x=-2\\pm\\sqrt2\\)",
+        "\\(x=-2\\pm\\dfrac{\\sqrt{30}}{3}\\)",
+        "\\(x=-6\\pm\\sqrt2\\)",
+        "\\(x=-6\\pm6\\sqrt2\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Use the quadratic formula with \\(a=3\\), \\(b=12\\), and \\(c=6\\).",
+        "Then \\(x=\\dfrac{-12\\pm\\sqrt{144-72}}6=\\dfrac{-12\\pm\\sqrt{72}}6\\).",
+        "Since \\(\\sqrt{72}=6\\sqrt2\\), the solutions are \\(-2\\pm\\sqrt2\\), choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(y=a(x-2)(x+4)\\), where \\(a\\) is nonzero, the graph has vertex \\((c,d)\\). Which expression equals \\(d\\)?",
+      "options": [
+        "\\(-9a\\)",
+        "\\(-8a\\)",
+        "\\(-5a\\)",
+        "\\(-2a\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The roots are 2 and \\(-4\\), so the axis of symmetry is \\(x=-1\\).",
+        "Substitute \\(x=-1\\): \\(y=a(-3)(3)=-9a\\).",
+        "Therefore, the vertex y-coordinate is \\(d=-9a\\), choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A rectangular garden is built against a fence. Three sides require fencing, with 80 feet available. If \\(x\\) is the width perpendicular to the fence, the area is \\(A(x)=x(80-2x)\\). What is the maximum possible area?",
+      "options": [
+        "400 square feet",
+        "600 square feet",
+        "800 square feet",
+        "1,200 square feet"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Rewrite the area as \\(A(x)=-2x^2+80x\\).",
+        "The vertex occurs at \\(x=-\\dfrac{80}{2(-2)}=20\\).",
+        "Evaluate: \\(A(20)=20(80-40)=800\\).",
+        "The maximum area is 800 square feet, choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(2x^2-4x=t\\), where \\(t\\) is a constant, if the equation has no real solutions, which could be the value of \\(t\\)?",
+      "options": [
+        "\\(-3\\)",
+        "\\(-1\\)",
+        "\\(1\\)",
+        "\\(3\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Rewrite as \\(2x^2-4x-t=0\\).",
+        "The discriminant is \\(D=(-4)^2-4(2)(-t)=16+8t\\).",
+        "No real solutions require \\(16+8t<0\\), so \\(t<-2\\).",
+        "Only \\(-3\\) satisfies this condition, choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(x^2+x-12=0\\), if \\(a\\) is a solution and \\(a>0\\), what is \\(a\\)?",
+      "answer": "\\(3\\)",
+      "discussion": [
+        "Factor: \\(x^2+x-12=(x+4)(x-3)\\).",
+        "The solutions are \\(x=-4\\) and \\(x=3\\).",
+        "The positive solution is \\(a=3\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The height of a ball is modeled by \\(h(t)=-16t^2+80t+96\\). A drone is at a constant height of 180 feet. For how many values of \\(t\\) will the ball be at the same height?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "Infinitely many"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Set the height equal to 180: \\(-16t^2+80t+96=180\\).",
+        "Rearrange: \\(-16t^2+80t-84=0\\), or \\(4t^2-20t+21=0\\).",
+        "Its discriminant is \\((-20)^2-4(4)(21)=64>0\\), so there are two real values of \\(t\\).",
+        "The correct answer is C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A parabola has x-intercepts at \\(x=4\\) and \\(x=10\\). Its vertex has y-coordinate \\(-18\\). Which equation could define it?",
+      "options": [
+        "\\(y=(x-4)(x-10)\\)",
+        "\\(y=2(x-4)(x-10)\\)",
+        "\\(y=-2(x-4)(x-10)\\)",
+        "\\(y=(x-4)(x-10)-18\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The axis of symmetry is the midpoint of the roots: \\(x=7\\).",
+        "At \\(x=7\\), \\((7-4)(7-10)=3(-3)=-9\\).",
+        "To make the vertex y-coordinate \\(-18\\), multiply by 2: \\(y=2(x-4)(x-10)\\).",
+        "The correct answer is B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Subscriber gain is modeled by \\(S(x)=-5x^2+300x+1500\\), where \\(x\\) is thousands of dollars spent on advertising. The company wants at least 5,500 subscribers. Which spending amount could work?",
+      "options": [
+        "USD \\(5{,}000\\)",
+        "USD \\(10{,}000\\)",
+        "USD \\(20{,}000\\)",
+        "USD \\(55{,}000\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Evaluate the model using \\(x\\) in thousands of dollars.",
+        "At \\(x=5\\), \\(S(5)=2875\\); at \\(x=10\\), \\(S(10)=4000\\); at \\(x=20\\), \\(S(20)=5500\\).",
+        "Thus, USD 20,000 could work. The correct answer is C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Let \\(f(x)=ax^2+bx+c\\). The graph has x-intercepts \\(-2\\) and \\(6\\), and passes through \\((2,-16)\\). What is \\(a+b+c\\)?",
+      "options": [
+        "\\(-15\\)",
+        "\\(-12\\)",
+        "\\(-9\\)",
+        "\\(-5\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The factored form is \\(f(x)=a(x+2)(x-6)\\).",
+        "Use \\((2,-16)\\): \\(-16=a(4)(-4)=-16a\\), so \\(a=1\\).",
+        "Therefore, \\(f(x)=(x+2)(x-6)=x^2-4x-12\\).",
+        "Thus, \\(a+b+c=1-4-12=-15\\), choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A company's profit is modeled by \\(P(x)=-(x-12)^2+81\\). For what range of \\(x\\) is profit at least 45 thousand dollars?",
+      "options": [
+        "\\(6\\le x\\le18\\)",
+        "\\(3\\le x\\le21\\)",
+        "\\(5\\le x\\le19\\)",
+        "\\(9\\le x\\le15\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Set the profit greater than or equal to 45: \\(-(x-12)^2+81\\ge45\\).",
+        "Subtract 81: \\(-(x-12)^2\\ge-36\\).",
+        "Multiply by \\(-1\\) and reverse the sign: \\((x-12)^2\\le36\\).",
+        "Thus, \\(-6\\le x-12\\le6\\), so \\(6\\le x\\le18\\), choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Let \\(f(x)=x^2-kx+28\\). The graph intersects the x-axis at two distinct integer values. Which could be \\(k\\)?",
+      "options": [
+        "\\(9\\)",
+        "\\(10\\)",
+        "\\(11\\)",
+        "\\(13\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The integer roots must multiply to 28, and their sum must equal \\(k\\).",
+        "The factor pair \\(4\\) and \\(7\\) has sum 11 and gives two distinct integer roots.",
+        "Therefore, \\(k=11\\), choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Let \\(f(x)=x^2+bx+c\\). The graph intersects the x-axis at \\(x=3\\) and \\(x=12\\). What is \\(f(2)\\)?",
+      "options": [
+        "\\(10\\)",
+        "\\(20\\)",
+        "\\(30\\)",
+        "\\(40\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The factored form is \\(f(x)=(x-3)(x-12)\\).",
+        "Evaluate at \\(x=2\\): \\(f(2)=(2-3)(2-12)=(-1)(-10)=10\\).",
+        "The correct answer is A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Subscribers are modeled by \\(N(p)=8000-100p\\). The company has a fixed monthly cost of USD \\(60{,}000\\) and an additional USD \\(20\\) cost per subscriber. What subscription price maximizes monthly profit?",
+      "options": [
+        "USD \\(30\\)",
+        "USD \\(40\\)",
+        "USD \\(50\\)",
+        "USD \\(60\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Revenue is \\(pN(p)=p(8000-100p)\\).",
+        "Total cost is \\(60,000+20N(p)\\). Thus profit is \\(-100p^2+10,000p-220,000\\).",
+        "The vertex occurs at \\(p=-\\dfrac{10,000}{2(-100)}=50\\).",
+        "The subscription price that maximizes profit is USD 50, choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "The area of a triangle is 270 square centimeters. Its base is 12 centimeters greater than its height. What is the height?",
+      "answer": "\\(18\\) centimeters",
+      "discussion": [
+        "Let the height be \\(h\\), so the base is \\(h+12\\).",
+        "Use the area formula: \\(\\dfrac12h(h+12)=270\\).",
+        "Multiply by 2: \\(h^2+12h-540=0\\).",
+        "Factor or use the quadratic formula to get \\(h=18\\) or \\(h=-30\\). A length must be positive, so the height is 18 centimeters."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(f(x)=(x+7)^2+4\\), for what value of \\(x\\) does \\(f(x)\\) reach its minimum?",
+      "answer": "\\(x=-7\\)",
+      "discussion": [
+        "The function is in vertex form \\(f(x)=(x-h)^2+k\\).",
+        "Here, \\(x+7=x-(-7)\\), so the vertex x-coordinate is \\(-7\\).",
+        "Because the squared term is nonnegative, the minimum occurs at \\(x=-7\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The function gives the product of \\(x\\) and a number 91 greater than \\(x\\). Which equation defines \\(f\\)?",
+      "options": [
+        "\\(f(x)=x^2+x+91\\)",
+        "\\(f(x)=x^2+91\\)",
+        "\\(f(x)=x^2+91x\\)",
+        "\\(f(x)=x^2+91x+91\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The number that is 91 greater than \\(x\\) is \\(x+91\\).",
+        "The product is \\(x(x+91)=x^2+91x\\).",
+        "Therefore, choice C is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Given \\(4x^2+bx-45=(hx+k)(x+j)\\), where \\(h\\), \\(k\\), and \\(j\\) are integers, which must be an integer?",
+      "options": [
+        "\\(\\dfrac{b}{h}\\)",
+        "\\(\\dfrac{b}{k}\\)",
+        "\\(\\dfrac{45}{h}\\)",
+        "\\(\\dfrac{45}{k}\\)"
+      ],
+      "answer": "D",
+      "discussion": [
+        "The constant terms satisfy \\(kj=-45\\).",
+        "Since \\(k\\) and \\(j\\) are integers and \\(kj=-45\\), \\(k\\) is an integer divisor of 45.",
+        "Therefore, \\(\\dfrac{45}{k}\\) must be an integer, choice D."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Given \\(f(x)=x^2-40x+2304\\), what is the minimum value of \\(f(x)\\)?",
+      "answer": "\\(1904\\)",
+      "discussion": [
+        "Complete the square: \\(x^2-40x+2304=(x-20)^2+1904\\).",
+        "The squared term is at least 0, so the minimum occurs when \\(x=20\\).",
+        "The minimum value is 1904."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
       "type": "open",
-      "question": "Before solving a new SAT Math question, what should you identify first?",
-      "answer": "Identify what the question is asking and the information that matters.",
+      "question": "Solve \\((x-3)(x+2)=0\\).",
+      "answer": "\\(x=3\\) or \\(x=-2\\)",
       "discussion": [
-        "Read the question carefully and name the quantity, claim, or skill being tested.",
-        "Then choose a representation or strategy that matches the information given."
-      ]
+        "By the zero-product property, \\(x-3=0\\) or \\(x+2=0\\).",
+        "Therefore, \\(x=3\\) or \\(x=-2\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Factor \\(x^2+5x+6\\).",
+      "answer": "\\((x+2)(x+3)\\)",
+      "discussion": [
+        "The numbers 2 and 3 multiply to 6 and add to 5.",
+        "Therefore, \\(x^2+5x+6=(x+2)(x+3)\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "How many real solutions does \\(x^2+4=0\\) have?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "Infinitely many"
+      ],
+      "answer": "A",
+      "discussion": [
+        "Rewrite as \\(x^2=-4\\).",
+        "No real number has a square equal to a negative value.",
+        "Therefore, there are 0 real solutions, choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Solve \\(x^2-7x+12=0\\).",
+      "answer": "\\(x=3\\) or \\(x=4\\)",
+      "discussion": [
+        "Factor: \\(x^2-7x+12=(x-3)(x-4)\\).",
+        "Set each factor equal to zero: \\(x=3\\) or \\(x=4\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "Find the discriminant of \\(2x^2+4x+5=0\\).",
+      "answer": "\\(-24\\)",
+      "discussion": [
+        "Here \\(a=2\\), \\(b=4\\), and \\(c=5\\).",
+        "The discriminant is \\(D=b^2-4ac=4^2-4(2)(5)=16-40=-24\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "For \\(y=(x-2)(x+6)\\), find the axis of symmetry.",
+      "answer": "\\(x=-2\\)",
+      "discussion": [
+        "The roots are 2 and \\(-6\\).",
+        "The axis of symmetry is their midpoint: \\(x=\\dfrac{2+(-6)}2=-2\\)."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The equation \\(x^2+kx+16=0\\) has exactly one real solution. Which could be the value of \\(k\\)?",
+      "options": [
+        "\\(4\\)",
+        "\\(6\\)",
+        "\\(8\\)",
+        "\\(10\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Exactly one real solution requires discriminant 0.",
+        "Thus, \\(k^2-4(1)(16)=0\\), so \\(k^2=64\\) and \\(k=8\\) or \\(k=-8\\).",
+        "Among the choices, 8 works, choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "A ball's height is \\(h(t)=-16t^2+80t+5\\). Find the positive time when it hits the ground, to the nearest tenth of a second.",
+      "answer": "Approximately \\(5.1\\) seconds",
+      "discussion": [
+        "Set the height equal to zero: \\(-16t^2+80t+5=0\\).",
+        "Using the quadratic formula gives \\(t=\\dfrac{10\\pm\\sqrt{105}}4\\).",
+        "The positive solution is approximately \\(5.06\\), which rounds to 5.1 seconds."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "open",
+      "question": "If \\(x^2-10x+c=0\\) has roots that differ by 4, find \\(c\\).",
+      "answer": "\\(21\\)",
+      "discussion": [
+        "The roots have sum 10 and differ by 4.",
+        "The roots are therefore 3 and 7.",
+        "Their product is \\(c=3(7)=21\\)."
+      ],
+      "showSolutionButton": true
     }
   ]
 }

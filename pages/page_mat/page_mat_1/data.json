@@ -13,35 +13,41 @@
     "number": "01"
   },
   "eyebrow": "SAT Math / 01",
-  "title": "Introduction and fundamentals",
-  "subtitle": "Build the language and habits that support every later SAT Math topic.",
+  "title": "Introduction to SAT Math and Mathematical Modeling",
+  "subtitle": "Learn the structure of the Digital SAT Math section and turn real-world language into accurate mathematical models.",
   "materi": [
     {
-      "judul": "The purpose of this meeting",
-      "icon": "fa-layer-group",
+      "judul": "What this meeting covers",
+      "icon": "fa-compass",
       "tipe": "basic",
       "isi": [
-        "This first meeting establishes the habits and language needed for the entire SAT Math course. You will learn how the Digital SAT Math section is organized, what kinds of mathematical content can appear, how to use the built-in Desmos calculator and reference information, and how to translate everyday language into mathematical expressions.",
-        "The central idea is <strong>mathematical modeling</strong>: a word problem describes a situation, and you build a mathematical representation of that situation. A strong model uses variables carefully, preserves units, and translates phrases such as <em>at least</em>, <em>twice</em>, <em>per</em>, and <em>no more than</em> accurately.",
+        {
+          "type": "paragraph",
+          "content": "This meeting introduces the Digital SAT Math section and the central idea of mathematical modeling. A model translates a real situation into an expression, equation, inequality, system, table, or graph that can be analyzed."
+        },
         {
           "type": "ordered-list",
           "items": [
-            "Identify the quantity or relationship the question asks for.",
-            "Build a mathematical model from the wording.",
-            "Calculate carefully while preserving units.",
-            "Verify that the result fits the situation."
+            "Identify what each variable represents.",
+            "Translate the important words into mathematics.",
+            "Keep units consistent and combine related quantities.",
+            "Interpret the result and check whether it is reasonable."
           ]
+        },
+        {
+          "type": "note",
+          "content": "The goal is not to memorize every formula immediately. The goal is to build reliable habits that make later Algebra, Advanced Math, Problem-Solving and Data Analysis, Geometry, and Trigonometry questions easier to understand."
         }
       ]
     },
     {
-      "judul": "The Digital SAT Math experience",
+      "judul": "The Digital SAT Math section",
       "icon": "fa-stopwatch",
       "tipe": "basic",
       "isi": [
         {
           "type": "paragraph",
-          "content": "The Math section has two modules. Each module contains 22 questions and has a 35-minute time limit. The second module is adaptive: performance in the first module influences the difficulty level of the second module."
+          "content": "The Digital SAT Math section has two modules. Each module contains 22 questions and allows 35 minutes. The second module is adaptive, so performance in the first module affects the difficulty of the second module."
         },
         {
           "type": "table",
@@ -50,7 +56,7 @@
               "Module",
               "Questions",
               "Time",
-              "Note"
+              "Key feature"
             ],
             "leftAlign": [
               0,
@@ -58,83 +64,148 @@
             ],
             "rows": [
               [
-                "1st Module",
+                "Module 1",
                 "22",
                 "35 minutes",
-                "The first Math module."
+                "Everyone gets the same set of questions with the same level of difficulty."
               ],
               [
-                "2nd Module",
+                "Module 2",
                 "22",
                 "35 minutes",
-                "Adaptive difficulty."
+                "The SAT uses adaptive difficulty. Everyone who performs well in Module 1 will receive a set of questions with a higher level of difficulty in Module 2, while those who do not perform well will receive an easier set of questions.<br>The maximum score a test-taker can achieve depends on whether they are directed to the easier or harder version of Module 2. If placed into the easier Module 2, the maximum score in a section is usually around 620–630, while the harder Module 2 allows for a full score up to 800."
               ]
             ]
           }
         },
         {
           "type": "paragraph",
-          "content": "Questions may be <strong>multiple-choice</strong>, with four answer choices, or <strong>student-produced response</strong>, in which you enter a numerical answer directly."
+          "content": "Questions may be multiple-choice or student-produced responses.<br><b>Multiple-choice</b> questions provide four choices.<br><b>Student-produced</b> response, you enter the numerical answer directly."
         },
         {
           "type": "note",
-          "content": "For a student-produced response, enter a number, decimal point, fraction slash, or negative sign as appropriate. A mixed number such as \\(4\\dfrac{1}{2}\\) may be entered as \\(\\dfrac{9}{2}\\) or \\(4.5\\)."
+          "content": "Timing matters: 22 questions in 35 minutes in each module is an average of about 1 minute 35 seconds per question. Some questions will take less time, leaving more time for questions that require modeling or multi-step reasoning."
         }
       ]
     },
     {
-      "judul": "The four content areas",
-      "icon": "fa-compass",
-      "tipe": "grid",
-      "isi": [
-        {
-          "type": "grid",
-          "items": [
-            {
-              "title": "Arithmetic",
-              "content": "Fractions, ratios, percentages, exponents, radicals, and complex numbers."
-            },
-            {
-              "title": "Algebra",
-              "content": "Equations, inequalities, functions, systems, quadratics, exponentials, logarithms, and circles."
-            },
-            {
-              "title": "Geometry",
-              "content": "Lines, angles, triangles, area, volume, surface area, and transformations."
-            },
-            {
-              "title": "Statistics",
-              "content": "Tables, graphs, averages, probability, sampling, and data claims."
-            }
-          ]
-        },
-        "The purpose of this meeting is not to master every topic immediately. It is to build a map of the test and make sure the algebraic language underneath later topics is secure."
-      ]
-    },
-    {
-      "judul": "Variables and expressions",
-      "icon": "fa-code",
-      "tipe": "basic",
-      "isi": [
-        "A variable represents an unknown or changing quantity. In the expression \\(3x+5\\), the number 3 is the coefficient of \\(x\\), and 5 is a constant.",
-        {
-          "type": "formula",
-          "content": "\\[3x+5 = \\text{three times }x\\text{, plus five}\\]"
-        },
-        "When defining a variable, give it meaning. For example, write “Let \\(x\\) be the number of tickets,” rather than only writing “Let \\(x\\).”"
-      ]
-    },
-    {
-      "judul": "Language into algebra",
-      "icon": "fa-language",
+      "judul": "Student-produced response rules",
+      "icon": "fa-keyboard",
       "tipe": "table",
       "isi": [
         {
           "type": "table",
           "table": {
             "headers": [
+              "No",
+              "Rules",
+              "Examples"
+            ],
+            "leftAlign": [
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "1",
+                "If you find more than one correct answer, enter just one answer.",
+                "$\\boxed{1}$ atau $\\boxed{2}$"
+              ],
+              [
+                "2",
+                "Enter up to 5 characters for a positive answer.",
+                "$\\boxed{1}$ , $\\boxed{6.6667}$ , atau $\\boxed{12345}$"
+              ],
+              [
+                "3",
+                "Enter up to 6 characters (this includes the negative sign) for a negative answer.",
+                "$\\boxed{-1}$ , $\\boxed{-3.3333}$ , atau $\\boxed{-12345}$"
+              ],
+              [
+                "4",
+                "If your answer is a mixed number, enter it as an improper fraction or its decimal equivalent.",
+                "$\\boxed{\\dfrac{11}{5}}$ atau $\\boxed{2.2}$"
+              ],
+              [
+                "5",
+                "Only enter numbers, decimal point, slash (fraction), or negative sign.",
+                "Contoh salah: $\\boxed{\\$25}$ , $\\boxed{10\\text{ cm}}$ , $\\boxed{15x}$ , dll"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "judul": "The four SAT Math content areas",
+      "icon": "fa-layer-group",
+      "tipe": "grid",
+      "isi": [
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Algebra",
+              "content": "Linear equations, systems, inequalities, and linear functions."
+            },
+            {
+              "title": "Advanced Math",
+              "content": "Nonlinear equations, quadratics, exponentials, circles, and equivalent expressions."
+            },
+            {
+              "title": "Problem-Solving and Data Analysis",
+              "content": "Ratios, percentages, rates, probability, statistics, and data interpretation."
+            },
+            {
+              "title": "Geometry and Trigonometry",
+              "content": "Lines, angles, triangles, circles, area, volume, and right-triangle relationships."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "These areas often overlap. For example, a geometry question may require an equation, and a data question may require a percentage model. Strong modeling helps connect the topics."
+        }
+      ]
+    },
+    {
+      "judul": "Variables, constants, and coefficients",
+      "icon": "fa-code",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "A variable represents an unknown or changing quantity. A constant is a fixed number. A coefficient is a number that multiplies a variable."
+        },
+        {
+          "type": "formula",
+          "content": "\\[7x+12\\]"
+        },
+        {
+          "type": "paragraph",
+          "content": "In \\(7x+12\\), \\(x\\) is the variable, 7 is the coefficient, and 12 is the constant. This is an expression because it does not contain an equals sign. By contrast, \\(7x+12=40\\) is an equation."
+        },
+        {
+          "type": "note",
+          "content": "Define variables with meaning and units when possible. For example, write “Let \\(x\\) be the number of tickets” rather than only writing “Let \\(x\\).”"
+        }
+      ]
+    },
+    {
+      "judul": "Translate words into algebra",
+      "icon": "fa-language",
+      "tipe": "table",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "Read comparison phrases from the reference quantity outward.<br>The phrase “5 less than \\(x\\)” means \\(x-5\\), not \\(5-x\\)."
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [
               "Words",
-              "Algebra",
+              "Mathematical translation",
               "Meaning"
             ],
             "leftAlign": [
@@ -146,433 +217,389 @@
               [
                 "3 more than \\(x\\)",
                 "\\(x+3\\)",
-                "Add 3 to the quantity."
+                "Add 3 to \\(x\\)."
               ],
               [
                 "3 less than \\(x\\)",
                 "\\(x-3\\)",
-                "Subtract 3 from the quantity."
+                "Subtract 3 from \\(x\\)."
               ],
               [
                 "3 times \\(x\\)",
                 "\\(3x\\)",
-                "Multiply the quantity by 3."
+                "Multiply \\(x\\) by 3."
               ],
               [
                 "half of \\(x\\)",
                 "\\(\\dfrac{x}{2}\\)",
-                "Divide the quantity by 2."
+                "Divide \\(x\\) by 2."
               ],
               [
                 "\\(x\\) is twice \\(y\\)",
                 "\\(x=2y\\)",
-                "The value of \\(x\\) is two times \\(y\\)."
+                "\\(x\\) is two times \\(y\\)."
               ],
               [
-                "total of \\(m\\) and \\(n\\)",
+                "the total of \\(m\\) and \\(n\\)",
                 "\\(m+n\\)",
                 "Add the quantities."
+              ],
+              [
+                "\\(x\\) exceeds 20",
+                "\\(x>20\\)",
+                "\\(x\\) is greater than 20."
+              ],
+              [
+                "\\(x\\) is at least 20",
+                "\\(x\\ge20\\)",
+                "\\(x\\) is greater than or equal to 20."
+              ],
+              [
+                "\\(x\\) is at most 20",
+                "\\(x\\le20\\)",
+                "\\(x\\) is less than or equal to 20."
               ]
             ]
           }
-        },
-        {
-          "type": "note",
-          "content": "The order matters. “Three less than \\(x\\)” is \\(x-3\\), not \\(3-x\\)."
         }
       ]
     },
     {
-      "judul": "Equations and inequalities from language",
-      "icon": "fa-scale-balanced",
-      "tipe": "table",
+      "judul": "Quiz: Classify inequality notation",
+      "icon": "fa-circle-question",
+      "tipe": "basic",
       "isi": [
-        "An equation states equality. An inequality describes a range of possible values.",
         {
-          "type": "table",
+          "type": "quiz",
+          "title": "Classify which statement belongs to each notation",
+          "prompt": "Let \\(x\\) be the number of students. Match each notation with every statement that describes it.",
+          "statements": [
+            "The number of students is equal to 30.",
+            "The number of students is more/greater than 30.",
+            "The number of students is more than or equal to 30.",
+            "The number of students is less than 30.",
+            "The number of students is less than or equal to 30.",
+            "The number of students is at least/cannot be less than 30.",
+            "The number of students is at most/cannot be greater than 30.",
+            "The number of students cannot exceed 30.",
+            "The maximum number of students is 30.",
+            "The minimum number of students is 30.",
+            "The exact number of students is 30."
+          ],
           "table": {
             "headers": [
-              "Phrase",
-              "Symbol",
-              "Interpretation"
+              "No",
+              "Notation",
+              "Your answer"
             ],
             "leftAlign": [
-              0,
+              1,
               2
             ],
             "rows": [
               [
-                "more than / greater than",
-                "\\(>\\)",
-                "The value is larger."
+                "1",
+                "\\(x=30\\)",
+                ""
               ],
               [
-                "less than",
-                "\\(<\\)",
-                "The value is smaller."
+                "2",
+                "\\(x<30\\)",
+                ""
               ],
               [
-                "at least / minimum",
-                "\\(\\ge\\)",
-                "The value is greater than or equal to."
+                "3",
+                "\\(x\\le30\\)",
+                ""
               ],
               [
-                "at most / maximum / no more than",
-                "\\(\\le\\)",
-                "The value is less than or equal to."
+                "4",
+                "\\(x>30\\)",
+                ""
               ],
               [
-                "exactly / equal to",
-                "\\(=\\)",
-                "The values are equal."
+                "5",
+                "\\(x\\ge30\\)",
+                ""
               ]
             ]
-          }
+          },
+          "answer": "1: a, k; 2: d; 3: e, g, h, i; 4: b; 5: c, f, j",
+          "discussion": [
+            "\\(x=30\\) means the number is exactly 30, so it matches statements a and k.",
+            "\\(x<30\\) means the number is less than 30, so it matches statement d.",
+            "\\(x\\le30\\) means the number is less than or equal to 30. It also means the number is at most 30, cannot exceed 30, and has a maximum of 30, so it matches statements e, g, h, and i.",
+            "\\(x>30\\) means the number is greater than 30, so it matches statement b.",
+            "\\(x\\ge30\\) means the number is greater than or equal to 30. It also means the number is at least 30, cannot be less than 30, and has a minimum of 30, so it matches statements c, f, and j."
+          ]
         }
       ]
     },
     {
-      "judul": "Units and rates",
-      "icon": "fa-ruler-combined",
-      "tipe": "basic",
-      "isi": [
-        "Units help prevent modeling errors. If one notebook costs USD 4 and a student buys \\(n\\) notebooks, the cost is:",
-        {
-          "type": "formula",
-          "content": "\\[C=4n\\]"
-        },
-        "If a phone call costs USD 0.20 per minute and lasts \\(h\\) hours, first convert hours to minutes:",
-        {
-          "type": "formula",
-          "content": "\\[C=0.20(60h)=12h\\]"
-        },
-        {
-          "type": "note",
-          "content": "Keep track of dollars, minutes, pounds, students, and other units. Convert before combining quantities measured in different units."
-        }
-      ]
-    },
-    {
-      "judul": "Tools: Desmos and reference information",
-      "icon": "fa-toolbox",
-      "tipe": "basic",
-      "isi": [
-        "Desmos is especially useful for graphing equations and inequalities, finding intersections, checking zeros and intercepts, evaluating numerical expressions, and exploring the meaning of parameters.",
-        "The reference sheet is useful for geometry formulas. However, a formula is only helpful when you know what each quantity represents.",
-        {
-          "type": "note",
-          "content": "Use a tool after identifying the mathematical relationship. A graph or calculator can verify a model, but it should not replace the modeling step."
-        }
-      ]
-    },
-    {
-      "judul": "Worked examples",
-      "icon": "fa-chalkboard-user",
-      "tipe": "basic",
-      "isi": [
-        {
-          "type": "example",
-          "title": "Example 1: Translate a comparison",
-          "content": "Andy’s height is \\(x\\) centimeters. Bryan is 3 centimeters taller. “Taller than” means add, so Bryan’s height is \\(x+3\\)."
-        },
-        {
-          "type": "example",
-          "title": "Example 2: Translate a repeated cost",
-          "content": "One book costs USD \\(d\\). The cost of \\(n\\) books is \\(nd\\) dollars."
-        },
-        {
-          "type": "example",
-          "title": "Example 3: Build a linear model",
-          "content": "A bicycle rental shop charges a fixed fee of USD 8 plus USD 3 per hour. After \\(t\\) hours, the cost is \\(C=3t+8\\). For 5 hours, \\(C=3(5)+8=23\\), so the total cost is USD 23."
-        },
-        {
-          "type": "example",
-          "title": "Example 4: Translate a capacity restriction",
-          "content": "A school accepts no more than 1,000 students. If \\(b\\) is the number of boys and \\(g\\) is the number of girls, then \\(b+g\\le1000\\)."
-        },
-        {
-          "type": "example",
-          "title": "Example 5: Use the definition of an intercept",
-          "content": "The y-intercept of \\(y=-6x-32\\) occurs when \\(x=0\\). Therefore \\(y=-6(0)-32=-32\\), and the y-intercept is \\((0,-32)\\)."
-        }
-      ]
-    },
-    {
-      "judul": "Practice strategies",
-      "icon": "fa-bullseye",
+      "judul": "Build a mathematical model",
+      "icon": "fa-diagram-project",
       "tipe": "basic",
       "isi": [
         {
           "type": "ordered-list",
           "items": [
-            "Read the goal before calculating.",
-            "Name variables with meaning.",
-            "Underline relational phrases such as “per,” “at least,” “twice,” and “no more than.”",
-            "Write the model before calculating.",
-            "Preserve units and convert when necessary.",
-            "Check the scale and whether the answer fits the context.",
-            "Use Desmos to verify an intersection or intercept when useful."
+            "Define the variables: state what each variable measures.",
+            "Translate the relationships: watch for words such as “per,” “total,” “twice,” and “at least.”",
+            "Combine the relationships: choose an expression, equation, inequality, system, or piecewise model.",
+            "Interpret the result: check units, signs, boundaries, and realistic values."
           ]
+        },
+        {
+          "type": "example",
+          "title": "Example: a ticket-revenue model",
+          "content": "A movie theater charges USD \\(12\\) for each adult ticket and USD \\(8\\) for each child ticket. If \\(a\\) represents the number of adult tickets sold and \\(c\\) represents the number of child tickets sold, which expression represents the total amount collected?<br><br>⤳ Adult tickets cost USD \\(12\\) and child tickets cost USD \\(8\\);<br>⤳ \\(a\\) is the number of adult tickets and \\(c\\) is the number of child tickets.<br><br>Then,<br>Adult revenue is \\(12a\\) and child revenue is \\(8c\\);<br>so the total revenue is \\(R=12a+8c\\)"
+        }
+      ]
+    },
+    {
+      "judul": "Units, rates, and fixed charges",
+      "icon": "fa-ruler-combined",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "paragraph",
+          "content": "Units are part of the meaning of a number. A per-unit rate is multiplied by the number of units, while a fixed charge is added separately."
+        },
+        {
+          "type": "formula",
+          "content": "\\[\\text{Total cost}=(\\text{rate})(\\text{number of units})+\\text{fixed fee}\\]"
+        },
+        {
+          "type": "example",
+          "title": "Example: convert hours to minutes",
+          "content": "A phone costs USD \\(0.20\\) per minute. If it is used for \\(h\\) hours, then \\(h\\) hours equals \\(60h\\) minutes. The cost is \\(C=0.20(60h)=12h\\) dollars."
+        },
+        {
+          "type": "example",
+          "title": "Example: a piecewise delivery cost",
+          "content": "A delivery service charges USD 18 for the first 10 miles and USD 1.40 for each additional mile.<br><br>So, for \\(0 < d \\le 10 \\), \\(C=18\\).<br>Then, for \\(d > 10\\), it costs \\(d-10\\) additional miles are charged $C=18+1.40(d-10)$."
+        },
+        {
+          "type": "note",
+          "content": "Do not combine hours with minutes, pounds with ounces, or percentages with whole-number amounts without converting to compatible units."
+        }
+      ]
+    },
+    {
+      "judul": "Equations, inequalities, and systems",
+      "icon": "fa-scale-balanced",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "grid",
+          "items": [
+            {
+              "title": "Equation",
+              "content": "An exact relationship, such as \\(x+y=350\\)."
+            },
+            {
+              "title": "Inequality",
+              "content": "A limit or range, such as \\(x+y\\le1000\\)."
+            },
+            {
+              "title": "System",
+              "content": "Several conditions that must hold at the same time."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: interpret a system",
+          "content": "A nutrition create a meal plan using protein bars and smoothies. Each protein bar contains 12 grams of protein and 5 grams of sugar. Each smoothie contains 20 grams of protein and 14 grams of sugar. The plan needs at least 100 grams of protein and no more than 60 grams of sugar. If \\(b\\) is the number of bars and \\(s\\) is the number of smoothies, which system models the situation?<br><br>The plan must consist at least 100 grams of protein gives \\(12b+20s\\ge100\\),<br>while no more than 60 grams of sugar gives \\(5b+14s\\le60\\)."
+        },
+        {
+          "type": "note",
+          "content": "“At least” and “no less than” use \\(\\ge\\). “At most,” “no more than,” and “cannot exceed” use \\(\\le\\). The boundary is included in these phrases."
+        }
+      ]
+    },
+    {
+      "judul": "SAT Math tools and checking habits",
+      "icon": "fa-toolbox",
+      "tipe": "basic",
+      "isi": [
+        {
+          "type": "list",
+          "items": [
+            "Use Desmos to graph equations and inequalities, find intersections, check zeros and intercepts, evaluate expressions, and test a proposed model.",
+            "Use the SAT reference sheet for formulas, but identify what each variable in the formula represents before substituting.",
+            "Estimate before calculating. A negative number of people or a cost below zero is usually a sign that the model was misread.",
+            "Use answer choices strategically by testing a convenient value when the question asks which expression matches.",
+            "Keep an error log: record whether a mistake came from translation, arithmetic, units, or interpretation."
+          ]
+        },
+        {
+          "type": "note",
+          "content": "A calculator can verify a model, but it cannot repair a sentence that was translated incorrectly."
         }
       ]
     }
   ],
   "latihan": [
     {
-      "showSolutionButton": true,
-      "sourcePage": 19,
-      "type": "open",
-      "question": "Andy's height is \\(x\\), and Bryan is 3 cm taller than Andy. What is Bryan's height?",
-      "answer": "\\(x+3\\)",
-      "discussion": [
-        "“3 cm taller than Andy” means add 3 to Andy's height.",
-        "Bryan's height is \\(x+3\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 19,
-      "type": "open",
-      "question": "The price of a pen is \\(x\\), and the price of a pencil is 2 cents less than that of the pen. What is the price of the pencil?",
-      "answer": "\\(x-2\\)",
-      "discussion": [
-        "“2 cents less than” means subtract 2.",
-        "The pencil's price is \\(x-2\\) cents."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 19,
-      "type": "open",
-      "question": "The price of one book is \\(d\\). What is the price of \\(n\\) books?",
-      "answer": "\\(nd\\)",
-      "discussion": [
-        "The total price is the price of one book multiplied by the number of books.",
-        "The model is \\(nd\\) dollars."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 20,
-      "type": "open",
-      "question": "The price of one mango is \\(x\\), and the price of one guava is double the price of the mango. What is the price of the guava?",
-      "answer": "\\(2x\\)",
-      "discussion": [
-        "“Double the price of the mango” means multiply \\(x\\) by 2.",
-        "The guava's price is \\(2x\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 20,
-      "type": "open",
-      "question": "There are only \\(m\\) apples and \\(n\\) oranges in a basket. How many fruits are there in total in the basket?",
-      "answer": "\\(m+n\\)",
-      "discussion": [
-        "The total number of fruits is the number of apples plus the number of oranges.",
-        "The total is \\(m+n\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 20,
-      "type": "open",
-      "question": "A teacher brings \\(b\\) books to the class to be divided equally among \\(s\\) students. How many books does every student get?",
-      "answer": "\\(\\dfrac{b}{s}\\)",
-      "discussion": [
-        "Dividing \\(b\\) books equally among \\(s\\) students means divide \\(b\\) by \\(s\\).",
-        "Every student gets \\(\\dfrac{b}{s}\\) books."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 21,
-      "type": "open",
-      "question": "Let \\(x\\) be the number of students. Classify which statement belongs to which notation:",
-      "prompt": "<p><strong>Notation:</strong></p><ol><li>\\(x=30\\)</li><li>\\(x&lt;30\\)</li><li>\\(x\\le30\\)</li><li>\\(x&gt;30\\)</li><li>\\(x\\ge30\\)</li></ol><p><strong>Statements:</strong></p><ol type=\"a\"><li>The number of students is equal to 30.</li><li>The number of students is more/greater than 30.</li><li>The number of students is more than or equal to 30.</li><li>The number of students is less than 30.</li><li>The number of students is less than or equal to 30.</li><li>The number of students is at least/cannot be less than 30.</li><li>The number of students is at most/cannot be greater than 30.</li><li>The number of students cannot exceed 30.</li><li>The maximum number of students is 30.</li><li>The minimum number of students is 30.</li><li>The exact number of students is 30.</li></ol>",
-      "answer": "1: a, k; 2: d; 3: e, g, h, i; 4: b; 5: c, f, j",
-      "discussion": [
-        "Statements a and k describe exactly 30, so they match \\(x=30\\).",
-        "Statement d describes fewer than 30, so it matches \\(x&lt;30\\).",
-        "Statements e, g, h, and i describe at most 30, so they match \\(x\\le30\\).",
-        "Statement b describes more than 30, so it matches \\(x&gt;30\\).",
-        "Statements c, f, and j describe at least 30, so they match \\(x\\ge30\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 22,
-      "type": "open",
-      "question": "The price of a shirt is \\(s\\), and the price of a hat is \\(h\\). How much should Andy pay for \\(n\\) shirts and \\(m\\) hats?",
-      "answer": "\\(ns+mh\\)",
-      "discussion": [
-        "The cost of \\(n\\) shirts is \\(ns\\) dollars.",
-        "The cost of \\(m\\) hats is \\(mh\\) dollars.",
-        "The total cost is \\(ns+mh\\) dollars."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 22,
-      "type": "open",
-      "question": "A school can only accept no more than 1,000 students per year. The school accepts \\(b\\) boys and \\(g\\) girls. Create a mathematical model involving \\(b\\), \\(g\\), and 1,000 for this situation.",
-      "answer": "\\(b+g\\le1000\\)",
-      "discussion": [
-        "The total number of students is \\(b+g\\).",
-        "“No more than 1,000” means the total can be 1,000 or less.",
-        "The model is \\(b+g\\le1000\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 24,
       "type": "multiple-choice",
-      "question": "One pound of grapes costs $2. At this rate, how many dollars will \\(c\\) pounds of grapes cost?",
+      "question": "A movie theater charges USD \\(12\\) for each adult ticket and USD \\(8\\) for each child ticket. If \\(a\\) represents the number of adult tickets sold and \\(c\\) represents the number of child tickets sold, which expression represents the total amount collected?",
       "options": [
-        "\\(2c\\)",
-        "\\(2+c\\)",
-        "\\(\\dfrac{2}{c}\\)",
-        "\\(\\dfrac{c}{2}\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "The rate is 2 dollars per pound.",
-        "For \\(c\\) pounds, multiply the rate by the number of pounds: \\(2c\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 25,
-      "type": "multiple-choice",
-      "question": "When 4 times the number \\(x\\) is added to 12, the result is 8. What number results when 2 times \\(x\\) is added to 7?",
-      "options": [
-        "\\(-1\\)",
-        "\\(5\\)",
-        "\\(8\\)",
-        "\\(9\\)"
+        "\\(20ac\\)",
+        "\\(12a+8c\\)",
+        "\\(12(a+c)\\)",
+        "\\(8a+12c\\)"
       ],
       "answer": "B",
       "discussion": [
-        "Translate the first statement: \\(4x+12=8\\).",
-        "Subtract 12: \\(4x=-4\\), so \\(x=-1\\).",
-        "Then \\(2x+7=2(-1)+7=5\\).",
-        "The correct choice is 5, which is option B."
-      ]
+        "Adult tickets contribute \\(12a\\) dollars.",
+        "Child tickets contribute \\(8c\\) dollars.",
+        "Adding the two revenue sources gives \\(12a+8c\\), so choice B is correct."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "sourcePage": 26,
       "type": "multiple-choice",
-      "question": "On Saturday afternoon, Armand sent \\(m\\) text messages each hour for 5 hours, and Tyrone sent \\(p\\) text messages each hour for 4 hours. Which of the following represents the total number of messages sent by Armand and Tyrone on Saturday afternoon?",
+      "question": "A gym orders cases of water bottles. Each case contains 24 bottles. If the gym orders \\(n\\) cases, which expression represents the total number of bottles ordered?",
       "options": [
-        "\\(9mp\\)",
-        "\\(20mp\\)",
-        "\\(5m+4p\\)",
-        "\\(4m+5p\\)"
+        "\\(24+n\\)",
+        "\\(\\dfrac{24}{n}\\)",
+        "\\(24n\\)",
+        "\\(n-24\\)"
       ],
       "answer": "C",
       "discussion": [
-        "Armand sent \\(5m\\) messages.",
-        "Tyrone sent \\(4p\\) messages.",
-        "The total is \\(5m+4p\\)."
-      ]
+        "There are 24 bottles in each case.",
+        "For \\(n\\) equal cases, multiply \\(24\\) by \\(n\\): \\(24n\\).",
+        "Therefore, choice C is correct."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "sourcePage": 27,
       "type": "multiple-choice",
-      "question": "The cost of using a telephone in a hotel meeting room is $0.20 per minute. Which of the following equations represents the total cost \\(c\\), in dollars, for \\(h\\) hours of phone use?",
+      "question": "A parking garage can hold no more than 450 cars. If \\(s\\) represents the number of small cars and \\(l\\) represents the number of large cars, which inequality models the situation?",
       "options": [
-        "\\(c=0.20(60h)\\)",
-        "\\(c=0.20h+60\\)",
-        "\\(c=\\dfrac{60h}{0.20}\\)",
-        "\\(c=\\dfrac{0.20h}{60}\\)"
+        "\\(s+l\\ge450\\)",
+        "\\(s+l<450\\)",
+        "\\(s+l\\le450\\)",
+        "\\(sl\\le450\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "The total number of cars is \\(s+l\\).",
+        "“No more than 450” means 450 or fewer, so the symbol is \\(\\le\\).",
+        "The model is \\(s+l\\le450\\), choice C."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Peanuts are 30% protein by weight, and almonds are 20% protein by weight. If \\(p\\) pounds of peanuts and \\(a\\) pounds of almonds provide 50 pounds of protein, which equation models the situation?",
+      "options": [
+        "\\(0.30+0.20=50\\)",
+        "\\(30p+20a=50\\)",
+        "\\(0.30p+0.20a=50\\)",
+        "\\(0.03a+0.20p=50\\)"
+      ],
+      "answer": "C",
+      "discussion": [
+        "Peanuts contribute \\(0.30p\\) pounds of protein.",
+        "Almonds contribute \\(0.20a\\) pounds of protein.",
+        "The total is 50 pounds, so \\(0.30p+0.20a=50\\). Choice C is correct."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Each protein bar contains 12 grams of protein and 5 grams of sugar. Each smoothie contains 20 grams of protein and 14 grams of sugar. The plan needs at least 100 grams of protein and no more than 60 grams of sugar. If \\(b\\) is the number of bars and \\(s\\) is the number of smoothies, which system models the situation?",
+      "options": [
+        "\\(12b+20s\\ge100\\); \\(5b+14s\\le60\\)",
+        "\\(12b+20s\\le100\\); \\(5b+14s\\ge60\\)",
+        "\\(17bs\\ge160\\); \\(12b+20s=100\\)",
+        "\\(12b+5s\\ge100\\); \\(20b+14s\\le60\\)"
       ],
       "answer": "A",
       "discussion": [
-        "The rate is given per minute, so convert \\(h\\) hours to \\(60h\\) minutes.",
-        "Multiply the number of minutes by 0.20 dollars per minute: \\(c=0.20(60h)\\)."
-      ]
+        "Protein is \\(12b+20s\\), and “at least 100” gives \\(12b+20s\\ge100\\).",
+        "Sugar is \\(5b+14s\\), and “no more than 60” gives \\(5b+14s\\le60\\).",
+        "Together these are choice A."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "sourcePage": 28,
       "type": "multiple-choice",
-      "question": "A gardener buys two kinds of fertilizer. Fertilizer A contains 60% filler materials by weight and Fertilizer B contains 40% filler materials by weight. Together, the fertilizers bought by the gardener contain a total of 240 pounds of filler materials. Which equation models this relationship, where \\(x\\) is the number of pounds of Fertilizer A and \\(y\\) is the number of pounds of Fertilizer B?",
+      "question": "Orange juice contains 15% sugar and mango juice contains 10% sugar. If \\(o\\) pounds of orange juice and \\(m\\) pounds of mango juice provide 18 pounds of sugar, which equation models the situation?",
       "options": [
-        "\\(0.4x+0.6y=240\\)",
-        "\\(0.6x+0.4y=240\\)",
-        "\\(40x+60y=240\\)",
-        "\\(60x+40y=240\\)"
+        "\\(15o+10m=18\\)",
+        "\\(0.15o+0.10m=18\\)",
+        "\\(0.25(o+m)=18\\)",
+        "\\(0.15m+0.10o=18\\)"
       ],
       "answer": "B",
       "discussion": [
-        "Fertilizer A contributes \\(0.60x\\) pounds of filler materials.",
-        "Fertilizer B contributes \\(0.40y\\) pounds of filler materials.",
-        "The total is 240 pounds, so \\(0.6x+0.4y=240\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 29,
-      "type": "multiple-choice",
-      "question": "Two types of tickets were sold for a concert held at an amphitheater. Tickets to sit on a bench during the concert cost \\$75 each, and tickets to sit on the lawn during the concert cost \\$40 each. Organizers of the concert announced that 350 tickets had been sold and that \\$19,250 had been raised through ticket sales alone. Which of the following systems of equations could be used to find the number of tickets for bench seats, \\(B\\), and the number of tickets for lawn seats, \\(L\\), that were sold for the concert?",
-      "options": [
-        "\\(\\begin{cases}(75B)(40L)=1{,}950\\\\B+L=350\\end{cases}\\)",
-        "\\(\\begin{cases}40B+75L=19{,}250\\\\B+L=350\\end{cases}\\)",
-        "\\(\\begin{cases}75B+40L=350\\\\B+L=19{,}250\\end{cases}\\)",
-        "\\(\\begin{cases}75B+40L=19{,}250\\\\B+L=350\\end{cases}\\)"
+        "The sugar from orange juice is \\(0.15o\\) pounds.",
+        "The sugar from mango juice is \\(0.10m\\) pounds.",
+        "Adding the contributions gives \\(0.15o+0.10m=18\\), choice B."
       ],
-      "answer": "D",
-      "discussion": [
-        "The total number of tickets is \\(B+L=350\\).",
-        "The ticket revenue is \\(75B+40L=19{,}250\\).",
-        "Together, these equations form option D."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "sourcePage": 30,
       "type": "multiple-choice",
-      "question": "Roberto is an insurance agent who sells two types of policies: a \\$50,000 policy and a \\$100,000 policy. Last month, his goal was to sell at least 57 insurance policies. While he did not meet his goal, the total value of the policies he sold was over \\$3,000,000. Which of the following systems of inequalities describes \\(x\\), the possible number of \\$50,000 policies, and \\(y\\), the possible number of \\$100,000 policies, that Roberto sold last month?",
+      "question": "A lab mixes Solution A, which is 8% salt, and Solution B, which is 25% salt. The lab needs 60 liters of a solution that is 17% salt. If \\(x\\) and \\(y\\) are the numbers of liters of Solutions A and B, which system models the situation?",
       "options": [
-        "\\(\\begin{cases}x+y<57\\\\50{,}000x+100{,}000y<3{,}000{,}000\\end{cases}\\)",
-        "\\(\\begin{cases}x+y>57\\\\50{,}000x+100{,}000y>3{,}000{,}000\\end{cases}\\)",
-        "\\(\\begin{cases}x+y<57\\\\50{,}000x+100{,}000y>3{,}000{,}000\\end{cases}\\)",
-        "\\(\\begin{cases}x+y>57\\\\50{,}000x+100{,}000y<3{,}000{,}000\\end{cases}\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "He did not meet a goal of at least 57 policies, so \\(x+y<57\\).",
-        "The total value was over 3,000,000, so \\(50{,}000x+100{,}000y>3{,}000{,}000\\).",
-        "This is option C."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "sourcePage": 31,
-      "type": "multiple-choice",
-      "question": "A laundry service is buying detergent and fabric softener from its supplier. The supplier will deliver no more than 300 pounds in a shipment. Each container of detergent weighs 7.35 pounds, and each container of fabric softener weighs 6.2 pounds. The service wants to buy at least twice as many containers of detergent as containers of fabric softener. Let \\(d\\) represent the number of containers of detergent, and let \\(s\\) represent the number of containers of fabric softener, where \\(d\\) and \\(s\\) are nonnegative integers. Which of the following systems of inequalities best represents this situation?",
-      "options": [
-        "\\(\\begin{cases}7.35d+6.2s\\le300\\\\d\\ge2s\\end{cases}\\)",
-        "\\(\\begin{cases}7.35d+6.2s\\le300\\\\2d\\ge s\\end{cases}\\)",
-        "\\(\\begin{cases}14.7d+6.2s\\le300\\\\d\\ge2s\\end{cases}\\)",
-        "\\(\\begin{cases}14.7d+6.2s\\le300\\\\2d\\ge s\\end{cases}\\)"
+        "\\(\\begin{cases}x+y=60\\\\0.08x+0.25y=10.2\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=60\\\\0.8x+2.5y=10.2\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=17\\\\0.08x+0.25y=60\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=60\\\\8x+25y=10.2\\end{cases}\\)"
       ],
       "answer": "A",
       "discussion": [
-        "The shipment weight is \\(7.35d+6.2s\\), and no more than 300 pounds means \\(7.35d+6.2s\\le300\\).",
-        "At least twice as many detergent containers means \\(d\\ge2s\\).",
-        "The correct system is option A."
-      ]
+        "The total volume is 60 liters, so \\(x+y=60\\).",
+        "The final solution contains \\(0.17(60)=10.2\\) liters of salt.",
+        "The salt contributions are \\(0.08x\\) and \\(0.25y\\), giving the system in choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A bookstore ships \\(n\\) boxes of novels and \\(t\\) boxes of textbooks. Each novel box weighs 14 pounds and costs USD \\(18\\) to ship. Each textbook box weighs 22 pounds and costs USD \\(26\\) to ship. The shipment must weigh no more than 520 pounds, cost no more than USD \\(620\\), and have at least one textbook box for every three novel boxes. Which system models the situation?",
+      "options": [
+        "\\(\\begin{cases}14n+22t\\le520\\\\18n+26t\\le620\\\\t\\ge\\frac13n\\end{cases}\\)",
+        "\\(\\begin{cases}14n+22t\\ge520\\\\18n+26t\\le620\\\\t\\le\\frac13n\\end{cases}\\)",
+        "\\(\\begin{cases}14n+22t\\le520\\\\18n+26t\\ge620\\\\t\\ge\\frac13n\\end{cases}\\)",
+        "\\(\\begin{cases}14n+22t\\le520\\\\18n+26t\\le620\\\\n\\ge3t\\end{cases}\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The weight limit gives \\(14n+22t\\le520\\).",
+        "The shipping-cost limit gives \\(18n+26t\\le620\\).",
+        "“At least one textbook box for every three novel boxes” means \\(t\\ge\\frac13n\\).",
+        "All three conditions appear in choice A."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A delivery app charges a USD \\(12\\) booking fee and USD \\(2.40\\) per mile. After the subtotal is calculated, the city adds a 5% surcharge to the entire amount. If \\(m\\) is the number of miles, which expression represents the total cost?",
+      "options": [
+        "\\(1.05(12+2.4m)\\)",
+        "\\(12+1.05(2.4m)\\)",
+        "\\(1.05(12m+2.4)\\)",
+        "\\(12+2.4m+0.05m\\)"
+      ],
+      "answer": "A",
+      "discussion": [
+        "The subtotal is the fixed fee plus the mileage charge: \\(12+2.4m\\).",
+        "A 5% surcharge makes the total 105% of the subtotal, so multiply by \\(1.05\\).",
+        "The total cost is \\(1.05(12+2.4m)\\), choice A."
+      ],
+      "showSolutionButton": true
     }
   ],
   "additionalPractice": [
     {
-      "showSolutionButton": true,
-      "difficulty": "Easy",
       "type": "multiple-choice",
-      "question": "A notebook costs USD 4. If Maya buys \\(n\\) notebooks, which expression represents the total cost?",
+      "question": "A notebook costs USD \\(4\\). Which expression represents the cost of \\(n\\) notebooks?",
       "options": [
         "\\(n+4\\)",
         "\\(4n\\)",
@@ -581,13 +608,13 @@
       ],
       "answer": "B",
       "discussion": [
-        "The cost of one notebook is USD 4.",
-        "For \\(n\\) notebooks, multiply 4 by \\(n\\): \\(4n\\)."
-      ]
+        "The cost is USD 4 for each notebook.",
+        "For \\(n\\) notebooks, multiply 4 by \\(n\\): \\(4n\\).",
+        "Therefore, choice B is correct."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "difficulty": "Easy",
       "type": "multiple-choice",
       "question": "Leo is 5 years older than Ana, whose age is \\(a\\). Which expression represents Leo's age?",
       "options": [
@@ -599,117 +626,11 @@
       "answer": "C",
       "discussion": [
         "“5 years older than Ana” means add 5 to Ana's age.",
-        "Leo's age is \\(a+5\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "Easy",
-      "type": "multiple-choice",
-      "question": "A school has \\(b\\) boys and \\(g\\) girls. Which expression represents the total number of students?",
-      "options": [
-        "\\(b-g\\)",
-        "\\(bg\\)",
-        "\\(b+g\\)",
-        "\\(\\dfrac{b}{g}\\)"
+        "Leo's age is \\(a+5\\), so choice C is correct."
       ],
-      "answer": "C",
-      "discussion": [
-        "The total number of students is the number of boys plus the number of girls.",
-        "The expression is \\(b+g\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "difficulty": "Easy",
-      "type": "multiple-choice",
-      "question": "A movie theater can hold no more than 450 people. If \\(x\\) people are inside, which inequality represents the situation?",
-      "options": [
-        "\\(x<450\\)",
-        "\\(x\\le450\\)",
-        "\\(x>450\\)",
-        "\\(x\\ge450\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "“No more than 450” means the number can be 450 or less.",
-        "The inequality is \\(x\\le450\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "Easy",
-      "type": "multiple-choice",
-      "question": "A fruit basket contains \\(r\\) red apples and \\(y\\) yellow apples. Which expression represents the number of apples remaining after 3 apples are removed?",
-      "options": [
-        "\\(r+y+3\\)",
-        "\\(3(r+y)\\)",
-        "\\(r+y-3\\)",
-        "\\(r+y\\div3\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "The basket initially contains \\(r+y\\) apples.",
-        "Removing 3 apples gives \\(r+y-3\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "Medium",
-      "type": "multiple-choice",
-      "question": "A music service charges a fixed fee of USD 7 plus USD 2 for each downloaded album. Which equation represents the total cost \\(C\\) for \\(a\\) albums?",
-      "options": [
-        "\\(C=7a+2\\)",
-        "\\(C=2a+7\\)",
-        "\\(C=9a\\)",
-        "\\(C=7-2a\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "The fixed fee is the constant 7.",
-        "The cost for \\(a\\) albums is \\(2a\\).",
-        "Therefore, \\(C=2a+7\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "Medium",
-      "type": "multiple-choice",
-      "question": "A number \\(x\\) is multiplied by 3 and then decreased by 8 to produce 19. What is \\(x\\)?",
-      "options": [
-        "\\(3\\)",
-        "\\(7\\)",
-        "\\(9\\)",
-        "\\(13\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "Translate the statement as \\(3x-8=19\\).",
-        "Add 8 to both sides: \\(3x=27\\).",
-        "Divide by 3: \\(x=9\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "Medium",
-      "type": "multiple-choice",
-      "question": "A school admits \\(m\\) students in the morning and twice as many students in the afternoon. If the school admits 96 students in total, which equation can be used to find \\(m\\)?",
-      "options": [
-        "\\(m+2=96\\)",
-        "\\(2m=96\\)",
-        "\\(m+2m=96\\)",
-        "\\(m^2=96\\)"
-      ],
-      "answer": "C",
-      "discussion": [
-        "The morning enrollment is \\(m\\).",
-        "The afternoon enrollment is twice as many, or \\(2m\\).",
-        "The total is \\(m+2m=96\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "Medium",
       "type": "multiple-choice",
       "question": "The number of red cards in a collection is 4 fewer than twice the number of blue cards. If \\(r\\) is the number of red cards and \\(b\\) is the number of blue cards, which equation represents the relationship?",
       "options": [
@@ -722,65 +643,45 @@
       "discussion": [
         "Twice the number of blue cards is \\(2b\\).",
         "Four fewer than \\(2b\\) is \\(2b-4\\).",
-        "Therefore, \\(r=2b-4\\)."
-      ]
+        "Thus, \\(r=2b-4\\), choice A."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "difficulty": "Medium",
       "type": "multiple-choice",
-      "question": "A school accepts at least 300 applicants but no more than 500 applicants. If \\(x\\) is the number accepted, which system represents the situation?",
+      "question": "A music service charges a fixed fee of USD \\(7\\) plus USD \\(2\\) per downloaded album. Which equation represents the total cost \\(C\\) for \\(a\\) albums?",
       "options": [
-        "\\(x < 300\\) and \\(x>500\\)",
-        "\\(x\\le300\\) and \\(x\\ge500\\)",
-        "\\(300\\le x\\le500\\)",
-        "\\(300 < x < 500\\)"
+        "\\(C=7a+2\\)",
+        "\\(C=2a+7\\)",
+        "\\(C=9a\\)",
+        "\\(C=7-2a\\)"
+      ],
+      "answer": "B",
+      "discussion": [
+        "The per-album charge is \\(2a\\).",
+        "The fixed fee is 7, so it is added to the variable charge.",
+        "Therefore, \\(C=2a+7\\), choice B."
+      ],
+      "showSolutionButton": true
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A school admits \\(m\\) students in the morning and twice as many in the afternoon. If the total is 96 students, which equation can be used to find \\(m\\)?",
+      "options": [
+        "\\(m+2=96\\)",
+        "\\(2m=96\\)",
+        "\\(m+2m=96\\)",
+        "\\(m^2=96\\)"
       ],
       "answer": "C",
       "discussion": [
-        "“At least 300” means \\(x\\ge300\\).",
-        "“No more than 500” means \\(x\\le500\\).",
-        "Together, \\(300\\le x\\le500\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A delivery company charges USD 18 for the first 10 miles and USD 1.40 for each additional mile. Which piecewise model represents the cost \\(C\\) for \\(d\\) miles, where \\(d>0\\)?",
-      "options": [
-        "\\(C=18+1.40d\\)",
-        "\\(C=18\\) for \\(d\\le10\\) and \\(C=18+1.40(d-10)\\) for \\(d>10\\)",
-        "\\(C=1.40(d-10)\\) for all \\(d\\)",
-        "\\(C=18d+1.40\\)"
+        "The morning group has \\(m\\) students.",
+        "The afternoon group has twice as many, or \\(2m\\) students.",
+        "Adding both groups gives \\(m+2m=96\\), choice C."
       ],
-      "answer": "B",
-      "discussion": [
-        "The first 10 miles cost a fixed USD 18.",
-        "Only miles beyond 10 receive the additional USD 1.40 charge.",
-        "For \\(d>10\\), the additional distance is \\(d-10\\), giving \\(C=18+1.40(d-10)\\)."
-      ]
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A school has \\(x\\) ninth-grade students and \\(y\\) tenth-grade students. The number of tenth-grade students is 24 more than the number of ninth-grade students, and the total number of students is 416. Which system represents the situation?",
-      "options": [
-        "\\(y=x-24\\) and \\(x+y=416\\)",
-        "\\(y=x+24\\) and \\(x+y=416\\)",
-        "\\(x=y+24\\) and \\(x-y=416\\)",
-        "\\(x+y=24\\) and \\(y=416x\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "The tenth-grade count is 24 more than the ninth-grade count, so \\(y=x+24\\).",
-        "The total number of students is \\(x+y=416\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
       "type": "multiple-choice",
       "question": "A quantity is increased by 40% and then decreased by 25%. If the original quantity is \\(q\\), which expression represents the final quantity?",
       "options": [
@@ -791,134 +692,44 @@
       ],
       "answer": "B",
       "discussion": [
-        "Increasing by 40% multiplies the quantity by \\(1.40\\).",
-        "Decreasing the new quantity by 25% multiplies it by \\(0.75\\).",
-        "The final quantity is \\(q(1.40)(0.75)\\)."
-      ]
+        "Increasing by 40% multiplies the original by \\(1.40\\).",
+        "Decreasing the new value by 25% multiplies it by \\(0.75\\).",
+        "The final value is \\(q(1.40)(0.75)\\), choice B."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A theater sells adult tickets for USD 14 and student tickets for USD 9. The theater sells \\(x\\) adult tickets and \\(y\\) student tickets. Which expression represents the total revenue, and what additional equation is needed if exactly 80 tickets are sold?",
-      "options": [
-        "\\(14x+9y\\) and \\(x+y=80\\)",
-        "\\(23xy\\) and \\(x-y=80\\)",
-        "\\(14x-9y\\) and \\(x+y=80\\)",
-        "\\(14y+9x\\) and \\(x-y=80\\)"
-      ],
-      "answer": "A",
+      "type": "open",
+      "question": "A theater sells adult tickets for USD \\(14\\) and student tickets for USD \\(9\\). If \\(x\\) adult tickets and \\(y\\) student tickets are sold, write an expression for the revenue and an equation if exactly 80 tickets are sold.",
+      "answer": "\\(R=14x+9y\\) and \\(x+y=80\\)",
       "discussion": [
-        "Adult ticket revenue is \\(14x\\), and student ticket revenue is \\(9y\\).",
-        "The total revenue is \\(14x+9y\\).",
-        "Exactly 80 tickets means \\(x+y=80\\)."
-      ]
+        "Adult-ticket revenue is \\(14x\\), and student-ticket revenue is \\(9y\\).",
+        "Adding the two sources gives \\(R=14x+9y\\).",
+        "Exactly 80 tickets means the ticket counts add to 80, so \\(x+y=80\\)."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A school's enrollment is modeled by \\(E(t)=a+bt\\), where \\(t\\) is the number of years after 2020. In 2020, enrollment was 840, and in 2024 it was 960. What is the predicted enrollment in 2030?",
-      "options": [
-        "\\(1{,}020\\)",
-        "\\(1{,}080\\)",
-        "\\(1{,}140\\)",
-        "\\(1{,}200\\)"
-      ],
-      "answer": "C",
+      "type": "open",
+      "question": "A school has \\(x\\) ninth-grade students and \\(y\\) tenth-grade students. There are 24 more tenth-grade students than ninth-grade students, and there are 416 students in total. Write a system of equations.",
+      "answer": "\\(\\begin{cases}y=x+24\\\\x+y=416\\end{cases}\\)",
       "discussion": [
-        "In 2020, \\(t=0\\), so \\(a=840\\).",
-        "In 2024, \\(t=4\\), so \\(840+4b=960\\), giving \\(b=30\\).",
-        "In 2030, \\(t=10\\), so \\(E(10)=840+30(10)=1{,}140\\)."
-      ]
+        "“24 more tenth-grade students” translates to \\(y=x+24\\).",
+        "The total enrollment is \\(x+y=416\\).",
+        "Together, these equations form the required system."
+      ],
+      "showSolutionButton": true
     },
     {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A farmer has chickens and goats. There are 38 animals and 104 legs in total. If \\(c\\) is the number of chickens and \\(g\\) is the number of goats, which system can be used to find \\(c\\) and \\(g\\)?",
-      "options": [
-        "\\(c+g=38\\) and \\(2c+4g=104\\)",
-        "\\(c-g=38\\) and \\(4c+2g=104\\)",
-        "\\(c+g=104\\) and \\(2c+4g=38\\)",
-        "\\(2c+4g=38\\) and \\(c-g=104\\)"
-      ],
-      "answer": "A",
+      "type": "open",
+      "question": "A school can accept no more than 1,200 students and must reserve at least 100 places for transfer students. If \\(b\\), \\(g\\), and \\(t\\) represent boys, girls, and transfer students, write a system of inequalities.",
+      "answer": "\\(\\begin{cases}b+g+t\\le1200\\\\t\\ge100\\end{cases}\\)",
       "discussion": [
-        "The total number of animals is \\(c+g=38\\).",
-        "Chickens contribute 2 legs each and goats contribute 4 legs each, so \\(2c+4g=104\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A phone plan costs USD 35 for up to 4 gigabytes of data and USD 8 for every gigabyte above 4. Which expression gives the cost for \\(x\\) gigabytes when \\(x>4\\)?",
-      "options": [
-        "\\(35+8x\\)",
-        "\\(35+8(x-4)\\)",
-        "\\(8(x+4)\\)",
-        "\\(35(x-4)\\)"
+        "The total number of students is \\(b+g+t\\).",
+        "“No more than 1,200” gives \\(b+g+t\\le1200\\).",
+        "“At least 100 transfer students” gives \\(t\\ge100\\)."
       ],
-      "answer": "B",
-      "discussion": [
-        "The first 4 gigabytes are included in the USD 35 base cost.",
-        "The number of additional gigabytes is \\(x-4\\).",
-        "The cost is \\(35+8(x-4)\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "The number of students in a club is represented by \\(n\\). The statement “the number of students is at least 12 but less than 30” is written as:",
-      "options": [
-        "\\(12 < n < 30\\)",
-        "\\(12 \\le n < 30\\)",
-        "\\(12 < n \\le 30\\)",
-        "\\(n \\le 12 \\) or \\( n \\ge 30 \\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "“At least 12” includes 12, so \\(n\\ge12\\).",
-        "“Less than 30” excludes 30, so \\(n<30\\).",
-        "Together, \\(12\\le n<30\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A quantity \\(P\\) is divided among \\(x\\) people. Each person receives 6 units, and 4 units remain. Which equation represents the situation?",
-      "options": [
-        "\\(P=6x-4\\)",
-        "\\(P=6x+4\\)",
-        "\\(P=4x+6\\)",
-        "\\(P=\\dfrac{x}{6}+4\\)"
-      ],
-      "answer": "B",
-      "discussion": [
-        "The amount distributed to people is \\(6x\\).",
-        "There are 4 units left over, so the original quantity is \\(P=6x+4\\)."
-      ]
-    },
-    {
-      "showSolutionButton": true,
-      "difficulty": "HOTS",
-      "type": "multiple-choice",
-      "question": "A school can accept no more than 1,200 students. The number of boys is \\(b\\), the number of girls is \\(g\\), and the number of transfer students is \\(t\\). If the school must reserve at least 100 places for transfer students, which system describes the constraints?",
-      "options": [
-        "\\(b+g+t\\le1200\\) and \\(t\\ge100\\)",
-        "\\(b+g+t\\ge1200\\) and \\(t\\le100\\)",
-        "\\(b+g-t\\le1200\\) and \\(t\\ge100\\)",
-        "\\(b+g+t=1200\\) and \\(t=100\\)"
-      ],
-      "answer": "A",
-      "discussion": [
-        "The total enrollment cannot exceed 1,200, so \\(b+g+t\\le1200\\).",
-        "At least 100 transfer places means \\(t\\ge100\\).",
-        "Together, these constraints are option A."
-      ]
+      "showSolutionButton": true
     }
   ]
 }
